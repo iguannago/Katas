@@ -1,1 +1,26 @@
-target/
+# Mac preview files
+.DS_Store
+
+# IntelliJ project files
+*.iml
+*.ipr
+*.iws
+.idea
+*.idea
+.idea*
+.DS_Store
+
+# Eclipse project files
+.project
+.springBeans
+.classpath
+MANIFEST.MF
+.settings/
+bin/
+*/target/*
+
+# Ignore output directories
+target/*
+**/target/*
+**/**/target/*
+**/**/**/target/*
