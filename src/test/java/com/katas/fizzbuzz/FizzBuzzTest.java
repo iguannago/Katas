@@ -10,7 +10,7 @@ import static junit.framework.Assert.assertEquals;
  * User: david
  * Date: 13/08/13
  * Time: 20:32
- * To change this template use File | Settings | File Templates.
+ * This is my test class.
  */
 public class FizzBuzzTest {
 
