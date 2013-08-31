@@ -8,9 +8,6 @@
     <artifactId>Katas</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>fizzbuzz</module>
-    </modules>
 
 
 </project>
