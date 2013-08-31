@@ -10,7 +10,7 @@ import static junit.framework.Assert.assertEquals;
  * User: david
  * Date: 13/08/13
  * Time: 20:32
- * This is my test class.
+ * This is my test class for FizzBuzz
  */
 public class FizzBuzzTest {
 
