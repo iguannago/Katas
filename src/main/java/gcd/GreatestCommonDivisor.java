@@ -12,12 +12,18 @@ public class GreatestCommonDivisor {
     private static Log logger = LogFactory.getLog(GreatestCommonDivisor.class);
 
     public int gcd(int a, int b) {
-        if (logger.isDebugEnabled()) {
-            logger.debug("a: " + a);
-            logger.debug("b: " + b);
+        logger.debug("a: " + a);
+        logger.debug("b: " + b);
+        if ((b == 0)||(a == 0)) {
+            int result = (b == 0) ? a : b;
+            logger.debug("fast result: " + result);
+            return result;
         }
-        if (b == 0)
-            return a;
-        return 0;
+        if ((a == 1) || (b == 1)) {
+            logger.debug("fast result: " + 1);
+            return 1;
+        }
+        return gcd(b, a % b);
     }
+
 }
