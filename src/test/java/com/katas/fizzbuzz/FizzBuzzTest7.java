@@ -24,17 +24,50 @@ public class FizzBuzzTest7 {
     }
 
     @Test
-    public void if1Return1() {
+    public void oneReturns1() {
         Assert.assertEquals("It Should returns 1", "1", fizzBuzz7.play(1));
     }
 
-    public void if3ReturnFizz() {
-        Assert.assertEquals("It should return Fizz", "Fizz", "");fizzBuzz7.play(3);
+    @Test
+    public void threeReturnsFizz() {
+        Assert.assertEquals("It should return Fizz", "Fizz", fizzBuzz7.play(3));
 
     }
 
+    @Test
+    public void fiveReturnsBuzz() {
+        Assert.assertEquals("It should return Buzz", "Buzz", fizzBuzz7.play(5));
+    }
 
+    @Test
+    public void nineReturnsFizz() {
+        Assert.assertEquals("It should return Fizz", "Fizz", fizzBuzz7.play(9));
+    }
 
+    @Test
+    public void tenReturnsBuzz() {
+        Assert.assertEquals("It should return Buzz", "Buzz", fizzBuzz7.play(10));
+    }
+
+    @Test
+    public void elevenReturns11() {
+        Assert.assertEquals("It should return 11", "11", fizzBuzz7.play(11));
+    }
+
+    @Test
+    public void twelveReturnsFizz() {
+        Assert.assertEquals("It should return Fizz", "Fizz", fizzBuzz7.play(12));
+    }
+
+    @Test
+    public void fifteenReturnsFizzBuzz() {
+        Assert.assertEquals("It should return FizzBuzz", "FizzBuzz", fizzBuzz7.play(15));
+    }
+
+    @Test
+    public void thirtyReturnsFizzBuzz() {
+        Assert.assertEquals("It should return FizzBuzz", "FizzBuzz", fizzBuzz7.play(30));
+    }
 
 
 }
