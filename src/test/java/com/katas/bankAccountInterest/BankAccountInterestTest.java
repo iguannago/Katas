@@ -12,6 +12,10 @@ import java.math.BigDecimal;
  * Given an amount in a range of [1001 - 2000] the interest is  1.15%
  * Given an amount in a range of [2001 - 3000] the interest is 1.22%
  * Given an amount > 3000 then the interest is 1.3%
+ *
+ * Also given that:
+ * customer wants for the amount to be a BigDecimal
+ * customer wants to return an exception if the amount is negative
  */
 public class BankAccountInterestTest {
 
