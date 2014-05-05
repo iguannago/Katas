@@ -70,4 +70,11 @@ public class BankAccountInterestTest1 {
         assertEquals("Interest is not 1.3%", new BigDecimal("1.3"), bankAccount1.workOutInterest(2001));
     }
 
+    //Testing ambiguous cases
+    //If amount is negative then return exception
+    @Test(expected = RuntimeException.class)
+    public void givenNegativeAmountThrowsException() {
+        bankAccount1.workOutInterest(-1);
+    }
+
 }

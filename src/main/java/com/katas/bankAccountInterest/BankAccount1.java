@@ -7,6 +7,9 @@ import java.math.BigDecimal;
  */
 public class BankAccount1 {
     public BigDecimal workOutInterest(int amount) {
+        if (amount < 0) {
+            throw new RuntimeException("Amount is negative");
+        }
         if (equalOrBiggerThan0AndEqualOrLessThan1000(amount)) {
             return new BigDecimal("1.1");
         }
