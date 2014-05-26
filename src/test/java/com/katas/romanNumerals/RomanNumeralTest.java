@@ -19,17 +19,52 @@ public class RomanNumeralTest {
 
     @Test
     public void roman1ReturnsI() {
-        Assert.assertEquals("I", romanNumeral.romanToArabic(1));
+        Assert.assertEquals("I", romanNumeral.arabicToRoman(1));
     }
 
     @Test
     public void roman2ReturnsII() {
-        Assert.assertEquals("II", romanNumeral.romanToArabic(2));
+        Assert.assertEquals("II", romanNumeral.arabicToRoman(2));
     }
 
     @Test
     public void roman3ReturnsIII() {
-        Assert.assertEquals("III", romanNumeral.romanToArabic(3));
+        Assert.assertEquals("III", romanNumeral.arabicToRoman(3));
+    }
+
+    @Test
+    public void roman4ReturnsIV() {
+        Assert.assertEquals("IV", romanNumeral.arabicToRoman(4));
+    }
+
+    @Test
+    public void roman5ReturnsV() {
+        Assert.assertEquals("V", romanNumeral.arabicToRoman(5));
+    }
+
+    @Test
+    public void roman6ReturnsVI() {
+        Assert.assertEquals("VI", romanNumeral.arabicToRoman(6));
+    }
+
+    @Test
+    public void roman7ReturnsVII() {
+        Assert.assertEquals("VII", romanNumeral.arabicToRoman(7));
+    }
+
+    @Test
+    public void roman8ReturnsVIII() {
+        Assert.assertEquals("VIII", romanNumeral.arabicToRoman(8));
+    }
+
+    @Test
+    public void roman9ReturnsIX() {
+        Assert.assertEquals("IX", romanNumeral.arabicToRoman(9));
+    }
+
+    @Test
+    public void roman10ReturnsX() {
+        Assert.assertEquals("X", romanNumeral.arabicToRoman(10));
     }
 
 }
