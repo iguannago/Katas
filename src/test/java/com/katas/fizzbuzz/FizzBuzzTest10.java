@@ -46,7 +46,7 @@ public class FizzBuzzTest10 {
         Assert.assertEquals("FizzBuzz", fizzBuzz10.evaluate(15));
     }
 
-    //    no happy paths takes into account input 0.
+    // no happy paths takes into account input 0.
     // This is a business decision coming from the customer.
     @Test(expected = RuntimeException.class)
     public void ZeroThrowsException() {
