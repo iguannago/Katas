@@ -9,17 +9,17 @@ public class RomanNumeral {
         StringBuffer roman = new StringBuffer();
         while (cont < number) {
             if (roman.toString().contains("III")) {
-                if (cont == 3) {
-                    roman.replace(0, roman.length(), "IV");
+                if (cont % 10 == 3){
+                    roman.replace(roman.length()-2, roman.length(), "V");
                 }
-                if (cont == 8) {
-                    roman.replace(0, roman.length(), "IX");
+                if (cont % 10 == 8){
+                    roman.replace(roman.length()-4, roman.length(), "IX");
                 }
             } else {
-                if (cont == 4) {
-                    roman = roman.replace(0, roman.length(), "V");
-                } else if (cont == 9) {
-                    roman = roman.replace(0, roman.length(), "X");
+                if (cont % 10 == 4) {
+                    roman = roman.replace(roman.length()-2, roman.length(), "V");
+                } else if (cont % 10 == 9) {
+                    roman = roman.replace(roman.length()-2, roman.length(), "X");
                 } else {
                     roman = roman.append("I");
                 }

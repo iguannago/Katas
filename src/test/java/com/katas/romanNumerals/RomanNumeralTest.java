@@ -5,7 +5,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * Documentation: http://codingdojo.org/cgi-bin/index.pl?KataRomanNumerals
+ * Documentation:
+ *  http://codingdojo.org/cgi-bin/index.pl?KataRomanNumerals
+ *  http://www.calculateme.com/cRomanNumerals/ArabicNumeralsToRoman.htm
  * Created by davicres on 26/05/2014.
  */
 public class RomanNumeralTest {
@@ -66,5 +68,74 @@ public class RomanNumeralTest {
     public void roman10ReturnsX() {
         Assert.assertEquals("X", romanNumeral.arabicToRoman(10));
     }
+
+    @Test
+    public void roman11ReturnsXI() {
+        Assert.assertEquals("XI", romanNumeral.arabicToRoman(11));
+    }
+
+    @Test
+    public void roman12ReturnsXII() {
+        Assert.assertEquals("XII", romanNumeral.arabicToRoman(12));
+    }
+
+    @Test
+    public void roman14ReturnsXIV() {
+        Assert.assertEquals("XIV", romanNumeral.arabicToRoman(14));
+    }
+
+    @Test
+    public void roman15ReturnsXV() {
+        Assert.assertEquals("XV", romanNumeral.arabicToRoman(15));
+    }
+
+    @Test
+    public void roman16ReturnsXVI() {
+        Assert.assertEquals("XVI", romanNumeral.arabicToRoman(16));
+    }
+
+    @Test
+    public void roman17ReturnsXVII() {
+        Assert.assertEquals("XVII", romanNumeral.arabicToRoman(17));
+    }
+
+    @Test
+    public void roman18ReturnsXVIII() {
+        String actual = romanNumeral.arabicToRoman(18);
+        Assert.assertEquals("XVIII", actual);
+    }
+
+    @Test
+    public void roman19ReturnsXIX() {
+        String actual = romanNumeral.arabicToRoman(19);
+        Assert.assertEquals("XIX", actual);
+    }
+    @Test
+    public void roman20ReturnsXX() {
+        String actual = romanNumeral.arabicToRoman(20);
+        Assert.assertEquals("XX", actual);
+    }
+    @Test
+    public void roman23ReturnsXXIII() {
+        String actual = romanNumeral.arabicToRoman(23);
+        Assert.assertEquals("XXIII", actual);
+    }
+    @Test
+    public void roman24ReturnsXXIV() {
+        String actual = romanNumeral.arabicToRoman(24);
+        Assert.assertEquals("XXIV", actual);
+    }
+
+    @Test
+    public void roman25ReturnsXXV() {
+        String actual = romanNumeral.arabicToRoman(25);
+        Assert.assertEquals("XXV", actual);
+    }
+    @Test
+    public void roman39ReturnsXXXIX() {
+        String actual = romanNumeral.arabicToRoman(39);
+        Assert.assertEquals("XXXIX", actual);
+    }
+
 
 }
