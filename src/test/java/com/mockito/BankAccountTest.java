@@ -1,31 +1,37 @@
-package com.searchings;
+package com.mockito;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.runners.MockitoJUnitRunner;
 
-import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 /**
  * Created by davicres on 08/06/2015.
  */
+@RunWith(MockitoJUnitRunner.class)
 public class BankAccountTest {
 
+    private
+    @Mock
+    Calculator calculator;
+
     @Test
-    public void bankAccountIsOpen() {
+    public void bankAccountShouldBeOpen() {
         BankAccount bankAccount = BankAccount.open(0);
         Assert.assertNotNull(bankAccount);
     }
 
     @Test
-    public void bankAccountIsOpenWithEspecifiedAmount() {
+    public void bankAccountShouldBeOpenWithEspecifiedAmount() {
         BankAccount bankAccount = BankAccount.open(100);
         Assert.assertEquals(100, bankAccount.getBalance());
     }
 
     @Test
-    public void makeADepositInBankAccount() {
-        Calculator calculator = mock(Calculator.class);
+    public void aDepositShouldbeMadeInBankAccount() {
         when(calculator.add(100, 10)).thenReturn(110);
         BankAccount bankAccount = BankAccount.open(100);
         bankAccount.setCalculator(calculator);

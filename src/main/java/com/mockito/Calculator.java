@@ -1,4 +1,4 @@
-package com.searchings;
+package com.mockito;
 
 /**
  * Created by davicres on 08/06/2015.

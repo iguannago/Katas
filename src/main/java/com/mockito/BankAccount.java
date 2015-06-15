@@ -1,4 +1,4 @@
-package com.searchings;
+package com.mockito;
 
 /**
  * Created by davicres on 10/06/2015.
@@ -27,6 +27,7 @@ public final class BankAccount {
     }
 
     public void setCalculator(Calculator calculator) {
+        Calculator cal = calculator;
         this.calculator = calculator;
     }
 
