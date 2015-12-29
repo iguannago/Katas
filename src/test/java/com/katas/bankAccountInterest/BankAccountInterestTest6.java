@@ -36,15 +36,51 @@ public class BankAccountInterestTest6 {
     }
 
     @Test
-    @Parameters(method = "amountBetween1001And2000")
+    @Parameters(method = "getAmountBetween1001And2000")
     public void givenAnAmountBetween1001And2000BothIncludedThenReturns1_15InterestTest(int amountBetween1001And2000) {
         assertEquals(new BigDecimal("1.15"), bankAccountInterest6.getRightInterest(amountBetween1001And2000));
 
     }
 
-    private static final Object[] amountBetween1001And2000() {
+    private static final Object[] getAmountBetween1001And2000() {
         return new Integer[][]{
                 {1001}, {1120}, {2000}
+        };
+    }
+
+    @Test
+    @Parameters(method = "getAmountBetween2001And3000")
+    public void givenAnAmountBetween2001And3000BothIncludedThenReturns1_22InterestTest(int amountBetween2001And3000) {
+        assertEquals(new BigDecimal("1.22"), bankAccountInterest6.getRightInterest(amountBetween2001And3000));
+    }
+
+    private static final Object[] getAmountBetween2001And3000() {
+        return new Integer[][] {
+                {2001}, {2345}, {3000}
+        };
+    }
+
+    @Test
+    @Parameters(method = "getAmountGreaterThan3000")
+    public void givenAnAmountGreaterThan3000ThenReturns1_3InterestTest(int amountGreaterThan3000) {
+        assertEquals(new BigDecimal("1.3"), bankAccountInterest6.getRightInterest(amountGreaterThan3000));
+    }
+
+    private static final Object[] getAmountGreaterThan3000() {
+        return new Integer[][] {
+                {3001}, {3874}, {10000983}
+        };
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    @Parameters(method = "getAmountZeroOrLessThanZero")
+    public void givenAnAmountOfZeroOrLessThanZeroThenReturnsExceptionTest(int amountZeroOrLessThanZero) {
+        bankAccountInterest6.getRightInterest(amountZeroOrLessThanZero);
+    }
+
+    private static final Object[] getAmountZeroOrLessThanZero() {
+        return new Integer[][]{
+                {0}, {-1}, {-1213}
         };
     }
 }
