@@ -5,11 +5,9 @@ package com.katas.fizzbuzz;
  */
 public final class FizzBuzz17 {
     public String printNumber(int i) {
-        if (i < 1)
+        if ((i < 1) || (i > 100))
             throw new IllegalArgumentException();
-        if (i > 100)
-            throw new IllegalArgumentException();
-        if (isMultipleOf3(i)&&isMultipleOf5(i))
+        if (isMultipleOf3(i) && isMultipleOf5(i))
             return "FizzBuzz";
         if (isMultipleOf3(i))
             return "Fizz";
@@ -23,7 +21,7 @@ public final class FizzBuzz17 {
     }
 
     private boolean isMultipleOf3(int i) {
-        return i % 3  == 0;
+        return i % 3 == 0;
     }
 
     public static void main(String[] args) {
