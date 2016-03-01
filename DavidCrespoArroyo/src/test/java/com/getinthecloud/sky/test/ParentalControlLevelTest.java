@@ -20,8 +20,8 @@ public class ParentalControlLevelTest {
      */
     @Test
     public void parentalControlLevelDefinitionMatchesRequirementTest() {
-        assertTrue(ParentalControlLevelDefinition.LevelU.getLevel() < ParentalControlLevelDefinition.LevelNP.getLevel());
-        assertTrue(ParentalControlLevelDefinition.LevelNP.getLevel() < ParentalControlLevelDefinition.Level12.getLevel());
+        assertTrue(ParentalControlLevelDefinition.LevelU.getLevel() < ParentalControlLevelDefinition.LevelPG.getLevel());
+        assertTrue(ParentalControlLevelDefinition.LevelPG.getLevel() < ParentalControlLevelDefinition.Level12.getLevel());
         assertTrue(ParentalControlLevelDefinition.Level12.getLevel() < ParentalControlLevelDefinition.Level15.getLevel());
         assertTrue(ParentalControlLevelDefinition.Level15.getLevel() < ParentalControlLevelDefinition.Level18.getLevel());
     }
@@ -36,7 +36,7 @@ public class ParentalControlLevelTest {
                 break;
 
             case "NP":
-                assertEquals(ParentalControlLevelDefinition.LevelNP.getLevel(),
+                assertEquals(ParentalControlLevelDefinition.LevelPG.getLevel(),
                         ParentalControlLevel.getLevelForTheGivenLevelCode(parentalControlLevel));
                 break;
 

@@ -8,7 +8,7 @@ public final class ParentalControlLevel {
 
     public enum ParentalControlLevelDefinition {
         LevelU("U", 1),
-        LevelNP("NP", 2),
+        LevelPG("PG", 2),
         Level12("12", 3),
         Level15("15", 4),
         Level18("18", 5); // semicolon needed when fields / methods follow
@@ -33,8 +33,8 @@ public final class ParentalControlLevel {
             case "U":
                 return ParentalControlLevelDefinition.LevelU.getLevel();
 
-            case "NP":
-                return ParentalControlLevelDefinition.LevelNP.getLevel();
+            case "PG":
+                return ParentalControlLevelDefinition.LevelPG.getLevel();
 
             case "12":
                 return ParentalControlLevelDefinition.Level12.getLevel();

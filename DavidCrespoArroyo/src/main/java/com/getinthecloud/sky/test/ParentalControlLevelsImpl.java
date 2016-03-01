@@ -10,7 +10,7 @@ public class ParentalControlLevelsImpl implements ParentalControlLevelsService {
     public boolean isCustomerAbleToWatchMovie(String movieId, String customerParentalControlLelelPreference) {
         boolean result = false;
         try {
-            if (ParentalControlLevel.getLevelForTheGivenLevelCode(movieService.getParentalControlLevel(movieId)) ==
+            if (ParentalControlLevel.getLevelForTheGivenLevelCode(movieService.getParentalControlLevel(movieId)) <=
                     ParentalControlLevel.getLevelForTheGivenLevelCode(customerParentalControlLelelPreference)) {
                 result = true;
             }

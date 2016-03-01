@@ -39,20 +39,21 @@ public class ParentalControlLevelsServiceTest {
      * to the caller that the customer can watch the movie
      */
     @Test
-    @Parameters(method = "getCustomerParentalControlLevelPreference")
-    public void parentalControlLevelOfMovieIsUAndCustomerPreferenceLevelIsUThenReturnTrueTest(
-            String customerParentalControlLevelPreference)
+    @Parameters(method = "getMovieAndCustomerParentalControlLevels")
+    public void parentalControlLevelOfMovieIsEqualOrLessThanCustomerPreferenceLevelThenReturnTrueTest(
+            String movieParentalControlLevel, String customerParentalControlLevelPreference)
             throws TechnicalFailureException, TitleNotFoundException {
         //mock the expected behaviour for this test
-        when(movieServiceMock.getParentalControlLevel(anyString())).thenReturn("U");
+        when(movieServiceMock.getParentalControlLevel(anyString())).thenReturn(movieParentalControlLevel);
         boolean isCustomerAbleToWatchMovie = parentalControlLevelsImpl.isCustomerAbleToWatchMovie(
                 anyString(), customerParentalControlLevelPreference);
         assertEquals(true, isCustomerAbleToWatchMovie);
     }
 
-    private static final Object[] getCustomerParentalControlLevelPreference() {
+    private static final Object[] getMovieAndCustomerParentalControlLevels() {
         return new String[][]{
-                {"U"}, {"PG"}, {"12"}, {"15"}, {"18"}
+                {"U", "U"}, {"U", "PG"}, {"U", "12"}, {"U", "15"}, {"U", "18"},
+                {"PG", "PG"}, {"PG", "12"}, {"PG", "15"},
         };
     }
 
