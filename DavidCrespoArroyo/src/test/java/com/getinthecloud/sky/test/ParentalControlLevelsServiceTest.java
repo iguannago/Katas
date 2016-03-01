@@ -38,9 +38,8 @@ public class ParentalControlLevelsServiceTest {
         //mock the expected behaviour for this test
         when(movieServiceMock.getParentalControlLevel(anyString())).thenReturn("U");
         String customerParentalControlLevelPreference = "U";
-        String movieId = "movieId";
         boolean isCustomerAbleToWatchMovie = parentalControlLevelsImpl.isCustomerAbleToWatchMovie(
-                movieId, customerParentalControlLevelPreference);
+                anyString(), customerParentalControlLevelPreference);
         assertEquals(true, isCustomerAbleToWatchMovie);
     }
 
