@@ -3,47 +3,53 @@ package com.getinthecloud.sky.test;
 /**
  * Created by davicres on 01/03/2016.
  */
-public enum ParentalControlLevel {
-    LevelU("U"),
-    LevelNP("NP"),
-    Level12("12"),
-    Level15("15"),
-    Level18("18")
-    ; // semicolon needed when fields / methods follow
+
+public final class ParentalControlLevel {
+
+    public enum ParentalControlLevelDefinition {
+        LevelU("U", 1),
+        LevelNP("NP", 2),
+        Level12("12", 3),
+        Level15("15", 4),
+        Level18("18", 5); // semicolon needed when fields / methods follow
 
 
-    private final String levelCode;
-    private final int level;
+        private final String levelCode;
+        private final int level;
 
-    private ParentalControlLevel(String levelCode) {
-        this.levelCode = levelCode;
+        private ParentalControlLevelDefinition(String levelCode, int level) {
+            this.levelCode = levelCode;
+            this.level = level;
+        }
+
+        public int getLevel() {
+            return level;
+        }
+
+    }
+
+    public static int getLevelForTheGivenLevelCode(String levelCode) {
         switch (levelCode) {
             case "U":
-                this.level = 1;
-                break;
+                return ParentalControlLevelDefinition.LevelU.getLevel();
 
             case "NP":
-                this.level = 2;
-                break;
+                return ParentalControlLevelDefinition.LevelNP.getLevel();
 
             case "12":
-                this.level = 3;
-                break;
+                return ParentalControlLevelDefinition.Level12.getLevel();
 
             case "15":
-                this.level = 4;
-                break;
+                return ParentalControlLevelDefinition.Level15.getLevel();
 
             case "18":
-                this.level = 5;
-                break;
+                return ParentalControlLevelDefinition.Level18.getLevel();
 
             default:
-                this.level = 0;
+                throw new IllegalArgumentException();
         }
     }
 
-    public int getLevel() {
-        return level;
-    }
+
 }
+
