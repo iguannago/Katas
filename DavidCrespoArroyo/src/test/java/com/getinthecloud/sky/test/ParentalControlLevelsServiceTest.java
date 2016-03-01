@@ -1,12 +1,15 @@
 package com.getinthecloud.sky.test;
 
 
+import junitparams.JUnitParamsRunner;
+import junitparams.Parameters;
 import org.junit.Before;
-import org.junit.Ignore;
+import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
-import org.mockito.runners.MockitoJUnitRunner;
+import org.mockito.junit.MockitoJUnit;
+import org.mockito.junit.MockitoRule;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Matchers.anyString;
@@ -15,8 +18,11 @@ import static org.mockito.Mockito.when;
 /**
  * Created by davicres on 01/03/2016.
  */
-@RunWith(MockitoJUnitRunner.class)
+@RunWith(JUnitParamsRunner.class)
 public class ParentalControlLevelsServiceTest {
+
+    @Rule
+    public MockitoRule mockitoRule = MockitoJUnit.rule();
 
     private ParentalControlLevelsImpl parentalControlLevelsImpl;
     @Mock
@@ -33,24 +39,24 @@ public class ParentalControlLevelsServiceTest {
      * to the caller that the customer can watch the movie
      */
     @Test
-    public void parentalControlLevelOfMovieIsUAndCustomerPreferenceLevelIsUThenReturnTrueTest()
+    @Parameters(method = "getCustomerParentalControlLevelPreference")
+    public void parentalControlLevelOfMovieIsUAndCustomerPreferenceLevelIsUThenReturnTrueTest(
+            String customerParentalControlLevelPreference)
             throws TechnicalFailureException, TitleNotFoundException {
         //mock the expected behaviour for this test
         when(movieServiceMock.getParentalControlLevel(anyString())).thenReturn("U");
-        String customerParentalControlLevelPreference = "U";
         boolean isCustomerAbleToWatchMovie = parentalControlLevelsImpl.isCustomerAbleToWatchMovie(
                 anyString(), customerParentalControlLevelPreference);
         assertEquals(true, isCustomerAbleToWatchMovie);
     }
 
-    @Test@Ignore
-    public void parentalControlLevelOfMovieIsPGAndCustomerPreferenceLevelIsUThenReturnFalseTest() {
-        String movieId = "movieId";
-        String customerParentalControlLevelPreference = "U";
-        boolean isCustomerAbleToWatchMovie = parentalControlLevelsImpl.isCustomerAbleToWatchMovie(
-                movieId, customerParentalControlLevelPreference);
-        assertEquals(false, isCustomerAbleToWatchMovie);
+    private static final Object[] getCustomerParentalControlLevelPreference() {
+        return new String[][]{
+                {"U"}, {"PG"}, {"12"}, {"15"}, {"18"}
+        };
     }
+
+
 
 
 }
