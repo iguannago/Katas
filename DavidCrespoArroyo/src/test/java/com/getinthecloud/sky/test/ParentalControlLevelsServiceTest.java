@@ -13,6 +13,7 @@ import org.mockito.junit.MockitoRule;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Matchers.anyString;
+import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.when;
 
 /**
@@ -55,6 +56,15 @@ public class ParentalControlLevelsServiceTest {
                 {"U", "U"}, {"U", "PG"}, {"U", "12"}, {"U", "15"}, {"U", "18"},
                 {"PG", "PG"}, {"PG", "12"}, {"PG", "15"},
         };
+    }
+
+
+    @Test(expected = TitleNotFoundException.class)
+    public void paramentalControlLevelsThrowExceptionifMovieIsNotFoundTest()
+            throws TechnicalFailureException, TitleNotFoundException {
+        //mock the expected behaviour for this test
+        doThrow(new TitleNotFoundException()).when(movieServiceMock).getParentalControlLevel(anyString());
+        parentalControlLevelsImpl.isCustomerAbleToWatchMovie(anyString(), "U");
     }
 
 

@@ -7,18 +7,13 @@ public class ParentalControlLevelsImpl implements ParentalControlLevelsService {
 
     private MovieService movieService;
 
-    public boolean isCustomerAbleToWatchMovie(String movieId, String customerParentalControlLelelPreference) {
+    public boolean isCustomerAbleToWatchMovie(String movieId, String customerParentalControlLevelPreference)
+            throws TechnicalFailureException, TitleNotFoundException {
         boolean result = false;
-        try {
             if (ParentalControlLevel.getLevelForTheGivenLevelCode(movieService.getParentalControlLevel(movieId)) <=
-                    ParentalControlLevel.getLevelForTheGivenLevelCode(customerParentalControlLelelPreference)) {
+                    ParentalControlLevel.getLevelForTheGivenLevelCode(customerParentalControlLevelPreference)) {
                 result = true;
             }
-        } catch (TitleNotFoundException e) {
-            e.printStackTrace();
-        } catch (TechnicalFailureException e) {
-            e.printStackTrace();
-        }
         return result;
     }
 
