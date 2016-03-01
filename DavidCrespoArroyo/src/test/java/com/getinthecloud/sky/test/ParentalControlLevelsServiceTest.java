@@ -59,15 +59,32 @@ public class ParentalControlLevelsServiceTest {
     }
 
 
+    /**
+     * The movie service could not find the given movie.
+     * Result: Indicate the error to the calling client.
+     * @throws TechnicalFailureException
+     * @throws TitleNotFoundException
+     */
     @Test(expected = TitleNotFoundException.class)
-    public void paramentalControlLevelsThrowExceptionifMovieIsNotFoundTest()
+    public void paramentalControlLevelsThrowTitleNotFoundExceptionExceptionifMovieIsNotFoundTest()
             throws TechnicalFailureException, TitleNotFoundException {
         //mock the expected behaviour for this test
         doThrow(new TitleNotFoundException()).when(movieServiceMock).getParentalControlLevel(anyString());
         parentalControlLevelsImpl.isCustomerAbleToWatchMovie(anyString(), "U");
     }
 
-
-
+    /**
+     * The movie service gets a System error
+     * Result: Indicate that the customer cannot watch this movie
+     * @throws TechnicalFailureException
+     * @throws TitleNotFoundException
+     */
+    @Test(expected = TechnicalFailureException.class)
+    public void paramentalControlLevelsThrowTechnicalFailureExceptionExceptionifASystemError()
+            throws TechnicalFailureException, TitleNotFoundException {
+        //mock the expected behaviour for this test
+        doThrow(new TechnicalFailureException()).when(movieServiceMock).getParentalControlLevel(anyString());
+        parentalControlLevelsImpl.isCustomerAbleToWatchMovie(anyString(), "U");
+    }
 
 }
