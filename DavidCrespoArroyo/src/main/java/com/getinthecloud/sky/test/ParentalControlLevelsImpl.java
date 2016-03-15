@@ -9,8 +9,10 @@ public class ParentalControlLevelsImpl implements ParentalControlLevelsService {
 
     public boolean isCustomerAbleToWatchMovie(String movieId, String customerParentalControlLevelPreference)
             throws TechnicalFailureException, TitleNotFoundException {
-        if (ParentalControlLevel.getLevelForTheGivenLevelCode(movieService.getParentalControlLevel(movieId)) <=
-                ParentalControlLevel.getLevelForTheGivenLevelCode(customerParentalControlLevelPreference)) {
+        if (ParentalControlLevelDefinition.
+                getParentalControlLevelDefinition(movieService.getParentalControlLevel(movieId)).getLevel() <=
+                ParentalControlLevelDefinition.
+                        getParentalControlLevelDefinition(customerParentalControlLevelPreference).getLevel()) {
             return true;
         }
         return false;
