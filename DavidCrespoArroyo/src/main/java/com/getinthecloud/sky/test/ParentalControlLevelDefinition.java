@@ -36,5 +36,12 @@ public enum ParentalControlLevelDefinition {
         return null;
     }
 
+    @Override
+    public String toString() {
+        return "ParentalControlLevelDefinition{" +
+                "levelCode='" + levelCode + '\'' +
+                ", level=" + level +
+                '}';
+    }
 }
 
