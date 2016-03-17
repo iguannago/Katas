@@ -68,4 +68,6 @@ public class ReportTest {
         return count;
     }
 
+    //TODO: check with customer for corner case such as when there is an input that does not match either with fizz, buzz, fizzbuzz or lucky
+
 }
