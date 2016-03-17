@@ -36,13 +36,18 @@ public class FizzBuzzStep1Test {
 
     private static final Object[] getContiguousNumberMultipleOf3() {
         return new Integer[][]{
-                {3}, {6}, {9}, {12}, {15}, {18}, {27}, {30}
+                {3}, {6}, {9}, {12}, {18}, {27}
         };
     }
 
     @Test
-    public void whenNumberisMultipleOf5ThenPrintsBuzz() {
+    public void whenNumberis5ThenPrintsBuzz() {
         assertEquals("buzz", fizzBuzzStep1.printFizzBuzz(5));
+    }
+
+    @Test
+    public void whenNumberis10ThenPrintsBuzz() {
+        assertEquals("buzz", fizzBuzzStep1.printFizzBuzz(10));
     }
 
 
