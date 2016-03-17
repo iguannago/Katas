@@ -36,7 +36,7 @@ public class FizzBuzzStep1Test {
 
     private static final Object[] getContiguousNumberMultipleOf3() {
         return new Integer[][]{
-                {3}, {6}, {9}, {12}, {18}, {27}
+                {6}, {9}, {12}, {18}, {27}
         };
     }
 
@@ -62,6 +62,11 @@ public class FizzBuzzStep1Test {
         return new Integer[][]{
                 {15}, {30}, {45}
         };
+    }
+
+    @Test
+    public void whenNumberIs3ThenPrintsLucky() {
+        assertEquals("lucky", fizzBuzzStep1.printFizzBuzz(3));
     }
 
     //TODO: check with customer for corner case such as when number is 0 or negative what is it the expected behaviour?

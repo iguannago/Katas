@@ -5,6 +5,9 @@ package com.getinthecloud.programming.kata;
  */
 public class FizzBuzzStep1 {
     public String printFizzBuzz(int number) {
+        if (number == 3) {
+            return "lucky";
+        }
         if (isMultipleOf3(number)&&isMultipleOf5(number)) {
             return "fizzbuzz";
         }
