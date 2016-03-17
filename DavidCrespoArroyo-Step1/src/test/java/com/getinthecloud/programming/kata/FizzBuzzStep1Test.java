@@ -40,6 +40,11 @@ public class FizzBuzzStep1Test {
         };
     }
 
+    @Test
+    public void whenNumberisMultipleOf5ThenPrintsBuzz() {
+        assertEquals("buzz", fizzBuzzStep1.printFizzBuzz(5));
+    }
+
 
 
 
