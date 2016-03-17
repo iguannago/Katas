@@ -41,17 +41,16 @@ public class FizzBuzzStep1Test {
     }
 
     @Test
-    public void whenNumberis5ThenPrintsBuzz() {
-        assertEquals("buzz", fizzBuzzStep1.printFizzBuzz(5));
+    @Parameters(method = "getContiguousNumberMultipleOf5")
+    public void whenNumberisMultipleOf5ThenPrintsBuzz(int contiguousNumberMultipleOf5) {
+        assertEquals("buzz", fizzBuzzStep1.printFizzBuzz(contiguousNumberMultipleOf5));
     }
 
-    @Test
-    public void whenNumberis10ThenPrintsBuzz() {
-        assertEquals("buzz", fizzBuzzStep1.printFizzBuzz(10));
+    private static final Object[] getContiguousNumberMultipleOf5() {
+        return new Integer[][]{
+                {5}, {10}, {20}, {25}, {35}
+        };
     }
-
-
-
 
 
 

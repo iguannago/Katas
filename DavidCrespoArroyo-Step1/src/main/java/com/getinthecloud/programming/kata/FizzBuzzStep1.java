@@ -5,13 +5,17 @@ package com.getinthecloud.programming.kata;
  */
 public class FizzBuzzStep1 {
     public String printFizzBuzz(int number) {
-        if (number % 5 == 0) {
+        if (isMultipleOf5(number)) {
             return "buzz";
         }
         if (isMultipleOf3(number)) {
             return "fizz";
         }
         return String.valueOf(number);
+    }
+
+    private boolean isMultipleOf5(int number) {
+        return number % 5 == 0;
     }
 
     private boolean isMultipleOf3(int number) {
