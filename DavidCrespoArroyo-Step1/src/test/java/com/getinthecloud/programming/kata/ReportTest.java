@@ -38,7 +38,7 @@ public class ReportTest {
         for (String item: collectionOfFizzBuzzAnIntegers) {
             report.record(item);
         }
-        assertEquals(getNumberOfItemFromTheCollection("2"), report.getAnInteger());
+        assertEquals(getNumberOfItemFromTheCollection("2"), report.getInteger());
     }
 
     @Test

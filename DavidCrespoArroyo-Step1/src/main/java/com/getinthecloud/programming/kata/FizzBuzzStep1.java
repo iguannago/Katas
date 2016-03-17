@@ -36,7 +36,7 @@ public final class FizzBuzzStep1 {
     public static void main(String[] args) {
         FizzBuzzStep1 fizzBuzzStep1 = new FizzBuzzStep1();
         Report report = new Report();
-        for (int i = 1; i <= 100; i++) {
+        for (int i = 1; i <= 20; i++) {
             String fizzbuzz = fizzBuzzStep1.printFizzBuzz(i);
             report.record(fizzbuzz);
             System.out.println(fizzbuzz);

@@ -6,7 +6,7 @@ package com.getinthecloud.programming.kata;
 public final class Report {
     private int fizz = 0;
     private int buzz = 0;
-    private int anInteger = 0;
+    private int integer = 0;
     private int fizzbuzz = 0;
     private int lucky = 0;
 
@@ -24,7 +24,7 @@ public final class Report {
             lucky++;
         }
         else {
-            anInteger++;
+            integer++;
         }
     }
 
@@ -36,8 +36,8 @@ public final class Report {
         return buzz;
     }
 
-    public int getAnInteger() {
-        return anInteger;
+    public int getInteger() {
+        return integer;
     }
 
     public int getFizzbuzz() {
@@ -53,7 +53,7 @@ public final class Report {
         return "Report{" +
                 "fizz=" + fizz +
                 ", buzz=" + buzz +
-                ", anInteger=" + anInteger +
+                ", integer=" + integer +
                 ", fizzbuzz=" + fizzbuzz +
                 ", lucky=" + lucky +
                 '}';
