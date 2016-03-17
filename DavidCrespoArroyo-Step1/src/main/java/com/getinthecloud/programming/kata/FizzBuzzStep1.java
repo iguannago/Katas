@@ -24,4 +24,11 @@ public class FizzBuzzStep1 {
     private boolean isMultipleOf3(int number) {
         return number % 3 == 0;
     }
+
+    public static void main(String[] args) {
+        FizzBuzzStep1 fizzBuzzStep1 = new FizzBuzzStep1();
+        for (int i = 1; i <= 100; i++) {
+            System.out.println(fizzBuzzStep1.printFizzBuzz(i));
+        }
+    }
 }
