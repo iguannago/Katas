@@ -17,7 +17,7 @@ public class FizzBuzzStep1Test {
 
     @Test
     @Parameters(method = "getContiguousNumberNotMultipleOf3Or5")
-    public void whenNumberIsNotMultipleOf3Or5ThenPrintsNumber(int contiguousNumberNotMultipleOf3Or5) {
+    public void whenNumberIsNotMultipleOf3Or5ThenPrintsNumberTest(int contiguousNumberNotMultipleOf3Or5) {
         assertEquals(String.valueOf(contiguousNumberNotMultipleOf3Or5),
                 fizzBuzzStep1.printFizzBuzz(contiguousNumberNotMultipleOf3Or5));
     }
@@ -30,7 +30,7 @@ public class FizzBuzzStep1Test {
 
     @Test
     @Parameters(method = "getContiguousNumberMultipleOf3")
-    public void whenNumberIsMultipleOf3ThenPrintsFizz(int contiguousNumberMultipleOf3) {
+    public void whenNumberIsMultipleOf3ThenPrintsFizzTest(int contiguousNumberMultipleOf3) {
         assertEquals("fizz", fizzBuzzStep1.printFizzBuzz(contiguousNumberMultipleOf3));
     }
 
@@ -42,13 +42,25 @@ public class FizzBuzzStep1Test {
 
     @Test
     @Parameters(method = "getContiguousNumberMultipleOf5")
-    public void whenNumberisMultipleOf5ThenPrintsBuzz(int contiguousNumberMultipleOf5) {
+    public void whenNumberIsMultipleOf5ThenPrintsBuzzTest(int contiguousNumberMultipleOf5) {
         assertEquals("buzz", fizzBuzzStep1.printFizzBuzz(contiguousNumberMultipleOf5));
     }
 
     private static final Object[] getContiguousNumberMultipleOf5() {
         return new Integer[][]{
                 {5}, {10}, {20}, {25}, {35}
+        };
+    }
+
+    @Test
+    @Parameters(method = "getContiguousNumberMultipleOf3And5")
+    public void whenNumberIsMultipleOf3And5ThenPrintsFizzbuzzTest(int contiguousNumberMultipleOf3And5) {
+        assertEquals("fizzbuzz", fizzBuzzStep1.printFizzBuzz(contiguousNumberMultipleOf3And5));
+    }
+
+    private static final Object[] getContiguousNumberMultipleOf3And5() {
+        return new Integer[][]{
+                {15}, {30}, {45}
         };
     }
 
