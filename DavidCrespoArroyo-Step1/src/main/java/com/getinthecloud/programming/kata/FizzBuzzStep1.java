@@ -5,6 +5,6 @@ package com.getinthecloud.programming.kata;
  */
 public class FizzBuzzStep1 {
     public String printFizzBuzz(int number) {
-        return "1";
+        return String.valueOf(number);
     }
 }
