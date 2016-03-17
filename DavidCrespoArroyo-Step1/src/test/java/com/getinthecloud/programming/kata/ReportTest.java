@@ -1,6 +1,5 @@
 package com.getinthecloud.programming.kata;
 
-import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -14,7 +13,7 @@ import static org.junit.Assert.assertEquals;
 public class ReportTest {
 
     private final ArrayList<String> collectionOfFizzBuzzAnIntegers =
-            new ArrayList<String>(Arrays.asList("fizz", "buzz", "2", "2", "fizz", "buzz"));
+            new ArrayList<String>(Arrays.asList("fizz", "buzz", "2", "2", "fizz", "buzz", "fizzbuzz", "fizzbuzz"));
     private final Report report = new Report();
 
     @Test
@@ -41,9 +40,23 @@ public class ReportTest {
         assertEquals(getNumberOfItemFromTheCollection("2"), report.getAnInteger());
     }
 
+    @Test
+    public void whenRecordFizzbuzzThenReportGetFizzbuzzTest() {
+        for (String item: collectionOfFizzBuzzAnIntegers) {
+            report.record(item);
+        }
+        assertEquals(getNumberOfItemFromTheCollection("fizzbuzz"), report.getFizzbuzz());
+    }
+
 
     private int getNumberOfItemFromTheCollection(String item) {
-        return StringUtils.countMatches(collectionOfFizzBuzzAnIntegers.toString(), item);
+        int count = 0;
+        for (String i: collectionOfFizzBuzzAnIntegers) {
+            if (i.equals(item)) {
+                count++;
+            }
+        }
+        return count;
     }
 
 }
