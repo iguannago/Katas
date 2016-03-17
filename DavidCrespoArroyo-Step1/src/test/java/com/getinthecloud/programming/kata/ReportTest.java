@@ -13,7 +13,8 @@ import static org.junit.Assert.assertEquals;
 public class ReportTest {
 
     private final ArrayList<String> collectionOfFizzBuzzAnIntegers =
-            new ArrayList<String>(Arrays.asList("fizz", "buzz", "2", "2", "fizz", "buzz", "fizzbuzz", "fizzbuzz"));
+            new ArrayList<String>(Arrays.asList("fizz", "buzz", "2", "2", "fizz", "buzz", "fizzbuzz", "fizzbuzz",
+                    "lucky", "lucky"));
     private final Report report = new Report();
 
     @Test
@@ -46,6 +47,14 @@ public class ReportTest {
             report.record(item);
         }
         assertEquals(getNumberOfItemFromTheCollection("fizzbuzz"), report.getFizzbuzz());
+    }
+
+    @Test
+    public void whenRecordLuckyThenReportGetLuckyTest() {
+        for (String item: collectionOfFizzBuzzAnIntegers) {
+            report.record(item);
+        }
+        assertEquals(getNumberOfItemFromTheCollection("lucky"), report.getLucky());
     }
 
 

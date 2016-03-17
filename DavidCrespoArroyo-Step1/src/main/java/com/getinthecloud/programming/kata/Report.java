@@ -4,10 +4,11 @@ package com.getinthecloud.programming.kata;
  * Created by davicres on 17/03/2016.
  */
 public final class Report {
-    private int fizz;
-    private int buzz;
-    private int anInteger;
-    private int fizzbuzz;
+    private int fizz = 0;
+    private int buzz = 0;
+    private int anInteger = 0;
+    private int fizzbuzz = 0;
+    private int lucky = 0;
 
     public void record(String input) {
         if (input.equals("fizz")) {
@@ -18,6 +19,9 @@ public final class Report {
         }
         else if (input.equals("fizzbuzz")){
             fizzbuzz++;
+        }
+        else if (input.equals("lucky")) {
+            lucky++;
         }
         else {
             anInteger++;
@@ -40,13 +44,18 @@ public final class Report {
         return fizzbuzz;
     }
 
+    public int getLucky() {
+        return lucky;
+    }
+
     @Override
     public String toString() {
         return "Report{" +
                 "fizz=" + fizz +
                 ", buzz=" + buzz +
                 ", anInteger=" + anInteger +
+                ", fizzbuzz=" + fizzbuzz +
+                ", lucky=" + lucky +
                 '}';
     }
-
 }
