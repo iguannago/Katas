@@ -6,6 +6,7 @@ package com.getinthecloud.programming.kata;
 public final class FizzBuzzStep1 {
     public String printFizzBuzz(int number) {
         if (numberContains3(number)) {
+            //TODO: move the hardcoded string to a Enum type
             return "lucky";
         }
         if (isMultipleOf3(number)&&isMultipleOf5(number)) {
