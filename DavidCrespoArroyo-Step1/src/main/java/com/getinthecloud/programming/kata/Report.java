@@ -6,13 +6,17 @@ package com.getinthecloud.programming.kata;
 public final class Report {
     private int fizz;
     private int buzz;
+    private int anInteger;
 
     public void record(String input) {
         if (input.equals("fizz")) {
             fizz++;
         }
-        if (input.equals("buzz")) {
+        else if (input.equals("buzz")) {
             buzz++;
+        }
+        else {
+            anInteger++;
         }
     }
 
@@ -22,5 +26,9 @@ public final class Report {
 
     public int getBuzz() {
         return buzz;
+    }
+
+    public int getAnInteger() {
+        return anInteger;
     }
 }
