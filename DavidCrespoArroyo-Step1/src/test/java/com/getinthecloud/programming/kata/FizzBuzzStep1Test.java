@@ -29,9 +29,18 @@ public class FizzBuzzStep1Test {
     }
 
     @Test
-    public void whenNumberIsMultipleOf3ThenPrintsFizz() {
-        assertEquals("fizz", fizzBuzzStep1.printFizzBuzz(3));
+    @Parameters(method = "getContiguousNumberMultipleOf3")
+    public void whenNumberIsMultipleOf3ThenPrintsFizz(int contiguousNumberMultipleOf3) {
+        assertEquals("fizz", fizzBuzzStep1.printFizzBuzz(contiguousNumberMultipleOf3));
     }
+
+    private static final Object[] getContiguousNumberMultipleOf3() {
+        return new Integer[][]{
+                {3}, {6}, {9}, {12}, {15}, {18}, {27}, {30}
+        };
+    }
+
+
 
 
 
