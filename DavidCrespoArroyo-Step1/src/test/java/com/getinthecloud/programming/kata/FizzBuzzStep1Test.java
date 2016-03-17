@@ -64,6 +64,6 @@ public class FizzBuzzStep1Test {
         };
     }
 
-
+    //TODO: check with customer for corner case such as when number is 0 or negative what is it the expected behaviour?
 
 }
