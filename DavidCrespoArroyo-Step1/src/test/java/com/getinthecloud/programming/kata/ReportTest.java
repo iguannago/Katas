@@ -2,6 +2,7 @@ package com.getinthecloud.programming.kata;
 
 import junitparams.JUnitParamsRunner;
 import org.apache.commons.lang3.StringUtils;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -25,11 +26,20 @@ public class ReportTest {
         for (String item: collectionOfFizzBuzzAnIntegers) {
             report.record(item);
         }
-        assertEquals(getNumberOfFizzsFromTheCollection(), report.getFizz());
+        assertEquals(getNumberOfItemFromTheCollection("fizz"), report.getFizz());
     }
 
-    private int getNumberOfFizzsFromTheCollection() {
-        return StringUtils.countMatches(collectionOfFizzBuzzAnIntegers.toString(), "fizz");
+    @Test@Ignore
+    public void whenRecordBuzzThenReportsNumberOfBuzz() {
+        for (String item: collectionOfFizzBuzzAnIntegers) {
+            report.record(item);
+        }
+        assertEquals(getNumberOfItemFromTheCollection("buzz"), report.getFizz());
+    }
+
+
+    private int getNumberOfItemFromTheCollection(String item) {
+        return StringUtils.countMatches(collectionOfFizzBuzzAnIntegers.toString(), item);
     }
 
 }
