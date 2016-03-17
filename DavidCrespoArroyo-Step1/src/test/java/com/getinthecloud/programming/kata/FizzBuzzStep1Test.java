@@ -21,4 +21,6 @@ public class FizzBuzzStep1Test {
         assertEquals("2", fizzBuzzStep1.printFizzBuzz(2));
     }
 
+
+
 }
