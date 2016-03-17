@@ -9,21 +9,16 @@ import static org.junit.Assert.assertEquals;
  */
 public class FizzBuzzStep1Test {
 
+    private final FizzBuzzStep1 fizzBuzzStep1 = new FizzBuzzStep1();
+
     @Test
     public void when1Prints1() {
-       FizzBuzzStep1 fizzBuzzStep1 = new FizzBuzzStep1();
-        int number = 1;
-        String result = fizzBuzzStep1.printFizzBuzz(number);
-        assertEquals("1", result);
+        assertEquals("1", fizzBuzzStep1.printFizzBuzz(1));
     }
 
     @Test
     public void when2Prints2() {
-       FizzBuzzStep1 fizzBuzzStep1 = new FizzBuzzStep1();
-        int number = 2;
-        String result = fizzBuzzStep1.printFizzBuzz(number);
-        assertEquals("2", result);
+        assertEquals("2", fizzBuzzStep1.printFizzBuzz(2));
     }
-
 
 }
