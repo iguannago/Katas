@@ -24,7 +24,7 @@ public class FizzBuzzStep1Test {
 
     private static final Object[] getContiguousNumberNotMultipleOf3Or5() {
         return new Integer[][]{
-                {1}, {2}, {4}, {7}, {8}, {11}, {13}, {14}, {17}
+                {1}, {2}, {4}, {7}, {8}, {11}, {14}, {17}
         };
     }
 
@@ -48,7 +48,7 @@ public class FizzBuzzStep1Test {
 
     private static final Object[] getContiguousNumberMultipleOf5() {
         return new Integer[][]{
-                {5}, {10}, {20}, {25}, {35}
+                {5}, {10}, {20}, {25}
         };
     }
 
@@ -60,13 +60,20 @@ public class FizzBuzzStep1Test {
 
     private static final Object[] getContiguousNumberMultipleOf3And5() {
         return new Integer[][]{
-                {15}, {30}, {45}
+                {15}, {45}
         };
     }
 
     @Test
-    public void whenNumberIs3ThenPrintsLucky() {
-        assertEquals("lucky", fizzBuzzStep1.printFizzBuzz(3));
+    @Parameters(method = "getNumberThatContains3")
+    public void whenNumberContents3ThenPrintsLucky(int numberThatContains3) {
+        assertEquals("lucky", fizzBuzzStep1.printFizzBuzz(numberThatContains3));
+    }
+
+    private static final Object[] getNumberThatContains3() {
+        return new Integer[][]{
+                {3}, {13}, {23}, {30}, {32}, {33}
+        };
     }
 
     //TODO: check with customer for corner case such as when number is 0 or negative what is it the expected behaviour?

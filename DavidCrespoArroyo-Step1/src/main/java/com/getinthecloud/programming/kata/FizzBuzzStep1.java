@@ -5,7 +5,7 @@ package com.getinthecloud.programming.kata;
  */
 public class FizzBuzzStep1 {
     public String printFizzBuzz(int number) {
-        if (number == 3) {
+        if (numberContains3(number)) {
             return "lucky";
         }
         if (isMultipleOf3(number)&&isMultipleOf5(number)) {
@@ -18,6 +18,10 @@ public class FizzBuzzStep1 {
             return "fizz";
         }
         return String.valueOf(number);
+    }
+
+    private boolean numberContains3(int number) {
+        return String.valueOf(number).contains("3");
     }
 
     private boolean isMultipleOf5(int number) {
