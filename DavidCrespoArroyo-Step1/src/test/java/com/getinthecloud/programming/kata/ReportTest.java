@@ -1,6 +1,7 @@
 package com.getinthecloud.programming.kata;
 
 import junitparams.JUnitParamsRunner;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -15,14 +16,15 @@ import static org.junit.Assert.assertEquals;
 @RunWith(JUnitParamsRunner.class)
 public class ReportTest {
 
+    private final ArrayList<String> fizzs = new ArrayList<String>(Arrays.asList("fizz", "buzz", "2", "fizz"));
+    private final Report report = new Report();
+
     @Test
-    public void whenRecordFizzThenReportPrintsNumberOfFizz() {
-        Report report = new Report();
-        ArrayList<String> fizzs = new ArrayList<String>(Arrays.asList("fizz", "fizz", "fizz", "fizz"));
+    public void whenRecordFizzThenReportsNumberOfFizz() {
         for (String fizz: fizzs) {
             report.record(fizz);
         }
-        assertEquals(fizzs.size(), report.getFizz());
+        assertEquals(StringUtils.countMatches(fizzs.toString(), "fizz"), report.getFizz());
     }
 
 }
