@@ -2,7 +2,6 @@ package com.getinthecloud.programming.kata;
 
 import junitparams.JUnitParamsRunner;
 import org.apache.commons.lang3.StringUtils;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -18,7 +17,7 @@ import static org.junit.Assert.assertEquals;
 public class ReportTest {
 
     private final ArrayList<String> collectionOfFizzBuzzAnIntegers =
-            new ArrayList<String>(Arrays.asList("fizz", "buzz", "2", "fizz"));
+            new ArrayList<String>(Arrays.asList("fizz", "buzz", "2", "fizz", "buzz"));
     private final Report report = new Report();
 
     @Test
@@ -29,12 +28,12 @@ public class ReportTest {
         assertEquals(getNumberOfItemFromTheCollection("fizz"), report.getFizz());
     }
 
-    @Test@Ignore
+    @Test
     public void whenRecordBuzzThenReportsNumberOfBuzz() {
         for (String item: collectionOfFizzBuzzAnIntegers) {
             report.record(item);
         }
-        assertEquals(getNumberOfItemFromTheCollection("buzz"), report.getFizz());
+        assertEquals(getNumberOfItemFromTheCollection("buzz"), report.getBuzz());
     }
 
 
