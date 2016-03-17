@@ -16,15 +16,20 @@ import static org.junit.Assert.assertEquals;
 @RunWith(JUnitParamsRunner.class)
 public class ReportTest {
 
-    private final ArrayList<String> fizzs = new ArrayList<String>(Arrays.asList("fizz", "buzz", "2", "fizz"));
+    private final ArrayList<String> collectionOfFizzBuzzAnIntegers =
+            new ArrayList<String>(Arrays.asList("fizz", "buzz", "2", "fizz"));
     private final Report report = new Report();
 
     @Test
     public void whenRecordFizzThenReportsNumberOfFizz() {
-        for (String fizz: fizzs) {
-            report.record(fizz);
+        for (String item: collectionOfFizzBuzzAnIntegers) {
+            report.record(item);
         }
-        assertEquals(StringUtils.countMatches(fizzs.toString(), "fizz"), report.getFizz());
+        assertEquals(getNumberOfFizzsFromTheCollection(), report.getFizz());
+    }
+
+    private int getNumberOfFizzsFromTheCollection() {
+        return StringUtils.countMatches(collectionOfFizzBuzzAnIntegers.toString(), "fizz");
     }
 
 }
