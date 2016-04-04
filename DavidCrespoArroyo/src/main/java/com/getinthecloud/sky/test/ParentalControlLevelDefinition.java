@@ -14,7 +14,7 @@ public enum ParentalControlLevelDefinition {
     private final String levelCode;
     private final int level;
 
-    private ParentalControlLevelDefinition(String levelCode, int level) {
+    ParentalControlLevelDefinition(String levelCode, int level) {
         this.levelCode = levelCode;
         this.level = level;
     }
@@ -33,7 +33,7 @@ public enum ParentalControlLevelDefinition {
                 return pcld;
             }
         }
-        return null;
+        throw new IllegalArgumentException("level is not recognised");
     }
 
     @Override

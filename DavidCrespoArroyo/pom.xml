@@ -7,18 +7,14 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.5.1</version>
         <configuration>
-          <source>1.7</source>
-          <target>1.7</target>
+          <source>1.8</source>
+          <target>1.8</target>
         </configuration>
       </plugin>
     </plugins>
   </build>
-  <parent>
-    <groupId>Katas</groupId>
-    <artifactId>Katas</artifactId>
-    <version>1.0-SNAPSHOT</version>
-  </parent>
   <groupId>com.getinthecloud.sky.test</groupId>
   <artifactId>DavidCrespoArroyo</artifactId>
   <version>1.0-SNAPSHOT</version>
@@ -35,6 +31,12 @@
       <groupId>org.mockito</groupId>
       <artifactId>mockito-core</artifactId>
       <version>1.10.19</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>pl.pragmatists</groupId>
+      <artifactId>JUnitParams</artifactId>
+      <version>1.0.4</version>
       <scope>test</scope>
     </dependency>
   </dependencies>

@@ -20,7 +20,7 @@ import static org.mockito.Mockito.when;
  * Created by davicres on 01/03/2016.
  */
 @RunWith(JUnitParamsRunner.class)
-public class ParentalControlLevelsServiceTest {
+public class ParentalControlServiceTest {
 
     @Rule
     public MockitoRule mockitoRule = MockitoJUnit.rule();
