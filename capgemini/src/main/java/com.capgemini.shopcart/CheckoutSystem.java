@@ -2,6 +2,9 @@ package com.capgemini.shopcart;
 
 
 
+import com.capgemini.shopcart.items.Item;
+import com.capgemini.shopcart.offers.Offer;
+
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;

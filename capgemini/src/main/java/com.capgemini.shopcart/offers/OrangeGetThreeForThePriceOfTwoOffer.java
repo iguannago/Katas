@@ -1,5 +1,8 @@
-package com.capgemini.shopcart;
+package com.capgemini.shopcart.offers;
 
+
+import com.capgemini.shopcart.items.Item;
+import com.capgemini.shopcart.items.Orange;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.capgemini.shopcart;
+package com.capgemini.shopcart.items;
 
 import java.math.BigDecimal;
 

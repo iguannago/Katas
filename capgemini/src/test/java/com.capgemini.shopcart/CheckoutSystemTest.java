@@ -1,5 +1,11 @@
 package com.capgemini.shopcart;
 
+import com.capgemini.shopcart.items.Apple;
+import com.capgemini.shopcart.items.Item;
+import com.capgemini.shopcart.items.Orange;
+import com.capgemini.shopcart.offers.AppleBuyOneGetOneFreeOffer;
+import com.capgemini.shopcart.offers.Offer;
+import com.capgemini.shopcart.offers.OrangeGetThreeForThePriceOfTwoOffer;
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 import org.junit.Test;
@@ -64,7 +70,7 @@ public class CheckoutSystemTest {
 
     @Test
     @Parameters(method = "getAmountOfApplesAndOranges")
-    public void totalCostAppliesOrangeOfferWhen1AppleAnd3Oranges(int amountOfApples, int amountOfOranges) {
+    public void totalCostAppliesOrangeOfferTest(int amountOfApples, int amountOfOranges) {
         createGivenNumberOfApplesAndOrangesAndAddThemToItems(amountOfApples, amountOfOranges);
         BigDecimal expected = ORANGE_COST.multiply(BigDecimal.valueOf(amountOfOranges - (amountOfOranges/3))).
                 add(APPLE_COST.multiply(BigDecimal.valueOf(amountOfApples)));
@@ -74,7 +80,7 @@ public class CheckoutSystemTest {
 
     private static final Object[] getAmountOfApplesAndOranges() {
         return new Integer[][]{
-                {1,1}, {2,2}, {3,1}, {4,5}, {0,0}, {10, 20}
+                {1,1}, {2,2}, {3,1}, {4,5}, {0,0}, {10, 20}, {3,4}, {10,0}, {0,10}, {7,9}
         };
     }
 }
