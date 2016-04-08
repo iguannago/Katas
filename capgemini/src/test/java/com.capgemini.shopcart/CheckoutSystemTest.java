@@ -23,7 +23,7 @@ public class CheckoutSystemTest {
 
     @Test
     @Parameters(method = "getAmountOfApplesAndOranges")
-    public void totalCostTestForAnAppleAndAnOrange(int amountOfApples, int amountOfOranges) {
+    public void totalCostTestForApplesAndAnOrangesInTheList(int amountOfApples, int amountOfOranges) {
         createGivenNumberOfApplesAndOrangesAndAddThemToItems(amountOfApples,amountOfOranges);
         BigDecimal expectedResult = getExpectedResult();
         System.out.println("expectedResult: " + expectedResult);
@@ -55,5 +55,7 @@ public class CheckoutSystemTest {
             items.add(item);
         }
     }
+
+
 
 }
