@@ -61,18 +61,20 @@ public class CheckoutSystemTest {
         assertEquals(expected, checkoutSystem.totalCost(items));
     }
 
+
+    @Test
+    @Parameters(method = "getAmountOfApplesAndOranges")
+    public void totalCostAppliesOrangeOfferWhen1AppleAnd3Oranges(int amountOfApples, int amountOfOranges) {
+        createGivenNumberOfApplesAndOrangesAndAddThemToItems(amountOfApples, amountOfOranges);
+        BigDecimal expected = ORANGE_COST.multiply(BigDecimal.valueOf(amountOfOranges - (amountOfOranges/3))).
+                add(APPLE_COST.multiply(BigDecimal.valueOf(amountOfApples)));
+        checkoutSystem.setOffers(Arrays.<Offer>asList(new OrangeGetThreeForThePriceOfTwoOffer()));
+        assertEquals(expected, checkoutSystem.totalCost(items));
+    }
+
     private static final Object[] getAmountOfApplesAndOranges() {
         return new Integer[][]{
                 {1,1}, {2,2}, {3,1}, {4,5}, {0,0}, {10, 20}
         };
     }
-
-    @Test
-    public void totalCostAppliesOrangeOfferWhen1AppleAnd3Oranges() {
-        createGivenNumberOfApplesAndOrangesAndAddThemToItems(1, 3);
-        BigDecimal expected = ORANGE_COST.multiply(BigDecimal.valueOf(3 - (3/2))).add(APPLE_COST);
-        checkoutSystem.setOffers(Arrays.<Offer>asList(new OrangeGetThreeForThePriceOfTwoOffer()));
-        assertEquals(expected, checkoutSystem.totalCost(items));
-    }
-
 }
