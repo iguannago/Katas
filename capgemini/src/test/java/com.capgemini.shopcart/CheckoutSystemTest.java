@@ -26,7 +26,6 @@ public class CheckoutSystemTest {
     public void totalCostTestForApplesAndAnOrangesInTheList(int amountOfApples, int amountOfOranges) {
         createGivenNumberOfApplesAndOrangesAndAddThemToItems(amountOfApples,amountOfOranges);
         BigDecimal expectedResult = getExpectedResult();
-        System.out.println("expectedResult: " + expectedResult);
         assertEquals(expectedResult, checkoutSystem.totalCost(items));
     }
 
@@ -57,7 +56,6 @@ public class CheckoutSystemTest {
         createGivenNumberOfApplesAndOrangesAndAddThemToItems(amountOfApples, amountOfOranges);
         BigDecimal expected = APPLE_COST.multiply(BigDecimal.valueOf(amountOfApples - (amountOfApples/2))).
                 add(ORANGE_COST.multiply(BigDecimal.valueOf(amountOfOranges)));
-        System.out.println("expected: " + expected);
         AppleOffer appleOffer = new AppleBuyOneGetOneFreeOffer();
         checkoutSystem.setAppleOffer(appleOffer);
         assertEquals(expected, checkoutSystem.totalCost(items));
