@@ -8,7 +8,7 @@ import java.util.List;
  */
 public final class CheckoutSystem {
     public BigDecimal totalCost(final List<? extends Item> items) {
-        BigDecimal totalCost = new BigDecimal("0");
+        BigDecimal totalCost = new BigDecimal("0.0");
         for (Item item: items) {
             totalCost = totalCost.add(item.getCost());
         }
