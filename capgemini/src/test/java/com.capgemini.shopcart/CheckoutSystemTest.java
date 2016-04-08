@@ -30,14 +30,9 @@ public class CheckoutSystemTest {
         assertEquals(expectedResult, checkoutSystem.totalCost(items));
     }
 
-    private static final Object[] getAmountOfApplesAndOranges() {
-        return new Integer[][]{
-                {1,1}, {2,2}, {3,1}, {4,5}, {0,0}, {10, 20}
-        };
-    }
 
     private BigDecimal getExpectedResult() {
-        BigDecimal expected = new BigDecimal("0.0");
+        BigDecimal expected = new BigDecimal("0.00");
         for (Item item: items) {
             expected = expected.add(item.getCost());
         }
@@ -57,13 +52,21 @@ public class CheckoutSystemTest {
     }
 
     @Test
-    public void totalCostAppliesAppleOfferWhenTwoApplesAndOneOrangeInTheListTest() {
-        createGivenNumberOfApplesAndOrangesAndAddThemToItems(2,1);
-        BigDecimal expected = APPLE_COST.multiply(BigDecimal.valueOf(2 - (2/2))).add(ORANGE_COST);
+    @Parameters(method = "getAmountOfApplesAndOranges")
+    public void totalCostAppliesAppleOfferTest(int amountOfApples, int amountOfOranges) {
+        createGivenNumberOfApplesAndOrangesAndAddThemToItems(amountOfApples, amountOfOranges);
+        BigDecimal expected = APPLE_COST.multiply(BigDecimal.valueOf(amountOfApples - (amountOfApples/2))).
+                add(ORANGE_COST.multiply(BigDecimal.valueOf(amountOfOranges)));
         System.out.println("expected: " + expected);
         AppleOffer appleOffer = new AppleBuyOneGetOneFreeOffer();
         checkoutSystem.setAppleOffer(appleOffer);
         assertEquals(expected, checkoutSystem.totalCost(items));
+    }
+
+    private static final Object[] getAmountOfApplesAndOranges() {
+        return new Integer[][]{
+                {1,1}, {2,2}, {3,1}, {4,5}, {0,0}, {10, 20}
+        };
     }
 
 }

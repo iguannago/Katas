@@ -12,7 +12,7 @@ public final class CheckoutSystem {
     private AppleOffer appleOffer;
 
     public BigDecimal totalCost(final List<? extends Item> items) {
-        BigDecimal totalCost = new BigDecimal("0.0");
+        BigDecimal totalCost = new BigDecimal("0.00");
         List<? extends Item> itemsWithOfferApplied = applyAppleOffer(items);
         for (Item item: itemsWithOfferApplied) {
             totalCost = totalCost.add(item.getCost());
