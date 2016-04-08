@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by davicres on 08/04/2016.
  */
-public final class AppleBuyOneGetOneFreeOffer implements AppleOffer {
+public final class AppleBuyOneGetOneFreeOffer implements Offer {
 
     public List<? extends Item> apply(List<? extends Item> items) {
         removeFreeApplesFromItems(items, getNumberOfFreeApples(items));

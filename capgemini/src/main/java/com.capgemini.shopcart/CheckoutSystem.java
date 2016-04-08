@@ -3,33 +3,33 @@ package com.capgemini.shopcart;
 
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by davicres on 08/04/2016.
  */
 public final class CheckoutSystem {
-    private AppleOffer appleOffer;
+    private List<Offer> offers = new ArrayList<Offer>();
 
     public BigDecimal totalCost(final List<? extends Item> items) {
         BigDecimal totalCost = new BigDecimal("0.00");
-        List<? extends Item> itemsWithOfferApplied = applyAppleOffer(items);
+        List<? extends Item> itemsWithOfferApplied = applyOffers(items);
         for (Item item: itemsWithOfferApplied) {
             totalCost = totalCost.add(item.getCost());
         }
         return totalCost;
     }
 
-    private List<? extends Item> applyAppleOffer(List<? extends Item> items) {
+    private List<? extends Item> applyOffers(List<? extends Item> items) {
         List<? extends Item> itemsWithOffersApplied = items;
-        if (appleOffer != null) {
-            itemsWithOffersApplied = appleOffer.apply(items);
+        for (Offer offer: offers) {
+            offer.apply(itemsWithOffersApplied);
         }
         return itemsWithOffersApplied;
     }
 
-    public void setAppleOffer(AppleOffer appleOffer) {
-        this.appleOffer = appleOffer;
+    public void setOffers(List<Offer> offers) {
+        this.offers = offers;
     }
-
 }

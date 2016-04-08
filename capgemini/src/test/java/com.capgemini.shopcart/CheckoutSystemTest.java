@@ -2,11 +2,13 @@ package com.capgemini.shopcart;
 
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -56,8 +58,7 @@ public class CheckoutSystemTest {
         createGivenNumberOfApplesAndOrangesAndAddThemToItems(amountOfApples, amountOfOranges);
         BigDecimal expected = APPLE_COST.multiply(BigDecimal.valueOf(amountOfApples - (amountOfApples/2))).
                 add(ORANGE_COST.multiply(BigDecimal.valueOf(amountOfOranges)));
-        AppleOffer appleOffer = new AppleBuyOneGetOneFreeOffer();
-        checkoutSystem.setAppleOffer(appleOffer);
+        checkoutSystem.setOffers(Arrays.<Offer>asList(new AppleBuyOneGetOneFreeOffer()));
         assertEquals(expected, checkoutSystem.totalCost(items));
     }
 
@@ -65,6 +66,14 @@ public class CheckoutSystemTest {
         return new Integer[][]{
                 {1,1}, {2,2}, {3,1}, {4,5}, {0,0}, {10, 20}
         };
+    }
+
+    @Test@Ignore
+    public void totalCostAppliesOrangeOfferWhen1AppleAnd3Oranges() {
+        createGivenNumberOfApplesAndOrangesAndAddThemToItems(1, 3);
+        BigDecimal expected = ORANGE_COST.multiply(BigDecimal.valueOf(3 - (3/2))).add(APPLE_COST);
+        checkoutSystem.setOffers(Arrays.<Offer>asList(new OrangeGetThreeForThePriceOfTwoOffer()));
+        assertEquals(expected, checkoutSystem.totalCost(items));
     }
 
 }
