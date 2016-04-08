@@ -9,4 +9,9 @@ public final class Orange extends Item {
     public Orange(BigDecimal cost) {
         super(cost);
     }
+
+    @Override
+    public String toString() {
+        return "Orange{}";
+    }
 }

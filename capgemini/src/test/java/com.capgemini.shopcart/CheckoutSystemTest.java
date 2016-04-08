@@ -56,8 +56,14 @@ public class CheckoutSystemTest {
         }
     }
 
-    
-
-
+    @Test
+    public void totalCostAppliesAppleOfferWhenTwoApplesAndOneOrangeInTheListTest() {
+        createGivenNumberOfApplesAndOrangesAndAddThemToItems(2,1);
+        BigDecimal expected = APPLE_COST.multiply(BigDecimal.valueOf(2 - (2/2))).add(ORANGE_COST);
+        System.out.println("expected: " + expected);
+        AppleOffer appleOffer = new AppleBuyOneGetOneFreeOffer();
+        checkoutSystem.setAppleOffer(appleOffer);
+        assertEquals(expected, checkoutSystem.totalCost(items));
+    }
 
 }
