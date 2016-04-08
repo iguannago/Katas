@@ -2,7 +2,6 @@ package com.capgemini.shopcart;
 
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -68,7 +67,7 @@ public class CheckoutSystemTest {
         };
     }
 
-    @Test@Ignore
+    @Test
     public void totalCostAppliesOrangeOfferWhen1AppleAnd3Oranges() {
         createGivenNumberOfApplesAndOrangesAndAddThemToItems(1, 3);
         BigDecimal expected = ORANGE_COST.multiply(BigDecimal.valueOf(3 - (3/2))).add(APPLE_COST);
