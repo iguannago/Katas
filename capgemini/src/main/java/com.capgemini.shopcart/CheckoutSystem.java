@@ -6,8 +6,12 @@ import java.util.List;
 /**
  * Created by davicres on 08/04/2016.
  */
-public class CheckoutSystem {
-    public BigDecimal totalCost(List<Item> items) {
-        return new BigDecimal("0.85");
+public final class CheckoutSystem {
+    public BigDecimal totalCost(final List<? extends Item> items) {
+        BigDecimal totalCost = new BigDecimal("0");
+        for (Item item: items) {
+            totalCost = totalCost.add(item.getCost());
+        }
+        return totalCost;
     }
 }
