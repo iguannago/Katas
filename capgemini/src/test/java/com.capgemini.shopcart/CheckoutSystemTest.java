@@ -13,7 +13,7 @@ import static org.junit.Assert.assertEquals;
  */
 public class CheckoutSystemTest {
     @Test
-    public void totalCost(){
+    public void totalCostTestForAnAppleAndAnOrange(){
         CheckoutSystem checkoutSystem = new CheckoutSystem();
         List<Item> items = new ArrayList<Item>();
         Item apple = new Apple(new BigDecimal("0.60"));
@@ -24,4 +24,5 @@ public class CheckoutSystemTest {
         System.out.println("expected: "  + expected);
         assertEquals(expected, checkoutSystem.totalCost(items));
     }
+
 }
