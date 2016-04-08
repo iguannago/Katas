@@ -7,4 +7,13 @@ repositories {
 dependencies {
     compile 'org.slf4j:slf4j-api:1.7.18'
     testCompile 'junit:junit:4.12'
+    testCompile 'pl.pragmatists:JUnitParams:1.0.4'
+
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+test {
+    testLogging.showStandardStreams = true
 }
