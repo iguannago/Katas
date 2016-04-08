@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 /**
  * Created by davicres on 08/04/2016.
  */
-public class Apple extends Item {
+public final class Apple extends Item {
     public Apple(BigDecimal cost) {
         super(cost);
     }

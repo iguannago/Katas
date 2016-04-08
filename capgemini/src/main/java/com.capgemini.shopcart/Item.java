@@ -6,7 +6,7 @@ import java.math.BigDecimal;
  * Created by davicres on 08/04/2016.
  */
 public class Item {
-    private BigDecimal cost;
+    private final BigDecimal cost;
 
     public Item(BigDecimal cost) {
         this.cost = cost;
