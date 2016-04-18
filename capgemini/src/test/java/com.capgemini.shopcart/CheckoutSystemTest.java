@@ -26,7 +26,7 @@ public class CheckoutSystemTest {
     public static final BigDecimal APPLE_COST = new BigDecimal("0.60");
     public static final BigDecimal ORANGE_COST = new BigDecimal("0.25");
     private CheckoutSystem checkoutSystem = new CheckoutSystem();
-    private List<Item> items = new ArrayList<Item>();
+    private List<Item> items = new ArrayList<>();
 
     @Test
     @Parameters(method = "getAmountOfApplesAndOranges")
