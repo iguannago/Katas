@@ -60,11 +60,16 @@ public class GalleryImpl implements Gallery {
         List<Art> artByPrice = new ArrayList<Art>();
         for (Art art: arts) {
             if ((art.getAskingPrice() != null)&&
-                    ((art.getAskingPrice().compareTo(lowerPrice) == 1)&&(art.getAskingPrice().compareTo(upperPrice) == -1))) {
+                    IsArtPriceBetweenUpperAndLowerPrice(upperPrice, lowerPrice, art.getAskingPrice())) {
                 artByPrice.add(art);
             }
         }
         return artByPrice;
+    }
+
+    private boolean IsArtPriceBetweenUpperAndLowerPrice(BigDecimal upperPrice, BigDecimal lowerPrice,
+                                                        BigDecimal artPrice) {
+        return (artPrice.compareTo(lowerPrice) == 1)&&(artPrice.compareTo(upperPrice) == -1);
     }
 
     private boolean isArtFromPreviousYear(LocalDate today, Art art) {
