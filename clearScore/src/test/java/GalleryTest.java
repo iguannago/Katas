@@ -1,13 +1,11 @@
 import org.junit.Test;
 
 import java.time.LocalDate;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by davicres on 18/04/2016.
@@ -16,7 +14,7 @@ public class GalleryTest {
 
     private Gallery gallery = new GalleryImpl();
     private Art art1 = new Art.Builder("Guernica", ArtType.PAINTING, "Pablo Picasso", LocalDate.of(2015, 01, 14)).build();
-    private Art art2 = new Art.Builder("Guernica fake", ArtType.PAINTING, "David Crespo", LocalDate.now()).build();
+    private Art art2 = new Art.Builder("Guernica fake", ArtType.PAINTING, "David Crespo", LocalDate.of(2015, 01, 10)).build();
     private Art art3 = new Art.Builder("Guernica fake 2", ArtType.PAINTING, "David Crespo", LocalDate.now()).build();
 
     @Test
@@ -64,7 +62,7 @@ public class GalleryTest {
     public void getArtByArtistTest() {
         initGallery();
         List<Art> expectedArtByArtistList = Arrays.asList(art2, art3);
-        assertEquals(expectedArtByArtistList, gallery.getArtByArtist("David Crespo"));
+        assertTrue(gallery.getArtByArtist("David Crespo").containsAll(expectedArtByArtistList));
         System.out.println(gallery.getArtByArtist("David Crespo"));
     }
 
@@ -72,7 +70,7 @@ public class GalleryTest {
     public void getRecentArtTest() {
         initGallery();
         List<Art> expected = Arrays.asList(art1);
-        assertEquals(expected, gallery.getRecentArt());
+        assertTrue(gallery.getRecentArt().containsAll(expected));
         System.out.println(gallery.getRecentArt());
     }
 
