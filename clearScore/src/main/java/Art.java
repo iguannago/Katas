@@ -20,6 +20,7 @@ public class Art {
     }
 
     public static class Builder {
+        //mandatory parameters
         private final String name;
         private final ArtType type;
         private final String artist;
@@ -44,4 +45,35 @@ public class Art {
         }
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Art art = (Art) o;
+
+        if (!name.equals(art.name)) return false;
+        if (type != art.type) return false;
+        return artist.equals(art.artist);
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = name.hashCode();
+        result = 31 * result + type.hashCode();
+        result = 31 * result + artist.hashCode();
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Art{" +
+                "askingPrice=" + askingPrice +
+                ", name='" + name + '\'' +
+                ", type=" + type +
+                ", artist='" + artist + '\'' +
+                ", created=" + created +
+                '}';
+    }
 }
