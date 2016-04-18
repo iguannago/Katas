@@ -1,3 +1,4 @@
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.*;
 
@@ -45,13 +46,25 @@ public class GalleryImpl implements Gallery {
     @Override
     public List<Art> getRecentArt() {
         LocalDate today = LocalDate.now();
-        List<Art> artByArtist = new ArrayList<Art>();
+        List<Art> recentArts = new ArrayList<Art>();
         for (Art art: arts) {
             if (isArtFromPreviousYear(today, art)) {
-                artByArtist.add(art);
+                recentArts.add(art);
             }
         }
-        return artByArtist;
+        return recentArts;
+    }
+
+    @Override
+    public List<Art> getArtByPrice(BigDecimal upperPrice, BigDecimal lowerPrice) {
+        List<Art> artByPrice = new ArrayList<Art>();
+        for (Art art: arts) {
+            if ((art.getAskingPrice() != null)&&
+                    ((art.getAskingPrice().compareTo(lowerPrice) == 1)&&(art.getAskingPrice().compareTo(upperPrice) == -1))) {
+                artByPrice.add(art);
+            }
+        }
+        return artByPrice;
     }
 
     private boolean isArtFromPreviousYear(LocalDate today, Art art) {

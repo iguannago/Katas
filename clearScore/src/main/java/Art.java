@@ -53,6 +53,10 @@ public class Art {
         return created;
     }
 
+    public BigDecimal getAskingPrice() {
+        return askingPrice;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

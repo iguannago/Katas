@@ -1,3 +1,4 @@
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.Set;
 
@@ -17,4 +18,6 @@ public interface Gallery {
     List<Art> getArtByArtist(String artist);
 
     List<Art> getRecentArt();
+
+    List<Art> getArtByPrice(BigDecimal upperPrice, BigDecimal lowerPrice);
 }

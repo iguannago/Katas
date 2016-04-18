@@ -1,11 +1,13 @@
 import org.junit.Test;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 /**
  * Created by davicres on 18/04/2016.
@@ -14,8 +16,10 @@ public class GalleryTest {
 
     private Gallery gallery = new GalleryImpl();
     private Art art1 = new Art.Builder("Guernica", ArtType.PAINTING, "Pablo Picasso", LocalDate.of(2015, 01, 14)).build();
-    private Art art2 = new Art.Builder("Guernica fake", ArtType.PAINTING, "David Crespo", LocalDate.of(2015, 01, 10)).build();
-    private Art art3 = new Art.Builder("Guernica fake 2", ArtType.PAINTING, "David Crespo", LocalDate.now()).build();
+    private Art art2 = new Art.Builder("Guernica fake", ArtType.PAINTING, "David Crespo", LocalDate.of(2015, 01, 10)).
+            askingPrice(new BigDecimal("14.00")).build();
+    private Art art3 = new Art.Builder("Guernica fake 2", ArtType.PAINTING, "David Crespo", LocalDate.now()).
+            askingPrice(new BigDecimal("19.00")).build();
 
     @Test
     public void addArtTest() {
@@ -72,6 +76,17 @@ public class GalleryTest {
         List<Art> expected = Arrays.asList(art1);
         assertTrue(gallery.getRecentArt().containsAll(expected));
         System.out.println(gallery.getRecentArt());
+    }
+
+    @Test
+    public void getArtByPriceTest(){
+        initGallery();
+        BigDecimal upperPrice = new BigDecimal("20.00");
+        BigDecimal lowerPrice = new BigDecimal("10.00");
+        List<Art> arts = gallery.getArtByPrice(upperPrice, lowerPrice);
+        System.out.println(arts);
+        List<Art> expected = Arrays.asList(art2, art3);
+        assertTrue(arts.containsAll(expected));
     }
 
     private void initGallery() {
