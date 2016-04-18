@@ -1,5 +1,5 @@
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 /**
  * Created by davicres on 18/04/2016.
@@ -9,7 +9,7 @@ public class Art {
     private final String name;
     private final ArtType type;
     private final String artist;
-    private final LocalDateTime created;
+    private final LocalDate created;
 
     private Art(Builder builder) {
         this.name = builder.name;
@@ -24,11 +24,11 @@ public class Art {
         private final String name;
         private final ArtType type;
         private final String artist;
-        private final LocalDateTime created;
+        private final LocalDate created;
         //Optional parameters
         private BigDecimal askingPrice;
 
-        public Builder(String name, ArtType type, String artist, LocalDateTime created) {
+        public Builder(String name, ArtType type, String artist, LocalDate created) {
             this.name = name;
             this.type = type;
             this.artist = artist;
@@ -47,6 +47,10 @@ public class Art {
 
     public String getArtist() {
         return artist;
+    }
+
+    public LocalDate getCreated() {
+        return created;
     }
 
     @Override

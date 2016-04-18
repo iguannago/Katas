@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.*;
 
 /**
@@ -22,12 +23,11 @@ public class GalleryImpl implements Gallery {
     }
 
     @Override
-    public List<String> getArtists() {
-        List<String> artists = new ArrayList<String>();
+    public Set<String> getArtists() {
+        Set<String> artists = new TreeSet<String>();
         for (Art art: arts) {
             artists.add(art.getArtist());
         }
-        Collections.sort(artists);
         return artists;
     }
 
@@ -36,6 +36,18 @@ public class GalleryImpl implements Gallery {
         List<Art> artByArtist = new ArrayList<Art>();
         for (Art art: arts) {
             if (art.getArtist().equals(artist)) {
+                artByArtist.add(art);
+            }
+        }
+        return artByArtist;
+    }
+
+    @Override
+    public List<Art> getRecentArt() {
+        LocalDate today = LocalDate.now();
+        List<Art> artByArtist = new ArrayList<Art>();
+        for (Art art: arts) {
+            if (today.getYear() - art.getCreated().getYear() == 1) {
                 artByArtist.add(art);
             }
         }

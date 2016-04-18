@@ -11,8 +11,10 @@ public interface Gallery {
 
     void deleteArt(Art art);
 
-    List<String> getArtists();
+    Set<String> getArtists();
 
 
     List<Art> getArtByArtist(String artist);
+
+    List<Art> getRecentArt();
 }
