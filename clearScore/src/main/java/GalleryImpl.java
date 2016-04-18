@@ -70,7 +70,11 @@ public class GalleryImpl implements Gallery {
     @Override
     public List<Art> getArtByPrice() {
         List<Art> artByPrice = new ArrayList<Art>();
-        artByPrice.addAll(arts);
+        for (Art art: arts) {
+            if (art.getAskingPrice() != null) {
+                artByPrice.add(art);
+            }
+        }
         return artByPrice;
     }
 

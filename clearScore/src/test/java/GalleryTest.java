@@ -90,7 +90,7 @@ public class GalleryTest {
         //optional parameters
         arts = gallery.getArtByPrice();
         System.out.println(arts);
-        assertTrue(arts.containsAll(gallery.getAllArts()));
+        assertTrue(arts.containsAll(expected));
     }
 
     private void initGallery() {
