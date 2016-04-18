@@ -1,3 +1,4 @@
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -9,4 +10,6 @@ public interface Gallery {
     Set<Art> getAllArts();
 
     void deleteArt(Art art);
+
+    List<String> getArtists();
 }

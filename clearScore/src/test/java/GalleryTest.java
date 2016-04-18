@@ -1,6 +1,7 @@
 import org.junit.Test;
 
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
@@ -13,7 +14,7 @@ public class GalleryTest {
 
     private Gallery gallery = new GalleryImpl();
     private Art art1 = new Art.Builder("Guernica", ArtType.PAINTING, "Pablo Picasso", LocalDateTime.now()).build();
-    private Art art2 = new Art.Builder("Guernica II", ArtType.PAINTING, "Pablo Picasso", LocalDateTime.now()).build();
+    private Art art2 = new Art.Builder("Guernica fake", ArtType.PAINTING, "David Crespo", LocalDateTime.now()).build();
 
     @Test
     public void addArtTest() {
@@ -45,6 +46,14 @@ public class GalleryTest {
         assertEquals(1, gallery.getAllArts().size());
         gallery.deleteArt(art2);
         assertEquals(1, gallery.getAllArts().size());
+    }
+
+    @Test
+    public void getArtistsTest() {
+        gallery.addArt(art1);
+        gallery.addArt(art2);
+        List<String> artistNames = gallery.getArtists();
+        assertEquals("[David Crespo, Pablo Picasso]", artistNames.toString());
     }
 
 

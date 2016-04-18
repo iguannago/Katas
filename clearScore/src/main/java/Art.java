@@ -45,6 +45,10 @@ public class Art {
         }
     }
 
+    public String getArtist() {
+        return artist;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
