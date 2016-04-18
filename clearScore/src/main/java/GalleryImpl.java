@@ -18,6 +18,11 @@ public class GalleryImpl implements Gallery {
     }
 
     @Override
+    public void deleteArt(Art art) {
+        arts.remove(art);
+    }
+
+    @Override
     public String toString() {
         return "Gallery{" +
                 "arts=" + arts +

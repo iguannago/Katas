@@ -5,5 +5,8 @@ import java.util.Set;
  */
 public interface Gallery {
     void addArt(Art art);
+
     Set<Art> getAllArts();
+
+    void deleteArt(Art art);
 }

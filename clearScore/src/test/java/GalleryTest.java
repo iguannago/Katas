@@ -12,16 +12,18 @@ import static org.junit.Assert.assertNotNull;
 public class GalleryTest {
 
     private Gallery gallery = new GalleryImpl();
+    private Art art1 = new Art.Builder("Guernica", ArtType.PAINTING, "Pablo Picasso", LocalDateTime.now()).build();
+    private Art art2 = new Art.Builder("Guernica II", ArtType.PAINTING, "Pablo Picasso", LocalDateTime.now()).build();
 
     @Test
     public void addArtTest() {
-        Art art = new Art.Builder("Guernica", ArtType.PAINTING, "Pablo Picasso", LocalDateTime.now()).build();
         assertEquals(0, gallery.getAllArts().size());
         System.out.println(gallery);
-        gallery.addArt(art);
+        gallery.addArt(art1);
         assertEquals(1, gallery.getAllArts().size());
         System.out.println(gallery);
-        gallery.addArt(art);
+        //assert that i cannot add the same piece of art twice.
+        gallery.addArt(art1);
         assertEquals(1, gallery.getAllArts().size());
         System.out.println(gallery);
     }
@@ -31,5 +33,22 @@ public class GalleryTest {
         Set<Art> artList = gallery.getAllArts();
         assertNotNull(artList);
     }
+
+    @Test
+    public void deleteArtTest() {
+        gallery.addArt(art1);
+        assertEquals(1, gallery.getAllArts().size());
+        gallery.deleteArt(art1);
+        assertEquals(0, gallery.getAllArts().size());
+        //Assert that I cannot remove a piece of art that does not exit.
+        gallery.addArt(art1);
+        assertEquals(1, gallery.getAllArts().size());
+        gallery.deleteArt(art2);
+        assertEquals(1, gallery.getAllArts().size());
+    }
+
+
+
+
 
 }
