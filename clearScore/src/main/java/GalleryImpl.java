@@ -47,11 +47,15 @@ public class GalleryImpl implements Gallery {
         LocalDate today = LocalDate.now();
         List<Art> artByArtist = new ArrayList<Art>();
         for (Art art: arts) {
-            if (today.getYear() - art.getCreated().getYear() == 1) {
+            if (isArtFromPreviousYear(today, art)) {
                 artByArtist.add(art);
             }
         }
         return artByArtist;
+    }
+
+    private boolean isArtFromPreviousYear(LocalDate today, Art art) {
+        return today.getYear() - art.getCreated().getYear() == 1;
     }
 
     @Override
