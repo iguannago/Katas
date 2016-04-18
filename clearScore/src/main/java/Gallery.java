@@ -12,4 +12,7 @@ public interface Gallery {
     void deleteArt(Art art);
 
     List<String> getArtists();
+
+
+    List<Art> getArtByArtist(String artist);
 }

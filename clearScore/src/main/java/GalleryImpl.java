@@ -32,6 +32,17 @@ public class GalleryImpl implements Gallery {
     }
 
     @Override
+    public List<Art> getArtByArtist(String artist) {
+        List<Art> artByArtist = new ArrayList<Art>();
+        for (Art art: arts) {
+            if (art.getArtist().equals(artist)) {
+                artByArtist.add(art);
+            }
+        }
+        return artByArtist;
+    }
+
+    @Override
     public String toString() {
         return "Gallery{" +
                 "arts=" + arts +
