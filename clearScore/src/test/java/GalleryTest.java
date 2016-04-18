@@ -87,6 +87,10 @@ public class GalleryTest {
         System.out.println(arts);
         List<Art> expected = Arrays.asList(art2, art3);
         assertTrue(arts.containsAll(expected));
+        //optional parameters
+        arts = gallery.getArtByPrice();
+        System.out.println(arts);
+        assertTrue(arts.containsAll(gallery.getAllArts()));
     }
 
     private void initGallery() {

@@ -20,4 +20,6 @@ public interface Gallery {
     List<Art> getRecentArt();
 
     List<Art> getArtByPrice(BigDecimal upperPrice, BigDecimal lowerPrice);
+
+    List<Art> getArtByPrice();
 }

@@ -67,6 +67,13 @@ public class GalleryImpl implements Gallery {
         return artByPrice;
     }
 
+    @Override
+    public List<Art> getArtByPrice() {
+        List<Art> artByPrice = new ArrayList<Art>();
+        artByPrice.addAll(arts);
+        return artByPrice;
+    }
+
     private boolean IsArtPriceBetweenUpperAndLowerPrice(BigDecimal upperPrice, BigDecimal lowerPrice,
                                                         BigDecimal artPrice) {
         return (artPrice.compareTo(lowerPrice) == 1)&&(artPrice.compareTo(upperPrice) == -1);
