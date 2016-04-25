@@ -17,19 +17,17 @@ public final class CheckoutSystem {
 
     public BigDecimal totalCost(final List<? extends Item> items) {
         BigDecimal totalCost = new BigDecimal("0.00");
-        List<? extends Item> itemsWithOfferApplied = applyOffers(items);
-        for (Item item: itemsWithOfferApplied) {
+        applyOffers(items);
+        for (Item item: items) {
             totalCost = totalCost.add(item.getCost());
         }
         return totalCost;
     }
 
-    private List<? extends Item> applyOffers(List<? extends Item> items) {
-        List<? extends Item> itemsWithOffersApplied = items;
+    private void applyOffers(List<? extends Item> items) {
         for (Offer offer: offers) {
-            offer.apply(itemsWithOffersApplied);
+            offer.apply(items);
         }
-        return itemsWithOffersApplied;
     }
 
     public void setOffers(List<Offer> offers) {

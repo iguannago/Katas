@@ -9,9 +9,9 @@ import java.util.List;
  * Created by davicres on 08/04/2016.
  */
 public interface Offer {
-    default List<? extends Item> apply(List<? extends Item> items) {
+    default void apply(List<? extends Item> items) {
         removeFreeItemsFromTheItemsList(items, getNumberOfFreeItems(items));
-        return items;    }
+    }
 
 
     default void removeFreeItemsFromTheItemsList(List<? extends Item> items, int freeItems) {

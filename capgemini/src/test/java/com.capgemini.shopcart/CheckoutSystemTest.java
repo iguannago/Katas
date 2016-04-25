@@ -45,7 +45,7 @@ public class CheckoutSystemTest {
         return expected;
     }
 
-    public void createGivenNumberOfApplesAndOrangesAndAddThemToItems(int numberOfApples, int numberOfOrange){
+    private void createGivenNumberOfApplesAndOrangesAndAddThemToItems(int numberOfApples, int numberOfOrange){
         Item item;
         for (int i = 0; i < numberOfApples; i++) {
             item = new Apple(APPLE_COST);
