@@ -23,14 +23,14 @@ public class NodeTest {
     }
 
     @Test
-    public void getAllDescendentTest() {
+    public void getAllDescendantTest() {
         node.addChild(child);
         Set<Node> descendants = node.getAllDescendants();
         assertEquals(1, descendants.size());
     }
 
     @Test
-    public void getAllDescendentsForAChildWithAChild() {
+    public void getAllDescendantsForAChildWithAChild() {
         Node thirdChild = new Node();
         Node anotherChild = new Node();
         anotherChild.addChild(thirdChild);
