@@ -86,3 +86,6 @@ target/*
 **/**/target/*
 **/**/**/target/*
 *.log
+
+.floo
+.flooignore
