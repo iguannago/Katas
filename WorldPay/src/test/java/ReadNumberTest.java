@@ -49,6 +49,50 @@ public class ReadNumberTest {
     public void when9ThenNine() {
         assertEquals("nine", readNumber.read(9));
     }
+    @Test
+    public void when10ThenTen() {
+        assertEquals("ten", readNumber.read(10));
+    }
+    @Test
+    public void when11ThenEleven() {
+        assertEquals("eleven", readNumber.read(11));
+    }
+    @Test
+    public void when12ThenTwelve() {
+        assertEquals("twelve", readNumber.read(12));
+    }
+    @Test
+    public void when13ThenThirteen() {
+        assertEquals("thirteen", readNumber.read(13));
+    }
+    @Test
+    public void when14ThenFourteen() {
+        assertEquals("fourteen", readNumber.read(14));
+    }
+    @Test
+    public void when15ThenFifteen() {
+        assertEquals("fifteen", readNumber.read(15));
+    }
+    @Test
+    public void when16ThenSixteen() {
+        assertEquals("sixteen", readNumber.read(16));
+    }
+    @Test
+    public void when17ThenSeventeen() {
+        assertEquals("seventeen", readNumber.read(17));
+    }
+    @Test
+    public void when18ThenEighteen() {
+        assertEquals("eighteen", readNumber.read(18));
+    }
+    @Test
+    public void when19ThenNineteen() {
+        assertEquals("nineteen", readNumber.read(19));
+    }
+    @Test
+    public void when20ThenTwenty() {
+        assertEquals("twenty", readNumber.read(20));
+    }
 
 
 
