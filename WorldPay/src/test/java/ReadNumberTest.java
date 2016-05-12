@@ -113,6 +113,14 @@ public class ReadNumberTest {
     public void when31ThenThirtyOne() {
         assertEquals("thirty one", readNumber.read(31));
     }
+    @Test
+    public void when40ThenForty() {
+        assertEquals("forty", readNumber.read(40));
+    }
+    @Test
+    public void when41ThenFortyOne() {
+        assertEquals("forty one", readNumber.read(41));
+    }
 
 
 

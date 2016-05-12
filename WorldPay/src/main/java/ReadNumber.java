@@ -16,6 +16,11 @@ public class ReadNumber {
 
         String result;
 
+        if (number >= 40) {
+            result = getString(number, 40, 2);
+            return result;
+        }
+
         if (number >= 30) {
             result = getString(number, 30, 1);
             return result;
