@@ -93,6 +93,11 @@ public class ReadNumberTest {
     public void when20ThenTwenty() {
         assertEquals("twenty", readNumber.read(20));
     }
+    @Test
+    public void when21ThenTwentyOne() {
+        assertEquals("twenty one", readNumber.read(21));
+    }
+
 
 
 

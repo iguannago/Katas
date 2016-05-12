@@ -6,10 +6,12 @@ import java.util.List;
  */
 public class ReadNumber {
     public String read(int number) {
-        System.out.println(number);
         List<String> cad = Arrays.asList("zero", "one", "two", "three", "four", "five", "six", "seven", "eight",
                 "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen",
                 "eighteen", "nineteen", "twenty");
+        if (number > 20) {
+            return "twenty " + cad.get(number % 20);
+        }
         return  cad.get(number);
     }
 }
