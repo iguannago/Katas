@@ -16,6 +16,18 @@ public final class Position {
         return new Position(x,y,direction);
     }
 
+    public char getDirection() {
+        return direction;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
     @Override
     public String toString() {
         return "Position{" +

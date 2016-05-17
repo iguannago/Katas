@@ -10,7 +10,6 @@ public class RoverTest {
 
     private final Position position = Position.create(0,0,'N');
 
-
     @Test
     public void roverMoveToTheRightTest() {
         Rover rover = Rover.create(position, "R");
@@ -25,6 +24,14 @@ public class RoverTest {
         assertEquals(Position.create(0,0,'L').toString(), rover.move().toString());
     }
     //TODO: parameterise the above tests to obly with the DRY.
+
+    @Test
+    public void roverNorthMovementTest() {
+        Rover rover = Rover.create(position, "M");
+        //TODO: improve the object assertion - how to compare objects.
+        assertEquals(Position.create(0,1,'N').toString(), rover.move().toString());
+    }
+
 
 
 
