@@ -1,4 +1,3 @@
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -25,6 +24,22 @@ public class RoverTest {
         //TODO: improve the object assertion - how to compare objects.
         System.out.println(rover.move());
         assertEquals(Position.create(0,0,'W').toString(), rover.move().toString());
+    }
+
+    @Test
+    public void roverTurnToSouthTest() {
+        Rover rover = Rover.create(position, "RR");
+        //TODO: improve the object assertion - how to compare objects.
+        System.out.println(rover.move());
+        assertEquals(Position.create(0,0,'S').toString(), rover.move().toString());
+    }
+
+    @Test
+    public void roverTurnToNorthTest() {
+        Rover rover = Rover.create(Position.create(0,0,'S'), "RR");
+        //TODO: improve the object assertion - how to compare objects.
+        System.out.println(rover.move());
+        assertEquals(Position.create(0,0,'N').toString(), rover.move().toString());
     }
     //TODO: parameterise the above tests to obly with the DRY.
 
@@ -60,15 +75,13 @@ public class RoverTest {
         assertEquals(Position.create(-1,0,'W').toString(), rover.move().toString());
     }
 
-    @Test@Ignore
+    @Test
     public void roverSouthMovementTest() {
         Rover rover = Rover.create(position, "RRM");
         //TODO: improve the object assertion - how to compare objects.
         System.out.println(rover.move());
-        assertEquals(Position.create(-1,0,'L').toString(), rover.move().toString());
+        assertEquals(Position.create(0,-1,'S').toString(), rover.move().toString());
     }
-
-
 
 
 }

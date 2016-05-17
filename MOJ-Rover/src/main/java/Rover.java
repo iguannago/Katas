@@ -21,28 +21,45 @@ public final class Rover {
     private Position recursiveMove(String instruction, Position position) {
         if (instruction.isEmpty())
             return position;
-        if (instruction.charAt(0) == 'M') {
-            if (position.getDirection() == 'N')
-                return recursiveMove(instruction.substring(1), Position.create(position.getX(),
-                        position.getY() + 1, 'N'));
-            if (position.getDirection() == 'E')
-                return recursiveMove(instruction.substring(1), Position.create(position.getX() + 1,
-                        position.getY(), 'E'));
-            if (position.getDirection() == 'W')
-                return recursiveMove(instruction.substring(1), Position.create(position.getX() - 1,
-                        position.getY(), 'W'));
+
+        if (position.getDirection() == 'N') {
+            if (instruction.charAt(0) == 'R')
+                return recursiveMove(instruction.substring(1), Position.create(position.getX(), position.getY(), 'E'));
+            if (instruction.charAt(0) == 'L')
+                return recursiveMove(instruction.substring(1), Position.create(position.getX(), position.getY(), 'W'));
+            if (instruction.charAt(0) == 'M')
+                return recursiveMove(instruction.substring(1), Position.create(position.getX(), position.getY() + 1, 'N'));
         }
 
-        if (instruction.charAt(0) == 'N')
-            return recursiveMove(instruction.substring(1), Position.create(position.getX(), position.getY(), 'N'));
+        if (position.getDirection() == 'E') {
+            if (instruction.charAt(0) == 'R')
+                return recursiveMove(instruction.substring(1), Position.create(position.getX(), position.getY(), 'S'));
+            if (instruction.charAt(0) == 'L')
+                return recursiveMove(instruction.substring(1), Position.create(position.getX(), position.getY(), 'N'));
+            if (instruction.charAt(0) == 'M')
+                return recursiveMove(instruction.substring(1), Position.create(position.getX() + 1, position.getY(), 'E'));
+        }
 
-        if (instruction.charAt(0) == 'R')
-            return recursiveMove(instruction.substring(1), Position.create(position.getX(), position.getY(), 'E'));
+        if (position.getDirection() == 'W') {
+            if (instruction.charAt(0) == 'R')
+                return recursiveMove(instruction.substring(1), Position.create(position.getX(), position.getY(), 'N'));
+            if (instruction.charAt(0) == 'L')
+                return recursiveMove(instruction.substring(1), Position.create(position.getX(), position.getY(), 'S'));
+            if (instruction.charAt(0) == 'M')
+                return recursiveMove(instruction.substring(1), Position.create(position.getX() - 1, position.getY(), 'W'));
+        }
 
-        if (instruction.charAt(0) == 'L')
-            return recursiveMove(instruction.substring(1), Position.create(position.getX(), position.getY(), 'W'));
+        if (position.getDirection() == 'S') {
+            if (instruction.charAt(0) == 'R')
+                return recursiveMove(instruction.substring(1), Position.create(position.getX(), position.getY(), 'W'));
+            if (instruction.charAt(0) == 'L')
+                return recursiveMove(instruction.substring(1), Position.create(position.getX(), position.getY(), 'E'));
+            if (instruction.charAt(0) == 'M')
+                return recursiveMove(instruction.substring(1), Position.create(position.getX(), position.getY() - 1, 'S'));
 
-        return null;
+        }
+
+        throw new RuntimeException("Something went wrong");
     }
 
     @Override
