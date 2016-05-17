@@ -12,6 +12,7 @@ public class RoverTest {
         Position position = Position.create(0,0,'N');
         Instruction instruction = Instruction.create("R");
         Rover rover = Rover.create(position, instruction);
-        assertEquals(Position.create(0,0,'R'), rover.move());
+        //TODO: improve the object assertion - how to compare objects.
+        assertEquals(Position.create(0,0,'R').toString(), rover.move().toString());
     }
 }

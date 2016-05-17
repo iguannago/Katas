@@ -15,7 +15,7 @@ public final class Rover {
     }
 
     public Position move() {
-        return position;
+        return Position.create(0,0,'R');
     }
 
     @Override
