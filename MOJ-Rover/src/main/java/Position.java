@@ -4,19 +4,19 @@
 public final class Position {
     private final int x;
     private final int y;
-    private final char direction;
+    private final String direction;
 
-    private Position(int x, int y, char direction) {
+    private Position(int x, int y, String direction) {
         this.x = x;
         this.y = y;
         this.direction = direction;
     }
 
-    public static Position create(int x, int y, char direction) {
+    public static Position create(int x, int y, String direction) {
         return new Position(x,y,direction);
     }
 
-    public char getDirection() {
+    public String getDirection() {
         return direction;
     }
 

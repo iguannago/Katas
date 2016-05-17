@@ -29,18 +29,20 @@ public class RoverTest {
      */
     private static final Object[] getInstructionAndExpectedDirection() {
         return new Object[][]{
-                {"turnToEastTest" ,"R", Position.create(0,0,'N'), Position.create(0,0,'E')},
-                {"turnToWestTest", "L", Position.create(0,0,'N'), Position.create(0,0,'W')},
-                {"turnToSouthTest" ,"RR", Position.create(0,0,'N'), Position.create(0,0,'S')},
-                {"turnToNorthTest" ,"RR", Position.create(0,0,'S'), Position.create(0,0,'N')},
-                {"roverNorthMovementTest" ,"M", Position.create(0,0,'N'), Position.create(0,1,'N')},
-                {"roverNorthMovementTwiceTest" ,"MM", Position.create(0,0,'N'), Position.create(0,2,'N')},
-                {"roverRightMovementTest" ,"RM", Position.create(0,0,'N'), Position.create(1,0,'E')},
-                {"roverLeftMovementTest" ,"LM", Position.create(0,0,'N'), Position.create(-1,0,'W')},
-                {"roverSouthMovementTest" ,"RRM", Position.create(0,0,'N'), Position.create(0,-1,'S')},
-                {"roverMovement1Test" ,"LMLMLMLMM", Position.create(1,2,'N'), Position.create(1,3,'N')},
-                {"roverMovement2Test" ,"MMRMMRMRRM", Position.create(3,3,'E'), Position.create(5,1,'E')}
+                {"turnToEastTest" ,"R", Position.create(0,0, "N"), Position.create(0,0, "E")},
+                {"turnToWestTest", "L", Position.create(0,0, "N"), Position.create(0,0, "W")},
+                {"turnToSouthTest" ,"RR", Position.create(0,0, "N"), Position.create(0,0, "S")},
+                {"turnToNorthTest" ,"RR", Position.create(0,0, "S"), Position.create(0,0, "N")},
+                {"roverNorthMovementTest" ,"M", Position.create(0,0, "N"), Position.create(0,1, "N")},
+                {"roverNorthMovementTwiceTest" ,"MM", Position.create(0,0, "N"), Position.create(0,2, "N")},
+                {"roverRightMovementTest" ,"RM", Position.create(0,0, "N"), Position.create(1,0, "E")},
+                {"roverLeftMovementTest" ,"LM", Position.create(0,0, "N"), Position.create(-1,0, "W")},
+                {"roverSouthMovementTest" ,"RRM", Position.create(0,0, "N"), Position.create(0,-1, "S")},
+                {"roverMovement1Test" ,"LMLMLMLMM", Position.create(1,2, "N"), Position.create(1,3, "N")},
+                {"roverMovement2Test" ,"MMRMMRMRRM", Position.create(3,3, "E"), Position.create(5,1, "E")}
         };
     }
+
+    //TODO; test corner cases such as limitation of the rectangle.
 
 }
