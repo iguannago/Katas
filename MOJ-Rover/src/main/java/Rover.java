@@ -25,15 +25,24 @@ public final class Rover {
             if (position.getDirection() == 'N')
                 return recursiveMove(instruction.substring(1), Position.create(position.getX(),
                         position.getY() + 1, 'N'));
-            if (position.getDirection() == 'R')
+            if (position.getDirection() == 'E')
                 return recursiveMove(instruction.substring(1), Position.create(position.getX() + 1,
-                        position.getY(), 'R'));
-            if (position.getDirection() == 'L')
+                        position.getY(), 'E'));
+            if (position.getDirection() == 'W')
                 return recursiveMove(instruction.substring(1), Position.create(position.getX() - 1,
-                        position.getY(), 'L'));
+                        position.getY(), 'W'));
         }
-        return recursiveMove(instruction.substring(1), Position.create(0, 0,
-                instruction.charAt(0)));
+
+        if (instruction.charAt(0) == 'N')
+            return recursiveMove(instruction.substring(1), Position.create(position.getX(), position.getY(), 'N'));
+
+        if (instruction.charAt(0) == 'R')
+            return recursiveMove(instruction.substring(1), Position.create(position.getX(), position.getY(), 'E'));
+
+        if (instruction.charAt(0) == 'L')
+            return recursiveMove(instruction.substring(1), Position.create(position.getX(), position.getY(), 'W'));
+
+        return null;
     }
 
     @Override
