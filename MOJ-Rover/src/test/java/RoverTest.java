@@ -83,5 +83,19 @@ public class RoverTest {
         assertEquals(Position.create(0,-1,'S').toString(), rover.move().toString());
     }
 
+    @Test
+    public void roverMovement1Test() {
+        Rover rover = Rover.create(Position.create(1,2,'N'), "LMLMLMLMM");
+        System.out.println(rover.move());
+        assertEquals(Position.create(1,3,'N').toString(), rover.move().toString());
+    }
+
+    @Test
+    public void roverMovement2Test() {
+        Rover rover = Rover.create(Position.create(3,3,'E'), "MMRMMRMRRM");
+        System.out.println(rover.move());
+        assertEquals(Position.create(5,1,'E').toString(), rover.move().toString());
+    }
+
 
 }
