@@ -6,8 +6,8 @@ import java.util.List;
  */
 public class ReadNumber {
 
-    private final List<String> cadUpTo19 = Arrays.asList("zero", "one", "two", "three", "four", "five", "six", "seven", "eight",
-            "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen",
+    private final List<String> cadUpTo19 = Arrays.asList("zero", "one", "two", "three", "four", "five", "six", "seven",
+            "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen",
             "eighteen", "nineteen");
     private final List<String> cadFrom20 = Arrays.asList("twenty", "thirty", "forty");
 
