@@ -11,4 +11,11 @@ public final class Instruction {
     public static Instruction create(String movement) {
         return new Instruction(movement);
     }
+
+    @Override
+    public String toString() {
+        return "Instruction{" +
+                "movement='" + movement + '\'' +
+                '}';
+    }
 }

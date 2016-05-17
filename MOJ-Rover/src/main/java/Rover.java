@@ -17,4 +17,12 @@ public final class Rover {
     public Position move() {
         return position;
     }
+
+    @Override
+    public String toString() {
+        return "Rover{" +
+                "position=" + position +
+                ", instruction=" + instruction +
+                '}';
+    }
 }

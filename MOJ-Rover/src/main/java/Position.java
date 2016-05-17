@@ -15,4 +15,13 @@ public final class Position {
     public static Position create(int x, int y, char direction) {
         return new Position(x,y,direction);
     }
+
+    @Override
+    public String toString() {
+        return "Position{" +
+                "x=" + x +
+                ", y=" + y +
+                ", direction=" + direction +
+                '}';
+    }
 }
