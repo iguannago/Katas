@@ -15,14 +15,19 @@ public final class Rover {
     }
 
     public Position move() {
-        for (int i = 0; i < instruction.length(); i++) {
-            if (instruction.charAt(i) == 'M') {
-                if (position.getDirection() == 'N')
-                   return Position.create(position.getX(), position.getY() + 1, 'N');
-            }
-            return Position.create(0,0, instruction.charAt(instruction.length()-1));
+        return recursiveMove(instruction, position);
+    }
+
+    private Position recursiveMove(String instruction, Position position) {
+        if (instruction.isEmpty())
+            return position;
+        if (instruction.charAt(0) == 'M') {
+            if (position.getDirection() == 'N')
+                return recursiveMove(instruction.substring(1), Position.create(position.getX(),
+                        position.getY() + 1, 'N'));
         }
-        throw new RuntimeException("Something went wrong");
+        return recursiveMove(instruction.substring(1), Position.create(0, 0,
+                instruction.charAt(0)));
     }
 
     @Override
