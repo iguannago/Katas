@@ -22,7 +22,7 @@ public final class Rover {
         if (instruction.isEmpty())
             return position;
 
-        if (position.getDirection() == "N") {
+        if (position.getDirection().equals("N")) {
             if (instruction.charAt(0) == 'R')
                 return recursiveMove(instruction.substring(1), Position.create(position.getX(), position.getY(), "E"));
             if (instruction.charAt(0) == 'L')
@@ -31,7 +31,7 @@ public final class Rover {
                 return recursiveMove(instruction.substring(1), Position.create(position.getX(), position.getY() + 1, "N"));
         }
 
-        if (position.getDirection() == "E") {
+        if (position.getDirection().equals("E")) {
             if (instruction.charAt(0) == 'R')
                 return recursiveMove(instruction.substring(1), Position.create(position.getX(), position.getY(), "S"));
             if (instruction.charAt(0) == 'L')
@@ -40,7 +40,7 @@ public final class Rover {
                 return recursiveMove(instruction.substring(1), Position.create(position.getX() + 1, position.getY(), "E"));
         }
 
-        if (position.getDirection() == "W") {
+        if (position.getDirection().equals("W")) {
             if (instruction.charAt(0) == 'R')
                 return recursiveMove(instruction.substring(1), Position.create(position.getX(), position.getY(), "N"));
             if (instruction.charAt(0) == 'L')
@@ -49,7 +49,7 @@ public final class Rover {
                 return recursiveMove(instruction.substring(1), Position.create(position.getX() - 1, position.getY(), "W"));
         }
 
-        if (position.getDirection() == "S") {
+        if (position.getDirection().equals("S")) {
             if (instruction.charAt(0) == 'R')
                 return recursiveMove(instruction.substring(1), Position.create(position.getX(), position.getY(), "W"));
             if (instruction.charAt(0) == 'L')

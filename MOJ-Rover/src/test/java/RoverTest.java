@@ -43,6 +43,4 @@ public class RoverTest {
         };
     }
 
-    //TODO; test corner cases such as limitation of the rectangle.
-
 }

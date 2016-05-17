@@ -14,6 +14,15 @@ public class MarsRoverApp {
         initializeRoversList(rovers, testInput);
 
         listRovers(rovers);
+
+        listRoverPositionAfterInstrunction(rovers);
+    }
+
+    private static void listRoverPositionAfterInstrunction(List<Rover> rovers) {
+        for (Rover rover: rovers) {
+            System.out.println(rover.move());
+            //TODO: we could manage if the Rover is out of the plateau limitation if there was such a requirement.
+        }
     }
 
     private static void listRovers(List<Rover> rovers) {
