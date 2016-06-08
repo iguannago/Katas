@@ -1,4 +1,4 @@
-package com.katas.programmingExercises;
+package com.programmingExercises;
 
 import org.junit.Test;
 

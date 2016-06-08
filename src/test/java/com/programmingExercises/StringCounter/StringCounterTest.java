@@ -1,6 +1,6 @@
-package com.katas.StringCounter;
+package com.programmingExercises.StringCounter;
 
-import com.katas.CounterString.CounterString;
+import com.programmingExercises.CounterString.CounterString;
 import org.junit.Test;
 
 import java.util.ArrayList;

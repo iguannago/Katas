@@ -1,4 +1,4 @@
-package com.katas.programmingExercises;
+package com.programmingExercises;
 
 /**
  * Created by davicres on 08/06/2016.

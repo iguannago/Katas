@@ -1,4 +1,4 @@
-package com.katas.CounterString;
+package com.programmingExercises.CounterString;
 
 import java.util.ArrayList;
 import java.util.HashSet;

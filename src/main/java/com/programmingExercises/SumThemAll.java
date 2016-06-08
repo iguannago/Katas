@@ -1,4 +1,4 @@
-package com.katas.programmingExercises;
+package com.programmingExercises;
 
 import java.util.ArrayList;
 import java.util.List;
