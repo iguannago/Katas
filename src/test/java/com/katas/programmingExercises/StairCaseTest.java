@@ -1,4 +1,4 @@
-package com.katas.staircase;
+package com.katas.programmingExercises;
 
 import org.junit.Test;
 

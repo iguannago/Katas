@@ -1,4 +1,4 @@
-package com.katas.staircase;
+package com.katas.programmingExercises;
 
 import java.util.ArrayList;
 import java.util.List;
