@@ -65,6 +65,19 @@ public class BankAccountTest7 {
         };
     }
 
+    //corner case
+    @Test(expected = IllegalArgumentException.class)
+    @Parameters(method = "getAmountZeroOrLessThanZero")
+    public void getInterestThrowAnErrorIfAmountIsZeroorLessThanZeroTest(int amountZeroOrLessThanZero) {
+        bankAccount.getInterest(amountZeroOrLessThanZero);
+    }
+
+    private static final Object[] getAmountZeroOrLessThanZero() {
+        return new Integer[][]{
+                {0}, {-3345}, {-4000}
+        };
+    }
+
 
 
 }
