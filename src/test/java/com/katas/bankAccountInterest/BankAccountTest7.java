@@ -41,5 +41,18 @@ public class BankAccountTest7 {
         };
     }
 
+    @Test
+    @Parameters(method = "getAmountBetween2001And3000")
+    public void getInterestReturns1_22WhenAmountIsBetween2001And3000Test(int amountBetween2001And3000) {
+        assertEquals(new BigDecimal("1.22"), bankAccount.getInterest(amountBetween2001And3000));
+    }
+
+    private static final Object[] getAmountBetween2001And3000() {
+        return new Integer[][]{
+                {2001}, {2345}, {3000}
+        };
+    }
+
+
 
 }
