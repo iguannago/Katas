@@ -53,6 +53,18 @@ public class BankAccountTest7 {
         };
     }
 
+    @Test
+    @Parameters(method = "getAmountGreaterThan3000")
+    public void getInterestReturns1_3WhenAmountIsGreaterThan3000Test(int amountGreaterThan3000) {
+        assertEquals(new BigDecimal("1.3"), bankAccount.getInterest(amountGreaterThan3000));
+    }
+
+    private static final Object[] getAmountGreaterThan3000() {
+        return new Integer[][]{
+                {3001}, {3345}, {4000}
+        };
+    }
+
 
 
 }

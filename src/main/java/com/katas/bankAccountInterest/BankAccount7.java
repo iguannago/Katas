@@ -7,6 +7,8 @@ import java.math.BigDecimal;
  */
 public class BankAccount7 {
     public BigDecimal getInterest(int amount) {
+        if (amount > 3000)
+            return new BigDecimal("1.3");
         if (amount > 2000)
             return new BigDecimal("1.22");
         if (amount > 1000)
