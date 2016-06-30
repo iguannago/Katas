@@ -27,6 +27,11 @@ public class FizzBuzzTest18 {
         };
     }
 
+    @Test
+    public void when3PrintsFizzTest() {
+        assertEquals("Fizz", fizzBuzz18.print(3));
+    }
+
 
 
 }
