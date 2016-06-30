@@ -42,6 +42,11 @@ public class FizzBuzzTest18 {
         assertEquals("Fizz", fizzBuzz18.print(6));
     }
 
+    @Test
+    public void when10PrintsBuzzTest() {
+        assertEquals("Buzz", fizzBuzz18.print(10));
+    }
+
 
 
 

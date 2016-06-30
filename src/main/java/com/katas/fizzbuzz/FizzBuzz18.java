@@ -7,7 +7,7 @@ public final class FizzBuzz18 {
     public String print(int i) {
         if (i % 3 == 0)
             return "Fizz";
-        if (i == 5)
+        if (i % 5 == 0)
             return "Buzz";
         return String.valueOf(i);
     }
