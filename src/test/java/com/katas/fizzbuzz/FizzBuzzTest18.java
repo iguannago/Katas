@@ -15,4 +15,11 @@ public class FizzBuzzTest18 {
         assertEquals("1", result);
     }
 
+    @Test
+    public void when2Prints2Test() {
+        FizzBuzz18 fizzBuzz18 = new FizzBuzz18();
+        String result = fizzBuzz18.print(2);
+        assertEquals("2", result);
+    }
+
 }
