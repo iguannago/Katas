@@ -39,6 +39,12 @@ public class FizzBuzzTest18 {
         );
     }
 
+    //corner cases
+    @Test(expected = IllegalArgumentException.class)
+    public void whenLessThan1ThenExcepction() {
+        fizzBuzz18.print(-1);
+    }
+
 
 
 }
