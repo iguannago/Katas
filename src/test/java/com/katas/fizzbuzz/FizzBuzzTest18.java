@@ -23,7 +23,7 @@ public class FizzBuzzTest18 {
 
     private static final Object[] getValues() {
         return new Integer[][]{
-                {1}, {2}
+                {1}, {2}, {4}
         };
     }
 
@@ -31,6 +31,13 @@ public class FizzBuzzTest18 {
     public void when3PrintsFizzTest() {
         assertEquals("Fizz", fizzBuzz18.print(3));
     }
+
+    @Test
+    public void when5PrintsBuzzTest() {
+        assertEquals("Buzz", fizzBuzz18.print(5));
+    }
+
+
 
 
 
