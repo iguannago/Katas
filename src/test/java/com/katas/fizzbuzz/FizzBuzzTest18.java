@@ -41,9 +41,16 @@ public class FizzBuzzTest18 {
 
     //corner cases
     @Test(expected = IllegalArgumentException.class)
-    public void whenLessThan1ThenExcepction() {
+    public void whenLessThan1ThenException() {
         fizzBuzz18.print(-1);
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void whenGreaterThan100ThenException() {
+        fizzBuzz18.print(101);
+    }
+
+
 
 
 

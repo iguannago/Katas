@@ -5,7 +5,7 @@ package com.katas.fizzbuzz;
  */
 public final class FizzBuzz18 {
     public String print(int i) {
-        if (i < 0) throw new IllegalArgumentException("argument cannot be negative");
+        if (i < 0 || i > 100) throw new IllegalArgumentException("argument cannot be negative");
         if (isMultipleOf3(i) && isMultipleOf5(i))
             return "FizzBuzz";
         if (isMultipleOf3(i))
