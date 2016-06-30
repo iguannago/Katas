@@ -5,6 +5,8 @@ package com.katas.fizzbuzz;
  */
 public final class FizzBuzz18 {
     public String print(int i) {
+        if (i == 3)
+            return "Fizz";
         return String.valueOf(i);
     }
 }
