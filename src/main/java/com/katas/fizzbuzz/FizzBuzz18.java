@@ -5,10 +5,18 @@ package com.katas.fizzbuzz;
  */
 public final class FizzBuzz18 {
     public String print(int i) {
-        if (i % 3 == 0)
+        if (isMultipleOf3(i))
             return "Fizz";
-        if (i % 5 == 0)
+        if (isMultipleOf5(i))
             return "Buzz";
         return String.valueOf(i);
+    }
+
+    private boolean isMultipleOf5(int i) {
+        return i % 5 == 0;
+    }
+
+    private boolean isMultipleOf3(int i) {
+        return i % 3 == 0;
     }
 }

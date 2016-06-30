@@ -2,6 +2,7 @@ package com.katas.fizzbuzz;
 
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -23,7 +24,7 @@ public class FizzBuzzTest18 {
 
     private static final Object[] getValues() {
         return new Integer[][]{
-                {1}, {2}, {4}, {7}, {8}
+                {1}, {2}, {4}, {7}, {8}, {11}, {13}, {14}
         };
     }
 
@@ -47,10 +48,10 @@ public class FizzBuzzTest18 {
         assertEquals("Buzz", fizzBuzz18.print(10));
     }
 
-
-
-
-
+    @Test@Ignore
+    public void when15PrintsFizzBuzzTest() {
+        assertEquals("FizzBuzz", fizzBuzz18.print(15));
+    }
 
 
 }
