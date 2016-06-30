@@ -5,6 +5,7 @@ import junitparams.Parameters;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import static junitparams.JUnitParamsRunner.$;
 import static org.junit.Assert.assertEquals;
 
 /**
@@ -17,40 +18,27 @@ public class FizzBuzzTest18 {
 
     @Test
     @Parameters(method = "getValues")
-    public void when1Prints1Test(int values) {
-        assertEquals(String.valueOf(values), fizzBuzz18.print(values));
+    public void when1Prints1Test(int values, String expectedResult) {
+        assertEquals(expectedResult, fizzBuzz18.print(values));
     }
 
-    private static final Object[] getValues() {
-        return new Integer[][]{
-                {1}, {2}, {4}, {7}, {8}, {11}, {13}, {14}
-        };
+    private Object[] getValues() {
+        return $(
+                $(1, "1"),
+                $(2, "2"),
+                $(3, "Fizz"),
+                $(4, "4"),
+                $(5, "Buzz"),
+                $(6, "Fizz"),
+                $(7, "7"),
+                $(8, "8"),
+                $(9, "Fizz"),
+                $(10, "Buzz"),
+                $(11, "11"),
+                $(15, "FizzBuzz")
+        );
     }
 
-    @Test
-    public void when3PrintsFizzTest() {
-        assertEquals("Fizz", fizzBuzz18.print(3));
-    }
-
-    @Test
-    public void when5PrintsBuzzTest() {
-        assertEquals("Buzz", fizzBuzz18.print(5));
-    }
-
-    @Test
-    public void when6PrintsFizzTest() {
-        assertEquals("Fizz", fizzBuzz18.print(6));
-    }
-
-    @Test
-    public void when10PrintsBuzzTest() {
-        assertEquals("Buzz", fizzBuzz18.print(10));
-    }
-
-    @Test
-    public void when15PrintsFizzBuzzTest() {
-        assertEquals("FizzBuzz", fizzBuzz18.print(15));
-    }
 
 
 }
