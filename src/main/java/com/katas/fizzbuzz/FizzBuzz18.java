@@ -5,6 +5,8 @@ package com.katas.fizzbuzz;
  */
 public final class FizzBuzz18 {
     public String print(int i) {
+        if (isMultipleOf3(i) && isMultipleOf5(i))
+            return "FizzBuzz";
         if (isMultipleOf3(i))
             return "Fizz";
         if (isMultipleOf5(i))

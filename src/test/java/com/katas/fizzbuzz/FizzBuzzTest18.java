@@ -2,7 +2,6 @@ package com.katas.fizzbuzz;
 
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -48,7 +47,7 @@ public class FizzBuzzTest18 {
         assertEquals("Buzz", fizzBuzz18.print(10));
     }
 
-    @Test@Ignore
+    @Test
     public void when15PrintsFizzBuzzTest() {
         assertEquals("FizzBuzz", fizzBuzz18.print(15));
     }
