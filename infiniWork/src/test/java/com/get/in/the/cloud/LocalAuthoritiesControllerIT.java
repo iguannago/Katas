@@ -24,7 +24,7 @@ import static org.junit.Assert.assertThat;
 @SpringApplicationConfiguration(classes = Application.class)
 @WebAppConfiguration
 @IntegrationTest({"server-port=0"})
-public class HelloControllerIT {
+public class LocalAuthoritiesControllerIT {
     @Value("${local.server.port}")
     private int port;
     private URL base;
@@ -32,12 +32,12 @@ public class HelloControllerIT {
 
     @Before
     public void setUp() throws Exception {
-        base = new URL("http://localhost:" + port + "/");
+        base = new URL("http://localhost:" + port + "/getLocalAuthorities");
     }
 
     @Test
-    public void getHelloTest() {
+    public void getLocalAuthoritiesTest() {
         ResponseEntity<String> response = restTemplate.getForEntity(base.toString(), String.class);
-        assertThat(response.getBody(), equalTo("Greetings from Spring Boot!"));
+        assertThat(response.getBody(), equalTo("Authorities List"));
     }
 }

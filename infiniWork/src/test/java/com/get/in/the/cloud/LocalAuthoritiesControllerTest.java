@@ -21,12 +21,12 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = MockServletContext.class)
 @WebAppConfiguration
-public class HelloControllerTest {
-    private MockMvc mockMvc = MockMvcBuilders.standaloneSetup(new HelloController()).build();
+public class LocalAuthoritiesControllerTest {
+    private MockMvc mockMvc = MockMvcBuilders.standaloneSetup(new LocalAuthoritiesController()).build();
 
     @Test
-    public void getHelloTest() throws Exception {
-        mockMvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON)).andExpect(status().isOk())
-                .andExpect(content().string(equalTo("Greetings from Spring Boot!")));
+    public void getLocalAuthoritiesTest() throws Exception {
+        mockMvc.perform(MockMvcRequestBuilders.get("/getLocalAuthorities").accept(MediaType.APPLICATION_JSON)).
+                andExpect(status().isOk()).andExpect(content().string(equalTo("Authorities List")));
     }
 }
