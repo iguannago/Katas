@@ -10,17 +10,44 @@
     <option value="" selected disabled>Please select</option>
   </select>
   <h3 ng-model="status">{{ status }}</h3>
+  <h3 ng-model="ratings">{{ ratings }}</h3>
   <table>
     <tr ng-repeat="x in establishments">
       <td>{{ x.RatingValue }}</td>
       <td>{{ x.BusinessName }}</td>
     </tr>
   </table>
+
 </div>
 
 <script>
 var app = angular.module('myApp', []);
-app.controller('myCtrl', function($scope, $http) {
+
+app.service('ratingService',function($http) {
+
+this.get = function() {
+  var result =   
+    $http({
+      method : "GET",
+      url : "http://api.ratings.food.gov.uk/ratings", 
+      headers: {
+      "accept": "application/json",
+      "x-api-version": 2
+      }
+    }).then(function mySucces(response) {
+      return response.data.ratings;
+    }, function myError(response) {
+      return response.statusText;
+  });
+    return result;
+
+}
+
+});
+
+
+app.controller('myCtrl', function($scope, $http, ratingService) {
+//Get Local Authoritites and load the dropdown menu
   $http({
     method : "GET",
     url : "http://api.ratings.food.gov.uk/Authorities/basic", 
@@ -32,6 +59,11 @@ app.controller('myCtrl', function($scope, $http) {
       $scope.localAuthorities = response.data.authorities;
     }, function myError(response) {
       $scope.localAuthorities = response.statusText;
+  });
+
+  
+  ratingService.get().then(function(data) {
+    $scope.ratings = data;
   });
 
   $scope.getRatings = function() {
