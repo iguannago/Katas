@@ -5,15 +5,12 @@
 
 <div ng-app="myApp" ng-controller="myCtrl">
 
-<p>Food Hygiene Ratings </p>
+<h1>Food Hygiene Ratings</h1>
 
-<!-- <h1>{{localAuthorities}}</h1> -->
-
-<ul>
-  <li ng-repeat="authority in localAuthorities">
-    {{ authority.Name + ', ' + authority.LocalAuthorityId }}
-  </li>
-</ul>
+<p>Local Authorities</p>
+<select>
+  <option ng-repeat="authority in localAuthorities" value="{{authority.LocalAuthorityId}}">{{ authority.Name + ', ' + authority.LocalAuthorityId }}</option>
+</select>
 
 </div>
 
