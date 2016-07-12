@@ -6,7 +6,9 @@
 <div ng-app="myApp" ng-controller="myCtrl">
   <h1>Food Hygiene Ratings</h1> 
   <p>Local Authorities</p>
-  <select ng-model="selectedLocalAuthorities" ng-options="x.Name for x in localAuthorities"></select>
+  <select ng-model="selectedLocalAuthorities" ng-options="x.Name for x in localAuthorities">
+    <option value="" selected disabled>Please select</option>
+  </select>
   <h3>{{selectedLocalAuthorities}}</h3>
 </div>
 
@@ -25,6 +27,7 @@ app.controller('myCtrl', function($scope, $http) {
     }, function myError(response) {
       $scope.localAuthorities = response.statusText;
   });
+
 });
 </script>
 
