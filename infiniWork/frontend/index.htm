@@ -7,11 +7,15 @@
 
 <p>Food Hygiene Ratings </p>
 
-<h1>{{localAuthorities}}</h1>
+<!-- <h1>{{localAuthorities}}</h1> -->
+
+<ul>
+  <li ng-repeat="authority in localAuthorities">
+    {{ authority.Name + ', ' + authority.LocalAuthorityId }}
+  </li>
+</ul>
 
 </div>
-
-<p>The $http service requests a page on the server, and the response is set as the value of the "myWelcome" variable.</p>
 
 <script>
 var app = angular.module('myApp', []);
@@ -24,9 +28,9 @@ app.controller('myCtrl', function($scope, $http) {
       "x-api-version": 2
     }
   }).then(function mySucces(response) {
-      $scope.localAuthorities = response.data;
+      $scope.localAuthorities = response.data.authorities;
     }, function myError(response) {
-      $scope.localAuthorities = response.config;
+      $scope.localAuthorities = response.statusText;
   });
 });
 </script>
