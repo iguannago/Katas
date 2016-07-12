@@ -45,26 +45,24 @@ app.controller('myCtrl', function($scope, $http) {
       "x-api-version": 2
     }
   }).then(function mySucces(response) {
-      $scope.status = "" 
+      $scope.status = ""; 
       $scope.establishments = response.data.establishments;
+      var data = [];
+      angular.forEach(response.data.establishments, function(value, key) {
+        // if (value.RatingValue in data)
+        // var item = {
+        //   "ratingValue" : value.RatingValue,
+        //   "count": 1 
 
+        // };
+        // data.push(item);
+        // console.log(data);
+      });
     }, function myError(response) {
       $scope.establishments = response.statusText;
   });
    
-}
-
-  
-
-  
-
-  // var values = {name: 'misko', gender: 'male'};
-  // var log = [];
-  // angular.forEach(values, function(value, key) {
-  //   this.push(key + ': ' + value);
-  // }, log);
-
-});
+}});
 </script>
 
 </body>
