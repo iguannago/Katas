@@ -6,10 +6,16 @@
 <div ng-app="myApp" ng-controller="myCtrl">
   <h1>Food Hygiene Ratings</h1> 
   <p>Local Authorities</p>
-  <select ng-model="selectedLocalAuthorities" ng-options="x.Name for x in localAuthorities">
+  <select ng-model="selectedLocalAuthority" ng-options="x.Name for x in localAuthorities" ng-change="getRatings()">
     <option value="" selected disabled>Please select</option>
   </select>
-  <h3>{{selectedLocalAuthorities}}</h3>
+  <h3 ng-model="status">{{ status }}</h3>
+  <table>
+    <tr ng-repeat="x in establishments">
+      <td>{{ x.RatingValue }}</td>
+      <td>{{ x.BusinessName }}</td>
+    </tr>
+  </table>
 </div>
 
 <script>
@@ -27,6 +33,36 @@ app.controller('myCtrl', function($scope, $http) {
     }, function myError(response) {
       $scope.localAuthorities = response.statusText;
   });
+
+  $scope.getRatings = function() {
+   $scope.status = "In progress...";
+   $scope.establishments = "";
+   $http({
+    method : "GET",
+    url : "http://api.ratings.food.gov.uk/Establishments?localAuthorityId=" + $scope.selectedLocalAuthority.LocalAuthorityId, 
+    headers: {
+      "accept": "application/json",
+      "x-api-version": 2
+    }
+  }).then(function mySucces(response) {
+      $scope.status = "" 
+      $scope.establishments = response.data.establishments;
+
+    }, function myError(response) {
+      $scope.establishments = response.statusText;
+  });
+   
+}
+
+  
+
+  
+
+  // var values = {name: 'misko', gender: 'male'};
+  // var log = [];
+  // angular.forEach(values, function(value, key) {
+  //   this.push(key + ': ' + value);
+  // }, log);
 
 });
 </script>
