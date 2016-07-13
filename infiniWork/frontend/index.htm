@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<head>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+      text-align: left;
+    }
+    .center {
+      margin: auto;
+      width: 60%;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
 <body>
 
-<div ng-app="myApp" ng-controller="myCtrl">
+<div class="center" ng-app="myApp" ng-controller="myCtrl">
   <h1>Food Hygiene Ratings</h1> 
   <p>Local Authorities</p>
   <select ng-model="selectedLocalAuthority" ng-options="x.Name for x in localAuthorities" ng-change="getRatingPercentages()">
     <option value="" selected disabled>Please select</option>
   </select>
   <h3 ng-model="status">{{ status }}</h3>
-  <table>
+  <table class="center">
+    <tr>
+      <th>Rating</th>
+      <th>Percentage</th>
+    </tr>
     <tr ng-repeat="x in establishments">
       <td>{{ x.name }}</td>
       <td>{{ (x.count * 100 /  totalCount).toFixed(0) }}%</td>
