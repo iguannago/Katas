@@ -2,6 +2,8 @@
 <html>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <head>
+  <meta charset="UTF-8">
+  <title>Food Hygiene Ratings</title>
   <style>
     table, th, td {
       border: 1px solid black;
@@ -25,9 +27,11 @@
   <select ng-model="selectedLocalAuthority" ng-options="x.Name for x in localAuthorities" ng-change="getRatingPercentages()">
     <option value="" selected disabled>Please select</option>
   </select>
-  <h3 ng-model="status">{{ status }}</h3>
+  <p>
+    <img id="mySpinner" src="images/loader.gif" ng-show="loading" />
+  </p>
   <table class="center">
-    <tr>
+    <tr ng-show="table_header">
       <th>Rating</th>
       <th>Percentage</th>
     </tr>
@@ -40,31 +44,12 @@
 
 <script>
 var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $http) {
 
-app.service('ratingService',function($http) {
+//Initialise spinner
+$scope.loading = false;
+$scope.table_header = false;
 
-this.get = function() {
-  var result =   
-    $http({
-      method : "GET",
-      url : "http://api.ratings.food.gov.uk/ratings", 
-      headers: {
-      "accept": "application/json",
-      "x-api-version": 2
-      }
-    }).then(function mySucces(response) {
-      return response.data.ratings;
-    }, function myError(response) {
-      return response.statusText;
-  });
-    return result;
-
-}
-
-});
-
-
-app.controller('myCtrl', function($scope, $http, ratingService) {
 //Get Local Authoritites and load the dropdown menu
   $http({
     method : "GET",
@@ -79,14 +64,10 @@ app.controller('myCtrl', function($scope, $http, ratingService) {
       $scope.localAuthorities = response.statusText;
   });
 
-  //load ratings 
-  ratingService.get().then(function(data) {
-    $scope.ratings = data;
-  });
-
   //getRatingPercentages implementation 
   $scope.getRatingPercentages = function() {
-   $scope.status = "In progress...";
+   $scope.loading = true;
+   $scope.table_header = false;
    $scope.establishments = "";
    $http({
     method : "GET",
@@ -96,7 +77,6 @@ app.controller('myCtrl', function($scope, $http, ratingService) {
       "x-api-version": 2
     }
   }).then(function mySucces(response) {
-      $scope.status = ""; 
       var items = {
         pass: {
           name: "Pass",
@@ -170,8 +150,12 @@ app.controller('myCtrl', function($scope, $http, ratingService) {
       });
       $scope.totalCount = response.data.meta.totalCount;
       $scope.establishments = items;
+      $scope.loading = false;
+      $scope.table_header = true;
     }, function myError(response) {
       $scope.establishments = response.statusText;
+      $scope.loading = false;
+      $scope.table_header = true;
   });
    
 }});
@@ -179,4 +163,3 @@ app.controller('myCtrl', function($scope, $http, ratingService) {
 
 </body>
 </html>
-
