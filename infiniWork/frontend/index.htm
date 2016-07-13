@@ -6,18 +6,16 @@
 <div ng-app="myApp" ng-controller="myCtrl">
   <h1>Food Hygiene Ratings</h1> 
   <p>Local Authorities</p>
-  <select ng-model="selectedLocalAuthority" ng-options="x.Name for x in localAuthorities" ng-change="getRatings()">
+  <select ng-model="selectedLocalAuthority" ng-options="x.Name for x in localAuthorities" ng-change="getRatingPercentages()">
     <option value="" selected disabled>Please select</option>
   </select>
   <h3 ng-model="status">{{ status }}</h3>
-  <h3 ng-model="ratings">{{ ratings }}</h3>
   <table>
     <tr ng-repeat="x in establishments">
-      <td>{{ x.RatingValue }}</td>
-      <td>{{ x.BusinessName }}</td>
+      <td>{{ x.name }}</td>
+      <td>{{ (x.count * 100 /  totalCount).toFixed(0) }}%</td>
     </tr>
   </table>
-
 </div>
 
 <script>
@@ -61,12 +59,13 @@ app.controller('myCtrl', function($scope, $http, ratingService) {
       $scope.localAuthorities = response.statusText;
   });
 
-  
+  //load ratings 
   ratingService.get().then(function(data) {
     $scope.ratings = data;
   });
 
-  $scope.getRatings = function() {
+  //getRatingPercentages implementation 
+  $scope.getRatingPercentages = function() {
    $scope.status = "In progress...";
    $scope.establishments = "";
    $http({
@@ -78,18 +77,79 @@ app.controller('myCtrl', function($scope, $http, ratingService) {
     }
   }).then(function mySucces(response) {
       $scope.status = ""; 
-      $scope.establishments = response.data.establishments;
-      var data = [];
+      var items = {
+        pass: {
+          name: "Pass",
+          count: 0
+        },
+        improvement_required: {
+          name: "Improvement Required", 
+          count: 0
+        },
+        awaiting_publication: {
+          name: "Awaiting Publication", 
+          count: 0
+        },
+        awaiting_inspection: {
+          name: "Awaiting Inspection",
+          count: 0
+        }, 
+        exempt: {
+          name: "Exempt", 
+          count: 0
+        },
+        five: {
+          name: "5", 
+          count: 0
+        },
+        four: {
+          name: "4", 
+          count: 0
+        }, 
+        three: {
+          name: "3", 
+          count: 0
+        }, 
+        two: {
+          name: "2", 
+          count: 0
+        }, 
+        one: {
+          name: "1", 
+          count: 0
+        }, 
+        zero: {
+          name: "0", 
+          count: 0
+        }
+      };
       angular.forEach(response.data.establishments, function(value, key) {
-        // if (value.RatingValue in data)
-        // var item = {
-        //   "ratingValue" : value.RatingValue,
-        //   "count": 1 
-
-        // };
-        // data.push(item);
-        // console.log(data);
+        //take into account "Pass an Eat" rating name as well. 
+        if (value.RatingValue.startsWith(items.pass.name))
+          items.pass.count = items.pass.count + 1;  
+        if (value.RatingValue == items.improvement_required.name)
+          items.improvement_required.count = items.improvement_required.count + 1;  
+        if (value.RatingValue == items.awaiting_publication.name)
+          items.awaiting_publication.count = items.awaiting_publication.count + 1;  
+        if (value.RatingValue == items.awaiting_inspection.name)
+          items.awaiting_inspection.count = items.awaiting_inspection.count + 1;
+        if (value.RatingValue == items.exempt.name)
+          items.exempt.count = items.exempt.count + 1;  
+        if (value.RatingValue == items.five.name)
+          items.five.count = items.five.count + 1;  
+        if (value.RatingValue == items.four.name)
+          items.four.count = items.four.count + 1;
+        if (value.RatingValue == items.three.name)
+          items.three.count = items.three.count + 1; 
+        if (value.RatingValue == items.two.name)
+          items.two.count = items.two.count + 1;
+        if (value.RatingValue == items.one.name)
+          items.one.count = items.one.count + 1;
+        if (value.RatingValue == items.zero.name)
+          items.zero.count = items.zero.count + 1;
       });
+      $scope.totalCount = response.data.meta.totalCount;
+      $scope.establishments = items;
     }, function myError(response) {
       $scope.establishments = response.statusText;
   });
