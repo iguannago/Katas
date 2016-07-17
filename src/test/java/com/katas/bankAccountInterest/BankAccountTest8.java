@@ -42,6 +42,11 @@ public class BankAccountTest8 {
         );
     }
 
+    @Test
+    public void get1_22InterestTest() {
+        assertEquals(new BigDecimal("1.22"), bankAccount8.getInterest(2001));
+    }
+
 
 
     
