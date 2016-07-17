@@ -43,8 +43,15 @@ public class BankAccountTest8 {
     }
 
     @Test
-    public void get1_22InterestTest() {
-        assertEquals(new BigDecimal("1.22"), bankAccount8.getInterest(2001));
+    @Parameters(method = "getAmountOfMoneyBetween2001And3000Inclusive")
+    public void get1_22InterestTest(int money) {
+        assertEquals(new BigDecimal("1.22"), bankAccount8.getInterest(money));
+    }
+
+    private Object[] getAmountOfMoneyBetween2001And3000Inclusive() {
+        return $(
+                $(2001), $(2500), $(3000)
+        );
     }
 
 
