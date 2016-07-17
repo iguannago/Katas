@@ -18,7 +18,7 @@ public class FizzBuzzTest18 {
 
     @Test
     @Parameters(method = "getValues")
-    public void when1Prints1Test(int values, String expectedResult) {
+    public void printMethodTest(int values, String expectedResult) {
         assertEquals(expectedResult, fizzBuzz18.print(values));
     }
 
