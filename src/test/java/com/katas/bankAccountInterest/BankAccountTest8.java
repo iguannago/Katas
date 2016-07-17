@@ -20,7 +20,7 @@ public class BankAccountTest8 {
 
     @Test
     @Parameters(method = "getAmountOfMoneyBetween1And1000Inclusive")
-    public void given1Return1_1(int money) {
+    public void get1_1InterestTest(int money) {
         assertEquals(new BigDecimal("1.1"), bankAccount8.getInterest(money));
     }
 
@@ -31,10 +31,19 @@ public class BankAccountTest8 {
     }
 
     @Test
-    public void given1001Return1_15() {
-        assertEquals(new BigDecimal("1.15"), bankAccount8.getInterest(1001));
+    @Parameters(method = "getAmountOfMoneyBetween1001And2000Inclusive")
+    public void get1_15InterestTest(int money) {
+        assertEquals(new BigDecimal("1.15"), bankAccount8.getInterest(money));
     }
-    
+
+    private Object[] getAmountOfMoneyBetween1001And2000Inclusive() {
+        return $(
+                $(1001), $(1501), $(2000)
+        );
+    }
+
+
+
     
 
 
