@@ -59,10 +59,4 @@ public class BankAccountTest8 {
         assertEquals(new BigDecimal("1.3"), bankAccount8.getInterest(3001));
     }
 
-
-
-    
-
-
-
 }
