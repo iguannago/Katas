@@ -59,4 +59,17 @@ public class BankAccountTest8 {
         assertEquals(new BigDecimal("1.3"), bankAccount8.getInterest(3001));
     }
 
+    //testing corner cases.
+    @Test(expected = RuntimeException.class)
+    @Parameters(method = "getAmountZeroOrLess")
+    public void throwExceptionIfAmountIsZeroOrLessTest(int money) {
+        bankAccount8.getInterest(money);
+    }
+
+    private Object[] getAmountZeroOrLess() {
+        return $(
+                $(0), $(-34)
+        );
+    }
+
 }
