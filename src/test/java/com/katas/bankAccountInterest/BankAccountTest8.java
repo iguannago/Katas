@@ -21,7 +21,7 @@ public class BankAccountTest8 {
     @Test
     @Parameters(method = "getAmountOfMoney")
     public void given1Return1_1(int money) {
-        assertEquals(bankAccount8.getInterest(money), new BigDecimal("1.1"));
+        assertEquals(new BigDecimal("1.1"), bankAccount8.getInterest(money));
     }
 
     private Object[] getAmountOfMoney() {
@@ -29,5 +29,12 @@ public class BankAccountTest8 {
                 $(1), $(500), $(1000)
         );
     }
+
+    @Test
+    public void given1001Return1_15() {
+        assertEquals(new BigDecimal("1.15"), bankAccount8.getInterest(1001));
+    }
+
+
 
 }
