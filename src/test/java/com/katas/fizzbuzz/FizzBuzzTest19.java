@@ -18,8 +18,14 @@ public class FizzBuzzTest19 {
     @Test
     @Parameters({"1, 1", "2, 2", "Fizz, 3", "Buzz, 5", "Fizz, 6", "7, 7", "Fizz, 9", "Buzz, 10", "Fizz, 12",
             "FizzBuzz, 15", "FizzBuzz, 30"})
-    public void print1When1Test(String expected, int number) {
+    public void printTest(String expected, int number) {
         assertEquals(expected, fizzBuzz19.print(number));
+    }
+
+    @Test(expected = RuntimeException.class)
+    @Parameters({"0", "-1", "-20"})
+    public void printCornerCaseTest(int number) {
+        fizzBuzz19.print(number);
     }
 
 }
