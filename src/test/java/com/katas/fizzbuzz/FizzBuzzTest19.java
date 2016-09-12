@@ -23,14 +23,8 @@ public class FizzBuzzTest19 {
     }
 
     @Test(expected = RuntimeException.class)
-    @Parameters({"0", "-1", "-20"})
-    public void printCornerCaseLowerThan1Test(int number) {
-        fizzBuzz19.print(number);
-    }
-
-    @Test(expected = RuntimeException.class)
-    @Parameters({"101", "1000", "230"})
-    public void printCornerCaseGreaterThan100Test(int number) {
+    @Parameters({"0", "-1", "-20", "101", "1000", "230"})
+    public void printCornerCaseLowerThan1AndGreaterThan100Test(int number) {
         fizzBuzz19.print(number);
     }
 
