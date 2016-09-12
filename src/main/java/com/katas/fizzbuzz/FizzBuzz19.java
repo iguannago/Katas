@@ -5,8 +5,8 @@ package com.katas.fizzbuzz;
  */
 public class FizzBuzz19 {
     public String print(int number) {
-        if (number <= 0) {
-            throw new RuntimeException("Number is equal or less than Zero");
+        if (number < 1 || number > 100) {
+            throw new RuntimeException("Number is not valid");
         }
         if (isMultipleOf3(number)&&isMultipleOf5(number)) {
             return "FizzBuzz";
