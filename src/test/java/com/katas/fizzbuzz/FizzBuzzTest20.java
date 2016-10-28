@@ -22,4 +22,14 @@ public class FizzBuzzTest20 {
         assertEquals(expected, fizzBuzz20.print(input));
     }
 
+    @Test(expected = RuntimeException.class)
+    public void ifInputIsGreaterThan100ThrowExceptionTest() {
+        fizzBuzz20.print(101);
+    }
+
+    @Test(expected = RuntimeException.class)
+    public void ifInputIsLowerThan1ThrowExceptionTest() {
+        fizzBuzz20.print(0);
+    }
+
 }

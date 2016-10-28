@@ -5,7 +5,10 @@ package com.katas.fizzbuzz;
  */
 public class FizzBuzz20 {
     public String print(int input) {
-        if (isMultipleOf3(input)&&isMultipleOf5(input)) {
+        if (input > 100 || input < 1) {
+            throw new RuntimeException("input is invalid");
+        }
+        if (isMultipleOf3(input) && isMultipleOf5(input)) {
             return "FizzBuzz";
         }
         if (isMultipleOf3(input)) {
