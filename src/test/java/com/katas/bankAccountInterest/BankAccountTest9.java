@@ -41,5 +41,11 @@ public class BankAccountTest9 {
         assertEquals(new BigDecimal("1.3"), bankAccount9.getInterest(amount));
     }
 
+    @Test(expected = RuntimeException.class)
+    @Parameters({"0", "-1"})
+    public void givenAmountZeroOrLessReturnExceptionTest(int amount) {
+        bankAccount9.getInterest(amount);
+    }
+
 
 }
