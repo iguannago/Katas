@@ -30,9 +30,15 @@ public class BankAccountTest9 {
     }
 
     @Test
-    @Parameters({"2001"})
+    @Parameters({"2001", "2500", "3000"})
     public void givenAmountInterestIs1_22Test(int amount) {
         assertEquals(new BigDecimal("1.22"), bankAccount9.getInterest(amount));
+    }
+
+    @Test
+    @Parameters({"3001", "3500", "4001"})
+    public void givenAmountInterestIs1_3Test(int amount) {
+        assertEquals(new BigDecimal("1.3"), bankAccount9.getInterest(amount));
     }
 
 
