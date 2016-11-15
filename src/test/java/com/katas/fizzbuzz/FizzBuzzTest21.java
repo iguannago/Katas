@@ -26,10 +26,9 @@ public class FizzBuzzTest21 {
     //corner cases
     @Test(expected = RuntimeException.class)
     @Parameters({"0", "-1", "101", "102"})
-    public void whenNumberLowerThan1ThrowExceptionTest(int input) {
+    public void whenNumberLowerThan1OrGreaterThan100ThrowExceptionTest(int input) {
         fizzBuzz21.print(input);
     }
-
 
 
 }
