@@ -5,6 +5,9 @@ package com.katas.fizzbuzz;
  */
 public class FizzBuzz21 {
     public String print(int number) {
+        if (number < 1) {
+            throw new RuntimeException();
+        }
         if (isMultipleOf3(number)&&isMultipleOf5(number)) {
             return "FizzBuzz";
         }
