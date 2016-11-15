@@ -8,7 +8,7 @@ public class FizzBuzz21 {
         if (isMultipleOf3(number)) {
             return "Fizz";
         }
-        if (number == 5) {
+        if (number % 5 == 0) {
             return "Buzz";
         }
         return String.valueOf(number);
