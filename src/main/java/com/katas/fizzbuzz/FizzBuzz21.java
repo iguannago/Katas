@@ -5,7 +5,7 @@ package com.katas.fizzbuzz;
  */
 public class FizzBuzz21 {
     public String print(int number) {
-        if (number == 3) {
+        if (number % 3 == 0) {
             return "Fizz";
         }
         if (number == 5) {

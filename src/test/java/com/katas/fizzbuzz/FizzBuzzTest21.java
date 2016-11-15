@@ -14,7 +14,7 @@ import static org.junit.Assert.assertEquals;
 public class FizzBuzzTest21 {
 
     @Test
-    @Parameters({"1, 1", "2, 2", "3, Fizz", "4, 4", "5, Buzz"})
+    @Parameters({"1, 1", "2, 2", "3, Fizz", "4, 4", "5, Buzz", "6, Fizz"})
     public void when1Prints1Test(int input, String expected) {
         FizzBuzz21 fizzBuzz21 = new FizzBuzz21();
         String actual = fizzBuzz21.print(input);
