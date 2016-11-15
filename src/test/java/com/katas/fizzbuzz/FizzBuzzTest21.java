@@ -13,11 +13,12 @@ import static org.junit.Assert.assertEquals;
 @RunWith(JUnitParamsRunner.class)
 public class FizzBuzzTest21 {
 
+    private final FizzBuzz21 fizzBuzz21 = new FizzBuzz21();
+
     @Test
     @Parameters({"1, 1", "2, 2", "3, Fizz", "4, 4", "5, Buzz", "6, Fizz", "7, 7", "9, Fizz", "10, Buzz",
             "11, 11", "12, Fizz", "15, FizzBuzz"})
     public void printMethodTest(int input, String expected) {
-        FizzBuzz21 fizzBuzz21 = new FizzBuzz21();
         String actual = fizzBuzz21.print(input);
         assertEquals(expected, actual);
     }
@@ -25,7 +26,6 @@ public class FizzBuzzTest21 {
     //corner cases
     @Test(expected = RuntimeException.class)
     public void whenNumberLowerThan1ThrowExceptionTest() {
-        FizzBuzz21 fizzBuzz21 = new FizzBuzz21();
         fizzBuzz21.print(0);
     }
 
