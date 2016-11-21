@@ -14,6 +14,9 @@ import static org.junit.Assert.assertNotNull;
  */
 public class FootballTeamTest {
 
+    private final FootballTeam team1 = FootballTeam.builder(1);
+    private final FootballTeam team0 = FootballTeam.builder(0);
+
     @Test
     public void constructorTest() {
         FootballTeam footballTeam = FootballTeam.builder(2);
@@ -28,15 +31,11 @@ public class FootballTeamTest {
 
     @Test
     public void FootballTeamWith1GamesWonRanksHigherThanFootballTeamWith0GamesWonTest() {
-        FootballTeam team1 = FootballTeam.builder(1);
-        FootballTeam team0 = FootballTeam.builder(0);
         assertEquals(1, team1.compareTo(team0));
     }
 
     @Test
     public void FootballTeamWith0GamesWonRanksLowerThanFootballTeamWith1GamesWonTest() {
-        FootballTeam team1 = FootballTeam.builder(1);
-        FootballTeam team0 = FootballTeam.builder(0);
         assertEquals(-1, team0.compareTo(team1));
     }
 
