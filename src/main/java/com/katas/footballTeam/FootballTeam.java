@@ -23,4 +23,5 @@ public final class FootballTeam implements Comparable<FootballTeam> {
     public int getGamesWon() {
         return gamesWon;
     }
+
 }

@@ -1,6 +1,9 @@
 package com.katas.footballTeam;
 
+import junitparams.JUnitParamsRunner;
+import junitparams.Parameters;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -12,10 +15,8 @@ import static org.junit.Assert.assertNotNull;
 /**
  * Created by davicres on 21/11/2016.
  */
+@RunWith(JUnitParamsRunner.class)
 public class FootballTeamTest {
-
-    private final FootballTeam team1 = FootballTeam.builder(1);
-    private final FootballTeam team0 = FootballTeam.builder(0);
 
     @Test
     public void constructorTest() {
@@ -30,19 +31,25 @@ public class FootballTeamTest {
     }
 
     @Test
-    public void FootballTeamWith1GamesWonRanksHigherThanFootballTeamWith0GamesWonTest() {
-        assertEquals(1, team1.compareTo(team0));
+    @Parameters({"1, 0"})
+    public void FootballTeamWith1GamesWonRanksHigherThanFootballTeamWith0GamesWonTest(int gamesWonA, int gamesWonB) {
+        FootballTeam teamA = FootballTeam.builder(gamesWonA);
+        FootballTeam teamB = FootballTeam.builder(gamesWonB);
+        assertEquals(1, teamA.compareTo(teamB));
     }
 
     @Test
     public void FootballTeamWith0GamesWonRanksLowerThanFootballTeamWith1GamesWonTest() {
-        assertEquals(-1, team0.compareTo(team1));
+        FootballTeam teamA = FootballTeam.builder(1);
+        FootballTeam teamB = FootballTeam.builder(0);
+        assertEquals(-1, teamB.compareTo(teamA));
     }
 
     @Test
     public void FootballTeamsWithEqualGamesWonRankEquallyTest() {
-        FootballTeam anotherTeam0 = FootballTeam.builder(0);
-        assertEquals(0, team0.compareTo(anotherTeam0));
+        FootballTeam anotherTeamB = FootballTeam.builder(0);
+        FootballTeam teamB = FootballTeam.builder(0);
+        assertEquals(0, teamB.compareTo(anotherTeamB));
     }
 
 
