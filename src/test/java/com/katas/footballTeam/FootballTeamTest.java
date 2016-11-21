@@ -2,6 +2,10 @@ package com.katas.footballTeam;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 import static org.junit.Assert.assertNotNull;
 
 /**
@@ -13,6 +17,12 @@ public class FootballTeamTest {
     public void constructorTest() {
         FootballTeam footballTeam = new FootballTeam(2);
         assertNotNull(footballTeam);
+    }
+
+    @Test
+    public void sortFootballTeamsTest() {
+        List<FootballTeam> footballTeamList = new ArrayList<>();
+        Collections.sort(footballTeamList);
     }
 
 }
