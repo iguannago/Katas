@@ -9,8 +9,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by davicres on 21/11/2016.
@@ -31,25 +31,26 @@ public class FootballTeamTest {
     }
 
     @Test
-    @Parameters({"1, 0"})
+    @Parameters({"1, 0", "4, 2", "8, 0", "4, 3"})
     public void FootballTeamWith1GamesWonRanksHigherThanFootballTeamWith0GamesWonTest(int gamesWonA, int gamesWonB) {
         FootballTeam teamA = FootballTeam.builder(gamesWonA);
         FootballTeam teamB = FootballTeam.builder(gamesWonB);
-        assertEquals(1, teamA.compareTo(teamB));
+        assertTrue(teamA.compareTo(teamB) > 0);
     }
 
     @Test
-    public void FootballTeamWith0GamesWonRanksLowerThanFootballTeamWith1GamesWonTest() {
-        FootballTeam teamA = FootballTeam.builder(1);
-        FootballTeam teamB = FootballTeam.builder(0);
-        assertEquals(-1, teamB.compareTo(teamA));
+    @Parameters({"0, 1", "2, 4", "0, 8", "3, 4"})
+    public void FootballTeamWith0GamesWonRanksLowerThanFootballTeamWith1GamesWonTest(int gamesWonA, int gamesWonB) {
+        FootballTeam teamA = FootballTeam.builder(gamesWonA);
+        FootballTeam teamB = FootballTeam.builder(gamesWonB);
+        assertTrue(teamA.compareTo(teamB) < 0);
     }
 
     @Test
     public void FootballTeamsWithEqualGamesWonRankEquallyTest() {
         FootballTeam anotherTeamB = FootballTeam.builder(0);
         FootballTeam teamB = FootballTeam.builder(0);
-        assertEquals(0, teamB.compareTo(anotherTeamB));
+        assertTrue(teamB.compareTo(anotherTeamB) == 0);
     }
 
 
