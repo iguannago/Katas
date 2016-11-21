@@ -15,7 +15,7 @@ public class FootballTeamTest {
 
     @Test
     public void constructorTest() {
-        FootballTeam footballTeam = new FootballTeam(2);
+        FootballTeam footballTeam = FootballTeam.builder(2);
         assertNotNull(footballTeam);
     }
 
