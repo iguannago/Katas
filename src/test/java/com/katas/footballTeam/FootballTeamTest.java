@@ -39,4 +39,11 @@ public class FootballTeamTest {
         assertEquals(-1, team0.compareTo(team1));
     }
 
+    @Test
+    public void FootballTeamsWithEqualGamesWonRankEquallyTest() {
+        FootballTeam anotherTeam0 = FootballTeam.builder(0);
+        assertEquals(0, team0.compareTo(anotherTeam0));
+    }
+
+
 }
