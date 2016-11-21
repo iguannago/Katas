@@ -17,13 +17,7 @@ public final class FootballTeam implements Comparable<FootballTeam> {
 
     @Override
     public int compareTo(FootballTeam o) {
-        if (gamesWon == o.getGamesWon()) {
-            return 0;
-        }
-        if (gamesWon < o.getGamesWon()) {
-            return -1;
-        }
-        return 1;
+        return gamesWon - o.getGamesWon();
     }
 
     public int getGamesWon() {
