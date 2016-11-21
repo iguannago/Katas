@@ -53,5 +53,10 @@ public class FootballTeamTest {
         assertTrue(teamB.compareTo(anotherTeamB) == 0);
     }
 
+    @Test(expected = IllegalArgumentException.class)
+    public void footballTeamWithLessThanZeroGamesWonThrowAnExceptionTest() {
+        FootballTeam.builder(-1);
+    }
+
 
 }
