@@ -14,6 +14,6 @@ public final class FootballTeam implements Comparable<FootballTeam> {
 
     @Override
     public int compareTo(FootballTeam o) {
-        return 0;
+        return 1;
     }
 }
