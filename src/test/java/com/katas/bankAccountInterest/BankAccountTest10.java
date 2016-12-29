@@ -23,6 +23,8 @@ public class BankAccountTest10 {
         assertEquals(new BigDecimal("1.1"), bankAccount10.getInterest(amount));
     }
 
-
-
+    @Test
+    public void whenAmountIs1001ThenInterestIs1_15() throws Exception {
+        assertEquals(new BigDecimal("1.15"), bankAccount10.getInterest(1001));
+    }
 }
