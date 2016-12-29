@@ -17,10 +17,12 @@ public class BankAccountTest10 {
 
     private final BankAccount10 bankAccount10 = new BankAccount10();
 
-    @Parameters({"1", "2"})
+    @Parameters({"1", "2", "1000"})
     @Test
-    public void whenAmountIs1ThenInterestIs1_1(int amount) throws Exception {
+    public void whenAmountIsBetween1And1000ThenInterestIs1_1(int amount) throws Exception {
         assertEquals(new BigDecimal("1.1"), bankAccount10.getInterest(amount));
     }
+
+
 
 }
