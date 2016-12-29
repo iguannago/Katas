@@ -43,8 +43,9 @@ public class BankAccountTest10 {
 
 //    Corner cases
 
+    @Parameters({"0"})
     @Test(expected = IllegalArgumentException.class)
-    public void whenAmountIsZeroOrLessThenThrowException() throws Exception {
-        bankAccount10.getInterest(0);
+    public void whenAmountIsZeroOrLessThenThrowException(int amount) throws Exception {
+        bankAccount10.getInterest(amount);
     }
 }
