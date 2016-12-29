@@ -35,9 +35,10 @@ public class BankAccountTest10 {
         assertEquals(new BigDecimal("1.22"), bankAccount10.getInterest(amount));
     }
 
+    @Parameters({"3001"})
     @Test
-    public void whenAmountIsGreaterThan3000ThenInterestIs1_2() {
-        assertEquals(new BigDecimal("1.3"), bankAccount10.getInterest(3001));
+    public void whenAmountIsGreaterThan3000ThenInterestIs1_2(int amount) {
+        assertEquals(new BigDecimal("1.3"), bankAccount10.getInterest(amount));
     }
 
 }
