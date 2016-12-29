@@ -41,4 +41,10 @@ public class BankAccountTest10 {
         assertEquals(new BigDecimal("1.3"), bankAccount10.getInterest(amount));
     }
 
+//    Corner cases
+
+    @Test(expected = IllegalArgumentException.class)
+    public void whenAmountIsZeroOrLessThenThrowException() throws Exception {
+        bankAccount10.getInterest(0);
+    }
 }
