@@ -29,9 +29,10 @@ public class BankAccountTest10 {
         assertEquals(new BigDecimal("1.15"), bankAccount10.getInterest(amount));
     }
 
-    @Parameters({"2001"})
+    @Parameters({"2001", "2002", "3000"})
     @Test
     public void whenAmountBetween2001And3000ThenInterestIs1_22(int amount) throws Exception {
         assertEquals(new BigDecimal("1.22"), bankAccount10.getInterest(amount));
     }
+
 }
