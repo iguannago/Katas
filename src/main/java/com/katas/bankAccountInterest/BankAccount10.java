@@ -7,7 +7,7 @@ import java.math.BigDecimal;
  */
 public class BankAccount10 {
     public BigDecimal getInterest(int amount) {
-        if (amount == 1001) {
+        if (amount > 1000) {
             return new BigDecimal("1.15");
         }
         return new BigDecimal("1.1");
