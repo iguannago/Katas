@@ -15,8 +15,15 @@ public class FootballTeamTest1 {
 
     @Test
     public void footballTeamWith1GameWonRankHigherThanFootballTeamWith0GamesWon() throws Exception {
-        FootballTeam1 footballTeamWith1GameWon = FootballTeam1.build(1);
+        FootballTeam1 footballTeam1With1GameWon = FootballTeam1.build(1);
         FootballTeam1 footballTeam1With0GamesWon = FootballTeam1.build(0);
-        assertEquals(true, footballTeamWith1GameWon.compareTo(footballTeam1With0GamesWon) == 1);
+        assertEquals(true, footballTeam1With1GameWon.compareTo(footballTeam1With0GamesWon) == 1);
+    }
+
+    @Test
+    public void teamWithFewerGamesWonRankLowerThanTeamWithGreaterGamesWon() throws Exception {
+        FootballTeam1 footballTeam1With1GameWon = FootballTeam1.build(1);
+        FootballTeam1 footballTeam1With0GamesWon = FootballTeam1.build(0);
+        assertEquals(true, footballTeam1With0GamesWon.compareTo(footballTeam1With1GameWon) < 0);
     }
 }
