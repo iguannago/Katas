@@ -26,7 +26,8 @@ public class FizzBuzzTest22 {
 
 
     @Test(expected = IllegalArgumentException.class)
-    public void ifLowerThan1OrGreaterThan100ThrowException() throws Exception {
-        fizzBuzz22.print(0);
+    @Parameters({"0"})
+    public void ifLowerThan1OrGreaterThan100ThrowException(int input) throws Exception {
+        fizzBuzz22.print(input);
     }
 }
