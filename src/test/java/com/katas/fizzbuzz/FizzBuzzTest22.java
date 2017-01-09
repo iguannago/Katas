@@ -17,7 +17,7 @@ public class FizzBuzzTest22 {
 
     @Test
     @Parameters({"1, 1", "3, Fizz", "4, 4", "5, Buzz", "6, Fizz", "7, 7", "9, Fizz", "10, Buzz", "12, Fizz",
-            "15, FizzBuzz"})
+            "15, FizzBuzz", "18, Fizz", "20, Buzz", "30, FizzBuzz"})
     public void when1Print1(int input, String expected) throws Exception {
         assertEquals(expected, fizzBuzz22.print(input));
     }
