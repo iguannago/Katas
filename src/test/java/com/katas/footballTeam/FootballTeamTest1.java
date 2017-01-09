@@ -10,6 +10,6 @@ import static org.junit.Assert.assertEquals;
 public class FootballTeamTest1 {
     @Test
     public void giveMeNumberOfGamesWon() throws Exception {
-        assertEquals(1, new FootballTeam1(1).getNumberOfGamesWon());
+        assertEquals(1, FootballTeam1.build(1).getNumberOfGamesWon());
     }
 }
