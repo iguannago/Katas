@@ -5,9 +5,7 @@ package com.katas.fizzbuzz;
  */
 public class FizzBuzz22 {
     public String print(int number) {
-        if (number < 1 || number > 100) {
-            throw new IllegalArgumentException("number is invalid");
-        }
+        handleNumberBoundaries(number);
         if (isMultipleOf3(number) && isMultipleOf5(number)) {
             return "FizzBuzz";
         }
@@ -18,6 +16,12 @@ public class FizzBuzz22 {
             return "Buzz";
         }
         return String.valueOf(number);
+    }
+
+    private void handleNumberBoundaries(int number) {
+        if (number < 1 || number > 100) {
+            throw new IllegalArgumentException("number is invalid");
+        }
     }
 
     private boolean isMultipleOf5(int number) {
