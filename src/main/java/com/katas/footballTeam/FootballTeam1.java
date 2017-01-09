@@ -3,7 +3,7 @@ package com.katas.footballTeam;
 /**
  * Created by davicres on 09/01/2017.
  */
-public final class FootballTeam1 implements Comparable {
+public final class FootballTeam1 implements Comparable<FootballTeam1> {
     private final int numberOfGamesWon;
 
     private FootballTeam1(int numberOfGamesWon) {
@@ -19,11 +19,7 @@ public final class FootballTeam1 implements Comparable {
     }
 
     @Override
-    public int compareTo(Object o) {
-        if (o instanceof FootballTeam1) {
-            FootballTeam1 footballTeam1 = (FootballTeam1) o;
-            return this.getNumberOfGamesWon() - footballTeam1.getNumberOfGamesWon();
-        }
-        throw new RuntimeException("object is not a valid type.");
+    public int compareTo(FootballTeam1 o) {
+        return this.getNumberOfGamesWon() - o.getNumberOfGamesWon();
     }
 }
