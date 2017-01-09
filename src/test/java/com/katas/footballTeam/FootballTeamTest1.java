@@ -36,9 +36,10 @@ public class FootballTeamTest1 {
     }
 
     @Test
-    public void teamWithEqualGamesWonRankEqually() throws Exception {
-        FootballTeam1 teamWinner = FootballTeam1.build(1);
-        FootballTeam1 teamLoser = FootballTeam1.build(1);
-        assertEquals(true, teamLoser.compareTo(teamWinner) == 0);
+    @Parameters({"1, 1", "0, 0"})
+    public void teamWithEqualGamesWonRankEqually(int teamAGames, int teamBGames) throws Exception {
+        FootballTeam1 teamA = FootballTeam1.build(teamAGames);
+        FootballTeam1 teamB = FootballTeam1.build(teamBGames);
+        assertEquals(true, teamB.compareTo(teamA) == 0);
     }
 }
