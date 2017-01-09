@@ -14,7 +14,7 @@ public final class FootballTeam1 implements Comparable {
         return new FootballTeam1(numberOfGamesWon);
     }
 
-    public int getNumberOfGamesWon() {
+    int getNumberOfGamesWon() {
         return numberOfGamesWon;
     }
 
