@@ -12,4 +12,11 @@ public class FootballTeamTest1 {
     public void giveMeNumberOfGamesWon() throws Exception {
         assertEquals(1, FootballTeam1.build(1).getNumberOfGamesWon());
     }
+
+    @Test
+    public void footballTeamWith1GameWonRankHigherThanFootballTeamWith0GamesWon() throws Exception {
+        FootballTeam1 footballTeamWith1GameWon = FootballTeam1.build(1);
+        FootballTeam1 footballTeam1With0GamesWon = FootballTeam1.build(0);
+        assertEquals(true, footballTeamWith1GameWon.compareTo(footballTeam1With0GamesWon) == 1);
+    }
 }
