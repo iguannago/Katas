@@ -19,18 +19,20 @@ public class FootballTeamTest1 {
 
     @Test
     @Parameters({"1, 0", "4, 0"})
-    public void footballTeamWith1GameWonRankHigherThanFootballTeamWith0GamesWon(int winnerGames, int loserGames)
+    public void footballTeamWith1GameWonRankHigherThanFootballTeamWith0GamesWon(int teamAGames, int teamBGames)
             throws Exception {
-        FootballTeam1 teamWinner = FootballTeam1.build(winnerGames);
-        FootballTeam1 teamLoser = FootballTeam1.build(loserGames);
-        assertEquals(true, teamWinner.compareTo(teamLoser) > 0);
+        FootballTeam1 teamA = FootballTeam1.build(teamAGames);
+        FootballTeam1 teamB = FootballTeam1.build(teamBGames);
+        assertEquals(true, teamA.compareTo(teamB) > 0);
     }
 
     @Test
-    public void teamWithFewerGamesWonRankLowerThanTeamWithGreaterGamesWon() throws Exception {
-        FootballTeam1 teamWinner = FootballTeam1.build(1);
-        FootballTeam1 teamLoser = FootballTeam1.build(0);
-        assertEquals(true, teamLoser.compareTo(teamWinner) < 0);
+    @Parameters({"0, 1", "1, 8"})
+    public void teamWithFewerGamesWonRankLowerThanTeamWithGreaterGamesWon(int teamAGames, int teamBGames)
+            throws Exception {
+        FootballTeam1 teamA = FootballTeam1.build(teamAGames);
+        FootballTeam1 teamB = FootballTeam1.build(teamBGames);
+        assertEquals(true, teamA.compareTo(teamB) < 0);
     }
 
     @Test
