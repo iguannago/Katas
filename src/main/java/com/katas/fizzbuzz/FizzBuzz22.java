@@ -31,4 +31,11 @@ public class FizzBuzz22 {
     private boolean isMultipleOf3(int number) {
         return number % 3 == 0;
     }
+
+    public static void main(String[] args) {
+        FizzBuzz22 fizzBuzz22 = new FizzBuzz22();
+        for (int i = 1; i < 101; i++) {
+            System.out.println(fizzBuzz22.print(i));
+        }
+    }
 }
