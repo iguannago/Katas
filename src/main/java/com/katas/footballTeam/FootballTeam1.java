@@ -22,12 +22,7 @@ public final class FootballTeam1 implements Comparable {
     public int compareTo(Object o) {
         if (o instanceof FootballTeam1) {
             FootballTeam1 footballTeam1 = (FootballTeam1) o;
-            if (this.getNumberOfGamesWon() > footballTeam1.getNumberOfGamesWon()) {
-                return 1;
-            } else if (this.getNumberOfGamesWon() < footballTeam1.getNumberOfGamesWon()) {
-                return -1;
-            }
-            return 0;
+            return this.getNumberOfGamesWon() - footballTeam1.getNumberOfGamesWon();
         }
         throw new RuntimeException("object is not a valid type.");
     }
