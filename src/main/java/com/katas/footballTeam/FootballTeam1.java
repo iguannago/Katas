@@ -11,6 +11,9 @@ public final class FootballTeam1 implements Comparable<FootballTeam1> {
     }
 
     public static FootballTeam1 build(int numberOfGamesWon) {
+        if (numberOfGamesWon < 0) {
+            throw new IllegalArgumentException("Less Than Zero");
+        }
         return new FootballTeam1(numberOfGamesWon);
     }
 

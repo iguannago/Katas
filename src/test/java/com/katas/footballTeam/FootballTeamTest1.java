@@ -42,4 +42,11 @@ public class FootballTeamTest1 {
         FootballTeam1 teamB = FootballTeam1.build(teamBGames);
         assertEquals(true, teamB.compareTo(teamA) == 0);
     }
+
+    //Corner case
+
+    @Test(expected = IllegalArgumentException.class)
+    public void ifNumberOfGamesIsLessThanZeroThrowException() throws Exception {
+        FootballTeam1.build(-1);
+    }
 }
