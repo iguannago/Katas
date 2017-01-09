@@ -25,7 +25,7 @@ public class FizzBuzzTest22 {
     //corner cases
 
     @Test(expected = IllegalArgumentException.class)
-    @Parameters({"0", "-1", "101"})
+    @Parameters({"0", "-1", "101", "200"})
     public void ifLowerThan1OrGreaterThan100ThrowException(int input) throws Exception {
         fizzBuzz22.print(input);
     }
