@@ -5,6 +5,9 @@ package com.katas.fizzbuzz;
  */
 public class FizzBuzz22 {
     public String print(int number) {
+        if (number == 0) {
+            throw new IllegalArgumentException("number is invalid");
+        }
         if (isMultipleOf3(number) && isMultipleOf5(number)) {
             return "FizzBuzz";
         }

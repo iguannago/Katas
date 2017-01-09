@@ -22,4 +22,11 @@ public class FizzBuzzTest22 {
         assertEquals(expected, fizzBuzz22.print(input));
     }
 
+    //corner cases
+
+
+    @Test(expected = IllegalArgumentException.class)
+    public void ifLowerThan1OrGreaterThan100ThrowException() throws Exception {
+        fizzBuzz22.print(0);
+    }
 }
