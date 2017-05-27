@@ -25,4 +25,19 @@ public final class FootballTeam1 implements Comparable<FootballTeam1> {
     public int compareTo(FootballTeam1 o) {
         return this.getNumberOfGamesWon() - o.getNumberOfGamesWon();
     }
+
+    @Override
+    public String toString() {
+        return "FootballTeam1{" +
+                "numberOfGamesWon=" + numberOfGamesWon +
+                '}';
+    }
+
+    public static void main(String[] args) {
+        FootballTeam1 barsa = FootballTeam1.build(3);
+        FootballTeam1 madrid = FootballTeam1.build(1);
+        FootballTeam1 seville = FootballTeam1.build(0);
+
+
+    }
 }
