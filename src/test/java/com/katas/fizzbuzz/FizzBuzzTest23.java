@@ -22,4 +22,9 @@ public class FizzBuzzTest23 {
         assertEquals(expected, fizzBuzz23.print(number));
     }
 
+    @Test(expected = IllegalArgumentException.class)
+    @Parameters({"0", "-1", "-20"})
+    public void givenNumberLowerThan1ThrowsException(int number) throws Exception {
+        fizzBuzz23.print(number);
+    }
 }
