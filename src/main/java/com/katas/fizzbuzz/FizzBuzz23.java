@@ -5,8 +5,6 @@ package com.katas.fizzbuzz;
  */
 public class FizzBuzz23 {
     public String print(int number) {
-        if (number == 1) {
-            return "1";
-        } else return "2";
+        return String.valueOf(number);
     }
 }
