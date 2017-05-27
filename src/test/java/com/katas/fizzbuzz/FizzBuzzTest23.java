@@ -23,8 +23,8 @@ public class FizzBuzzTest23 {
     }
 
     @Test(expected = IllegalArgumentException.class)
-    @Parameters({"0", "-1", "-20"})
-    public void givenNumberLowerThan1ThrowsException(int number) throws Exception {
+    @Parameters({"0", "-1", "-20", "101", "200"})
+    public void givenNumberLowerThan1OrGreaterThan100ThrowsException(int number) throws Exception {
         fizzBuzz23.print(number);
     }
 }

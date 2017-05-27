@@ -5,8 +5,8 @@ package com.katas.fizzbuzz;
  */
 public class FizzBuzz23 {
     public String print(int number) {
-        if (number < 1) {
-            throw new IllegalArgumentException("Number is lower than 1");
+        if (number < 1 || number > 100) {
+            throw new IllegalArgumentException("Number argument is invalid");
         }
         if (multipleOf3(number) && multipleOf5(number)) {
             return "FizzBuzz";
