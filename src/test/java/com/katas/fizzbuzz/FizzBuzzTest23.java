@@ -20,4 +20,11 @@ public class FizzBuzzTest23 {
     public void given2Prints2() throws Exception {
         assertEquals("2", fizzBuzz23.print(2));
     }
+
+    @Test
+    public void given3PrintsFizz() throws Exception {
+        assertEquals("Fizz", fizzBuzz23.print(3));
+    }
+
+
 }
