@@ -26,5 +26,8 @@ public class FizzBuzzTest23 {
         assertEquals("Fizz", fizzBuzz23.print(3));
     }
 
-
+    @Test
+    public void given5PrintsBuzz() throws Exception {
+        assertEquals("Buzz", fizzBuzz23.print(5));
+    }
 }
