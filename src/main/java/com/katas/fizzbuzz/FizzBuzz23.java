@@ -5,12 +5,23 @@ package com.katas.fizzbuzz;
  */
 public class FizzBuzz23 {
     public String print(int number) {
-        if (number == 3) {
+        if (multipleOf3(number) && multipleOf5(number)) {
+            return "FizzBuzz";
+        }
+        if (multipleOf3(number)) {
             return "Fizz";
         }
-        if (number == 5) {
+        if (multipleOf5(number)) {
             return "Buzz";
         }
         return String.valueOf(number);
+    }
+
+    private boolean multipleOf5(int number) {
+        return number % 5 == 0;
+    }
+
+    private boolean multipleOf3(int number) {
+        return number % 3 == 0;
     }
 }
