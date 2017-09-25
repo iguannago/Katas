@@ -1,15 +1,14 @@
 package com.katas.bankAccountInterest;
 
+import lombok.Value;
+
 import java.math.BigDecimal;
 
+@Value(staticConstructor = "of")
 public class BankAccount11 {
-    private BigDecimal interest;
-
-    public BankAccount11(int amount) {
-        interest = new BigDecimal("1.1");
-    }
+    final private int amount;
 
     public BigDecimal getInterest() {
-        return interest;
+        return new BigDecimal("1.1");
     }
 }

@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 public class BankAccountInterestTest11 {
     @Test
     public void whenAmountIs1ThenInterestIs1_1Test() throws Exception {
-        BankAccount11 bankAccount11 = new BankAccount11(1);
+        BankAccount11 bankAccount11 = BankAccount11.of(1);
         assertEquals(new BigDecimal("1.1"), bankAccount11.getInterest());
     }
 }
