@@ -1,24 +1,20 @@
 package com.katas.bankAccountInterest;
 
+import junitparams.JUnitParamsRunner;
+import junitparams.Parameters;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import java.math.BigDecimal;
 
 import static org.junit.Assert.assertEquals;
 
+@RunWith(JUnitParamsRunner.class)
 public class BankAccountInterestTest11 {
     @Test
-    public void whenAmountIs1ThenInterestIs1_1Test() throws Exception {
-        assertEquals(new BigDecimal("1.1"), BankAccount11.of(1).getInterest());
-    }
-
-    @Test
-    public void whenAmountIs2ThenInterestIs1_1Test() throws Exception {
-        assertEquals(new BigDecimal("1.1"), BankAccount11.of(2).getInterest());
-    }
-
-    @Test
-    public void whenAmountis1000ThenInterestIs1_1Test() throws Exception {
-        assertEquals(new BigDecimal("1.1"), BankAccount11.of(1000).getInterest());
+    @Parameters({"1", "23", "1000"})
+    public void whenAmountIsSomethingBetween1And1000IncludedThenInterestIs1_1Test(int amount) throws Exception {
+        assertEquals(new BigDecimal("1.1"), BankAccount11.of(amount).getInterest());
     }
 }
+
