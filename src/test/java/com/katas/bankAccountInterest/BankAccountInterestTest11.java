@@ -16,5 +16,11 @@ public class BankAccountInterestTest11 {
     public void whenAmountIsSomethingBetween1And1000IncludedThenInterestIs1_1Test(int amount) throws Exception {
         assertEquals(new BigDecimal("1.1"), BankAccount11.of(amount).getInterest());
     }
+
+    @Test
+    @Parameters({"1001", "1500", "2000"})
+    public void whenAmountIsSomethingBetween1001And2000IncludedThenInterestIs1_15Test(int amount) throws Exception {
+        assertEquals(new BigDecimal("1.15"), BankAccount11.of(amount).getInterest());
+    }
 }
 

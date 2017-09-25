@@ -9,6 +9,8 @@ public class BankAccount11 {
     final private int amount;
 
     public BigDecimal getInterest() {
+        if (amount >= 1001)
+            return new BigDecimal("1.15");
         return new BigDecimal("1.1");
     }
 }
