@@ -28,5 +28,19 @@ public class BankAccountInterestTest11 {
     public void whenAmountIsSomethingBetween2001And3000IncludedThenInterestIs1_22Test(int amount) throws Exception {
         assertEquals(new BigDecimal("1.22"), BankAccount11.of(amount).getInterest());
     }
+
+    @Test
+    @Parameters({"3001", "3400"})
+    public void whenAmountIsGreaterThan3000ThenInterestIs1_3Test(int amount) throws Exception {
+        assertEquals(new BigDecimal("1.3"), BankAccount11.of(amount).getInterest());
+    }
+
+    //Corner cases
+    @Test(expected = IllegalArgumentException.class)
+    @Parameters({"0", "-1"})
+    public void whenAmountIsLowerThan1ThenThrowExceptionTest(int amount) throws Exception {
+        BankAccount11.of(amount).getInterest();
+    }
+
 }
 
