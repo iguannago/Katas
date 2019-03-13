@@ -2,24 +2,20 @@ package com.katas.fizzbuzz;
 
 import static org.junit.Assert.assertEquals;
 
+import junitparams.JUnitParamsRunner;
+import junitparams.Parameters;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
+@RunWith(JUnitParamsRunner.class)
 public class FizzBuzzTest24 {
 
     private final FizzBuzz24 fizzBuzz24 = new FizzBuzz24();
 
     @Test
-    public void given1_shouldReturn1() {
-        assertEquals("1", fizzBuzz24.print(1));
+    @Parameters({"1,1", "2,2", "Fizz,3"})
+    public void given1_shouldReturn1(String expected, int number) {
+        assertEquals(expected, fizzBuzz24.print(number));
     }
 
-    @Test
-    public void given2_shouldReturn2() {
-        assertEquals("2", fizzBuzz24.print(2));
-    }
-
-    @Test
-    public void given3_shouldReturn3() {
-        assertEquals("Fizz", fizzBuzz24.print(3));
-    }
 }
