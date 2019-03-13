@@ -8,7 +8,6 @@ public class FizzBuzzTest24 {
     @Test
     public void given1_shouldReturn1() {
         FizzBuzz24 fizzBuzz24 = new FizzBuzz24();
-        String result = fizzBuzz24.print(1);
-        assertEquals("1", result);
+        assertEquals("1", fizzBuzz24.print(1));
     }
 }
