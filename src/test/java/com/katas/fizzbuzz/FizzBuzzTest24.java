@@ -17,4 +17,9 @@ public class FizzBuzzTest24 {
     public void given2_shouldReturn2() {
         assertEquals("2", fizzBuzz24.print(2));
     }
+
+    @Test
+    public void given3_shouldReturn3() {
+        assertEquals("Fizz", fizzBuzz24.print(3));
+    }
 }
