@@ -2,8 +2,8 @@ package com.katas.fizzbuzz;
 
 public class FizzBuzz24 {
     public String print(int number) {
-        if (0 == number) {
-            throw new IllegalArgumentException("number cannot be Zero or less than Zero");
+        if (number <= 0 || number > 100) {
+            throw new IllegalArgumentException("number cannot be Zero less than Zero Or number cannot be greater than 100");
         }
         if (isMultipleOf3(number) && isMultipleOf5(number)) {
             return "FizzBuzz";

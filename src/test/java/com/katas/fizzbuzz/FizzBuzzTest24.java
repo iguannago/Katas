@@ -20,7 +20,8 @@ public class FizzBuzzTest24 {
     }
 
     @Test(expected = RuntimeException.class)
-    public void given0_shouldThrowException() {
-        fizzBuzz24.print(0);
+    @Parameters({"0", "-1", "101", "201"})
+    public void givenNumberOutOfBoundaries_shouldThrowException(int number) {
+        fizzBuzz24.print(number);
     }
 }
