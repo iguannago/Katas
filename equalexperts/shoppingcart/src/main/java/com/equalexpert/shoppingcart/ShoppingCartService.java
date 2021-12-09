@@ -5,6 +5,14 @@ import java.util.List;
 public class ShoppingCartService {
 
     public ShoppingCart addProduct(ShoppingCart shoppingCart, Product newProduct, int units) {
+        validateParameters(shoppingCart, units);
+        if (units == 1) {
+            return addProductOnce(shoppingCart, newProduct);
+        }
+        return addProduct(addProductOnce(shoppingCart, newProduct), newProduct, --units);
+    }
+
+    private void validateParameters(ShoppingCart shoppingCart, int units) {
         if (shoppingCart == null) {
             throw new RuntimeException("Error: shopping cart is null");
         }
@@ -14,10 +22,6 @@ public class ShoppingCartService {
         if (units <= 0) {
             throw new RuntimeException("Error: units has to be a positive number");
         }
-        if (units == 1) {
-            return addProductOnce(shoppingCart, newProduct);
-        }
-        return addProduct(addProductOnce(shoppingCart, newProduct), newProduct, --units);
     }
 
     private ShoppingCart addProductOnce(ShoppingCart shoppingCart, Product newProduct) {
