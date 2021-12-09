@@ -4,9 +4,17 @@ import lombok.Value;
 
 import java.math.BigDecimal;
 
-@Value(staticConstructor = "of")
+@Value
 public class BankAccount11 {
     final private int amount;
+
+    public BankAccount11(int amount) {
+        this.amount = amount;
+    }
+
+    public static BankAccount11 of(int amount) {
+        return new BankAccount11(amount);
+    }
 
     public BigDecimal getInterest() {
         if (amount < 1)
