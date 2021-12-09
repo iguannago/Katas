@@ -53,4 +53,28 @@ public class ShoppingCartServiceTest {
 
         Assertions.assertEquals("Error: units has to be a positive number", actualException.getMessage());
     }
+
+    @Test
+    void given_totalPrice_is_zero_or_negative_when_user_adds_products_throw_exception() {
+        RuntimeException actualException = Assertions.assertThrows(RuntimeException.class,
+            () -> {
+                ShoppingCart shoppingCartWithInvalidTotalPrice =
+                    new ShoppingCart(new ArrayList<>(), new BigDecimal("-1.00"));
+                shoppingCartService.addProduct(shoppingCartWithInvalidTotalPrice, doveSoap, 1);
+            });
+
+        Assertions.assertEquals("Error: invalid total price", actualException.getMessage());
+    }
+
+    @Test
+    void given_newProduct_is_null_when_user_adds_products_throw_exception() {
+        RuntimeException actualException = Assertions.assertThrows(RuntimeException.class,
+            () -> shoppingCartService.addProduct(
+                new ShoppingCart(new ArrayList<>(), new BigDecimal("0.00")),
+                null,
+                1));
+
+        Assertions.assertEquals("Error: new product is null", actualException.getMessage());
+    }
+
 }
