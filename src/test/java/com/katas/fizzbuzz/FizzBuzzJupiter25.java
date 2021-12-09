@@ -20,7 +20,12 @@ public class FizzBuzzJupiter25 {
         "2,2",
         "3,Fizz",
         "4,4",
-        "5,Buzz"
+        "5,Buzz",
+        "6,Fizz",
+        "10,Buzz",
+        "15,FizzBuzz",
+        "30,FizzBuzz",
+        "41,41"
     })
     void when_number_then_Fizz_Buzz_FizzBuzz_or_number(int number, String expected) {
         Assertions.assertEquals(expected, fizzBuzz25.fizzbuzz(number));
