@@ -77,4 +77,16 @@ public class ShoppingCartServiceTest {
         Assertions.assertEquals("Error: new product is null", actualException.getMessage());
     }
 
+    @Test
+    void given_empty_shopping_cart_when_adding_additional_same_products_then_shopping_cart_is_as_expected() {
+        ShoppingCart emptyShoppingCart = new ShoppingCart(new ArrayList<>(), new BigDecimal("0.00"));
+
+        ShoppingCart shoppingCartWithFiveProducts =
+            shoppingCartService.addProduct(emptyShoppingCart, doveSoap, 5);
+        ShoppingCart actualShoppingCart =
+            shoppingCartService.addProduct(shoppingCartWithFiveProducts, doveSoap, 3);
+
+        Assertions.assertEquals(8, actualShoppingCart.getProducts().size());
+        Assertions.assertEquals("319.92", actualShoppingCart.getTotalPrice().toString());
+    }
 }
