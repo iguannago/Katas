@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.List;
 
 public class ShoppingCartServiceTest {
 
@@ -18,7 +19,15 @@ public class ShoppingCartServiceTest {
         ShoppingCart actualShoppingCart = shoppingCartService.addProduct(emptyShoppingCart, doveSoap, 5);
 
         Assertions.assertEquals(5, actualShoppingCart.getProducts().size());
+        Assertions.assertEquals(5,
+            getCountOfProductsWithGivenUnitPrice(actualShoppingCart.getProducts(), "39.99"));
         Assertions.assertEquals("199.95", actualShoppingCart.getTotalPrice().toString());
+    }
+
+    private long getCountOfProductsWithGivenUnitPrice(List<Product> products, String unitPrice) {
+        return products.stream()
+            .filter(p -> p.getPrice().equals(new BigDecimal(unitPrice)))
+            .count();
     }
 
     // edge case scenarios
@@ -87,6 +96,8 @@ public class ShoppingCartServiceTest {
             shoppingCartService.addProduct(shoppingCartWithFiveProducts, doveSoap, 3);
 
         Assertions.assertEquals(8, actualShoppingCart.getProducts().size());
+        Assertions.assertEquals(8,
+            getCountOfProductsWithGivenUnitPrice(actualShoppingCart.getProducts(), "39.99"));
         Assertions.assertEquals("319.92", actualShoppingCart.getTotalPrice().toString());
     }
 }
