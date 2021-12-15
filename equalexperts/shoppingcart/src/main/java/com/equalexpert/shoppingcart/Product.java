@@ -3,7 +3,7 @@ package com.equalexpert.shoppingcart;
 import java.math.BigDecimal;
 import java.util.Objects;
 
-public class Product {
+public final class Product {
     private final String name;
     private final BigDecimal price;
 

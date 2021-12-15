@@ -20,4 +20,6 @@ class ShoppingCartTest {
     void getTotalPrice() {
         Assertions.assertEquals(new BigDecimal("0.00"), shoppingCart.getTotalPrice());
     }
+
+    //todo: add equals, hashCode and toString tests (MUST)
 }

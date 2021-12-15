@@ -4,10 +4,11 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.Objects;
 
-public class ShoppingCart {
+public final class ShoppingCart {
     private final List<Product> products;
     private final BigDecimal totalPrice;
 
+    //todo: add build pattern (NICE)
     public ShoppingCart(List<Product> products, BigDecimal totalPrice) {
         this.products = products;
         this.totalPrice = totalPrice;
@@ -20,7 +21,6 @@ public class ShoppingCart {
     public BigDecimal getTotalPrice() {
         return totalPrice;
     }
-    //todo: add unit test coverage for these methods
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

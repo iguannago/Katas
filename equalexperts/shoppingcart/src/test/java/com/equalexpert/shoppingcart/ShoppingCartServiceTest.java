@@ -100,4 +100,6 @@ public class ShoppingCartServiceTest {
             getCountOfProductsWithGivenUnitPrice(actualShoppingCart.getProducts(), "39.99"));
         Assertions.assertEquals("319.92", actualShoppingCart.getTotalPrice().toString());
     }
+
+    //todo: add step 3 test scenarios (MUST)
 }
