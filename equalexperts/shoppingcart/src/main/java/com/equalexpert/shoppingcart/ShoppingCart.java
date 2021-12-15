@@ -20,7 +20,7 @@ public class ShoppingCart {
     public BigDecimal getTotalPrice() {
         return totalPrice;
     }
-
+    //todo: add unit test coverage for these methods
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
