@@ -11,11 +11,10 @@ public class ShoppingCartServiceTest {
 
     private final ShoppingCartService shoppingCartService = new ShoppingCartService();
     private final Product doveSoap = new Product("Dove soap", new BigDecimal("39.99"));
+    private final ShoppingCart emptyShoppingCart = new ShoppingCart(new ArrayList<>(), new BigDecimal("0.00"));
 
     @Test
     void given_empty_shopping_cart_when_user_adds_five_product_then_shopping_cart_is_as_expected() {
-        ShoppingCart emptyShoppingCart = new ShoppingCart(new ArrayList<>(), new BigDecimal("0.00"));
-
         ShoppingCart actualShoppingCart = shoppingCartService.addProductToShoppingCartGivenUnits(emptyShoppingCart, doveSoap, 5);
 
         Assertions.assertEquals(5, actualShoppingCart.getProducts().size());
@@ -86,10 +85,9 @@ public class ShoppingCartServiceTest {
         Assertions.assertEquals("Error: new product is null", actualException.getMessage());
     }
 
+    // step 2
     @Test
     void given_empty_shopping_cart_when_adding_additional_same_products_then_shopping_cart_is_as_expected() {
-        ShoppingCart emptyShoppingCart = new ShoppingCart(new ArrayList<>(), new BigDecimal("0.00"));
-
         ShoppingCart shoppingCartWithFiveProducts =
             shoppingCartService.addProductToShoppingCartGivenUnits(emptyShoppingCart, doveSoap, 5);
         ShoppingCart actualShoppingCart =
@@ -101,5 +99,9 @@ public class ShoppingCartServiceTest {
         Assertions.assertEquals("319.92", actualShoppingCart.getTotalPrice().toString());
     }
 
-    //todo: add step 3 test scenarios (MUST)
+    // step 3
+    @Test
+    void given_empty_shopping_cart_when_add_products_with_sales_tax_shopping_cart_is_as_expected() {
+
+    }
 }
