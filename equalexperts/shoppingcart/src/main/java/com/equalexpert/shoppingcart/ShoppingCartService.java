@@ -5,12 +5,12 @@ import java.util.List;
 
 public class ShoppingCartService {
 
-    public ShoppingCart addProductGivenUnits(ShoppingCart shoppingCart, Product newProduct, int units) {
+    public ShoppingCart addProductToShoppingCartGivenUnits(ShoppingCart shoppingCart, Product newProduct, int units) {
         validateParameters(shoppingCart, newProduct, units);
         if (units == 1) {
-            return addProductOnce(shoppingCart, newProduct);
+            return addProductToShoppingCartOnce(shoppingCart, newProduct);
         }
-        return addProductGivenUnits(addProductOnce(shoppingCart, newProduct), newProduct, --units);
+        return addProductToShoppingCartGivenUnits(addProductToShoppingCartOnce(shoppingCart, newProduct), newProduct, --units);
     }
 
     private void validateParameters(ShoppingCart shoppingCart, Product newProduct, int units) {
@@ -31,7 +31,7 @@ public class ShoppingCartService {
         }
     }
 
-    private ShoppingCart addProductOnce(ShoppingCart shoppingCart, Product newProduct) {
+    private ShoppingCart addProductToShoppingCartOnce(ShoppingCart shoppingCart, Product newProduct) {
         List<Product> products = shoppingCart.getProducts();
         products.add(newProduct);
         return new ShoppingCart(products, shoppingCart.getTotalPrice().add(newProduct.getPrice()));

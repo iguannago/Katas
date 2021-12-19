@@ -16,7 +16,7 @@ public class ShoppingCartServiceTest {
     void given_empty_shopping_cart_when_user_adds_five_product_then_shopping_cart_is_as_expected() {
         ShoppingCart emptyShoppingCart = new ShoppingCart(new ArrayList<>(), new BigDecimal("0.00"));
 
-        ShoppingCart actualShoppingCart = shoppingCartService.addProductGivenUnits(emptyShoppingCart, doveSoap, 5);
+        ShoppingCart actualShoppingCart = shoppingCartService.addProductToShoppingCartGivenUnits(emptyShoppingCart, doveSoap, 5);
 
         Assertions.assertEquals(5, actualShoppingCart.getProducts().size());
         Assertions.assertEquals(5,
@@ -35,7 +35,7 @@ public class ShoppingCartServiceTest {
     @Test
     void given_null_shopping_cart_when_user_adds_products_throw_exception() {
         RuntimeException actualException = Assertions.assertThrows(RuntimeException.class,
-            () -> shoppingCartService.addProductGivenUnits(null, doveSoap, 1));
+            () -> shoppingCartService.addProductToShoppingCartGivenUnits(null, doveSoap, 1));
 
         Assertions.assertEquals("Error: shopping cart is null", actualException.getMessage());
     }
@@ -46,7 +46,7 @@ public class ShoppingCartServiceTest {
             () -> {
                 ShoppingCart shoppingCartWithNullProductList =
                     new ShoppingCart(null, new BigDecimal("0.00"));
-                shoppingCartService.addProductGivenUnits(shoppingCartWithNullProductList, doveSoap, 1);
+                shoppingCartService.addProductToShoppingCartGivenUnits(shoppingCartWithNullProductList, doveSoap, 1);
             });
 
         Assertions.assertEquals("Error: product list is null", actualException.getMessage());
@@ -57,7 +57,7 @@ public class ShoppingCartServiceTest {
         RuntimeException actualException = Assertions.assertThrows(RuntimeException.class,
             () -> {
                 ShoppingCart shoppingCart = new ShoppingCart(new ArrayList<>(), new BigDecimal("0.00"));
-                shoppingCartService.addProductGivenUnits(shoppingCart, doveSoap, 0);
+                shoppingCartService.addProductToShoppingCartGivenUnits(shoppingCart, doveSoap, 0);
             });
 
         Assertions.assertEquals("Error: units has to be a positive number", actualException.getMessage());
@@ -69,7 +69,7 @@ public class ShoppingCartServiceTest {
             () -> {
                 ShoppingCart shoppingCartWithInvalidTotalPrice =
                     new ShoppingCart(new ArrayList<>(), new BigDecimal("-1.00"));
-                shoppingCartService.addProductGivenUnits(shoppingCartWithInvalidTotalPrice, doveSoap, 1);
+                shoppingCartService.addProductToShoppingCartGivenUnits(shoppingCartWithInvalidTotalPrice, doveSoap, 1);
             });
 
         Assertions.assertEquals("Error: invalid total price", actualException.getMessage());
@@ -78,7 +78,7 @@ public class ShoppingCartServiceTest {
     @Test
     void given_newProduct_is_null_when_user_adds_products_throw_exception() {
         RuntimeException actualException = Assertions.assertThrows(RuntimeException.class,
-            () -> shoppingCartService.addProductGivenUnits(
+            () -> shoppingCartService.addProductToShoppingCartGivenUnits(
                 new ShoppingCart(new ArrayList<>(), new BigDecimal("0.00")),
                 null,
                 1));
@@ -91,9 +91,9 @@ public class ShoppingCartServiceTest {
         ShoppingCart emptyShoppingCart = new ShoppingCart(new ArrayList<>(), new BigDecimal("0.00"));
 
         ShoppingCart shoppingCartWithFiveProducts =
-            shoppingCartService.addProductGivenUnits(emptyShoppingCart, doveSoap, 5);
+            shoppingCartService.addProductToShoppingCartGivenUnits(emptyShoppingCart, doveSoap, 5);
         ShoppingCart actualShoppingCart =
-            shoppingCartService.addProductGivenUnits(shoppingCartWithFiveProducts, doveSoap, 3);
+            shoppingCartService.addProductToShoppingCartGivenUnits(shoppingCartWithFiveProducts, doveSoap, 3);
 
         Assertions.assertEquals(8, actualShoppingCart.getProducts().size());
         Assertions.assertEquals(8,
