@@ -35,7 +35,9 @@ public class ShoppingCartService {
     private ShoppingCart addProductToShoppingCartOnce(ShoppingCart shoppingCart, Product newProduct) {
         List<Product> products = shoppingCart.getProducts();
         products.add(newProduct);
-        return new ShoppingCart(products, shoppingCart.getTotalPrice().add(newProduct.getPrice()));
+        return new ShoppingCart(products,
+            shoppingCart.getTotalPrice().add(newProduct.getPrice()),
+            new BigDecimal("0.00"));
     }
 
 }
