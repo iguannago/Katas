@@ -29,7 +29,7 @@ class ShoppingCartTest {
 
     @Test
     void getTotalPrice() {
-        Assertions.assertEquals(new BigDecimal("0.00"), shoppingCartWithSomeProduct.getTotalPrice());
+        Assertions.assertEquals(new BigDecimal("0.00"), shoppingCartWithSomeProduct.getTotalPriceWithoutTax());
     }
 
     @Test
@@ -62,8 +62,8 @@ class ShoppingCartTest {
     @Test
     void toStringTest() {
         Assertions.assertEquals(
-            "ShoppingCart{products=[Product{name='some product', price=0.00}], totalPrice=0.00, "
-            + "totalPriceWithSalesTax=0.00, salesTaxRate=0.00, totalSalesTax=0.00}",
+            "ShoppingCart{products=[Product{name='some product', price=0.00}], totalPriceWithoutTax=0.00, "
+            + "totalPriceWithTax=0.00, salesTaxRate=0.00, totalSalesTax=0.00}",
             shoppingCartWithSomeProduct.toString()
         );
     }

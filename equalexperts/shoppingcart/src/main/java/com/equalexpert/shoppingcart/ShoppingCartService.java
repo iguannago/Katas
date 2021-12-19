@@ -24,7 +24,7 @@ public class ShoppingCartService {
         if (shoppingCart.getProducts() == null) {
             throw new RuntimeException("Error: product list is null");
         }
-        if (shoppingCart.getTotalPrice() == null || shoppingCart.getTotalPrice().compareTo(BigDecimal.ZERO) < 0) {
+        if (shoppingCart.getTotalPriceWithoutTax() == null || shoppingCart.getTotalPriceWithoutTax().compareTo(BigDecimal.ZERO) < 0) {
             throw new RuntimeException("Error: invalid total price");
         }
         if (newProduct == null) {
@@ -39,7 +39,7 @@ public class ShoppingCartService {
         List<Product> products = shoppingCart.getProducts();
         products.add(newProduct);
 
-        BigDecimal newTotalPrice = shoppingCart.getTotalPrice().add(newProduct.getPrice());
+        BigDecimal newTotalPrice = shoppingCart.getTotalPriceWithoutTax().add(newProduct.getPrice());
         BigDecimal totalSalesTax = calculateTaxToGivenAmount(newTotalPrice, shoppingCart.getSalesTaxRate());
 
         return new ShoppingCart(

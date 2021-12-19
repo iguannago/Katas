@@ -25,7 +25,7 @@ public class ShoppingCartServiceTest {
         Assertions.assertEquals(5, actualShoppingCart.getProducts().size());
         Assertions.assertEquals(5, getCountOfProductsForGivenProduct(actualShoppingCart.getProducts(),
             doveSoapProduct));
-        Assertions.assertEquals("199.95", actualShoppingCart.getTotalPrice().toString());
+        Assertions.assertEquals("199.95", actualShoppingCart.getTotalPriceWithTax().toString());
     }
 
     private long getCountOfProductsForGivenProduct(List<Product> products, Product product) {
@@ -92,8 +92,13 @@ public class ShoppingCartServiceTest {
     void given_newProduct_is_null_when_user_adds_products_throw_exception() {
         RuntimeException actualException = Assertions.assertThrows(RuntimeException.class,
             () -> shoppingCartService.addProductToShoppingCartGivenUnits(
-                new ShoppingCart(new ArrayList<>(), new BigDecimal("0.00"), new BigDecimal("0.00"), new BigDecimal("0.00"), new BigDecimal("0.00")),
-                null, 1)
+                new ShoppingCart(new ArrayList<>(),
+                    new BigDecimal("0.00"),
+                    new BigDecimal("0.00"),
+                    new BigDecimal("0.00"),
+                    new BigDecimal("0.00")),
+                null,
+                1)
         );
 
         Assertions.assertEquals("Error: new product is null", actualException.getMessage());
@@ -110,7 +115,7 @@ public class ShoppingCartServiceTest {
         Assertions.assertEquals(8, actualShoppingCart.getProducts().size());
         Assertions.assertEquals(8, getCountOfProductsForGivenProduct(actualShoppingCart.getProducts(),
             doveSoapProduct));
-        Assertions.assertEquals("319.92", actualShoppingCart.getTotalPrice().toString());
+        Assertions.assertEquals("319.92", actualShoppingCart.getTotalPriceWithTax().toString());
     }
 
     // step 3
@@ -139,6 +144,6 @@ public class ShoppingCartServiceTest {
             axeDeoProduct));
 
         Assertions.assertEquals(new BigDecimal("35.00"), actualShoppingCart.getTotalSalesTax());
-        Assertions.assertEquals(new BigDecimal("314.96"), actualShoppingCart.getTotalPriceWithSalesTax());
+        Assertions.assertEquals(new BigDecimal("314.96"), actualShoppingCart.getTotalPriceWithTax());
     }
 }
