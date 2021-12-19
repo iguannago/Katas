@@ -13,6 +13,7 @@ public class ShoppingCartService {
         return addProductToShoppingCartGivenUnits(addProductToShoppingCartOnce(shoppingCart, newProduct), newProduct, --units);
     }
 
+    //todo: create custom exceptions (nice)
     private void validateParameters(ShoppingCart shoppingCart, Product newProduct, int units) {
         if (shoppingCart == null) {
             throw new RuntimeException("Error: shopping cart is null");

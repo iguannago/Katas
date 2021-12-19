@@ -8,7 +8,7 @@ public final class ShoppingCart {
     private final List<Product> products;
     private final BigDecimal totalPrice;
 
-    //todo: add build pattern (NICE)
+    //todo: add build pattern (nice)
     public ShoppingCart(List<Product> products, BigDecimal totalPrice) {
         this.products = products;
         this.totalPrice = totalPrice;
