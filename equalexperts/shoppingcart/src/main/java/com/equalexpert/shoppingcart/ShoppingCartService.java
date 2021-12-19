@@ -1,6 +1,7 @@
 package com.equalexpert.shoppingcart;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.List;
 
 public class ShoppingCartService {
@@ -10,7 +11,9 @@ public class ShoppingCartService {
         if (units == 1) {
             return addProductToShoppingCartOnce(shoppingCart, newProduct);
         }
-        return addProductToShoppingCartGivenUnits(addProductToShoppingCartOnce(shoppingCart, newProduct), newProduct, --units);
+        return addProductToShoppingCartGivenUnits(addProductToShoppingCartOnce(shoppingCart, newProduct),
+            newProduct,
+            --units);
     }
 
     //todo: create custom exceptions (nice)
@@ -35,9 +38,23 @@ public class ShoppingCartService {
     private ShoppingCart addProductToShoppingCartOnce(ShoppingCart shoppingCart, Product newProduct) {
         List<Product> products = shoppingCart.getProducts();
         products.add(newProduct);
-        return new ShoppingCart(products,
-            shoppingCart.getTotalPrice().add(newProduct.getPrice()),
-            new BigDecimal("0.00"));
+
+        BigDecimal newTotalPrice = shoppingCart.getTotalPrice().add(newProduct.getPrice());
+        BigDecimal totalSalesTax = calculateTaxToGivenAmount(newTotalPrice, shoppingCart.getSalesTaxRate());
+
+        return new ShoppingCart(
+            products,
+            newTotalPrice,
+            newTotalPrice.add(totalSalesTax),
+            shoppingCart.getSalesTaxRate(),
+            totalSalesTax
+        );
+    }
+
+    private BigDecimal calculateTaxToGivenAmount(BigDecimal totalPrice, BigDecimal salesTaxRate) {
+        BigDecimal saleRate = salesTaxRate.divide(new BigDecimal("100"), 4, RoundingMode.HALF_EVEN);
+        BigDecimal multiply = totalPrice.multiply(saleRate);
+        return multiply.setScale(2, RoundingMode.HALF_EVEN);
     }
 
 }

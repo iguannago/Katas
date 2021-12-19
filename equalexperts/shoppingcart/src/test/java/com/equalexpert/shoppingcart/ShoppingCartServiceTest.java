@@ -13,6 +13,7 @@ public class ShoppingCartServiceTest {
     private final Product doveSoapProduct = new Product("Dove soap", new BigDecimal("39.99"));
     private final ShoppingCart emptyShoppingCart = new ShoppingCart(new ArrayList<>(),
         new BigDecimal("0.00"),
+        new BigDecimal("0.00"), new BigDecimal("0.00"),
         new BigDecimal("0.00"));
 
     @Test
@@ -22,14 +23,14 @@ public class ShoppingCartServiceTest {
             5);
 
         Assertions.assertEquals(5, actualShoppingCart.getProducts().size());
-        Assertions.assertEquals(5,
-            getCountOfProductsWithGivenUnitPrice(actualShoppingCart.getProducts(), "39.99"));
+        Assertions.assertEquals(5, getCountOfProductsForGivenProduct(actualShoppingCart.getProducts(),
+            doveSoapProduct));
         Assertions.assertEquals("199.95", actualShoppingCart.getTotalPrice().toString());
     }
 
-    private long getCountOfProductsWithGivenUnitPrice(List<Product> products, String unitPrice) {
+    private long getCountOfProductsForGivenProduct(List<Product> products, Product product) {
         return products.stream()
-            .filter(p -> p.getPrice().equals(new BigDecimal(unitPrice)))
+            .filter(p -> p.equals(product))
             .count();
     }
 
@@ -49,6 +50,7 @@ public class ShoppingCartServiceTest {
             () -> {
                 ShoppingCart shoppingCartWithNullProductList = new ShoppingCart(null,
                     new BigDecimal("0.00"),
+                    new BigDecimal("0.00"), new BigDecimal("0.00"),
                     new BigDecimal("0.00"));
                 shoppingCartService.addProductToShoppingCartGivenUnits(shoppingCartWithNullProductList, doveSoapProduct, 1);
             });
@@ -62,6 +64,7 @@ public class ShoppingCartServiceTest {
             () -> {
                 ShoppingCart shoppingCart = new ShoppingCart(new ArrayList<>(),
                     new BigDecimal("0.00"),
+                    new BigDecimal("0.00"), new BigDecimal("0.00"),
                     new BigDecimal("0.00"));
                 shoppingCartService.addProductToShoppingCartGivenUnits(shoppingCart, doveSoapProduct, 0);
             });
@@ -75,6 +78,7 @@ public class ShoppingCartServiceTest {
             () -> {
                 ShoppingCart shoppingCartWithInvalidTotalPrice = new ShoppingCart(new ArrayList<>(),
                     new BigDecimal("-1.00"),
+                    new BigDecimal("0.00"), new BigDecimal("0.00"),
                     new BigDecimal("0.00"));
                 shoppingCartService.addProductToShoppingCartGivenUnits(shoppingCartWithInvalidTotalPrice,
                     doveSoapProduct,
@@ -88,7 +92,7 @@ public class ShoppingCartServiceTest {
     void given_newProduct_is_null_when_user_adds_products_throw_exception() {
         RuntimeException actualException = Assertions.assertThrows(RuntimeException.class,
             () -> shoppingCartService.addProductToShoppingCartGivenUnits(
-                new ShoppingCart(new ArrayList<>(), new BigDecimal("0.00"), new BigDecimal("0.00")),
+                new ShoppingCart(new ArrayList<>(), new BigDecimal("0.00"), new BigDecimal("0.00"), new BigDecimal("0.00"), new BigDecimal("0.00")),
                 null, 1)
         );
 
@@ -104,8 +108,8 @@ public class ShoppingCartServiceTest {
             shoppingCartService.addProductToShoppingCartGivenUnits(shoppingCartWithFiveProducts, doveSoapProduct, 3);
 
         Assertions.assertEquals(8, actualShoppingCart.getProducts().size());
-        Assertions.assertEquals(8,
-            getCountOfProductsWithGivenUnitPrice(actualShoppingCart.getProducts(), "39.99"));
+        Assertions.assertEquals(8, getCountOfProductsForGivenProduct(actualShoppingCart.getProducts(),
+            doveSoapProduct));
         Assertions.assertEquals("319.92", actualShoppingCart.getTotalPrice().toString());
     }
 
@@ -113,9 +117,28 @@ public class ShoppingCartServiceTest {
     @Test
     void given_empty_shopping_cart_when_add_products_with_sales_tax_shopping_cart_is_as_expected() {
         Product axeDeoProduct = new Product("Axe Deo", new BigDecimal("99.99"));
-        ShoppingCart shoppingCartServiceWithTaxRate = new ShoppingCart(new ArrayList<>(),
-            new BigDecimal("0.00"),
-            new BigDecimal("12.5"));
 
+        ShoppingCart emptyShoppingCartServiceWithTaxRate = new ShoppingCart(new ArrayList<>(),
+            new BigDecimal("0.00"),
+            new BigDecimal("0.00"), new BigDecimal("12.5"),
+            new BigDecimal("0.00"));
+
+        ShoppingCart shoppingCartWithTwoDoveSoapProducts = shoppingCartService.addProductToShoppingCartGivenUnits(
+            emptyShoppingCartServiceWithTaxRate,
+            doveSoapProduct,
+            2);
+
+        ShoppingCart actualShoppingCart = shoppingCartService.addProductToShoppingCartGivenUnits(
+            shoppingCartWithTwoDoveSoapProducts,
+            axeDeoProduct,
+            2);
+
+        Assertions.assertEquals(2, getCountOfProductsForGivenProduct(actualShoppingCart.getProducts(),
+            doveSoapProduct));
+        Assertions.assertEquals(2, getCountOfProductsForGivenProduct(actualShoppingCart.getProducts(),
+            axeDeoProduct));
+
+        Assertions.assertEquals(new BigDecimal("35.00"), actualShoppingCart.getTotalSalesTax());
+        Assertions.assertEquals(new BigDecimal("314.96"), actualShoppingCart.getTotalPriceWithSalesTax());
     }
 }

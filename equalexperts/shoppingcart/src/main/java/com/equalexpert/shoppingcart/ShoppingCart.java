@@ -7,12 +7,20 @@ import java.util.Objects;
 public final class ShoppingCart {
     private final List<Product> products;
     private final BigDecimal totalPrice;
-    private final BigDecimal taxRate;
+    private final BigDecimal totalPriceWithSalesTax;
+    private final BigDecimal salesTaxRate;
+    private final BigDecimal totalSalesTax;
 
-    public ShoppingCart(List<Product> products, BigDecimal totalPrice, BigDecimal taxRate) {
+    public ShoppingCart(List<Product> products,
+                        BigDecimal totalPrice,
+                        BigDecimal totalPriceWithSalesTax,
+                        BigDecimal taxRate,
+                        BigDecimal totalSalesTaxRate) {
         this.products = products;
         this.totalPrice = totalPrice;
-        this.taxRate = taxRate;
+        this.totalPriceWithSalesTax = totalPriceWithSalesTax;
+        this.salesTaxRate = taxRate;
+        this.totalSalesTax = totalSalesTaxRate;
     }
 
     public List<Product> getProducts() {
@@ -23,17 +31,33 @@ public final class ShoppingCart {
         return totalPrice;
     }
 
+    public BigDecimal getTotalSalesTax() {
+        return totalSalesTax;
+    }
+
+    public BigDecimal getTotalPriceWithSalesTax() {
+        return totalPriceWithSalesTax;
+    }
+
+    public BigDecimal getSalesTaxRate() {
+        return salesTaxRate;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ShoppingCart that = (ShoppingCart) o;
-        return Objects.equals(products, that.products) && Objects.equals(totalPrice, that.totalPrice) && Objects.equals(taxRate, that.taxRate);
+        return Objects.equals(products, that.products)
+               && Objects.equals(totalPrice, that.totalPrice)
+               && Objects.equals(totalPriceWithSalesTax, that.totalPriceWithSalesTax)
+               && Objects.equals(salesTaxRate, that.salesTaxRate)
+               && Objects.equals(totalSalesTax, that.totalSalesTax);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(products, totalPrice, taxRate);
+        return Objects.hash(products, totalPrice, totalPriceWithSalesTax, salesTaxRate, totalSalesTax);
     }
 
     @Override
@@ -41,7 +65,9 @@ public final class ShoppingCart {
         return "ShoppingCart{" +
                "products=" + products +
                ", totalPrice=" + totalPrice +
-               ", taxRate=" + taxRate +
+               ", totalPriceWithSalesTax=" + totalPriceWithSalesTax +
+               ", salesTaxRate=" + salesTaxRate +
+               ", totalSalesTax=" + totalSalesTax +
                '}';
     }
 }
