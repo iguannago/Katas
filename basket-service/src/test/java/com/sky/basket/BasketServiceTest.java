@@ -3,6 +3,7 @@ package com.sky.basket;
 import com.sky.customer.CustomerService;
 import com.sky.subscription.SubscriptionNotFoundException;
 import com.sky.subscription.SubscriptionService;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -21,12 +22,19 @@ import static org.mockito.Mockito.when;
 public class BasketServiceTest {
 
     public static final String ENTERTAINMENT = "ENTERTAINMENT";
+    public static final String SPORTS = "SPORTS";
     @Mock
     SubscriptionService subscriptionService;
     @Mock
     CustomerService customerService;
     @InjectMocks
     private BasketService basketService;
+
+    @Before
+    public void setUp() {
+        when(subscriptionService.getSubscriptionPrice(ENTERTAINMENT)).thenReturn(new BigDecimal("9.99"));
+        when(subscriptionService.getSubscriptionPrice(SPORTS)).thenReturn(new BigDecimal("19.99"));
+    }
 
     /**
      * Scenario: Successful basket calculation of a single subscription
@@ -36,10 +44,7 @@ public class BasketServiceTest {
      */
     @Test
     public void given_entertainment_subs_when_basket_calculates_cost_then_returns_9_99() {
-        when(subscriptionService.getSubscriptionPrice(ENTERTAINMENT)).thenReturn(new BigDecimal("9.99"));
-
-        List<String> entertainmentSubs = List.of(ENTERTAINMENT);
-        BigDecimal actualCost = basketService.calculate("1", entertainmentSubs);
+        BigDecimal actualCost = basketService.calculate("1", List.of(ENTERTAINMENT));
 
         assertEquals(new BigDecimal("9.99"), actualCost);
         verify(subscriptionService).getSubscriptionPrice(ENTERTAINMENT);
@@ -47,12 +52,10 @@ public class BasketServiceTest {
 
     @Test
     public void given_sports_subs_when_basket_calculates_cost_then_returns_19_99() {
-        when(subscriptionService.getSubscriptionPrice("SPORTS")).thenReturn(new BigDecimal("19.99"));
-
-        List<String> entertainmentSubs = List.of("SPORTS");
-        BigDecimal actualCost = basketService.calculate("1", entertainmentSubs);
+        BigDecimal actualCost = basketService.calculate("1", List.of(SPORTS));
 
         assertEquals(new BigDecimal("19.99"), actualCost);
+        verify(subscriptionService).getSubscriptionPrice(SPORTS);
     }
 
     /**
