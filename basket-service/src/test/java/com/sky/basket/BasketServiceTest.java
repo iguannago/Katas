@@ -26,6 +26,8 @@ public class BasketServiceTest {
     public static final String CUSTOMER_ID = "1";
     private static final String MOVIES = "MOVIES";
     private static final String BOOST = "BOOST";
+    private static final String HALF_PRICE = "HALF_PRICE";
+    private static final String TEN_PERCENT = "TEN_PERCENT";
     @Mock
     SubscriptionService subscriptionService;
     @Mock
@@ -50,7 +52,7 @@ public class BasketServiceTest {
      */
     @Test
     public void given_entertainment_subs_when_basket_calculates_cost_then_returns_9_99() {
-        BigDecimal actualCost = basketService.calculate(CUSTOMER_ID, List.of(ENTERTAINMENT));
+        BigDecimal actualCost = basketService.calculate(CUSTOMER_ID, List.of(ENTERTAINMENT), null);
 
         assertEquals(new BigDecimal("9.99"), actualCost);
         verify(subscriptionService).getSubscriptionPrice(ENTERTAINMENT);
@@ -58,7 +60,7 @@ public class BasketServiceTest {
 
     @Test
     public void given_sports_subs_when_basket_calculates_cost_then_returns_19_99() {
-        BigDecimal actualCost = basketService.calculate(CUSTOMER_ID, List.of(SPORTS));
+        BigDecimal actualCost = basketService.calculate(CUSTOMER_ID, List.of(SPORTS), null);
 
         assertEquals(new BigDecimal("19.99"), actualCost);
         verify(subscriptionService).getSubscriptionPrice(SPORTS);
@@ -73,7 +75,7 @@ public class BasketServiceTest {
      */
     @Test(expected = SubscriptionNotFoundException.class)
     public void given_unknown_sub_when_calculate_then_throw_exception() {
-        basketService.calculate(CUSTOMER_ID, List.of(MOVIES));
+        basketService.calculate(CUSTOMER_ID, List.of(MOVIES), null);
 
         verify(subscriptionService).getSubscriptionPrice(MOVIES);
     }
@@ -86,7 +88,7 @@ public class BasketServiceTest {
      */
     @Test
     public void give_multiple_subs_then_returns_expected_cost() {
-        BigDecimal actualCost = basketService.calculate("1", List.of(ENTERTAINMENT, SPORTS));
+        BigDecimal actualCost = basketService.calculate("1", List.of(ENTERTAINMENT, SPORTS), null);
 
         assertEquals(new BigDecimal("29.98"), actualCost);
         InOrder inOrder = inOrder(subscriptionService);
@@ -107,7 +109,7 @@ public class BasketServiceTest {
     public void given_boost_subs_and_entertainment_then_returns_expected_cost() {
         when(customerService.getSubscriptionsForCustomer(CUSTOMER_ID)).thenReturn(List.of(ENTERTAINMENT));
 
-        BigDecimal actualCost = basketService.calculate(CUSTOMER_ID, List.of(BOOST));
+        BigDecimal actualCost = basketService.calculate(CUSTOMER_ID, List.of(BOOST), null);
 
         assertEquals(new BigDecimal("1.99"), actualCost);
         verify(customerService).getSubscriptionsForCustomer(CUSTOMER_ID);
@@ -118,7 +120,7 @@ public class BasketServiceTest {
     public void given_boost_subs_then_expects_exception() {
         when(customerService.getSubscriptionsForCustomer(CUSTOMER_ID)).thenReturn(null);
 
-        basketService.calculate(CUSTOMER_ID, List.of(BOOST));
+        basketService.calculate(CUSTOMER_ID, List.of(BOOST), null);
 
         verify(subscriptionService).getSubscriptionPrice(SPORTS);
         verify(customerService).getSubscriptionsForCustomer(CUSTOMER_ID);
@@ -128,7 +130,7 @@ public class BasketServiceTest {
     public void given_boost_subs_when_customer_has_empty_subs_then_expects_exception() {
         when(customerService.getSubscriptionsForCustomer(CUSTOMER_ID)).thenReturn(Collections.emptyList());
 
-        basketService.calculate(CUSTOMER_ID, List.of(BOOST));
+        basketService.calculate(CUSTOMER_ID, List.of(BOOST), null);
 
         verify(subscriptionService).getSubscriptionPrice(SPORTS);
         verify(customerService).getSubscriptionsForCustomer(CUSTOMER_ID);
@@ -138,11 +140,36 @@ public class BasketServiceTest {
     public void given_boost1_subs_then_returns_expected_cost() {
         when(subscriptionService.getSubscriptionPrice("BOOST1")).thenReturn(new BigDecimal("2.99"));
 
-        BigDecimal actualCost = basketService.calculate("1", List.of("BOOST1"));
+        BigDecimal actualCost = basketService.calculate("1", List.of("BOOST1"), null);
 
         assertEquals(new BigDecimal("2.99"), actualCost);
     }
 
     // Part 3 - Enhance Basket Service to use Vouchers
+
+    /**
+     * Scenario: Successful basket calculation with a voucher
+     * Given the customer wants to purchase an ENTERTAINMENT subscription
+     * And the customer applies a HALF_PRICE voucher
+     * When the basket is calculated
+     * Then a successful response is returned with £4.99 as the charge
+     */
+    @Test
+    public void given_customer_purchases_entertainment_and_has_half_price_voucher_when_calculate_then_expect_4_99() {
+        BigDecimal actualCost = basketService.calculate(CUSTOMER_ID, List.of(ENTERTAINMENT), HALF_PRICE);
+
+        assertEquals(new BigDecimal("4.99"), actualCost);
+
+        verify(subscriptionService).getSubscriptionPrice(ENTERTAINMENT);
+    }
+
+    @Test
+    public void given_customer_purchases_entertainment_and_has_ten_percent_voucher_when_calculate_then_expect_9() {
+        BigDecimal actualCost = basketService.calculate(CUSTOMER_ID, List.of(ENTERTAINMENT), TEN_PERCENT);
+
+        assertEquals(new BigDecimal("9.00"), actualCost);
+
+        verify(subscriptionService).getSubscriptionPrice(ENTERTAINMENT);
+    }
 
 }
