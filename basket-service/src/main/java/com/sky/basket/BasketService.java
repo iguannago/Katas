@@ -6,6 +6,7 @@ import com.sky.subscription.SubscriptionService;
 
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.Optional;
 
 public class BasketService {
 
@@ -28,15 +29,9 @@ public class BasketService {
 
     private BigDecimal calculateSubsCosts(List<String> subscriptions) {
         return subscriptions.stream()
-                .map(this::getStringBigDecimalFunction)
+                .map(sub -> Optional.ofNullable(subscriptionService.getSubscriptionPrice(sub))
+                        .orElseThrow(SubscriptionNotFoundException::new))
                 .reduce(BigDecimal.valueOf(0), BigDecimal::add);
     }
 
-    private BigDecimal getStringBigDecimalFunction(String sub) {
-        BigDecimal cost = subscriptionService.getSubscriptionPrice(sub);
-        if (cost == null) {
-            throw new SubscriptionNotFoundException();
-        }
-        return cost;
-    }
 }

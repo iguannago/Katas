@@ -28,13 +28,12 @@ public class BasketServiceTest {
     @InjectMocks
     private BasketService basketService;
 
-    /*
-    Scenario: Successful basket calculation of a single subscription
-Given the customer wants to purchase an ENTERTAINMENT subscription
-When the basket is calculated
-Then a successful response is returned with £9.99 as the charge
+    /**
+     * Scenario: Successful basket calculation of a single subscription
+     * Given the customer wants to purchase an ENTERTAINMENT subscription
+     * When the basket is calculated
+     * Then a successful response is returned with £9.99 as the charge
      */
-
     @Test
     public void given_entertainment_subs_when_basket_calculates_cost_then_returns_9_99() {
         when(subscriptionService.getSubscriptionPrice(ENTERTAINMENT)).thenReturn(new BigDecimal("9.99"));
@@ -56,14 +55,12 @@ Then a successful response is returned with £9.99 as the charge
         assertEquals(new BigDecimal("19.99"), actualCost);
     }
 
-
-    /*
-    Scenario: Successful basket calculation of multiple subscriptions
-Given the customer wants to purchase ENTERTAINMENT and SPORTS subscriptions
-When the basket is calculated
-Then a successful response is returned with £29.98 as the charge
+    /**
+     * Scenario: Successful basket calculation of multiple subscriptions
+     * Given the customer wants to purchase ENTERTAINMENT and SPORTS subscriptions
+     * When the basket is calculated
+     * Then a successful response is returned with £29.98 as the charge
      */
-
     @Test
     public void give_multiple_subs_then_returns_expected_cost() {
         List<String> subscriptions = List.of("ENTERTAINMENT", "SPORTS");
@@ -77,14 +74,13 @@ Then a successful response is returned with £29.98 as the charge
     }
 
 
-    /*
-    Scenario: Unknown subscription should return SubscriptionNotFound exception
-Given the customer wants to purchase a MOVIES subscription
-And the SubscriptionService does not return a price (returns null)
-When the basket is calculated
-Then a SubscriptionNotFound exception is thrown
+    /**
+     * Scenario: Unknown subscription should return SubscriptionNotFound exception
+     * Given the customer wants to purchase a MOVIES subscription
+     * And the SubscriptionService does not return a price (returns null)
+     * When the basket is calculated
+     * Then a SubscriptionNotFound exception is thrown
      */
-
     @Test(expected = SubscriptionNotFoundException.class)
     public void given_unknown_subscription_returns_exception() {
         when(subscriptionService.getSubscriptionPrice("MOVIES")).thenReturn(null);
@@ -93,12 +89,12 @@ Then a SubscriptionNotFound exception is thrown
     }
 
 
-    /*
-    Scenario: Successful basket calculation of a BOOST subscription
-    Given the customer has an existing ENTERTAINMENT subscription
-    And the customer wants to purchase a BOOST subscription
-    When the basket is calculated
-    Then a successful response is returned with £1.99 as the charge
+    /**
+     * Scenario: Successful basket calculation of a BOOST subscription
+     * Given the customer has an existing ENTERTAINMENT subscription
+     * And the customer wants to purchase a BOOST subscription
+     * When the basket is calculated
+     * Then a successful response is returned with £1.99 as the charge
      */
 
     @Test
