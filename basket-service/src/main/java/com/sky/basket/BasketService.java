@@ -40,15 +40,18 @@ public class BasketService {
 
     private BigDecimal calculateSubsCosts(List<String> subscriptions, String voucher) {
         BigDecimal costBeforeVoucher = calculateCostBeforeVoucher(subscriptions);
-        String validVoucher = Optional.ofNullable(voucher).orElse("");
-        return applyVoucher(costBeforeVoucher, validVoucher);
+        Optional<String> validVoucher = Optional.ofNullable(voucher);
+        if (validVoucher.isPresent()) {
+            return applyVoucher(costBeforeVoucher, validVoucher.get());
+        }
+        return costBeforeVoucher;
     }
 
-    private BigDecimal applyVoucher(BigDecimal costBeforeVoucher, String maybeVoucher) {
-        if (HALF_PRICE.equals(maybeVoucher)) {
+    private BigDecimal applyVoucher(BigDecimal costBeforeVoucher, String voucher) {
+        if (HALF_PRICE.equals(voucher)) {
             return costBeforeVoucher.divide(new BigDecimal(2), RoundingMode.DOWN);
         }
-        if (TEN_PERCENT.equals(maybeVoucher)) {
+        if (TEN_PERCENT.equals(voucher)) {
             return costBeforeVoucher.subtract(costBeforeVoucher.divide(new BigDecimal("10"), RoundingMode.DOWN));
         }
         return costBeforeVoucher;
