@@ -6,6 +6,7 @@ import com.sky.subscription.SubscriptionService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.InOrder;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
@@ -15,8 +16,7 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.anyString;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
 public class BasketServiceTest {
@@ -82,14 +82,12 @@ public class BasketServiceTest {
      */
     @Test
     public void give_multiple_subs_then_returns_expected_cost() {
-        List<String> subscriptions = List.of("ENTERTAINMENT", "SPORTS");
-
-        when(subscriptionService.getSubscriptionPrice("ENTERTAINMENT")).thenReturn(new BigDecimal("9.99"));
-        when(subscriptionService.getSubscriptionPrice("SPORTS")).thenReturn(new BigDecimal("19.99"));
-
-        BigDecimal actualCost = basketService.calculate("1", subscriptions);
+        BigDecimal actualCost = basketService.calculate("1", List.of(ENTERTAINMENT, SPORTS));
 
         assertEquals(new BigDecimal("29.98"), actualCost);
+        InOrder inOrder = inOrder(subscriptionService);
+        inOrder.verify(subscriptionService).getSubscriptionPrice(ENTERTAINMENT);
+        inOrder.verify(subscriptionService).getSubscriptionPrice(SPORTS);
     }
 
 
@@ -136,7 +134,6 @@ public class BasketServiceTest {
 
     @Test
     public void given_boost1_subs_then_returns_expected_cost() {
-        when(customerService.getSubscriptionsForCustomer(anyString())).thenReturn(List.of("ENTERTAINMENT"));
         when(subscriptionService.getSubscriptionPrice("BOOST1")).thenReturn(new BigDecimal("2.99"));
 
         BigDecimal actualCost = basketService.calculate("1", List.of("BOOST1"));

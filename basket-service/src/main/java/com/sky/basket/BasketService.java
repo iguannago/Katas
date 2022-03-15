@@ -19,12 +19,13 @@ public class BasketService {
     }
 
     public BigDecimal calculate(String customerId, List<String> subscriptions) throws BasketConditionNotMetException {
-        List<String> customerSubscriptions = customerService.getSubscriptionsForCustomer(customerId);
-        if (subscriptions.contains("BOOST") && !customerSubscriptions.contains("ENTERTAINMENT")) {
-            throw new BasketConditionNotMetException();
-        } else {
-            return calculateSubsCosts(subscriptions);
+        if (subscriptions.contains("BOOST")) {
+            List<String> customerSubscriptions = customerService.getSubscriptionsForCustomer(customerId);
+            if (!customerSubscriptions.contains("ENTERTAINMENT")) {
+                throw new BasketConditionNotMetException();
+            }
         }
+        return calculateSubsCosts(subscriptions);
     }
 
     private BigDecimal calculateSubsCosts(List<String> subscriptions) {
