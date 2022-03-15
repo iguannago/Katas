@@ -12,10 +12,10 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import java.math.BigDecimal;
+import java.util.Collections;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
-import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
@@ -25,6 +25,7 @@ public class BasketServiceTest {
     public static final String SPORTS = "SPORTS";
     public static final String CUSTOMER_ID = "1";
     private static final String MOVIES = "MOVIES";
+    private static final String BOOST = "BOOST";
     @Mock
     SubscriptionService subscriptionService;
     @Mock
@@ -36,6 +37,7 @@ public class BasketServiceTest {
     public void setUp() {
         when(subscriptionService.getSubscriptionPrice(ENTERTAINMENT)).thenReturn(new BigDecimal("9.99"));
         when(subscriptionService.getSubscriptionPrice(SPORTS)).thenReturn(new BigDecimal("19.99"));
+        when(subscriptionService.getSubscriptionPrice(BOOST)).thenReturn(new BigDecimal("1.99"));
     }
 
     /**
@@ -90,22 +92,6 @@ public class BasketServiceTest {
         inOrder.verify(subscriptionService).getSubscriptionPrice(SPORTS);
     }
 
-
-    /**
-     * Scenario: Unknown subscription should return SubscriptionNotFound exception
-     * Given the customer wants to purchase a MOVIES subscription
-     * And the SubscriptionService does not return a price (returns null)
-     * When the basket is calculated
-     * Then a SubscriptionNotFound exception is thrown
-     */
-    @Test(expected = SubscriptionNotFoundException.class)
-    public void given_unknown_subscription_returns_exception() {
-        when(subscriptionService.getSubscriptionPrice("MOVIES")).thenReturn(null);
-
-        basketService.calculate("1", List.of("MOVIES"));
-    }
-
-
     /**
      * Scenario: Successful basket calculation of a BOOST subscription
      * Given the customer has an existing ENTERTAINMENT subscription
@@ -113,24 +99,36 @@ public class BasketServiceTest {
      * When the basket is calculated
      * Then a successful response is returned with £1.99 as the charge
      */
-
     @Test
-    public void given_boost_subs_then_returns_expected_cost() {
-        when(customerService.getSubscriptionsForCustomer(anyString())).thenReturn(List.of("ENTERTAINMENT"));
-        when(subscriptionService.getSubscriptionPrice("BOOST")).thenReturn(new BigDecimal("1.99"));
+    public void given_boost_subs_and_entertainment_then_returns_expected_cost() {
+        when(customerService.getSubscriptionsForCustomer(CUSTOMER_ID)).thenReturn(List.of(ENTERTAINMENT));
 
-        BigDecimal actualCost = basketService.calculate("1", List.of("BOOST"));
+        BigDecimal actualCost = basketService.calculate(CUSTOMER_ID, List.of(BOOST));
 
         assertEquals(new BigDecimal("1.99"), actualCost);
+        verify(customerService).getSubscriptionsForCustomer(CUSTOMER_ID);
+        verify(subscriptionService).getSubscriptionPrice(BOOST);
     }
 
     @Test(expected = BasketConditionNotMetException.class)
     public void given_boost_subs_then_expects_exception() {
-        when(customerService.getSubscriptionsForCustomer(anyString())).thenReturn(List.of("SPORTS"));
+        when(customerService.getSubscriptionsForCustomer(CUSTOMER_ID)).thenReturn(null);
 
-        basketService.calculate("1", List.of("BOOST"));
+        basketService.calculate(CUSTOMER_ID, List.of(BOOST));
+
+        verify(subscriptionService).getSubscriptionPrice(SPORTS);
+        verify(customerService).getSubscriptionsForCustomer(CUSTOMER_ID);
     }
 
+    @Test(expected = BasketConditionNotMetException.class)
+    public void given_boost_subs_when_customer_has_empty_subs_then_expects_exception() {
+        when(customerService.getSubscriptionsForCustomer(CUSTOMER_ID)).thenReturn(Collections.emptyList());
+
+        basketService.calculate(CUSTOMER_ID, List.of(BOOST));
+
+        verify(subscriptionService).getSubscriptionPrice(SPORTS);
+        verify(customerService).getSubscriptionsForCustomer(CUSTOMER_ID);
+    }
 
     @Test
     public void given_boost1_subs_then_returns_expected_cost() {

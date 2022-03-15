@@ -6,10 +6,13 @@ import com.sky.subscription.SubscriptionService;
 
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 public class BasketService {
 
+    public static final String BOOST = "BOOST";
+    public static final String ENTERTAINMENT = "ENTERTAINMENT";
     SubscriptionService subscriptionService;
     CustomerService customerService;
 
@@ -19,9 +22,9 @@ public class BasketService {
     }
 
     public BigDecimal calculate(String customerId, List<String> subscriptions) throws BasketConditionNotMetException {
-        if (subscriptions.contains("BOOST")) {
+        if (subscriptions.contains(BOOST)) {
             List<String> customerSubscriptions = customerService.getSubscriptionsForCustomer(customerId);
-            if (!customerSubscriptions.contains("ENTERTAINMENT")) {
+            if (Objects.isNull(customerSubscriptions) || customerSubscriptions.isEmpty()) {
                 throw new BasketConditionNotMetException();
             }
         }
