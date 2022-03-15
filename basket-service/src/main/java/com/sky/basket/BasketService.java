@@ -28,8 +28,8 @@ public class BasketService {
 
     private BigDecimal calculateSubsCosts(List<String> subscriptions) {
         return subscriptions.stream()
-            .map(this::getStringBigDecimalFunction)
-            .reduce(BigDecimal.valueOf(0), BigDecimal::add);
+                .map(this::getStringBigDecimalFunction)
+                .reduce(BigDecimal.valueOf(0), BigDecimal::add);
     }
 
     private BigDecimal getStringBigDecimalFunction(String sub) {
@@ -37,6 +37,6 @@ public class BasketService {
         if (cost == null) {
             throw new SubscriptionNotFoundException();
         }
-        return subscriptionService.getSubscriptionPrice(sub);
+        return cost;
     }
 }
