@@ -40,6 +40,8 @@ public class BasketServiceTest {
         when(subscriptionService.getSubscriptionPrice(BOOST)).thenReturn(new BigDecimal("1.99"));
     }
 
+    //Part 1 - Implement Basket Service:
+
     /**
      * Scenario: Successful basket calculation of a single subscription
      * Given the customer wants to purchase an ENTERTAINMENT subscription
@@ -92,6 +94,8 @@ public class BasketServiceTest {
         inOrder.verify(subscriptionService).getSubscriptionPrice(SPORTS);
     }
 
+    // Part 2 - Enhance Basket Service to use Customer Service
+
     /**
      * Scenario: Successful basket calculation of a BOOST subscription
      * Given the customer has an existing ENTERTAINMENT subscription
@@ -138,4 +142,7 @@ public class BasketServiceTest {
 
         assertEquals(new BigDecimal("2.99"), actualCost);
     }
+
+    // Part 3 - Enhance Basket Service to use Vouchers
+
 }
