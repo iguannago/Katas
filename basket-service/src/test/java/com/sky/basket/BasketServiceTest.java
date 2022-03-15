@@ -23,6 +23,8 @@ public class BasketServiceTest {
 
     public static final String ENTERTAINMENT = "ENTERTAINMENT";
     public static final String SPORTS = "SPORTS";
+    public static final String CUSTOMER_ID = "1";
+    private static final String MOVIES = "MOVIES";
     @Mock
     SubscriptionService subscriptionService;
     @Mock
@@ -44,7 +46,7 @@ public class BasketServiceTest {
      */
     @Test
     public void given_entertainment_subs_when_basket_calculates_cost_then_returns_9_99() {
-        BigDecimal actualCost = basketService.calculate("1", List.of(ENTERTAINMENT));
+        BigDecimal actualCost = basketService.calculate(CUSTOMER_ID, List.of(ENTERTAINMENT));
 
         assertEquals(new BigDecimal("9.99"), actualCost);
         verify(subscriptionService).getSubscriptionPrice(ENTERTAINMENT);
@@ -52,10 +54,24 @@ public class BasketServiceTest {
 
     @Test
     public void given_sports_subs_when_basket_calculates_cost_then_returns_19_99() {
-        BigDecimal actualCost = basketService.calculate("1", List.of(SPORTS));
+        BigDecimal actualCost = basketService.calculate(CUSTOMER_ID, List.of(SPORTS));
 
         assertEquals(new BigDecimal("19.99"), actualCost);
         verify(subscriptionService).getSubscriptionPrice(SPORTS);
+    }
+
+    /**
+     * Scenario: Unknown subscription should return SubscriptionNotFound exception
+     * Given the customer wants to purchase a MOVIES subscription
+     * And the SubscriptionService does not return a price (returns null)
+     * When the basket is calculated
+     * Then a SubscriptionNotFound exception is thrown
+     */
+    @Test(expected = SubscriptionNotFoundException.class)
+    public void given_unknown_sub_when_calculate_then_throw_exception() {
+        basketService.calculate(CUSTOMER_ID, List.of(MOVIES));
+
+        verify(subscriptionService).getSubscriptionPrice(MOVIES);
     }
 
     /**
