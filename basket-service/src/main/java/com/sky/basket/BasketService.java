@@ -40,7 +40,11 @@ public class BasketService {
 
     private BigDecimal calculateSubsCosts(List<String> subscriptions, String voucher) {
         BigDecimal costBeforeVoucher = calculateCostBeforeVoucher(subscriptions);
-        String maybeVoucher = Optional.ofNullable(voucher).orElse("");
+        String validVoucher = Optional.ofNullable(voucher).orElse("");
+        return applyVoucher(costBeforeVoucher, validVoucher);
+    }
+
+    private BigDecimal applyVoucher(BigDecimal costBeforeVoucher, String maybeVoucher) {
         if (HALF_PRICE.equals(maybeVoucher)) {
             return costBeforeVoucher.divide(new BigDecimal(2), RoundingMode.DOWN);
         }
