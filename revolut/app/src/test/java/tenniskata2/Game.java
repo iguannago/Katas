@@ -13,8 +13,8 @@ public final class Game {
 
     public Score play(String winner) {
         if (player1.getName().equals(winner)
+                && player1.getPoints().getValue() <= Point.FORTY.getValue()
                 && player2.getPoints().getValue() < Point.FORTY.getValue()
-                && player1.getPoints().getValue() < Point.FORTY.getValue()
         ) {
             return new Score(new Player(player1.getName(), giveMeNextPoint(player1.getPoints())), player2);
         }
@@ -29,6 +29,8 @@ public final class Game {
                 return Point.THIRTY;
             case THIRTY:
                 return Point.FORTY;
+            case FORTY:
+                return Point.ADVANTAGE;
         }
         throw new RuntimeException("Point is not recognised");
     }
