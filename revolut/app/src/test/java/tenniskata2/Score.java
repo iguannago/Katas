@@ -11,6 +11,14 @@ public final class Score {
         this.player2 = player2;
     }
 
+    public Player getPlayer1() {
+        return player1;
+    }
+
+    public Player getPlayer2() {
+        return player2;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

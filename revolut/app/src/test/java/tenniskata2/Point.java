@@ -3,13 +3,13 @@ package tenniskata2;
 public enum Point {
     LOVE(0), FIFTEEN(1), THIRTY(2), FORTY(3);
 
-    private final int point;
+    private final int value;
 
-    Point(int point) {
-        this.point = point;
+    Point(int value) {
+        this.value = value;
     }
 
-    public int getPoint() {
-        return point;
+    public int getValue() {
+        return value;
     }
 }
