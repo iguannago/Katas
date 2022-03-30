@@ -12,13 +12,36 @@ public final class Game {
     }
 
     public Score play(String winner) {
-        if (player1.getName().equals(winner)
-                && player1.getPoints().getValue() <= Point.FORTY.getValue()
-                && player2.getPoints().getValue() < Point.FORTY.getValue()
-        ) {
-            return new Score(new Player(player1.getName(), giveMeNextPoint(player1.getPoints())), player2);
+        System.out.println(winner + " wins the point");
+        if (player1.getName().equals(winner)) {
+            if (isNormalGame(player1, player2)) {
+                Player player1 = new Player(this.player1.getName(), giveMeNextPoint(this.player1.getPoints()));
+                return new Score(player1, player2, null);
+            }
+            if (isWinningGame(player1, player2)) {
+                return new Score(player1, player2, player1.getName() + " wins the game");
+            }
+            return new Score(player1, player2, null);
         }
-        return new Score(player1, player2);
+        if (player2.getName().equals(winner)) {
+            if (isNormalGame(player2, player1)) {
+                Player player2 = new Player(this.player2.getName(), giveMeNextPoint(this.player2.getPoints()));
+                return new Score(player1, player2, null);
+            }
+            if (isWinningGame(player2, player1)) {
+                return new Score(player1, player2, player2.getName() + " wins the game");
+            }
+        }
+        return new Score(player1, player2, null);
+    }
+
+    private boolean isWinningGame(Player player1, Player player2) {
+        return player1.getPoints().equals(Point.FORTY) && player2.getPoints().getValue() < Point.FORTY.getValue();
+    }
+
+    private boolean isNormalGame(Player player1, Player player2) {
+        return player1.getPoints().getValue() < Point.FORTY.getValue()
+                && player2.getPoints().getValue() < Point.FORTY.getValue();
     }
 
     private Point giveMeNextPoint(Point givenPoint) {

@@ -17,10 +17,15 @@ class TennisGameTest {
 
     public static Stream<Arguments> scenarioProvider() {
         return Stream.of(
-                Arguments.of(Point.LOVE, Point.LOVE, PLAYER_1_NAME, Point.FIFTEEN, Point.LOVE),
-                Arguments.of(Point.FIFTEEN, Point.LOVE, PLAYER_1_NAME, Point.THIRTY, Point.LOVE),
-                Arguments.of(Point.THIRTY, Point.LOVE, PLAYER_1_NAME, Point.FORTY, Point.LOVE),
-                Arguments.of(Point.FORTY, Point.LOVE, PLAYER_1_NAME, Point.ADVANTAGE, Point.LOVE)
+                Arguments.of(Point.LOVE, Point.LOVE, PLAYER_1_NAME, Point.FIFTEEN, Point.LOVE, null),
+                Arguments.of(Point.FIFTEEN, Point.LOVE, PLAYER_1_NAME, Point.THIRTY, Point.LOVE, null),
+                Arguments.of(Point.THIRTY, Point.LOVE, PLAYER_1_NAME, Point.FORTY, Point.LOVE, null),
+                Arguments.of(Point.FORTY, Point.LOVE, PLAYER_1_NAME, Point.FORTY, Point.LOVE, "Nadal wins the game"),
+
+                Arguments.of(Point.LOVE, Point.LOVE, PLAYER_2_NAME, Point.LOVE, Point.FIFTEEN, null),
+                Arguments.of(Point.LOVE, Point.FIFTEEN, PLAYER_2_NAME, Point.LOVE, Point.THIRTY, null),
+                Arguments.of(Point.LOVE, Point.THIRTY, PLAYER_2_NAME, Point.LOVE, Point.FORTY, null),
+                Arguments.of(Point.LOVE, Point.FORTY, PLAYER_2_NAME, Point.LOVE, Point.FORTY, "Federer wins the game")
         );
     }
 
@@ -31,16 +36,17 @@ class TennisGameTest {
             Point player2Points,
             String winner,
             Point expectedPlayer1Points,
-            Point expectedPlayer2Points
+            Point expectedPlayer2Points,
+            String expectedResult
     ) {
         player1 = new Player(PLAYER_1_NAME, player1Points);
         player2 = new Player(PLAYER_2_NAME, player2Points);
-        game = new Game(new Score(player1, player2));
+        game = new Game(new Score(player1, player2, null));
 
         Score actual = game.play(winner);
 
-        Score expectedScore = new Score(new Player("Nadal", expectedPlayer1Points),
-                new Player("Federer", expectedPlayer2Points));
+        Score expectedScore = new Score(new Player(PLAYER_1_NAME, expectedPlayer1Points),
+                new Player(PLAYER_2_NAME, expectedPlayer2Points), expectedResult);
         Assertions.assertEquals(expectedScore, actual);
     }
 
