@@ -10,10 +10,7 @@ import java.util.stream.Stream;
 class TennisGameTest {
 
     public static final String PLAYER_1_NAME = "Nadal";
-    private Player player1 = null;
     public static final String PLAYER_2_NAME = "Federer";
-    private Player player2 = null;
-    private Game game = null;
 
     public static Stream<Arguments> scenarioProvider() {
         return Stream.of(
@@ -25,7 +22,19 @@ class TennisGameTest {
                 Arguments.of(Point.LOVE, Point.LOVE, PLAYER_2_NAME, Point.LOVE, Point.FIFTEEN, null),
                 Arguments.of(Point.LOVE, Point.FIFTEEN, PLAYER_2_NAME, Point.LOVE, Point.THIRTY, null),
                 Arguments.of(Point.LOVE, Point.THIRTY, PLAYER_2_NAME, Point.LOVE, Point.FORTY, null),
-                Arguments.of(Point.LOVE, Point.FORTY, PLAYER_2_NAME, Point.LOVE, Point.FORTY, "Federer wins the game")
+                Arguments.of(Point.LOVE, Point.FORTY, PLAYER_2_NAME, Point.LOVE, Point.FORTY, "Federer wins the game"),
+
+                Arguments.of(Point.THIRTY, Point.FORTY, PLAYER_1_NAME, Point.FORTY, Point.FORTY, "deuce"),
+                Arguments.of(Point.FORTY, Point.THIRTY, PLAYER_2_NAME, Point.FORTY, Point.FORTY, "deuce"),
+
+                Arguments.of(Point.FORTY, Point.FORTY, PLAYER_1_NAME, Point.ADVANTAGE, Point.FORTY, "Nadal's advantage"),
+                Arguments.of(Point.FORTY, Point.FORTY, PLAYER_2_NAME, Point.FORTY, Point.ADVANTAGE, "Federer's advantage"),
+
+                Arguments.of(Point.ADVANTAGE, Point.FORTY, PLAYER_1_NAME, Point.ADVANTAGE, Point.FORTY, "Nadal wins the game"),
+                Arguments.of(Point.FORTY, Point.ADVANTAGE, PLAYER_2_NAME, Point.FORTY, Point.ADVANTAGE, "Federer wins the game"),
+
+                Arguments.of(Point.ADVANTAGE, Point.FORTY, PLAYER_2_NAME, Point.FORTY, Point.FORTY, "deuce"),
+                Arguments.of(Point.FORTY, Point.ADVANTAGE, PLAYER_1_NAME, Point.FORTY, Point.FORTY, "deuce")
         );
     }
 
@@ -39,9 +48,9 @@ class TennisGameTest {
             Point expectedPlayer2Points,
             String expectedResult
     ) {
-        player1 = new Player(PLAYER_1_NAME, player1Points);
-        player2 = new Player(PLAYER_2_NAME, player2Points);
-        game = new Game(new Score(player1, player2, null));
+        Player player1 = new Player(PLAYER_1_NAME, player1Points);
+        Player player2 = new Player(PLAYER_2_NAME, player2Points);
+        Game game = new Game(player1, player2);
 
         Score actual = game.play(winner);
 
