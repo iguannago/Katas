@@ -2,6 +2,7 @@ package functional;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 
 public class AnimalApp {
     @FunctionalInterface
@@ -10,6 +11,14 @@ public class AnimalApp {
     }
 
     public static void main(String[] args) {
+
+        Function<String, String> cat = name -> name + " miaow";
+        Function<String, String> dog = name -> "woof " + name;
+        List<Function<String, String>> animals = new ArrayList<>();
+        animals.add(cat);
+        animals.add(dog);
+        animals.forEach(a -> System.out.println(a.apply("David")));
+
         List<AnimalSound> animalSoundList = new ArrayList<>();
         animalSoundList.add(owner -> "woof " + owner);
         animalSoundList.add(owner -> owner + " miaow");
