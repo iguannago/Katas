@@ -3,6 +3,7 @@ package functional;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
+import java.util.function.Predicate;
 
 public class AnimalApp {
     @FunctionalInterface
@@ -18,6 +19,9 @@ public class AnimalApp {
         animals.add(cat);
         animals.add(dog);
         animals.forEach(a -> System.out.println(a.apply("David")));
+
+        Predicate<Integer> isCarAffordable = price -> price <= 10000;
+        System.out.println(isCarAffordable.test(5000));
 
         List<AnimalSound> animalSoundList = new ArrayList<>();
         animalSoundList.add(owner -> "woof " + owner);
