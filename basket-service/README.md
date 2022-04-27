@@ -8,9 +8,8 @@ Subscription prices are retrieved via the `SubscriptionService` interface. You a
 
 JUnit must be used to unit test `BasketService` against the provided Acceptance Criteria. Third party services should be mocked.
 
-We have the following features that we want to implement. Please complete each feature in it's own commit.
+We have the following features that we want to implement.
 
-When you are finished, make sure you provide a git-bundle, so we can see your local history (see docs [here](https://git-scm.com/docs/git-bundle)).
 
 ## Part 1 - Implement Basket Service:
 
