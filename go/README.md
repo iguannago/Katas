@@ -1,5 +1,8 @@
 # Go lang
 
+## Official site
+https://go.dev/
+
 ## Initialise your application
 ```go mod init booking-app```
 
