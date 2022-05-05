@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 	conferenceName := "Go Conference"
@@ -11,26 +14,43 @@ func main() {
 	fmt.Printf("We have total of %v tickets and %v are still available\n", remainingTickets, conferenceTickets)
 	fmt.Println("Get your tickets here to attend")
 
-	var firstName string
-	var lastName string
-	var email string
-	var userTickets int
+	var bookings []string
 
-	fmt.Print("Enter your first name: ")
-	fmt.Scan(&firstName)
-	fmt.Print("Enter your last name: ")
-	fmt.Scan(&lastName)
-	fmt.Print("Enter your email: ")
-	fmt.Scan(&email)
-	fmt.Print("Enter number of tickets: ")
-	fmt.Scan(&userTickets)
+	for {
 
-	var bookings [50]string
-	bookings[0] = firstName + " " + lastName
-	fmt.Printf("The whole array: %v\n", bookings)
-	fmt.Printf("The first element: %v\n", bookings[0])
+		var firstName string
+		var lastName string
+		var email string
+		var userTickets int
 
-	fmt.Printf("Thank you %v %v for booking %v tickets.\n", firstName, lastName, userTickets)
-	remainingTickets = conferenceTickets - userTickets
-	fmt.Printf("We have a total of %v tickets and %v are still available\n", conferenceTickets, remainingTickets)
+		fmt.Print("Enter your first name: ")
+		fmt.Scan(&firstName)
+		fmt.Print("Enter your last name: ")
+		fmt.Scan(&lastName)
+		fmt.Print("Enter your email: ")
+		fmt.Scan(&email)
+		fmt.Print("Enter number of tickets: ")
+		fmt.Scan(&userTickets)
+
+		bookings = append(bookings, firstName+" "+lastName)
+		fmt.Printf("Bookings: %v\n", bookings)
+		fmt.Printf("The first element: %v\n", bookings[0])
+
+		printBookingFirstNames(bookings)
+
+		fmt.Printf("Thank you %v %v for booking %v tickets.\n", firstName, lastName, userTickets)
+		remainingTickets = remainingTickets - userTickets
+		fmt.Printf("We have a total of %v tickets and %v are still available\n", conferenceTickets, remainingTickets)
+
+	}
+
+}
+
+func printBookingFirstNames(bookings []string) {
+	firstNames := []string{}
+	for _, booking := range bookings {
+		names := strings.Fields(booking)
+		firstNames = append(firstNames, names[0])
+	}
+	fmt.Printf("Booking first names: %v\n", firstNames)
 }
