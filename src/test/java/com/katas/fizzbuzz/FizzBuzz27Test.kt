@@ -15,7 +15,10 @@ class FizzBuzz27Test {
             "2, 2",
             "3, Fizz",
             "4, 4",
-            "5, Buzz"
+            "5, Buzz",
+            "7, 7",
+            "9, Fizz",
+            "15, FizzBuzz"
         ]
     )
     internal fun `given 1 returns 1`(input: Int, expectedOutcome: String) {
