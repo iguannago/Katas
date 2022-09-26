@@ -6,7 +6,7 @@ package com.katas.romanNumerals;
 public class RomanNumeral {
     public String arabicToRoman(int number) {
         int cont = 0;
-        StringBuffer roman = new StringBuffer();
+        StringBuilder roman = new StringBuilder();
         while (cont < number) {
             if (roman.toString().contains("III")) {
                 if (cont % 10 == 3){
@@ -17,11 +17,11 @@ public class RomanNumeral {
                 }
             } else {
                 if (cont % 10 == 4) {
-                    roman = roman.replace(roman.length()-2, roman.length(), "V");
+                    roman.replace(roman.length() - 2, roman.length(), "V");
                 } else if (cont % 10 == 9) {
-                    roman = roman.replace(roman.length()-2, roman.length(), "X");
+                    roman.replace(roman.length() - 2, roman.length(), "X");
                 } else {
-                    roman = roman.append("I");
+                    roman.append("I");
                 }
             }
             cont++;
