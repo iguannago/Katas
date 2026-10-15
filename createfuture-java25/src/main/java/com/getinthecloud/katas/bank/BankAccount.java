@@ -1,12 +1,16 @@
 package com.getinthecloud.katas.bank;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 public final class BankAccount {
 
     private BigDecimal balance;
 
-    public BankAccount() {
+    private final RecordedDeposits recordedDeposits;
+
+    public BankAccount(RecordedDeposits recordedDeposits) {
+        this.recordedDeposits = recordedDeposits;
         this.balance = BigDecimal.ZERO;
     }
 
@@ -18,6 +22,7 @@ public final class BankAccount {
     public void deposit(BigDecimal amount) {
         validateAmount(amount);
         balance = balance.add(amount);
+        recordedDeposits.add(new Deposit(LocalDateTime.now(), balance));
     }
 
     public void withdraw(BigDecimal amount) {
@@ -30,13 +35,13 @@ public final class BankAccount {
 
     private void validateAmount(BigDecimal amount) {
         if (amount == null || amount.compareTo(BigDecimal.ZERO) < 0) {
-            throw new IllegalArgumentException("Invalid deposit amount");
+            throw new IllegalArgumentException("Invalid deposit balance");
         }
         try {
             //noinspection BigDecimalMethodWithoutRoundingCalled,ResultOfMethodCallIgnored
             amount.setScale(2);
         } catch (ArithmeticException e) {
-            throw new IllegalArgumentException("Invalid deposit amount");
+            throw new IllegalArgumentException("Invalid deposit balance");
         }
     }
 }
