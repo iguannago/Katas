@@ -22,6 +22,9 @@ public final class BankAccount {
 
     public void withdraw(BigDecimal amount) {
         validateAmount(amount);
+        if (balance.compareTo(amount) < 0) {
+            throw new IllegalStateException("Insufficient funds");
+        }
         balance = balance.subtract(amount);
     }
 

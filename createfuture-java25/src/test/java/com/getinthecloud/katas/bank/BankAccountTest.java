@@ -38,6 +38,9 @@ class BankAccountTest {
 
         account.deposit(new BigDecimal("10.500"));
         assertEquals(new BigDecimal("24.50"), account.balance());
+
+        account.deposit(new BigDecimal("0.25"));
+        assertEquals(new BigDecimal("24.75"), account.balance());
     }
 
     public static Stream<Arguments> invalidAmounts() {
@@ -72,5 +75,22 @@ class BankAccountTest {
 
         account.withdraw(BigDecimal.ONE);
         assertEquals(new BigDecimal("8.00"), account.balance());
+
+        account.withdraw(new BigDecimal("0.10"));
+        assertEquals(new BigDecimal("7.90"), account.balance());
+
+        account.withdraw(new BigDecimal("0.00"));
+        assertEquals(new BigDecimal("7.90"), account.balance());
+
+        account.withdraw(new BigDecimal("7.90"));
+        assertEquals(new BigDecimal("0.00"), account.balance());
+    }
+
+    @Test
+    void rejectValidWithdrawalGreaterThanBalance() {
+        BankAccount account = new BankAccount();
+        account.deposit(BigDecimal.TEN);
+
+        assertThrows(IllegalStateException.class, () -> account.withdraw(BigDecimal.valueOf(11)));
     }
 }
