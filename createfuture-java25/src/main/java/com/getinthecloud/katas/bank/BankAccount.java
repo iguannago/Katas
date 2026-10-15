@@ -11,14 +11,29 @@ public final class BankAccount {
     }
 
     public BigDecimal balance() {
-        return balance;
+        //noinspection BigDecimalMethodWithoutRoundingCalled
+        return balance.setScale(2);
     }
 
     public void deposit(BigDecimal amount) {
+        validateAmount(amount);
         balance = balance.add(amount);
     }
 
     public void withdraw(BigDecimal amount) {
+        validateAmount(amount);
         balance = balance.subtract(amount);
+    }
+
+    private void validateAmount(BigDecimal amount) {
+        if (amount == null || amount.compareTo(BigDecimal.ZERO) < 0) {
+            throw new IllegalArgumentException("Invalid deposit amount");
+        }
+        try {
+            //noinspection BigDecimalMethodWithoutRoundingCalled,ResultOfMethodCallIgnored
+            amount.setScale(2);
+        } catch (ArithmeticException e) {
+            throw new IllegalArgumentException("Invalid deposit amount");
+        }
     }
 }
