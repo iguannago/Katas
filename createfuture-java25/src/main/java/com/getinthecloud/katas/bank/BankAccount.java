@@ -1,6 +1,7 @@
 package com.getinthecloud.katas.bank;
 
 import java.math.BigDecimal;
+import java.time.Clock;
 import java.time.LocalDateTime;
 
 public final class BankAccount {
@@ -8,10 +9,12 @@ public final class BankAccount {
     private BigDecimal balance;
     private final RecordedDeposits recordedDeposits;
     private final RecordedWithdrawals recordedWithdrawals;
+    private final Clock clock;
 
-    public BankAccount(RecordedDeposits recordedDeposits, RecordedWithdrawals recordedWithdrawals) {
+    public BankAccount(RecordedDeposits recordedDeposits, RecordedWithdrawals recordedWithdrawals, Clock clock) {
         this.recordedDeposits = recordedDeposits;
         this.recordedWithdrawals = recordedWithdrawals;
+        this.clock = clock;
         this.balance = BigDecimal.ZERO;
     }
 
@@ -23,7 +26,7 @@ public final class BankAccount {
     public void deposit(BigDecimal amount) {
         validateAmount(amount);
         balance = balance.add(amount);
-        recordedDeposits.add(new Deposit(LocalDateTime.now(), balance));
+        recordedDeposits.add(new Deposit(LocalDateTime.now(clock), balance));
     }
 
     public void withdraw(BigDecimal amount) {
@@ -32,7 +35,7 @@ public final class BankAccount {
             throw new IllegalStateException("Insufficient funds");
         }
         balance = balance.subtract(amount);
-        recordedWithdrawals.add(new Withdrawal(LocalDateTime.now(), balance));
+        recordedWithdrawals.add(new Withdrawal(LocalDateTime.now(clock), balance));
     }
 
     private void validateAmount(BigDecimal amount) {

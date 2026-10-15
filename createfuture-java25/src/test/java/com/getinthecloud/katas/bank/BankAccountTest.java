@@ -6,11 +6,15 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.math.BigDecimal;
+import java.time.Clock;
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.argThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
@@ -18,7 +22,9 @@ class BankAccountTest {
 
     private final RecordedDeposits recordedDeposits = mock(RecordedDeposits.class);
     private final RecordedWithdrawals recordedWithdrawals = mock(RecordedWithdrawals.class);
-    private final BankAccount bankAccount = new BankAccount(recordedDeposits, recordedWithdrawals);
+    private final Clock clock = Clock.fixed(Instant.parse("2022-01-01T00:00:00Z"), ZoneOffset.UTC);
+
+    private final BankAccount bankAccount = new BankAccount(recordedDeposits, recordedWithdrawals, clock);
 
     @Test
     void startsWithAZeroBalance() {
@@ -100,15 +106,36 @@ class BankAccountTest {
 
     @Test
     void recordDatedDeposit() {
+        LocalDateTime expectedDate = LocalDateTime.ofInstant(clock.instant(), clock.getZone());
+
         bankAccount.deposit(new BigDecimal("10.00"));
-        verify(recordedDeposits).add(any(Deposit.class));
+        bankAccount.deposit(new BigDecimal("10.00"));
+
+        verify(recordedDeposits).add(argThat(deposit ->
+                deposit != null
+                        && expectedDate.equals(deposit.date())
+                        && new BigDecimal("10.00")
+                        .compareTo(deposit.balance()) == 0));
+
+        verify(recordedDeposits).add(argThat(deposit ->
+                deposit != null
+                        && expectedDate.equals(deposit.date())
+                        && new BigDecimal("20.00")
+                        .compareTo(deposit.balance()) == 0));
     }
 
     @Test
     void recordDatedWithdrawal() {
+        LocalDateTime expectedDate = LocalDateTime.ofInstant(clock.instant(), clock.getZone());
+
         bankAccount.deposit(new BigDecimal("10.00"));
         bankAccount.withdraw(new BigDecimal("1.00"));
-        verify(recordedWithdrawals).add(any(Withdrawal.class));
+
+        verify(recordedWithdrawals).add(argThat(withdrawal ->
+                withdrawal != null
+                        && expectedDate.equals(withdrawal.date())
+                        && new BigDecimal("9.00")
+                        .compareTo(withdrawal.balance()) == 0));
     }
 
 }
