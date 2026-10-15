@@ -6,11 +6,12 @@ import java.time.LocalDateTime;
 public final class BankAccount {
 
     private BigDecimal balance;
-
     private final RecordedDeposits recordedDeposits;
+    private final RecordedWithdrawals recordedWithdrawals;
 
-    public BankAccount(RecordedDeposits recordedDeposits) {
+    public BankAccount(RecordedDeposits recordedDeposits, RecordedWithdrawals recordedWithdrawals) {
         this.recordedDeposits = recordedDeposits;
+        this.recordedWithdrawals = recordedWithdrawals;
         this.balance = BigDecimal.ZERO;
     }
 
@@ -31,6 +32,7 @@ public final class BankAccount {
             throw new IllegalStateException("Insufficient funds");
         }
         balance = balance.subtract(amount);
+        recordedWithdrawals.add(new Withdrawal(LocalDateTime.now(), balance));
     }
 
     private void validateAmount(BigDecimal amount) {

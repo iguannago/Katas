@@ -17,7 +17,8 @@ import static org.mockito.Mockito.verify;
 class BankAccountTest {
 
     private final RecordedDeposits recordedDeposits = mock(RecordedDeposits.class);
-    private final BankAccount bankAccount = new BankAccount(recordedDeposits);
+    private final RecordedWithdrawals recordedWithdrawals = mock(RecordedWithdrawals.class);
+    private final BankAccount bankAccount = new BankAccount(recordedDeposits, recordedWithdrawals);
 
     @Test
     void startsWithAZeroBalance() {
@@ -101,6 +102,13 @@ class BankAccountTest {
     void recordDatedDeposit() {
         bankAccount.deposit(new BigDecimal("10.00"));
         verify(recordedDeposits).add(any(Deposit.class));
+    }
+
+    @Test
+    void recordDatedWithdrawal() {
+        bankAccount.deposit(new BigDecimal("10.00"));
+        bankAccount.withdraw(new BigDecimal("1.00"));
+        verify(recordedWithdrawals).add(any(Withdrawal.class));
     }
 
 }
