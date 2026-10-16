@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Babyfood, instant, dry, brown rice, cereal",
+    "calories": 406.0,
+    "totalFat": 3.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cereals ready-to-eat, fortified, puffed, rice",
+    "calories": 402.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beverages, powder, sweetened, lemon, instant, tea",
+    "calories": 401.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "35.00 mg"
+  },
+  {
+    "name": "Beverages, sweetened, lemon, decaffeinated, instant, tea",
+    "calories": 401.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "5.00 mg"
+  },
+  {
+    "name": "Beverages, with added nutrients, powder, chocolate-flavor beverage mix for milk",
+    "calories": 400.0,
+    "totalFat": 2.3,
+    "fatRating": "LOW",
+    "caffeine": "8.00 mg"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Cheese, camembert",
+    "calories": 300.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, whole milk, mozzarella",
+    "calories": 300.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "PEPPERIDGE FARM, Cinnamon Swirl Bread",
+    "calories": 300.0,
+    "totalFat": 5.0,
+    "fatRating": "MEDIUM",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fast foods, with crispy chicken fillet, biscuit",
+    "calories": 300.0,
+    "totalFat": 15.0,
+    "fatRating": "MEDIUM",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KELLOGG'S, Chocolate Chip, Mini Muffin Tops, EGGO",
+    "calories": 300.0,
+    "totalFat": 11.0,
+    "fatRating": "MEDIUM",
+    "caffeine": "0"
+  },
+  {
+    "name": "Chicken, roasted, cooked, meat and skin, back, broilers or fryers",
+    "calories": 300.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beef, roasted, cooked, all grades, trimmed to 1/8\" fat, separable lean and fat, lip-on, bone-in, rib eye roast",
+    "calories": 300.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beef, grilled, cooked, choice, trimmed to 0\" fat, separable lean and fat, outside skirt, boneless, plate steak",
+    "calories": 300.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  }
+]

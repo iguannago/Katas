@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Fish oil, cod liver",
+    "calories": 902.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish oil, menhaden",
+    "calories": 902.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fat, mutton tallow",
+    "calories": 902.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish oil, sardine",
+    "calories": 902.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish oil, herring",
+    "calories": 902.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  }
+]

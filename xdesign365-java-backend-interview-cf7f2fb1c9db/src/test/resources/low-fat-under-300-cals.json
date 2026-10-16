@@ -1,0 +1,7002 @@
+[
+  {
+    "name": "Eggplant, raw",
+    "calories": 25.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sherbet, orange",
+    "calories": 144.0,
+    "totalFat": 2.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cauliflower, raw",
+    "calories": 25.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Taro leaves, raw",
+    "calories": 42.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "PACE, Picante Sauce",
+    "calories": 25.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Mango nectar, canned",
+    "calories": 51.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Peppers, raw, jalapeno",
+    "calories": 29.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Winged bean tuber, raw",
+    "calories": 148.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Grapes, raw, muscadine",
+    "calories": 57.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Nuts, raw, ginkgo nuts",
+    "calories": 182.0,
+    "totalFat": 1.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "PACE, Green Taco Sauce",
+    "calories": 25.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Syrup, Canadian, maple",
+    "calories": 270.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Ostrich, raw, top loin",
+    "calories": 119.0,
+    "totalFat": 3.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Chewing gum, sugarless",
+    "calories": 268.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "McDONALD'S, Side Salad",
+    "calories": 20.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Broccoli, raw, chinese",
+    "calories": 30.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Agave, raw (Southwest)",
+    "calories": 68.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Emu, raw, outside drum",
+    "calories": 103.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Currants, dried, zante",
+    "calories": 283.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Lentils, raw, sprouted",
+    "calories": 106.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, raw, sheepshead",
+    "calories": 108.0,
+    "totalFat": 2.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Babyfood, pear, juice",
+    "calories": 47.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Brussels sprouts, raw",
+    "calories": 43.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Broccoli raab, cooked",
+    "calories": 33.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Chicory, raw, witloof",
+    "calories": 17.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Broccoli, raw, leaves",
+    "calories": 28.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Tomatoes, raw, orange",
+    "calories": 16.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Tomatoes, raw, yellow",
+    "calories": 15.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, smoked, haddock",
+    "calories": 116.0,
+    "totalFat": 1.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fireweed, raw, leaves",
+    "calories": 103.0,
+    "totalFat": 2.8,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Emu, raw, flat fillet",
+    "calories": 102.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Emu, raw, inside drum",
+    "calories": 108.0,
+    "totalFat": 1.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "USDA Commodity, salsa",
+    "calories": 36.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Figs, uncooked, dried",
+    "calories": 249.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Syrup, fruit flavored",
+    "calories": 261.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Broccoli, raw, stalks",
+    "calories": 28.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Gravy, canned, au jus",
+    "calories": 16.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Soup, mix, dry, onion",
+    "calories": 293.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mushrooms, raw, enoki",
+    "calories": 37.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Hominy, white, canned",
+    "calories": 72.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Game meat, raw, moose",
+    "calories": 102.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pears, red anjou, raw",
+    "calories": 62.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Horseradish, prepared",
+    "calories": 48.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sauce, worcestershire",
+    "calories": 78.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Horned melon (Kiwano)",
+    "calories": 44.0,
+    "totalFat": 1.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Peppers, raw, serrano",
+    "calories": 32.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cabbage, cooked, napa",
+    "calories": 12.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Spices, white, pepper",
+    "calories": 296.0,
+    "totalFat": 2.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Yambean (jicama), raw",
+    "calories": 38.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Kiwifruit, raw, green",
+    "calories": 61.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Drumstick leaves, raw",
+    "calories": 64.0,
+    "totalFat": 1.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Yautia (tannier), raw",
+    "calories": 98.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cucumber, raw, peeled",
+    "calories": 12.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Dandelion greens, raw",
+    "calories": 45.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Melons, raw, honeydew",
+    "calories": 36.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mushrooms, raw, white",
+    "calories": 22.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mushrooms, raw, morel",
+    "calories": 31.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oranges, Florida, raw",
+    "calories": 46.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SILK Vanilla, soymilk",
+    "calories": 41.0,
+    "totalFat": 1.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Papaya nectar, canned",
+    "calories": 57.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fiddlehead ferns, raw",
+    "calories": 34.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "SILK Peach soy yogurt",
+    "calories": 94.0,
+    "totalFat": 1.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "SILK Plain soy yogurt",
+    "calories": 66.0,
+    "totalFat": 1.8,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "PACE, Enchilada Sauce",
+    "calories": 40.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Yeast extract spread",
+    "calories": 185.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Tomatoes, raw, green",
+    "calories": 23.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mollusks, raw, snail",
+    "calories": 90.0,
+    "totalFat": 1.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Emu, raw, fan fillet",
+    "calories": 103.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sour cream, fat free",
+    "calories": 74.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Carrot juice, canned",
+    "calories": 40.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fruit butters, apple",
+    "calories": 173.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pickle relish, sweet",
+    "calories": 130.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Rice noodles, cooked",
+    "calories": 108.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sesbania flower, raw",
+    "calories": 27.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cherries, raw, sweet",
+    "calories": 63.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SILK Coffee, soymilk",
+    "calories": 62.0,
+    "totalFat": 1.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Peaches, raw, yellow",
+    "calories": 39.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pears, bartlett, raw",
+    "calories": 63.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Toppings, strawberry",
+    "calories": 254.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Seaweed, raw, wakame",
+    "calories": 45.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Amaranth leaves, raw",
+    "calories": 23.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Grape leaves, canned",
+    "calories": 69.0,
+    "totalFat": 2.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "PACE, Red Taco Sauce",
+    "calories": 50.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pumpkin flowers, raw",
+    "calories": 15.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Loganberries, frozen",
+    "calories": 55.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Tangerine juice, raw",
+    "calories": 43.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Game meat, raw, deer",
+    "calories": 120.0,
+    "totalFat": 2.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oranges, navels, raw",
+    "calories": 49.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Taro, raw, tahitian",
+    "calories": 44.0,
+    "totalFat": 1.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Chicory greens, raw",
+    "calories": 23.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Hearts of palm, raw",
+    "calories": 115.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Chayote, raw, fruit",
+    "calories": 19.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Syrups, light, corn",
+    "calories": 283.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, raw, monkfish",
+    "calories": 76.0,
+    "totalFat": 1.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Guavas, raw, common",
+    "calories": 68.0,
+    "totalFat": 1.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Emu, raw, full rump",
+    "calories": 112.0,
+    "totalFat": 1.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mustard greens, raw",
+    "calories": 27.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Seaweed, raw, laver",
+    "calories": 35.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Figs, stewed, dried",
+    "calories": 107.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SILK Mocha, soymilk",
+    "calories": 58.0,
+    "totalFat": 1.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Game meat, raw, elk",
+    "calories": 111.0,
+    "totalFat": 1.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "PACE, Pico De Gallo",
+    "calories": 31.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Ostrich, raw, round",
+    "calories": 116.0,
+    "totalFat": 2.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Prune juice, canned",
+    "calories": 71.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, raw, mahimahi",
+    "calories": 85.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Potatoes, skin, raw",
+    "calories": 58.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pepper, raw, banana",
+    "calories": 27.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Drumstick pods, raw",
+    "calories": 37.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Toppings, pineapple",
+    "calories": 253.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Tomatoes, sun-dried",
+    "calories": 258.0,
+    "totalFat": 3.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Guava sauce, cooked",
+    "calories": 36.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pumpkin leaves, raw",
+    "calories": 19.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Melons, raw, casaba",
+    "calories": 28.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Melon balls, frozen",
+    "calories": 33.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Rolls, pumpernickel",
+    "calories": 276.0,
+    "totalFat": 2.8,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, raw, tilefish",
+    "calories": 96.0,
+    "totalFat": 2.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "SILK Plain, soymilk",
+    "calories": 41.0,
+    "totalFat": 1.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cabbage, raw, savoy",
+    "calories": 27.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, raw, tilapia",
+    "calories": 96.0,
+    "totalFat": 1.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Broccoli raab, raw",
+    "calories": 22.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Turtle, raw, green",
+    "calories": 89.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Chicory roots, raw",
+    "calories": 72.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Prickly pears, raw",
+    "calories": 41.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, raw, haddock",
+    "calories": 74.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Jams and preserves",
+    "calories": 278.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Carrots, raw, baby",
+    "calories": 35.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Catsup, low sodium",
+    "calories": 101.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Acerola juice, raw",
+    "calories": 23.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Jute, raw, potherb",
+    "calories": 34.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Bagels, multigrain",
+    "calories": 241.0,
+    "totalFat": 1.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beef, dried, cured",
+    "calories": 153.0,
+    "totalFat": 1.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Seaweed, raw, kelp",
+    "calories": 43.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Seaweed, raw, agar",
+    "calories": 26.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Bread, white wheat",
+    "calories": 238.0,
+    "totalFat": 2.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Onions, raw, sweet",
+    "calories": 32.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Onions, raw, welsh",
+    "calories": 34.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SILK Chai, soymilk",
+    "calories": 53.0,
+    "totalFat": 1.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Vinegar, distilled",
+    "calories": 18.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sapote, raw, mamey",
+    "calories": 124.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Syrups, sugar free",
+    "calories": 52.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Syrups, dark, corn",
+    "calories": 286.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Bamboo shoots, raw",
+    "calories": 27.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, raw, lingcod",
+    "calories": 85.0,
+    "totalFat": 1.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Whey, fluid, sweet",
+    "calories": 27.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Yardlong bean, raw",
+    "calories": 47.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cress, raw, garden",
+    "calories": 32.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Dates, deglet noor",
+    "calories": 282.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Lambsquarters, raw",
+    "calories": 43.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Turnip greens, raw",
+    "calories": 32.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pomegranates, raw",
+    "calories": 83.0,
+    "totalFat": 1.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pears, raw, asian",
+    "calories": 42.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Chard, raw, swiss",
+    "calories": 19.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Peppermint, fresh",
+    "calories": 70.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Vinegar, red wine",
+    "calories": 19.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Vinegar, balsamic",
+    "calories": 88.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oheloberries, raw",
+    "calories": 28.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "PACE, Salsa Verde",
+    "calories": 47.0,
+    "totalFat": 1.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Plantains, cooked",
+    "calories": 116.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Burdock root, raw",
+    "calories": 72.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Butterbur, canned",
+    "calories": 3.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Ostrich, raw, fan",
+    "calories": 117.0,
+    "totalFat": 2.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SILK Nog, soymilk",
+    "calories": 74.0,
+    "totalFat": 1.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Syrups, grenadine",
+    "calories": 268.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Raisins, seedless",
+    "calories": 299.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Strawberries, raw",
+    "calories": 32.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, raw, burbot",
+    "calories": 90.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Gooseberries, raw",
+    "calories": 44.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Grape leaves, raw",
+    "calories": 93.0,
+    "totalFat": 2.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Kale, raw, scotch",
+    "calories": 42.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Marmalade, orange",
+    "calories": 246.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Whey, fluid, acid",
+    "calories": 24.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Eggplant, pickled",
+    "calories": 49.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fennel, raw, bulb",
+    "calories": 31.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Wild rice, cooked",
+    "calories": 101.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Elderberries, raw",
+    "calories": 73.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Orange juice, raw",
+    "calories": 45.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cabbage, raw, red",
+    "calories": 31.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Blackberries, raw",
+    "calories": 43.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Wasabi, raw, root",
+    "calories": 109.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Raspberries, raw",
+    "calories": 52.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Corn bran, crude",
+    "calories": 224.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Taro shoots, raw",
+    "calories": 11.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, raw, cisco",
+    "calories": 98.0,
+    "totalFat": 1.9,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Couscous, cooked",
+    "calories": 112.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Dill weed, fresh",
+    "calories": 43.0,
+    "totalFat": 1.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Spearmint, fresh",
+    "calories": 44.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Lemon juice, raw",
+    "calories": 22.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Ginger root, raw",
+    "calories": 80.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Orange peel, raw",
+    "calories": 97.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Blueberries, raw",
+    "calories": 57.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beet greens, raw",
+    "calories": 22.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Bagels, oat bran",
+    "calories": 255.0,
+    "totalFat": 1.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Clementines, raw",
+    "calories": 47.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Peas, raw, green",
+    "calories": 81.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oat bran, cooked",
+    "calories": 40.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pears, bosc, raw",
+    "calories": 67.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cranberries, raw",
+    "calories": 46.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Rose-apples, raw",
+    "calories": 25.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, raw, scup",
+    "calories": 105.0,
+    "totalFat": 2.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Watermelon, raw",
+    "calories": 30.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Syrups, sorghum",
+    "calories": 290.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Lemon peel, raw",
+    "calories": 47.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nectarines, raw",
+    "calories": 44.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mulberries, raw",
+    "calories": 43.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Lotus root, raw",
+    "calories": 74.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sauce, barbecue",
+    "calories": 172.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Crabapples, raw",
+    "calories": 76.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Breadfruit, raw",
+    "calories": 103.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pimento, canned",
+    "calories": 23.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Tomatillos, raw",
+    "calories": 32.0,
+    "totalFat": 1.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Raisins, seeded",
+    "calories": 296.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Vanilla extract",
+    "calories": 288.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Wheat, sprouted",
+    "calories": 198.0,
+    "totalFat": 1.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, raw, cusk",
+    "calories": 87.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Watercress, raw",
+    "calories": 11.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, raw, ling",
+    "calories": 87.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Lime juice, raw",
+    "calories": 25.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cabbage, kimchi",
+    "calories": 15.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Dates, medjool",
+    "calories": 277.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Arrowroot, raw",
+    "calories": 65.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Tamarinds, raw",
+    "calories": 239.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Vinegar, cider",
+    "calories": 21.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Longans, dried",
+    "calories": 286.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pectin, liquid",
+    "calories": 11.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Quinoa, cooked",
+    "calories": 120.0,
+    "totalFat": 1.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Plantains, raw",
+    "calories": 122.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Parsley, fresh",
+    "calories": 36.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Radicchio, raw",
+    "calories": 23.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Bulgur, cooked",
+    "calories": 83.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Millet, cooked",
+    "calories": 119.0,
+    "totalFat": 1.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Capers, canned",
+    "calories": 23.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sapodilla, raw",
+    "calories": 83.0,
+    "totalFat": 1.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Arrowhead, raw",
+    "calories": 99.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Frog legs, raw",
+    "calories": 73.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Jackfruit, raw",
+    "calories": 95.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Litchis, dried",
+    "calories": 277.0,
+    "totalFat": 1.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Rutabagas, raw",
+    "calories": 37.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cornsalad, raw",
+    "calories": 21.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cherimoya, raw",
+    "calories": 75.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Asparagus, raw",
+    "calories": 20.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Apricots, raw",
+    "calories": 48.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Broccoli, raw",
+    "calories": 34.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Shallots, raw",
+    "calories": 72.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Syrups, maple",
+    "calories": 260.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pepeao, dried",
+    "calories": 298.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Purslane, raw",
+    "calories": 20.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Radishes, raw",
+    "calories": 16.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Bagels, wheat",
+    "calories": 250.0,
+    "totalFat": 1.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Parsnips, raw",
+    "calories": 75.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Collards, raw",
+    "calories": 32.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Celeriac, raw",
+    "calories": 42.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Kumquats, raw",
+    "calories": 71.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Spelt, cooked",
+    "calories": 127.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Kohlrabi, raw",
+    "calories": 27.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Celtuce, raw",
+    "calories": 18.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Thyme, fresh",
+    "calories": 101.0,
+    "totalFat": 1.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Basil, fresh",
+    "calories": 23.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Rhubarb, raw",
+    "calories": 21.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nopales, raw",
+    "calories": 16.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Longans, raw",
+    "calories": 60.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Loquats, raw",
+    "calories": 47.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Epazote, raw",
+    "calories": 32.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pumpkin, raw",
+    "calories": 26.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Carrots, raw",
+    "calories": 41.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, surimi",
+    "calories": 99.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cabbage, raw",
+    "calories": 25.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cardoon, raw",
+    "calories": 17.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Abiyuch, raw",
+    "calories": 69.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pummelo, raw",
+    "calories": 38.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Quinces, raw",
+    "calories": 57.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Roselle, raw",
+    "calories": 49.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Soursop, raw",
+    "calories": 66.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Arugula, raw",
+    "calories": 25.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Litchis, raw",
+    "calories": 66.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Teff, cooked",
+    "calories": 101.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Spinach, raw",
+    "calories": 23.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cassava, raw",
+    "calories": 160.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Turnips, raw",
+    "calories": 28.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Bananas, raw",
+    "calories": 89.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Papayas, raw",
+    "calories": 43.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Chives, raw",
+    "calories": 30.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Carob flour",
+    "calories": 222.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Prune puree",
+    "calories": 257.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Salt, table",
+    "calories": 0.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Borage, raw",
+    "calories": 21.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Mangos, raw",
+    "calories": 60.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Garlic, raw",
+    "calories": 149.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Endive, raw",
+    "calories": 17.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Tofu yogurt",
+    "calories": 94.0,
+    "totalFat": 1.8,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Celery, raw",
+    "calories": 16.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Bagels, egg",
+    "calories": 278.0,
+    "totalFat": 2.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Feijoa, raw",
+    "calories": 61.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Jujube, raw",
+    "calories": 79.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Syrup, Cane",
+    "calories": 269.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Onions, raw",
+    "calories": 40.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish broth",
+    "calories": 16.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Eppaw, raw",
+    "calories": 150.0,
+    "totalFat": 1.8,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Limes, raw",
+    "calories": 30.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pears, raw",
+    "calories": 57.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Plums, raw",
+    "calories": 46.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Rowal, raw",
+    "calories": 111.0,
+    "totalFat": 2.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beets, raw",
+    "calories": 43.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Dock, raw",
+    "calories": 22.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Kale, raw",
+    "calories": 49.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Okra, raw",
+    "calories": 33.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Taro, raw",
+    "calories": 112.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Figs, raw",
+    "calories": 74.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Goat, raw",
+    "calories": 109.0,
+    "totalFat": 2.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Molasses",
+    "calories": 290.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Yam, raw",
+    "calories": 118.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Jellies",
+    "calories": 266.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Catsup",
+    "calories": 101.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Okara",
+    "calories": 76.0,
+    "totalFat": 1.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Poi",
+    "calories": 112.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Winged bean leaves, raw",
+    "calories": 74.0,
+    "totalFat": 1.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Corn, raw, white, sweet",
+    "calories": 86.0,
+    "totalFat": 1.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, raw, king, mackerel",
+    "calories": 105.0,
+    "totalFat": 2.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Mushrooms, raw, portabella",
+    "calories": 22.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Yogurt, nonfat, fruit variety",
+    "calories": 95.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Peppers, canned, green, chili",
+    "calories": 21.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pumpkin, without salt, canned",
+    "calories": 34.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beverages, orange, carbonated",
+    "calories": 48.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Kefir, LIFEWAY, plain, lowfat",
+    "calories": 41.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Crustaceans, raw, queen, crab",
+    "calories": 90.0,
+    "totalFat": 1.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Wheat, cooked, KAMUT khorasan",
+    "calories": 132.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Sauce, ready-to-serve, oyster",
+    "calories": 51.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SILK Light Chocolate, soymilk",
+    "calories": 49.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beets, drained solids, canned",
+    "calories": 31.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Ice creams, fat free, vanilla",
+    "calories": 138.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Turkey, raw, meat only, whole",
+    "calories": 112.0,
+    "totalFat": 1.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Lemon grass (citronella), raw",
+    "calories": 99.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Jujube, dried, fresh, Chinese",
+    "calories": 281.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Quail, raw, meat only, breast",
+    "calories": 123.0,
+    "totalFat": 3.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Currants, raw, european black",
+    "calories": 63.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pineapple, all varieties, raw",
+    "calories": 50.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, raw, Atlantic, wolffish",
+    "calories": 96.0,
+    "totalFat": 2.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Leavening agents, baking soda",
+    "calories": 0.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Asparagus, unprepared, frozen",
+    "calories": 24.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "English muffins, whole-wheat",
+    "calories": 203.0,
+    "totalFat": 2.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Apples, with skin, gala, raw",
+    "calories": 57.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, dry heat, cooked, ling",
+    "calories": 111.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, dry heat, cooked, cusk",
+    "calories": 112.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Babyfood, junior, beef, meat",
+    "calories": 81.0,
+    "totalFat": 2.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Tree fern, with salt, cooked",
+    "calories": 40.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Squash, raw, hubbard, winter",
+    "calories": 40.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Rambutan, syrup pack, canned",
+    "calories": 82.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Orange Pineapple Juice Blend",
+    "calories": 51.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beverages, hard cider, AMBER",
+    "calories": 56.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, apple-banana juice",
+    "calories": 51.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Ground turkey, raw, fat free",
+    "calories": 112.0,
+    "totalFat": 2.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Kanpyo, (dried gourd strips)",
+    "calories": 258.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pancakes, reduced fat, plain",
+    "calories": 269.0,
+    "totalFat": 1.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Tennis Bread, plain (Apache)",
+    "calories": 258.0,
+    "totalFat": 1.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cockles, raw (Alaska Native)",
+    "calories": 79.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Yogurt, lowfat, plain, Greek",
+    "calories": 73.0,
+    "totalFat": 1.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Apples, with skin, fuji, raw",
+    "calories": 63.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Peppers, canned, hot pickled",
+    "calories": 22.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Lettuce, raw, cos or romaine",
+    "calories": 17.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Bread, enriched, white, pita",
+    "calories": 275.0,
+    "totalFat": 1.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cranberry juice, unsweetened",
+    "calories": 46.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Ostrich, cooked, tip trimmed",
+    "calories": 145.0,
+    "totalFat": 2.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sweet potato, mashed, canned",
+    "calories": 101.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pastrami, 98% fat-free, beef",
+    "calories": 95.0,
+    "totalFat": 1.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Game meat, raw, wild, rabbit",
+    "calories": 114.0,
+    "totalFat": 2.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "PACE, Dry Taco Seasoning Mix",
+    "calories": 188.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Alfalfa seeds, raw, sprouted",
+    "calories": 23.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Squash, raw (Navajo), Indian",
+    "calories": 26.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "SMART SOUP, Greek Minestrone",
+    "calories": 40.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Babyfood, mixed fruit, juice",
+    "calories": 47.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Milk shakes, thick chocolate",
+    "calories": 119.0,
+    "totalFat": 2.7,
+    "fatRating": "LOW",
+    "caffeine": "2.00 mg"
+  },
+  {
+    "name": "Grapefruit juice, raw, white",
+    "calories": 39.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, raw, Atlantic, pollock",
+    "calories": 92.0,
+    "totalFat": 1.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "HEALTHY REQUEST Tomato juice",
+    "calories": 21.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Puddings, ready-to-eat, rice",
+    "calories": 108.0,
+    "totalFat": 2.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mushrooms, stir-fried, white",
+    "calories": 26.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sauce, ready-to-serve, salsa",
+    "calories": 29.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Peppers, raw, red, hot chili",
+    "calories": 40.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Squash, raw, scallop, summer",
+    "calories": 18.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Currants, raw, red and white",
+    "calories": 56.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Crustaceans, raw, blue, crab",
+    "calories": 87.0,
+    "totalFat": 1.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pie fillings, cherry, canned",
+    "calories": 115.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Yogurt, nonfat, plain, Greek",
+    "calories": 59.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mushrooms, microwaved, white",
+    "calories": 35.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beverages, AMP, Energy drink",
+    "calories": 46.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "31.00 mg"
+  },
+  {
+    "name": "SILK Black Cherry soy yogurt",
+    "calories": 88.0,
+    "totalFat": 1.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beverages, well, tap, water",
+    "calories": 0.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Chrysanthemum, raw, garland",
+    "calories": 24.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Stew, moose (Alaska Native)",
+    "calories": 55.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Grapefruit juice, raw, pink",
+    "calories": 39.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Radish seeds, raw, sprouted",
+    "calories": 43.0,
+    "totalFat": 2.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "MORI-NU, firm, silken, Tofu",
+    "calories": 62.0,
+    "totalFat": 2.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "MORI-NU, soft, silken, Tofu",
+    "calories": 55.0,
+    "totalFat": 2.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Bread, rye, reduced-calorie",
+    "calories": 203.0,
+    "totalFat": 2.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Radishes, raw, white icicle",
+    "calories": 14.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Vinespinach, raw, (basella)",
+    "calories": 19.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Syrups, high-fructose, corn",
+    "calories": 281.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Ostrich, raw, outside strip",
+    "calories": 120.0,
+    "totalFat": 2.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mushrooms, raw, Chanterelle",
+    "calories": 38.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Mollusks, raw, blue, mussel",
+    "calories": 86.0,
+    "totalFat": 2.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sauce, ready-to-serve, fish",
+    "calories": 35.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, raw, european, turbot",
+    "calories": 95.0,
+    "totalFat": 3.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pie fillings, canned, apple",
+    "calories": 100.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sauce, ready-to-serve, plum",
+    "calories": 184.0,
+    "totalFat": 1.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Ostrich, cooked, inside leg",
+    "calories": 141.0,
+    "totalFat": 1.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Gravy, mushroom, CAMPBELL'S",
+    "calories": 34.0,
+    "totalFat": 1.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Bread, canned, boston brown",
+    "calories": 195.0,
+    "totalFat": 1.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Apricots, sweetened, frozen",
+    "calories": 98.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Tomatoes, cooked, ripe, red",
+    "calories": 18.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Squash, raw, baby, zucchini",
+    "calories": 21.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "PACE, Organic Picante Sauce",
+    "calories": 25.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Peppers, raw, yellow, sweet",
+    "calories": 27.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Babyfood, toddler, potatoes",
+    "calories": 52.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sauce, ready-to-serve, duck",
+    "calories": 245.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Persimmons, dried, japanese",
+    "calories": 274.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Carrots, unprepared, frozen",
+    "calories": 36.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Carambola, raw, (starfruit)",
+    "calories": 31.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SILK Light Vanilla, soymilk",
+    "calories": 33.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Turnips, unprepared, frozen",
+    "calories": 16.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "PACE, Cilantro Chunky Salsa",
+    "calories": 25.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "PACE, Chipotle Chunky Salsa",
+    "calories": 25.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Jams and preserves, apricot",
+    "calories": 242.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Ham, cooked, smoked, honey",
+    "calories": 122.0,
+    "totalFat": 2.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Spaghetti, cooked, spinach",
+    "calories": 130.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Guinea hen, raw, meat only",
+    "calories": 110.0,
+    "totalFat": 2.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Squash, raw, acorn, winter",
+    "calories": 40.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Peppers, raw, green, sweet",
+    "calories": 20.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pomegranate juice, bottled",
+    "calories": 54.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nance, unsweetened, frozen",
+    "calories": 73.0,
+    "totalFat": 1.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Sauce, sriracha, hot chile",
+    "calories": 93.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Bread, kneel down (Navajo)",
+    "calories": 195.0,
+    "totalFat": 2.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Canadian bacon, unprepared",
+    "calories": 110.0,
+    "totalFat": 2.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pumpkin, with salt, canned",
+    "calories": 34.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, nonfat, mozzarella",
+    "calories": 141.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Ostrich, raw, inside strip",
+    "calories": 127.0,
+    "totalFat": 2.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SILK Very Vanilla, soymilk",
+    "calories": 53.0,
+    "totalFat": 1.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Taro, without salt, cooked",
+    "calories": 142.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Gravy, chicken, CAMPBELL'S",
+    "calories": 51.0,
+    "totalFat": 2.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fast foods, mashed, potato",
+    "calories": 89.0,
+    "totalFat": 2.8,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Milk shakes, thick vanilla",
+    "calories": 112.0,
+    "totalFat": 3.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "PACE, Thick & Chunky Salsa",
+    "calories": 25.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Java-plum, raw, (jambolan)",
+    "calories": 60.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "McDONALD'S, Barbeque Sauce",
+    "calories": 165.0,
+    "totalFat": 1.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pasta, cooked, whole-wheat",
+    "calories": 149.0,
+    "totalFat": 1.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sauce, tomato based, steak",
+    "calories": 95.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mushrooms, dried, shiitake",
+    "calories": 296.0,
+    "totalFat": 1.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Carissa, raw, (natal-plum)",
+    "calories": 62.0,
+    "totalFat": 1.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beverages, chocolate syrup",
+    "calories": 279.0,
+    "totalFat": 1.1,
+    "fatRating": "LOW",
+    "caffeine": "6.00 mg"
+  },
+  {
+    "name": "Babyfood, toddler, carrots",
+    "calories": 26.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SILK Strawberry soy yogurt",
+    "calories": 94.0,
+    "totalFat": 1.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, raw, rainbow, smelt",
+    "calories": 97.0,
+    "totalFat": 2.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Bagels, whole grain white",
+    "calories": 255.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Apples, without skin, raw",
+    "calories": 48.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Tomatoes, canned, crushed",
+    "calories": 32.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Chrysanthemum leaves, raw",
+    "calories": 24.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Rhubarb, uncooked, frozen",
+    "calories": 21.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Broccoli, cooked, chinese",
+    "calories": 22.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Ostrich, raw, outside leg",
+    "calories": 115.0,
+    "totalFat": 2.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, raw, orange, roughy",
+    "calories": 76.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Lemons, without peel, raw",
+    "calories": 29.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mammy-apple, raw, (mamey)",
+    "calories": 51.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Mountain yam, raw, hawaii",
+    "calories": 67.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "PACE, Salsa Refried Beans",
+    "calories": 60.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Campbell's Pork and Beans",
+    "calories": 108.0,
+    "totalFat": 1.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "PACE, Triple Pepper Salsa",
+    "calories": 47.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Gravy, turkey, CAMPBELL'S",
+    "calories": 42.0,
+    "totalFat": 1.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "SILK Unsweetened, soymilk",
+    "calories": 33.0,
+    "totalFat": 1.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "PACE, Diced Green Chilies",
+    "calories": 27.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Blueberries, frozen, wild",
+    "calories": 57.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Agave, cooked (Southwest)",
+    "calories": 135.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Gravy, au jus, CAMPBELL'S",
+    "calories": 8.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "SMART SOUP, French Lentil",
+    "calories": 53.0,
+    "totalFat": 1.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Nuts, canned, ginkgo nuts",
+    "calories": 111.0,
+    "totalFat": 1.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Ostrich, raw, tip trimmed",
+    "calories": 114.0,
+    "totalFat": 2.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, raw, northern, pike",
+    "calories": 88.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Jerusalem-artichokes, raw",
+    "calories": 73.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Radishes, dried, oriental",
+    "calories": 271.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Persimmons, raw, japanese",
+    "calories": 70.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SILK Light Plain, soymilk",
+    "calories": 29.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "SILK Raspberry soy yogurt",
+    "calories": 88.0,
+    "totalFat": 1.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "SILK Blueberry soy yogurt",
+    "calories": 88.0,
+    "totalFat": 1.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Sweet potato leaves, raw",
+    "calories": 42.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, raw, Atlantic, cod",
+    "calories": 82.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Kale, unprepared, frozen",
+    "calories": 28.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Mushrooms, raw, shiitake",
+    "calories": 34.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Milk, non-soy, imitation",
+    "calories": 46.0,
+    "totalFat": 2.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fungi, dried, Cloud ears",
+    "calories": 284.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "New Zealand spinach, raw",
+    "calories": 14.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "PACE, Tequila Lime Salsa",
+    "calories": 47.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Lettuce, raw, green leaf",
+    "calories": 15.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, raw, white, sucker",
+    "calories": 92.0,
+    "totalFat": 2.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Peppers, raw, red, sweet",
+    "calories": 31.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Ostrich, raw, inside leg",
+    "calories": 111.0,
+    "totalFat": 1.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SILK Plus Fiber, soymilk",
+    "calories": 41.0,
+    "totalFat": 1.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Corn, raw, yellow, sweet",
+    "calories": 86.0,
+    "totalFat": 1.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Bread, whole-wheat, pita",
+    "calories": 262.0,
+    "totalFat": 1.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beans, raw, yellow, snap",
+    "calories": 31.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "CAMPBELL'S, Tomato juice",
+    "calories": 21.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Guanabana nectar, canned",
+    "calories": 59.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Peas, raw, edible-podded",
+    "calories": 42.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, raw, striped, bass",
+    "calories": 97.0,
+    "totalFat": 2.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Jellyfish, salted, dried",
+    "calories": 36.0,
+    "totalFat": 1.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Spices, ground, cinnamon",
+    "calories": 247.0,
+    "totalFat": 1.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beans, raw, in pod, fava",
+    "calories": 88.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pickle relish, hamburger",
+    "calories": 129.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, raw, walleye, pike",
+    "calories": 93.0,
+    "totalFat": 1.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Jew's ear, raw, (pepeao)",
+    "calories": 25.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Turkey and gravy, frozen",
+    "calories": 67.0,
+    "totalFat": 2.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cucumber, raw, with peel",
+    "calories": 15.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cowpeas, raw, leafy tips",
+    "calories": 29.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Syrup, chocolate, NESTLE",
+    "calories": 269.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "18.00 mg"
+  },
+  {
+    "name": "Yogurt, non-fat, vanilla",
+    "calories": 78.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Game meat, raw, antelope",
+    "calories": 114.0,
+    "totalFat": 2.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cherries, raw, red, sour",
+    "calories": 50.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cabbage, salted, mustard",
+    "calories": 28.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Blackberry juice, canned",
+    "calories": 38.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Okra, unprepared, frozen",
+    "calories": 30.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SILK Key Lime soy yogurt",
+    "calories": 88.0,
+    "totalFat": 1.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beans, raw, green, snap",
+    "calories": 31.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, fat free, cream",
+    "calories": 105.0,
+    "totalFat": 1.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Water, generic, bottled",
+    "calories": 0.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cauliflower, raw, green",
+    "calories": 31.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Malabar spinach, cooked",
+    "calories": 23.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Peppers, raw, hungarian",
+    "calories": 29.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pumpkin pie mix, canned",
+    "calories": 104.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Seaweed, raw, irishmoss",
+    "calories": 49.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pickles, sour, cucumber",
+    "calories": 11.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Octopus (Alaska Native)",
+    "calories": 56.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Bagels, cinnamon-raisin",
+    "calories": 274.0,
+    "totalFat": 1.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Tamarind nectar, canned",
+    "calories": 57.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pears, green anjou, raw",
+    "calories": 66.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Gravy, beef, CAMPBELL'S",
+    "calories": 42.0,
+    "totalFat": 1.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Seaweed, raw, spirulina",
+    "calories": 26.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Barley, cooked, pearled",
+    "calories": 123.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, orange, juice",
+    "calories": 45.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Guavas, raw, strawberry",
+    "calories": 69.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Radishes, raw, oriental",
+    "calories": 18.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mushrooms, raw, maitake",
+    "calories": 31.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Taro, with salt, cooked",
+    "calories": 142.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Melons, raw, cantaloupe",
+    "calories": 34.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Persimmons, raw, native",
+    "calories": 127.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oranges, with peel, raw",
+    "calories": 63.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Seeds, raw, lotus seeds",
+    "calories": 89.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Gravy, canned, mushroom",
+    "calories": 50.0,
+    "totalFat": 2.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "SILK Chocolate, soymilk",
+    "calories": 58.0,
+    "totalFat": 1.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "English muffins, wheat",
+    "calories": 223.0,
+    "totalFat": 2.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Apples, with skin, raw",
+    "calories": 52.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beverages, cola, ZEVIA",
+    "calories": 0.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "13.00 mg"
+  },
+  {
+    "name": "Hearts of palm, canned",
+    "calories": 28.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, raw, ocean, pout",
+    "calories": 79.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Bread, sprouted, wheat",
+    "calories": 188.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, apple, juice",
+    "calories": 47.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Egg, fresh, raw, white",
+    "calories": 52.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mushrooms, raw, oyster",
+    "calories": 33.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Hominy, yellow, canned",
+    "calories": 72.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Lettuce, raw, red leaf",
+    "calories": 16.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Butterbur, raw, (fuki)",
+    "calories": 14.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pickle relish, hot dog",
+    "calories": 91.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Amaranth grain, cooked",
+    "calories": 102.0,
+    "totalFat": 1.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Melon, banana (Navajo)",
+    "calories": 21.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Soup, vegetable broth, SWANSON",
+    "calories": 6.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Yogurt, whole milk, fruit, Greek",
+    "calories": 106.0,
+    "totalFat": 3.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Soy sauce made from soy (tamari)",
+    "calories": 60.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cloudberries, raw (Alaska Native)",
+    "calories": 51.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Nuts, roasted, european, chestnuts",
+    "calories": 245.0,
+    "totalFat": 2.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cherries, sweetened, frozen, sweet",
+    "calories": 89.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SPAGHETTIOS, SpaghettiOs  A to Z's",
+    "calories": 67.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cowpeas, raw, young pods with seeds",
+    "calories": 44.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, junior, applesauce, fruit",
+    "calories": 37.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mollusks, raw, mixed species, squid",
+    "calories": 92.0,
+    "totalFat": 1.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sauce, ready-to-serve, verde, salsa",
+    "calories": 38.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Walrus, dried (Alaska Native), meat",
+    "calories": 251.0,
+    "totalFat": 2.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Crustaceans, raw, alaska king, crab",
+    "calories": 84.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "CAMPBELL'S, V8 100% Vegetable Juice",
+    "calories": 21.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oranges, valencias, California, raw",
+    "calories": 49.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beans, no salt added, canned, baked",
+    "calories": 105.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Onions, unprepared, chopped, frozen",
+    "calories": 29.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Tea, Hohoysi (Hopi), brewed, herbal",
+    "calories": 2.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, raw, mixed species, sea bass",
+    "calories": 97.0,
+    "totalFat": 2.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, dry heat, cooked, sheepshead",
+    "calories": 126.0,
+    "totalFat": 1.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Walrus, raw (Alaska Native), liver",
+    "calories": 125.0,
+    "totalFat": 3.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beverages, Cran Grape, OCEAN SPRAY",
+    "calories": 54.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Grapefruit, California, white, raw",
+    "calories": 37.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Peaches, uncooked, sulfured, dried",
+    "calories": 239.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Potatoes, raw, flesh and skin, red",
+    "calories": 70.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Turkey breast, prepackaged, sliced",
+    "calories": 100.0,
+    "totalFat": 2.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Acerola, raw, (west indian cherry)",
+    "calories": 32.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "English muffins, whole grain white",
+    "calories": 245.0,
+    "totalFat": 1.8,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Stew/soup, caribou (Alaska Native)",
+    "calories": 41.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beverages, tonic water, carbonated",
+    "calories": 34.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Emu, broiled, cooked, inside drums",
+    "calories": 156.0,
+    "totalFat": 2.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mustard greens, unprepared, frozen",
+    "calories": 20.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Peaches, sweetened, sliced, frozen",
+    "calories": 94.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "PACE, Spicy Jalapeno Refried Beans",
+    "calories": 63.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cake, prepared, dry mix, angelfood",
+    "calories": 257.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Huckleberries, raw (Alaska Native)",
+    "calories": 37.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Chicken, raw, all classes, gizzard",
+    "calories": 94.0,
+    "totalFat": 2.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SILK Plus for Bone Health, soymilk",
+    "calories": 41.0,
+    "totalFat": 1.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Boysenberries, heavy syrup, canned",
+    "calories": 88.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Boysenberries, unsweetened, frozen",
+    "calories": 50.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beans, canned, mature seeds, white",
+    "calories": 114.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Babyfood, chicken and rice, dinner",
+    "calories": 51.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Artichokes, raw, (globe or french)",
+    "calories": 47.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Squash, raw, all varieties, summer",
+    "calories": 16.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Squash, raw, all varieties, winter",
+    "calories": 34.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Salmonberries, raw (Alaska Native)",
+    "calories": 47.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Babyfood, orange and banana, juice",
+    "calories": 50.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beverages, PERRIER, bottled, water",
+    "calories": 0.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Gourd, raw, dishcloth (towelgourd)",
+    "calories": 20.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, strained, peaches, fruit",
+    "calories": 65.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Tangerine juice, sweetened, canned",
+    "calories": 50.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Kefir, LIFEWAY, strawberry, lowfat",
+    "calories": 62.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Turkey from whole, raw, light meat",
+    "calories": 114.0,
+    "totalFat": 1.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Lemonade, pink, frozen concentrate",
+    "calories": 192.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mollusks, raw, mixed species, clam",
+    "calories": 86.0,
+    "totalFat": 1.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sea cucumber, yane (Alaska Native)",
+    "calories": 56.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cranberry sauce, sweetened, canned",
+    "calories": 159.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "CAMPBELL'S, condensed, Tomato Soup",
+    "calories": 71.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Vitasoy USA, Nasoya Lite Firm Tofu",
+    "calories": 54.0,
+    "totalFat": 1.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Soup, Chinese restaurant, egg drop",
+    "calories": 27.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, roasted, japanese, chestnuts",
+    "calories": 201.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Macaroni and Cheese, canned entree",
+    "calories": 82.0,
+    "totalFat": 2.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Asparagus, drained, boiled, cooked",
+    "calories": 22.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Onions, solids and liquids, canned",
+    "calories": 19.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Taro shoots, without salt, cooked",
+    "calories": 14.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Mollusks, canned, eastern, oyster",
+    "calories": 68.0,
+    "totalFat": 2.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Grapefruit, all areas, white, raw",
+    "calories": 33.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Peas, raw, sprouted, mature seeds",
+    "calories": 124.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Babyfood, apple and cherry, juice",
+    "calories": 41.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, roasted, chinese, chestnuts",
+    "calories": 239.0,
+    "totalFat": 1.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "MORI-NU, extra firm, silken, Tofu",
+    "calories": 55.0,
+    "totalFat": 1.9,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, raw, wild, channel, catfish",
+    "calories": 95.0,
+    "totalFat": 2.8,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, raw, mixed species, grouper",
+    "calories": 92.0,
+    "totalFat": 1.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Asparagus, drained solids, canned",
+    "calories": 19.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Rice, cooked, medium-grain, brown",
+    "calories": 112.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Chicken, raw, meat only, roasting",
+    "calories": 111.0,
+    "totalFat": 2.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pie fillings, low calorie, cherry",
+    "calories": 53.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Stew, hominy with mutton (Navajo)",
+    "calories": 83.0,
+    "totalFat": 2.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "SMART SOUP, Santa Fe Corn Chowder",
+    "calories": 55.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beverages, ginger ale, carbonated",
+    "calories": 34.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, toddler, dices, peaches",
+    "calories": 51.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beverages, RED BULL, Energy drink",
+    "calories": 43.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "29.00 mg"
+  },
+  {
+    "name": "Yogurt, nonfat, strawberry, Greek",
+    "calories": 82.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Yogurt, lowfat, strawberry, Greek",
+    "calories": 103.0,
+    "totalFat": 2.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Crustaceans, raw, dungeness, crab",
+    "calories": 86.0,
+    "totalFat": 1.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, raw, yellowfin, fresh, tuna",
+    "calories": 109.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Bread, somiviki (Hopi), blue corn",
+    "calories": 186.0,
+    "totalFat": 1.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beans, canned, mature seeds, navy",
+    "calories": 113.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, raw, mixed species, snapper",
+    "calories": 100.0,
+    "totalFat": 1.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Potatoes, with salt, flesh, baked",
+    "calories": 93.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Alcoholic beverage, cooking, wine",
+    "calories": 50.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, nonfat or fat free, Swiss",
+    "calories": 127.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Turnip greens, unprepared, frozen",
+    "calories": 22.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beverages, unsweetened, rice milk",
+    "calories": 47.0,
+    "totalFat": 1.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mollusks, baked or broiled, conch",
+    "calories": 130.0,
+    "totalFat": 1.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Taro, with salt, cooked, tahitian",
+    "calories": 44.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Apples, uncooked, sulfured, dried",
+    "calories": 243.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mouse nuts, roots (Alaska Native)",
+    "calories": 81.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Buckwheat groats, cooked, roasted",
+    "calories": 92.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sweet potato, vacuum pack, canned",
+    "calories": 91.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Orange juice, unsweetened, canned",
+    "calories": 47.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Refried beans, vegetarian, canned",
+    "calories": 83.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Game meat, roasted, cooked, moose",
+    "calories": 134.0,
+    "totalFat": 1.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Strawberries, unsweetened, frozen",
+    "calories": 35.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Canadian bacon, pan-fried, cooked",
+    "calories": 146.0,
+    "totalFat": 2.8,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mush, blue corn with ash (Navajo)",
+    "calories": 54.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Winged beans, raw, immature seeds",
+    "calories": 49.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Toppings, butterscotch or caramel",
+    "calories": 216.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cranberry juice cocktail, bottled",
+    "calories": 54.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, orange and apple, juice",
+    "calories": 43.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Babyfood, prune and orange, juice",
+    "calories": 70.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "SPAGHETTIOS, SpaghettiOs Original",
+    "calories": 67.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Soup, ready to serve, beef barley",
+    "calories": 52.0,
+    "totalFat": 1.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Dressing, fat-free, honey mustard",
+    "calories": 169.0,
+    "totalFat": 1.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mollusks, raw, unspecified, whelk",
+    "calories": 137.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beverages, grape soda, carbonated",
+    "calories": 43.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Mushrooms, drained solids, canned",
+    "calories": 25.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, raw, mixed species, whiting",
+    "calories": 90.0,
+    "totalFat": 1.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Leavening agents, cream of tartar",
+    "calories": 258.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Radishes, pickled, hawaiian style",
+    "calories": 28.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Gravy, fat free, beef, CAMPBELL'S",
+    "calories": 25.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Blackberries, unsweetened, frozen",
+    "calories": 64.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Onions, unprepared, whole, frozen",
+    "calories": 35.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beverages, ROCKSTAR, Energy drink",
+    "calories": 58.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "33.00 mg"
+  },
+  {
+    "name": "SILK Banana-Strawberry soy yogurt",
+    "calories": 88.0,
+    "totalFat": 1.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Vitasoy USA Azumaya, Silken Tofu",
+    "calories": 43.0,
+    "totalFat": 2.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Moose, raw (Alaska Native), meat",
+    "calories": 103.0,
+    "totalFat": 1.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, dry heat, cooked, mahimahi",
+    "calories": 109.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Emu, broiled, cooked, fan fillet",
+    "calories": 154.0,
+    "totalFat": 2.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, dry heat, cooked, monkfish",
+    "calories": 97.0,
+    "totalFat": 2.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Babyfood, apple and grape, juice",
+    "calories": 46.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Potatoes, home-prepared, o'brien",
+    "calories": 81.0,
+    "totalFat": 1.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "MORI-NU, lite firm, silken, Tofu",
+    "calories": 37.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Alcoholic beverage, whiskey sour",
+    "calories": 149.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Babyfood, junior, cherry cobbler",
+    "calories": 78.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, raw, Atlantic, ocean perch",
+    "calories": 79.0,
+    "totalFat": 1.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Potatoes, drained solids, canned",
+    "calories": 60.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Babyfood, apple and peach, juice",
+    "calories": 43.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Seeds, roasted, breadfruit seeds",
+    "calories": 207.0,
+    "totalFat": 2.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beverages, root beer, carbonated",
+    "calories": 41.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pears, uncooked, sulfured, dried",
+    "calories": 262.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Soup, home-prepared, beef, stock",
+    "calories": 13.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Soup, home-prepared, fish, stock",
+    "calories": 16.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, raw, skipjack, fresh, tuna",
+    "calories": 103.0,
+    "totalFat": 1.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Noodles, cooked, somen, japanese",
+    "calories": 131.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, raw, pumpkin seed, sunfish",
+    "calories": 89.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Sauce, original, KRAFT, barbecue",
+    "calories": 172.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Vegetable juice cocktail, canned",
+    "calories": 22.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Coriander (cilantro) leaves, raw",
+    "calories": 23.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Blueberries, unsweetened, frozen",
+    "calories": 51.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Bread, protein (includes gluten)",
+    "calories": 245.0,
+    "totalFat": 2.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beverages, municipal, tap, water",
+    "calories": 0.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Game meat, roasted, cooked, goat",
+    "calories": 143.0,
+    "totalFat": 3.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Bagels, toasted, cinnamon-raisin",
+    "calories": 294.0,
+    "totalFat": 1.8,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sweet potato, unprepared, frozen",
+    "calories": 96.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Mashu roots, raw (Alaska Native)",
+    "calories": 135.0,
+    "totalFat": 2.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "CAMPBELL'S, Organic Tomato juice",
+    "calories": 21.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beverages, Citrus,  Energy drink",
+    "calories": 45.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "13.00 mg"
+  },
+  {
+    "name": "Succotash, raw, (corn and limas)",
+    "calories": 99.0,
+    "totalFat": 1.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Frozen novelties, lime, ice type",
+    "calories": 128.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, apple and prune, juice",
+    "calories": 72.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pasta, cooked, corn, gluten-free",
+    "calories": 126.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "PACE, Lime & Garlic Chunky Salsa",
+    "calories": 38.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beverages, club soda, carbonated",
+    "calories": 0.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cabbage, raw, chinese (pak-choi)",
+    "calories": 13.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, strained, pears, fruit",
+    "calories": 42.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, junior, peaches, fruit",
+    "calories": 65.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Salsify, raw, (vegetable oyster)",
+    "calories": 82.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Salad dressing, fat-free, caesar",
+    "calories": 131.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Passion-fruit juice, raw, yellow",
+    "calories": 60.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Raspberries, unsweetened, frozen",
+    "calories": 52.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, toddler, dices, apples",
+    "calories": 51.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Soup, Chinese restaurant, wonton",
+    "calories": 32.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Passion-fruit juice, raw, purple",
+    "calories": 51.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beverages, brewed, hibiscus, tea",
+    "calories": 0.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beverages, drinking, tap, water",
+    "calories": 0.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "English muffins, toasted, wheat",
+    "calories": 243.0,
+    "totalFat": 2.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, dry heat, cooked, tilapia",
+    "calories": 128.0,
+    "totalFat": 2.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, dry heat, cooked, lingcod",
+    "calories": 109.0,
+    "totalFat": 1.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Grapefruit, Florida, white, raw",
+    "calories": 32.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Soymilk, unfortified, chocolate",
+    "calories": 63.0,
+    "totalFat": 1.5,
+    "fatRating": "LOW",
+    "caffeine": "2.00 mg"
+  },
+  {
+    "name": "Babyfood, tropical fruit medley",
+    "calories": 51.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, dry heat, cooked, haddock",
+    "calories": 90.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Lima beans, raw, immature seeds",
+    "calories": 113.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Bread, toasted, sprouted, wheat",
+    "calories": 205.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Carbonated beverage, cream soda",
+    "calories": 51.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beverages, Malt liquor beverage",
+    "calories": 40.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Alcoholic beverages, rose, wine",
+    "calories": 83.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, apple-cranberry juice",
+    "calories": 46.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, toddler, dices, pears",
+    "calories": 57.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Emu, broiled, cooked, full rump",
+    "calories": 168.0,
+    "totalFat": 2.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Crustaceans, canned, blue, crab",
+    "calories": 83.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sauce, ready-to-serve, cocktail",
+    "calories": 124.0,
+    "totalFat": 1.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, fruit supreme dessert",
+    "calories": 73.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Noodles, cooked, soba, japanese",
+    "calories": 99.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "PACE, Traditional Refried Beans",
+    "calories": 67.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Soup, condensed, canned, tomato",
+    "calories": 66.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Alcoholic beverage, light, wine",
+    "calories": 49.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Soymilk (All flavors), enhanced",
+    "calories": 45.0,
+    "totalFat": 2.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Seeds, boiled, breadfruit seeds",
+    "calories": 168.0,
+    "totalFat": 2.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Seeds, raw, breadnut tree seeds",
+    "calories": 217.0,
+    "totalFat": 1.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Alcoholic beverage, rice (sake)",
+    "calories": 134.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sauce, ready-to-serve, teriyaki",
+    "calories": 89.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Game meat, roasted, cooked, elk",
+    "calories": 146.0,
+    "totalFat": 1.9,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Broadbeans, raw, immature seeds",
+    "calories": 72.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Taro, with salt, cooked, shoots",
+    "calories": 14.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Alcoholic beverage, light, beer",
+    "calories": 29.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pie fillings, canned, blueberry",
+    "calories": 181.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Plums, uncooked, dried (prunes)",
+    "calories": 240.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Refried beans, fat-free, canned",
+    "calories": 79.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Rice, cooked, long-grain, brown",
+    "calories": 123.0,
+    "totalFat": 1.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pigeonpeas, raw, immature seeds",
+    "calories": 136.0,
+    "totalFat": 1.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, peach yogurt, dessert",
+    "calories": 76.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, apple - cherry, juice",
+    "calories": 47.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Frozen novelties, pop, ice type",
+    "calories": 79.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, apple and plum, juice",
+    "calories": 49.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Peas, unprepared, frozen, green",
+    "calories": 77.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, raw, mixed species, perch",
+    "calories": 91.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "McDONALD'S, Sweet 'N Sour Sauce",
+    "calories": 170.0,
+    "totalFat": 1.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Mushrooms, stir-fried, shiitake",
+    "calories": 39.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cranberry-orange relish, canned",
+    "calories": 178.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cauliflower, unprepared, frozen",
+    "calories": 24.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beans, with pork, canned, baked",
+    "calories": 106.0,
+    "totalFat": 1.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Tree fern, without salt, cooked",
+    "calories": 40.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cabbage, raw, chinese (pe-tsai)",
+    "calories": 16.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Restaurant, tripe soup, Latino",
+    "calories": 74.0,
+    "totalFat": 2.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, dry heat, cooked, burbot",
+    "calories": 115.0,
+    "totalFat": 1.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Ravioli, canned, cheese-filled",
+    "calories": 77.0,
+    "totalFat": 1.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Yogurt, nonfat milk, chocolate",
+    "calories": 112.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "2.00 mg"
+  },
+  {
+    "name": "Beverages, non-alcoholic, Wine",
+    "calories": 6.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, strained, beef, meat",
+    "calories": 81.0,
+    "totalFat": 2.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, strained, veal, meat",
+    "calories": 81.0,
+    "totalFat": 2.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Peppers, raw, green, hot chili",
+    "calories": 40.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Squash, raw, butternut, winter",
+    "calories": 45.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Bread, unenriched, white, pita",
+    "calories": 275.0,
+    "totalFat": 1.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Salad dressing, sweet and sour",
+    "calories": 15.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beverages, canned, grape drink",
+    "calories": 61.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Soup, condensed, canned, onion",
+    "calories": 46.0,
+    "totalFat": 1.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mangosteen, syrup pack, canned",
+    "calories": 73.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Kiwifruit, raw, ZESPRI SunGold",
+    "calories": 63.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, toddler, dices, peas",
+    "calories": 64.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mollusks, raw, common, octopus",
+    "calories": 82.0,
+    "totalFat": 1.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Yogurt, nonfat, vanilla, Greek",
+    "calories": 78.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Noodles, cooked, enriched, egg",
+    "calories": 138.0,
+    "totalFat": 2.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pitanga, raw, (surinam-cherry)",
+    "calories": 33.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Broccoli, raw, flower clusters",
+    "calories": 28.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SILK Plus Omega-3 DHA, soymilk",
+    "calories": 45.0,
+    "totalFat": 2.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Blueberries, sweetened, frozen",
+    "calories": 85.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beets, drained, boiled, cooked",
+    "calories": 44.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, orange-carrot, juice",
+    "calories": 43.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cream, fat free, half and half",
+    "calories": 59.0,
+    "totalFat": 1.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Squash, raw, spaghetti, winter",
+    "calories": 31.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beans, microwaved, green, snap",
+    "calories": 39.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "SMART SOUP, Indian Bean Masala",
+    "calories": 57.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "SMART SOUP, Moroccan Chick Pea",
+    "calories": 51.0,
+    "totalFat": 1.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "SMART SOUP, Thai Coconut Curry",
+    "calories": 36.0,
+    "totalFat": 1.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Onions, tops only, young green",
+    "calories": 27.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, junior, pears, fruit",
+    "calories": 44.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mollusks, raw, Pacific, oyster",
+    "calories": 81.0,
+    "totalFat": 2.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Yogurt, lowfat, vanilla, Greek",
+    "calories": 95.0,
+    "totalFat": 2.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mushrooms, grilled, portabella",
+    "calories": 29.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Game meat, raw, water, buffalo",
+    "calories": 99.0,
+    "totalFat": 1.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beverages, brewed, Oolong, tea",
+    "calories": 1.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "16.00 mg"
+  },
+  {
+    "name": "Nuts, raw, japanese, chestnuts",
+    "calories": 154.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Tomato products, sauce, canned",
+    "calories": 24.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beverages, Orange juice drink",
+    "calories": 54.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, peas and brown rice",
+    "calories": 64.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "HOUSE FOODS Premium Soft Tofu",
+    "calories": 59.0,
+    "totalFat": 2.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Sweet potato, unprepared, raw",
+    "calories": 86.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Jackfruit, syrup pack, canned",
+    "calories": 92.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Syrups, pancake, table blends",
+    "calories": 234.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sugar-apples, raw, (sweetsop)",
+    "calories": 94.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Nuts, raw, chinese, chestnuts",
+    "calories": 224.0,
+    "totalFat": 1.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Bread, wheat, reduced-calorie",
+    "calories": 217.0,
+    "totalFat": 2.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Bread, white, reduced-calorie",
+    "calories": 207.0,
+    "totalFat": 2.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nance, drained, syrup, canned",
+    "calories": 95.0,
+    "totalFat": 1.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "WENDY'S, Frosty Dairy Dessert",
+    "calories": 132.0,
+    "totalFat": 2.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pokeberry shoots, raw, (poke)",
+    "calories": 23.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Potatoes, raw, flesh and skin",
+    "calories": 77.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nopales, without salt, cooked",
+    "calories": 15.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Raspberries, sweetened, red, frozen",
+    "calories": 103.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Peas and carrots, unprepared, frozen",
+    "calories": 53.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beans, drained solids, canned, pinto",
+    "calories": 114.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Plums, wild (Northern Plains Indians)",
+    "calories": 91.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Babyfood, toddler, macaroni and cheese",
+    "calories": 82.0,
+    "totalFat": 2.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, pasta with vegetables, dinner",
+    "calories": 60.0,
+    "totalFat": 2.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SPAGHETTIOS, SpaghettiOs with Meatballs",
+    "calories": 95.0,
+    "totalFat": 2.8,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "SMART SOUP, Vietnamese Carrot Lemongrass",
+    "calories": 44.0,
+    "totalFat": 1.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Syrups, cane and 15% maple, table blends",
+    "calories": 278.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pasta, cooked, plain, fresh-refrigerated",
+    "calories": 131.0,
+    "totalFat": 1.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beverages, POLAND SPRING, bottled, water",
+    "calories": 0.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pasta with tomato sauce, canned, no meat",
+    "calories": 70.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Soup, condensed, canned, cream of potato",
+    "calories": 74.0,
+    "totalFat": 1.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Gravy, classic chicken, HEINZ Home Style",
+    "calories": 46.0,
+    "totalFat": 2.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cowpeas (blackeyes), raw, immature seeds",
+    "calories": 90.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Taro, with salt, steamed, cooked, leaves",
+    "calories": 24.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Spaghetti with meat sauce, frozen entree",
+    "calories": 90.0,
+    "totalFat": 1.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Whale, raw (Alaska Native), meat, beluga",
+    "calories": 111.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Kale, with salt, drained, boiled, cooked",
+    "calories": 28.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Lamb, raw, testes, imported, New Zealand",
+    "calories": 68.0,
+    "totalFat": 2.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cherries, unsweetened, frozen, red, sour",
+    "calories": 46.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, junior, with egg yolks, cereal",
+    "calories": 52.0,
+    "totalFat": 1.8,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beverages, sugar free, AMP, Energy drink",
+    "calories": 2.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "30.00 mg"
+  },
+  {
+    "name": "Beverages, No pulp, light, Orange juice",
+    "calories": 21.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Strawberries, sliced, sweetened, frozen",
+    "calories": 96.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Potatoes, baked, flesh and skin, Russet",
+    "calories": 97.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Soup, lower sodium, beef broth, SWANSON",
+    "calories": 6.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pickles, reduced sodium, dill, cucumber",
+    "calories": 12.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beverages, Light Cranberry, OCEAN SPRAY",
+    "calories": 19.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KASHI, Frozen Entree, Red Curry Chicken",
+    "calories": 110.0,
+    "totalFat": 3.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Babyfood, toddler, beef lasagna, dinner",
+    "calories": 77.0,
+    "totalFat": 2.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Veal, raw, separable lean only, sirloin",
+    "calories": 110.0,
+    "totalFat": 2.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Noodles, cooked, enriched, spinach, egg",
+    "calories": 132.0,
+    "totalFat": 1.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, strained, beef noodle, dinner",
+    "calories": 63.0,
+    "totalFat": 2.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Lima beans, canned, mature seeds, large",
+    "calories": 79.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, New York State, raw, brook, trout",
+    "calories": 110.0,
+    "totalFat": 2.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Sea lion, meat (Alaska Native), Steller",
+    "calories": 120.0,
+    "totalFat": 1.9,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beverages, strawberry, fast food, shake",
+    "calories": 113.0,
+    "totalFat": 2.8,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Peas, unprepared, frozen, edible-podded",
+    "calories": 42.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Mung beans, raw, sprouted, mature seeds",
+    "calories": 30.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "HEALTHY REQUEST, condensed, Tomato Soup",
+    "calories": 73.0,
+    "totalFat": 1.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beverages, chamomile, brewed, herb, tea",
+    "calories": 1.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, strained, tutti frutti, fruit",
+    "calories": 66.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Soup, canned, low sodium, chicken broth",
+    "calories": 16.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Soup, condensed, canned, chicken noodle",
+    "calories": 48.0,
+    "totalFat": 1.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Squash, boiled (Navajo), cooked, Indian",
+    "calories": 16.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Babyfood, canned, no sugar, grape juice",
+    "calories": 62.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, strained, carrots, vegetables",
+    "calories": 26.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Soup, condensed, canned, vegetable beef",
+    "calories": 63.0,
+    "totalFat": 1.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Blackberries, raw (Alaska Native), wild",
+    "calories": 52.0,
+    "totalFat": 1.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SCHAR, Classic White Rolls, Gluten-Free",
+    "calories": 239.0,
+    "totalFat": 2.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Vitasoy USA, Organic Nasoya Silken Tofu",
+    "calories": 47.0,
+    "totalFat": 2.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cabbage, pickled, fresh, japanese style",
+    "calories": 30.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Yogurt, DANNON OIKOS, strawberry, Greek",
+    "calories": 106.0,
+    "totalFat": 2.9,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Yogurt, CHOBANI, vanilla, nonfat, Greek",
+    "calories": 71.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beverages, Tropical, V8 V-FUSION Juices",
+    "calories": 49.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Gravy, microwavable, turkey, CAMPBELL'S",
+    "calories": 42.0,
+    "totalFat": 1.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Mollusks, raw, farmed, eastern, oyster",
+    "calories": 59.0,
+    "totalFat": 1.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, dry heat, cooked, king, mackerel",
+    "calories": 134.0,
+    "totalFat": 2.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Grapefruit, Florida, pink and red, raw",
+    "calories": 30.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "MORI-NU, lite extra firm, silken, Tofu",
+    "calories": 38.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Frankfurter, low fat, meat and poultry",
+    "calories": 121.0,
+    "totalFat": 2.8,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beverages, fortified, Acai berry drink",
+    "calories": 62.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Alcoholic beverage, dry, dessert, wine",
+    "calories": 152.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Potatoes, baked, flesh and skin, white",
+    "calories": 94.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, junior, dutch apple, dessert",
+    "calories": 79.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beverages, regular, brewed, green, tea",
+    "calories": 1.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "12.00 mg"
+  },
+  {
+    "name": "Grapes, raw, american type (slip skin)",
+    "calories": 67.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, strained, mixed fruit yogurt",
+    "calories": 75.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, strained, squash, vegetables",
+    "calories": 28.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Tomato and vegetable juice, low sodium",
+    "calories": 22.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Soup, condensed, canned, tomato bisque",
+    "calories": 96.0,
+    "totalFat": 2.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cake, commercially prepared, angelfood",
+    "calories": 258.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Desserts, unsweetened, tablets, rennin",
+    "calories": 84.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Tortillas, corn, ready-to-bake or -fry",
+    "calories": 218.0,
+    "totalFat": 2.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Tomatoes, with salt, cooked, ripe, red",
+    "calories": 18.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Alcoholic beverage, all, regular, beer",
+    "calories": 43.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Blueberries, raw (Alaska Native), wild",
+    "calories": 61.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, dry heat, cooked, orange, roughy",
+    "calories": 105.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pineapple, drained, juice pack, canned",
+    "calories": 60.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Apricots, drained, heavy syrup, canned",
+    "calories": 83.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Restaurant, chicken chow mein, Chinese",
+    "calories": 85.0,
+    "totalFat": 2.8,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Vanilla extract, no alcohol, imitation",
+    "calories": 56.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pickles, dill or kosher dill, cucumber",
+    "calories": 12.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Strawberries, whole, sweetened, frozen",
+    "calories": 78.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Jellies, home preserved, reduced sugar",
+    "calories": 179.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Soup, condensed, canned, chicken gumbo",
+    "calories": 45.0,
+    "totalFat": 1.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Soup, condensed, canned, chicken broth",
+    "calories": 31.0,
+    "totalFat": 1.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Chilchen (Red Berry Beverage) (Navajo)",
+    "calories": 44.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Babyfood, junior, peach melba, dessert",
+    "calories": 60.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Milk, reduced sugar, lowfat, chocolate",
+    "calories": 54.0,
+    "totalFat": 1.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pasta, cooked, made with egg, homemade",
+    "calories": 130.0,
+    "totalFat": 1.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, dry heat, cooked, northern, pike",
+    "calories": 113.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Alcoholic beverage, white, table, wine",
+    "calories": 82.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SPAGHETTIOS, SpaghettiOs in Meat Sauce",
+    "calories": 69.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Nuts, peeled, raw, european, chestnuts",
+    "calories": 196.0,
+    "totalFat": 1.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Sauerkraut, solids and liquids, canned",
+    "calories": 19.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beverages, Mixed Berry, Zero, POWERADE",
+    "calories": 0.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, whole (Alaska Native), blackfish",
+    "calories": 82.0,
+    "totalFat": 1.8,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Sweeteners, liquid, fructose, tabletop",
+    "calories": 279.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sauce, TABASCO, pepper, ready-to-serve",
+    "calories": 12.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Frozen novelties, fruit and juice bars",
+    "calories": 87.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sourdock, young leaves (Alaska Native)",
+    "calories": 42.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Mushrooms, with salt, cooked, shiitake",
+    "calories": 56.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Soup, condensed, canned, beef mushroom",
+    "calories": 61.0,
+    "totalFat": 2.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, smoked, mixed species, whitefish",
+    "calories": 108.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Soup, Chinese restaurant, hot and sour",
+    "calories": 39.0,
+    "totalFat": 1.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oranges, all commercial varieties, raw",
+    "calories": 47.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Ice creams, soft-serve, light, vanilla",
+    "calories": 126.0,
+    "totalFat": 2.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beverages, Kiwi Strawberry Juice Drink",
+    "calories": 47.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beverages, FULL THROTTLE, Energy drink",
+    "calories": 46.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "33.00 mg"
+  },
+  {
+    "name": "English muffins, toasted, whole-wheat",
+    "calories": 221.0,
+    "totalFat": 2.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Broccoli, unprepared, chopped, frozen",
+    "calories": 26.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pineapple, traditional varieties, raw",
+    "calories": 45.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Apples, with skin, red delicious, raw",
+    "calories": 59.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Babyfood, junior, beef noodle, dinner",
+    "calories": 57.0,
+    "totalFat": 1.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Rhubarb, leaves (Alaska Native), wild",
+    "calories": 61.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beverages, caffeine free, cola, ZEVIA",
+    "calories": 0.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, dry heat, cooked, walleye, pike",
+    "calories": 119.0,
+    "totalFat": 1.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, dried and salted, Atlantic, cod",
+    "calories": 290.0,
+    "totalFat": 2.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, dry heat, cooked, Atlantic, cod",
+    "calories": 105.0,
+    "totalFat": 0.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beverages, Cran Lemonade, OCEAN SPRAY",
+    "calories": 45.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, strained, banana no tapioca",
+    "calories": 91.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Potatoes, raw, flesh and skin, russet",
+    "calories": 79.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cauliflower, with salt, cooked, green",
+    "calories": 32.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Waterchestnuts, raw, (matai), chinese",
+    "calories": 97.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Vegetables, unprepared, frozen, mixed",
+    "calories": 72.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Ascidians (tunughnak) (Alaska Native)",
+    "calories": 20.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Potatoes, unprepared, frozen, o'brien",
+    "calories": 76.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Gourd, raw, white-flowered (calabash)",
+    "calories": 14.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, junior, carrots, vegetables",
+    "calories": 32.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Veal, raw, separable lean only, shank",
+    "calories": 94.0,
+    "totalFat": 1.6,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sauce, original, BULL'S-EYE, barbecue",
+    "calories": 170.0,
+    "totalFat": 0.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Sauce, ready-to-serve, sweet and sour",
+    "calories": 150.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Gravy, microwavable, beef, CAMPBELL'S",
+    "calories": 42.0,
+    "totalFat": 1.7,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Collards, unprepared, chopped, frozen",
+    "calories": 33.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Soup, ready to serve, vegetable broth",
+    "calories": 5.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Lemonade, prepared with water, powder",
+    "calories": 14.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Peaches, drained, heavy syrup, canned",
+    "calories": 72.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Apples, unheated, unsweetened, frozen",
+    "calories": 48.0,
+    "totalFat": 0.3,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, dry heat, cooked, striped, bass",
+    "calories": 124.0,
+    "totalFat": 3.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Mouse nuts, seedlings (Alaska Native)",
+    "calories": 104.0,
+    "totalFat": 1.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, dry heat, cooked, white, sucker",
+    "calories": 119.0,
+    "totalFat": 3.0,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Babyfood, junior, tutti frutti, fruit",
+    "calories": 69.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Bamboo shoots, drained solids, canned",
+    "calories": 19.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Balsam-pear (bitter gourd), raw, pods",
+    "calories": 17.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, eggs (Alaska Native), whitefish",
+    "calories": 104.0,
+    "totalFat": 2.9,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beverages, ready to drink, black, tea",
+    "calories": 0.0,
+    "totalFat": 0.0,
+    "fatRating": "LOW",
+    "caffeine": "11.00 mg"
+  },
+  {
+    "name": "Babyfood, orange and pineapple, juice",
+    "calories": 48.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "SPAGHETTIOS, SpaghettiOs plus Calcium",
+    "calories": 67.0,
+    "totalFat": 0.4,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "USDA Commodity, frozen, Potato wedges",
+    "calories": 123.0,
+    "totalFat": 2.2,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Babyfood, strained, beets, vegetables",
+    "calories": 34.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, toddler, dices, green beans",
+    "calories": 29.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, strained, applesauce, fruit",
+    "calories": 41.0,
+    "totalFat": 0.2,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mollusks, raw, mixed species, scallop",
+    "calories": 69.0,
+    "totalFat": 0.5,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mollusks, raw, mixed species, abalone",
+    "calories": 105.0,
+    "totalFat": 0.8,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Macaroni, cooked, enriched, vegetable",
+    "calories": 128.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Custard-apple, raw, (bullock's-heart)",
+    "calories": 101.0,
+    "totalFat": 0.6,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  },
+  {
+    "name": "Potatoes, with salt, skin only, baked",
+    "calories": 198.0,
+    "totalFat": 0.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Gravy, ready-to-serve, canned, turkey",
+    "calories": 51.0,
+    "totalFat": 2.1,
+    "fatRating": "LOW",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, strained, with eggs, cereal",
+    "calories": 58.0,
+    "totalFat": 1.5,
+    "fatRating": "LOW",
+    "caffeine": "0"
+  }
+]

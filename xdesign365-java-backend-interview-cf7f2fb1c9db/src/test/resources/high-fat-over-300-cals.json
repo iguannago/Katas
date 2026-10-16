@@ -1,0 +1,7002 @@
+[
+  {
+    "name": "Nuts, pecans",
+    "calories": 691.0,
+    "totalFat": 72.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, camembert",
+    "calories": 300.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, sesame crunch",
+    "calories": 516.0,
+    "totalFat": 33.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, dried, pine nuts",
+    "calories": 673.0,
+    "totalFat": 68.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, dried, beechnuts",
+    "calories": 576.0,
+    "totalFat": 50.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Butter oil, anhydrous",
+    "calories": 876.0,
+    "totalFat": 99.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Peanut flour, low fat",
+    "calories": 428.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Danish pastry, cheese",
+    "calories": 374.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, glazed, walnuts",
+    "calories": 500.0,
+    "totalFat": 36.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oil, soybean lecithin",
+    "calories": 763.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Egg, fresh, raw, yolk",
+    "calories": 322.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Snacks, potato sticks",
+    "calories": 522.0,
+    "totalFat": 34.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, port de salut",
+    "calories": 352.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Bacon and beef sticks",
+    "calories": 517.0,
+    "totalFat": 44.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Salami, pork, Italian",
+    "calories": 425.0,
+    "totalFat": 37.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Peanuts, raw, spanish",
+    "calories": 570.0,
+    "totalFat": 50.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, dried, pilinuts",
+    "calories": 719.0,
+    "totalFat": 80.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cheese, Mexican blend",
+    "calories": 358.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pate, truffle flavor",
+    "calories": 327.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Crackers, multigrain",
+    "calories": 482.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Spices, ground, mace",
+    "calories": 475.0,
+    "totalFat": 32.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Butter, without salt",
+    "calories": 717.0,
+    "totalFat": 81.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KFC, Popcorn Chicken",
+    "calories": 351.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Snacks, banana chips",
+    "calories": 519.0,
+    "totalFat": 34.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, HEATH BITES",
+    "calories": 530.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Polish sausage, pork",
+    "calories": 326.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Bacon bits, meatless",
+    "calories": 476.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "DENNY'S, onion rings",
+    "calories": 385.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oil, corn and canola",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Tostada shells, corn",
+    "calories": 474.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oil, ucuhuba butter",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Spices, celery seed",
+    "calories": 392.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, peanut bar",
+    "calories": 522.0,
+    "totalFat": 34.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, apricot kernel",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sweet rolls, cheese",
+    "calories": 360.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish oil, cod liver",
+    "calories": 902.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Nuts, dried, acorns",
+    "calories": 509.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Croutons, seasoned",
+    "calories": 465.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Snacks, taro chips",
+    "calories": 498.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Liver cheese, pork",
+    "calories": 304.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oil, nutmeg butter",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Croissants, cheese",
+    "calories": 414.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fast food, biscuit",
+    "calories": 370.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, almond paste",
+    "calories": 458.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish oil, menhaden",
+    "calories": 902.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Croissants, butter",
+    "calories": 406.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Taco shells, baked",
+    "calories": 476.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Spices, cumin seed",
+    "calories": 375.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Spices, poppy seed",
+    "calories": 525.0,
+    "totalFat": 42.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fat, mutton tallow",
+    "calories": 902.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sauce, horseradish",
+    "calories": 503.0,
+    "totalFat": 51.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Liverwurst spread",
+    "calories": 305.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "TACO BELL, Nachos",
+    "calories": 350.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish oil, sardine",
+    "calories": 902.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish oil, herring",
+    "calories": 902.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cheese, provolone",
+    "calories": 351.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, roquefort",
+    "calories": 369.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oil, cocoa butter",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Egg, dried, whole",
+    "calories": 592.0,
+    "totalFat": 44.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, raw, acorns",
+    "calories": 387.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cheese, limburger",
+    "calories": 327.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Rice bran, crude",
+    "calories": 316.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish oil, salmon",
+    "calories": 902.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cheese, muenster",
+    "calories": 368.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, cheshire",
+    "calories": 387.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fat, beef tallow",
+    "calories": 902.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "POPEYES, biscuit",
+    "calories": 401.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Egg, dried, yolk",
+    "calories": 669.0,
+    "totalFat": 59.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, monterey",
+    "calories": 373.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, cheddar",
+    "calories": 404.0,
+    "totalFat": 33.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, caraway",
+    "calories": 376.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oil, wheat germ",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Bacon, meatless",
+    "calories": 309.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, tomatoseed",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Seeds, flaxseed",
+    "calories": 534.0,
+    "totalFat": 42.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, gruyere",
+    "calories": 413.0,
+    "totalFat": 32.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, gjetost",
+    "calories": 466.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cheese, fontina",
+    "calories": 389.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Butter, salted",
+    "calories": 717.0,
+    "totalFat": 81.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, rice bran",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, poppyseed",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, grapeseed",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, romano",
+    "calories": 387.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, cupu assu",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, tilsit",
+    "calories": 340.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cheese, brick",
+    "calories": 371.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Blood sausage",
+    "calories": 379.0,
+    "totalFat": 35.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, almonds",
+    "calories": 579.0,
+    "totalFat": 50.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, hazelnut",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, colby",
+    "calories": 394.0,
+    "totalFat": 32.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, cream",
+    "calories": 350.0,
+    "totalFat": 34.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Bread, cheese",
+    "calories": 408.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, swiss",
+    "calories": 393.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, gouda",
+    "calories": 356.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, blue",
+    "calories": 353.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, brie",
+    "calories": 334.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, teaseed",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, sheanut",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, babassu",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, edam",
+    "calories": 357.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, coconut",
+    "calories": 892.0,
+    "totalFat": 99.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, mustard",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oil, avocado",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fat, chicken",
+    "calories": 900.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fat, turkey",
+    "calories": 900.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, almond",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, walnut",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, canola",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fat, goose",
+    "calories": 900.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oil, palm",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fat, duck",
+    "calories": 882.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, oat",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Lard",
+    "calories": 902.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, cold pressed, flaxseed",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, queso anejo, mexican",
+    "calories": 373.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Smelt, dried (Alaska Native)",
+    "calories": 386.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Tofu, dried-frozen (koyadofu)",
+    "calories": 477.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Salami, beef and pork, cooked",
+    "calories": 336.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Babyfood, vegetable, crackers",
+    "calories": 477.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Seeds, high-fat, sesame flour",
+    "calories": 526.0,
+    "totalFat": 37.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, ALMOND JOY Candy Bar",
+    "calories": 479.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cheese, queso cotija, mexican",
+    "calories": 366.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, sugar-coated almonds",
+    "calories": 474.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, queso seco, dry white",
+    "calories": 325.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beef, reduced sodium, bologna",
+    "calories": 310.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Iced Oatmeal Cookies",
+    "calories": 467.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Peanut butter, reduced sodium",
+    "calories": 590.0,
+    "totalFat": 50.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, salad or cooking, peanut",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, REESE'S PIECES Candy",
+    "calories": 497.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "GIRL SCOUTS, Trefoils Cookies",
+    "calories": 498.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, PAYDAY Bar, HERSHEYS",
+    "calories": 490.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "McDONALD'S, Chicken McNUGGETS",
+    "calories": 302.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Peanut spread, reduced sugar",
+    "calories": 650.0,
+    "totalFat": 55.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, salad or cooking, olive",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "DENNY'S, golden fried shrimp",
+    "calories": 319.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Crackers, low sodium, cheese",
+    "calories": 503.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Spices, ground, mustard seed",
+    "calories": 508.0,
+    "totalFat": 36.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, low sodium, parmesan",
+    "calories": 451.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, reduced fat, cheddar",
+    "calories": 309.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cream, heavy whipping, fluid",
+    "calories": 340.0,
+    "totalFat": 36.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pinon Nuts, roasted (Navajo)",
+    "calories": 541.0,
+    "totalFat": 34.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, semisweet chocolate",
+    "calories": 480.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "62.00 mg"
+  },
+  {
+    "name": "Sauce, dry, cheese sauce mix",
+    "calories": 438.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oil, and olive, peanut, corn",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Soy flour, roasted, full-fat",
+    "calories": 439.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "McDONALD'S, Sausage McMUFFIN",
+    "calories": 333.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, CARAMELLO Candy Bar",
+    "calories": 462.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Veal, raw, external fat only",
+    "calories": 503.0,
+    "totalFat": 52.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, walrus (Alaska Native)",
+    "calories": 900.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Frankfurter, unheated, beef",
+    "calories": 316.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Soybeans, raw, mature seeds",
+    "calories": 446.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beef sausage, cooked, fresh",
+    "calories": 332.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Luncheon meat, canned, pork",
+    "calories": 334.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "MURRAY, Vanilla Sugar Wafer",
+    "calories": 527.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "OSCAR MAYER, Bologna (beef)",
+    "calories": 316.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, dried, black, walnuts",
+    "calories": 619.0,
+    "totalFat": 59.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "McDONALD'S, Sausage Biscuit",
+    "calories": 376.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Nuts, full fat, acorn flour",
+    "calories": 501.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Snacks, smoked, beef sticks",
+    "calories": 550.0,
+    "totalFat": 50.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cheese, queso blanco, white",
+    "calories": 310.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Brotwurst, link, beef, pork",
+    "calories": 323.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sausage, raw, pork, Italian",
+    "calories": 346.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, CHUNKY Bar, NESTLE",
+    "calories": 475.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pork, raw, salt pork, cured",
+    "calories": 748.0,
+    "totalFat": 81.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, hazelnuts or filberts",
+    "calories": 628.0,
+    "totalFat": 61.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "GIRL SCOUTS, Chalet Cookies",
+    "calories": 478.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "GIRL SCOUTS, Samoas Cookies",
+    "calories": 489.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cheese, semisoft type, goat",
+    "calories": 364.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, unsweetened, carob",
+    "calories": 540.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Veal, cooked, seam fat only",
+    "calories": 505.0,
+    "totalFat": 50.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Seeds, paste, sesame butter",
+    "calories": 586.0,
+    "totalFat": 51.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Butter, with salt, whipped",
+    "calories": 718.0,
+    "totalFat": 78.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Bockwurst, raw, veal, pork",
+    "calories": 301.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, KIT KAT Wafer Bar",
+    "calories": 518.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "14.00 mg"
+  },
+  {
+    "name": "Vegetable oil, palm kernel",
+    "calories": 862.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, shredded, parmesan",
+    "calories": 415.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "OSCAR MAYER, Salami (hard)",
+    "calories": 368.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "MOTHER'S, Macaroon Cookies",
+    "calories": 552.0,
+    "totalFat": 34.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Snacks, regular, trail mix",
+    "calories": 462.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cream substitute, powdered",
+    "calories": 529.0,
+    "totalFat": 33.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mayonnaise, made with tofu",
+    "calories": 322.0,
+    "totalFat": 32.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, low sodium, swiss",
+    "calories": 374.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, raw, macadamia nuts",
+    "calories": 718.0,
+    "totalFat": 76.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, MOUNDS Candy Bar",
+    "calories": 486.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "17.00 mg"
+  },
+  {
+    "name": "Nuts, raw, pistachio nuts",
+    "calories": 560.0,
+    "totalFat": 45.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Snacks, plain, pork skins",
+    "calories": 544.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Dessert topping, powdered",
+    "calories": 577.0,
+    "totalFat": 40.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cookies, coconut macaroon",
+    "calories": 460.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pork, raw, backfat, fresh",
+    "calories": 812.0,
+    "totalFat": 89.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Crackers, regular, cheese",
+    "calories": 489.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cookies, dry mix, oatmeal",
+    "calories": 462.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Crackers, low salt, wheat",
+    "calories": 473.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Frankfurter, heated, beef",
+    "calories": 322.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Salami, pork, dry or hard",
+    "calories": 407.0,
+    "totalFat": 34.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Smoked link sausage, pork",
+    "calories": 309.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, low fat, monterey",
+    "calories": 313.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Turkey bacon, microwaved",
+    "calories": 368.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "BURGER KING, Onion Rings",
+    "calories": 417.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Salad dressing, coleslaw",
+    "calories": 390.0,
+    "totalFat": 33.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beef sausage, pre-cooked",
+    "calories": 405.0,
+    "totalFat": 38.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "WENDY'S, Chicken Nuggets",
+    "calories": 326.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, white chocolate",
+    "calories": 539.0,
+    "totalFat": 32.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, dried, hickorynuts",
+    "calories": 657.0,
+    "totalFat": 64.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "CHICK-FIL-A, hash browns",
+    "calories": 301.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Oatmeal Cookies",
+    "calories": 478.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Seeds, dried, chia seeds",
+    "calories": 486.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Animal fat, bacon grease",
+    "calories": 897.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, grated, parmesan",
+    "calories": 420.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, sweet chocolate",
+    "calories": 507.0,
+    "totalFat": 34.0,
+    "fatRating": "HIGH",
+    "caffeine": "66.00 mg"
+  },
+  {
+    "name": "Soy flour, raw, full-fat",
+    "calories": 434.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Veal, raw, seam fat only",
+    "calories": 444.0,
+    "totalFat": 44.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Seeds, hulled, hemp seed",
+    "calories": 553.0,
+    "totalFat": 49.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Egg Mix, USDA Commodity",
+    "calories": 555.0,
+    "totalFat": 35.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Peanuts, raw, all types",
+    "calories": 567.0,
+    "totalFat": 49.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Bratwurst, cooked, veal",
+    "calories": 341.0,
+    "totalFat": 32.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, milk chocolate",
+    "calories": 535.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "20.00 mg"
+  },
+  {
+    "name": "Sauce, dry, alfredo mix",
+    "calories": 535.0,
+    "totalFat": 36.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, blanched, almonds",
+    "calories": 590.0,
+    "totalFat": 53.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Frankfurter, low sodium",
+    "calories": 312.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pork, raw, belly, fresh",
+    "calories": 518.0,
+    "totalFat": 53.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, dried, butternuts",
+    "calories": 612.0,
+    "totalFat": 57.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Bratwurst, cooked, pork",
+    "calories": 333.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, plain, halavah",
+    "calories": 469.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Nuts, raw, coconut meat",
+    "calories": 354.0,
+    "totalFat": 33.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Toppings, nuts in syrup",
+    "calories": 448.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, hard type, goat",
+    "calories": 452.0,
+    "totalFat": 36.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish, salted, mackerel",
+    "calories": 305.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Bologna, beef and pork",
+    "calories": 308.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, english, walnuts",
+    "calories": 654.0,
+    "totalFat": 65.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Spices, ground, nutmeg",
+    "calories": 525.0,
+    "totalFat": 36.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, REESE'S BITES",
+    "calories": 521.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, hard, parmesan",
+    "calories": 392.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Snacks, shrimp cracker",
+    "calories": 426.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Peanuts, raw, virginia",
+    "calories": 563.0,
+    "totalFat": 49.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Peanuts, raw, valencia",
+    "calories": 570.0,
+    "totalFat": 48.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Nuts, raw, cashew nuts",
+    "calories": 553.0,
+    "totalFat": 44.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Chorizo, pork and beef",
+    "calories": 455.0,
+    "totalFat": 38.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Bologna, pork, chicken",
+    "calories": 336.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Falafel, home-prepared",
+    "calories": 333.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Mortadella, pork, beef",
+    "calories": 311.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, sliced, sharp, cheddar",
+    "calories": 410.0,
+    "totalFat": 34.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "APPLEBEE'S, crunchy onion rings",
+    "calories": 356.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Wheat Crackers, TOASTEDS",
+    "calories": 466.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Mayonnaise dressing, no cholesterol",
+    "calories": 688.0,
+    "totalFat": 78.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, unblanched, dried, brazilnuts",
+    "calories": 659.0,
+    "totalFat": 67.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Salad dressing, home recipe, french",
+    "calories": 631.0,
+    "totalFat": 70.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, BUTTERFINGER Crisp, NESTLE",
+    "calories": 465.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "5.00 mg"
+  },
+  {
+    "name": "Snacks, almond, hard, granola bars",
+    "calories": 495.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "SUNSHINE, Cheez-It Crackers, GRIPZ",
+    "calories": 491.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Sesame Crackers, TOASTEDS",
+    "calories": 496.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, refrigerated dough, sugar",
+    "calories": 436.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Chocolate-flavored hazelnut spread",
+    "calories": 541.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "7.00 mg"
+  },
+  {
+    "name": "Candies, WHATCHAMACALLIT Candy Bar",
+    "calories": 494.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "10.00 mg"
+  },
+  {
+    "name": "KEEBLER, Multigrain Crackers, CLUB",
+    "calories": 466.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "SUNSHINE, Colby Crackers, CHEEZ-IT",
+    "calories": 512.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, MR. GOODBAR Chocolate Bar",
+    "calories": 538.0,
+    "totalFat": 33.0,
+    "fatRating": "HIGH",
+    "caffeine": "18.00 mg"
+  },
+  {
+    "name": "OSCAR MAYER, Wieners (beef franks)",
+    "calories": 329.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Butter, without salt, stick, light",
+    "calories": 499.0,
+    "totalFat": 55.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Doughnuts, glazed, french crullers",
+    "calories": 412.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pork, cooked, separable fat, fresh",
+    "calories": 626.0,
+    "totalFat": 66.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Peanut butter, reduced fat, smooth",
+    "calories": 520.0,
+    "totalFat": 34.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, HERSHEY'S SKOR Toffee Bar",
+    "calories": 541.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "10.00 mg"
+  },
+  {
+    "name": "Knackwurst, beef, pork, knockwurst",
+    "calories": 307.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pate, canned, not specified, liver",
+    "calories": 319.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "MOTHER'S, Vanilla Sandwich Cookies",
+    "calories": 469.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oil, whale (Alaska Native), beluga",
+    "calories": 900.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Puff pastry, ready-to-bake, frozen",
+    "calories": 551.0,
+    "totalFat": 38.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, swiss, pasteurized process",
+    "calories": 334.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Peanut butter with omega-3, creamy",
+    "calories": 608.0,
+    "totalFat": 54.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "MOTHER'S, Coconut Cocadas Cookies",
+    "calories": 500.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fast foods, with sausage, biscuit",
+    "calories": 371.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Snacks, plain, hard, granola bars",
+    "calories": 471.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pork, cooked, rendered fat, bacon",
+    "calories": 898.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pork, baked, cooked, bacon, cured",
+    "calories": 548.0,
+    "totalFat": 43.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Onion Crackers, TOASTEDS",
+    "calories": 479.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, BUTTERFINGER Bar, NESTLE",
+    "calories": 459.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "1.00 mg"
+  },
+  {
+    "name": "DENNY'S, mozzarella cheese sticks",
+    "calories": 324.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "McDONALD'S, Peanuts (for Sundaes)",
+    "calories": 640.0,
+    "totalFat": 53.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "T.G.I. FRIDAY'S, fried mozzarella",
+    "calories": 333.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Danish pastry, enriched, cinnamon",
+    "calories": 403.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Caribou, raw (Alaska Native), eye",
+    "calories": 326.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Frosted Cookies, ANIMALS",
+    "calories": 506.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, lemon wafer, gluten-free",
+    "calories": 515.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Seeds, dried, whole, sesame seeds",
+    "calories": 573.0,
+    "totalFat": 50.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Kielbasa, pan-fried, fully cooked",
+    "calories": 333.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pate, canned, smoked, goose liver",
+    "calories": 462.0,
+    "totalFat": 44.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oil, salad or cooking, cottonseed",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, spotted seal (Alaska Native)",
+    "calories": 894.0,
+    "totalFat": 99.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Snacks, reduced fat, potato chips",
+    "calories": 471.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Salad dressing, creamy, poppyseed",
+    "calories": 399.0,
+    "totalFat": 33.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pie crust, dry mix, standard-type",
+    "calories": 518.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "MOTHER'S, Chocolate Chip Cookies",
+    "calories": 490.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Salad dressing, russian dressing",
+    "calories": 355.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, original, PAM cooking spray",
+    "calories": 792.0,
+    "totalFat": 79.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Toasted Coconut Cookies",
+    "calories": 475.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Kielbasa, unheated, fully cooked",
+    "calories": 325.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SUNSHINE, BIG Crackers, CHEEZ-IT",
+    "calories": 507.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Danish pastry, unenriched, lemon",
+    "calories": 371.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "APPLEBEE'S, Double Crunch Shrimp",
+    "calories": 323.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "BURGER KING, french toast sticks",
+    "calories": 349.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "T.G.I. FRIDAY'S, chicken fingers",
+    "calories": 325.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pie, prepared from recipe, pecan",
+    "calories": 412.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cheese, queso chihuahua, mexican",
+    "calories": 374.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Original Crackers, CLUB",
+    "calories": 486.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cheesecake commercially prepared",
+    "calories": 321.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Crackers, GAMESA SABROSAS, cream",
+    "calories": 484.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Snacks, rice-based, oriental mix",
+    "calories": 506.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Snacks, almond, crisped rice bar",
+    "calories": 458.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pepperoni, sliced, beef and pork",
+    "calories": 504.0,
+    "totalFat": 46.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cookies, dry mix, chocolate chip",
+    "calories": 497.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "12.00 mg"
+  },
+  {
+    "name": "MOTHER'S, Taffy Sandwich Cookies",
+    "calories": 475.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "ON THE BORDER, cheese quesadilla",
+    "calories": 394.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pork, dehydrated, oriental style",
+    "calories": 615.0,
+    "totalFat": 62.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Salad dressing, bacon and tomato",
+    "calories": 326.0,
+    "totalFat": 35.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese food, American, cold pack",
+    "calories": 331.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "MOTHER'S, Circus Animal Cookies",
+    "calories": 515.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fast foods, french toast sticks",
+    "calories": 340.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Crackers, fish-shaped, flavored",
+    "calories": 463.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Salami, less sodium, beef, pork",
+    "calories": 396.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Liver sausage, pork, liverwurst",
+    "calories": 326.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Danish Wedding Cookies",
+    "calories": 504.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Butter, with salt, stick, light",
+    "calories": 499.0,
+    "totalFat": 55.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pork, raw, separable fat, fresh",
+    "calories": 632.0,
+    "totalFat": 66.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fast foods, with cheese, nachos",
+    "calories": 343.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Kielbasa, grilled, fully cooked",
+    "calories": 337.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Salami, beef, pork, dry or hard",
+    "calories": 378.0,
+    "totalFat": 32.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "MOTHER'S, Iced Lemonade Cookies",
+    "calories": 502.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "MOTHER'S, Jungle Animal Cookies",
+    "calories": 514.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "GIRL SCOUTS, Thin Mints Cookies",
+    "calories": 502.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Veal, cooked, external fat only",
+    "calories": 540.0,
+    "totalFat": 53.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "BEAR NAKED, Fruit & Nut Cookies",
+    "calories": 443.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Snacks, salted, plantain chips",
+    "calories": 531.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Bologna, turkey and beef, pork",
+    "calories": 336.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "BURGER KING, Hash Brown Rounds",
+    "calories": 302.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, 100 GRAND Bar, NESTLE",
+    "calories": 468.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "8.00 mg"
+  },
+  {
+    "name": "Sausage, cooked, pork, Italian",
+    "calories": 344.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "McDONALD'S, Sausage McGRIDDLES",
+    "calories": 312.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Snacks, cheese-flavor, popcorn",
+    "calories": 526.0,
+    "totalFat": 33.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, queso asadero, mexican",
+    "calories": 356.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Topping, SMUCKER'S MAGIC SHELL",
+    "calories": 609.0,
+    "totalFat": 44.0,
+    "fatRating": "HIGH",
+    "caffeine": "4.00 mg"
+  },
+  {
+    "name": "Oil, salad or cooking, soybean",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, OH HENRY! Bar, NESTLE",
+    "calories": 462.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "4.00 mg"
+  },
+  {
+    "name": "Candies, KRACKEL Chocolate Bar",
+    "calories": 512.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, BABY RUTH Bar, NESTLE",
+    "calories": 459.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "4.00 mg"
+  },
+  {
+    "name": "NABISCO, NABISCO RITZ Crackers",
+    "calories": 492.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "MOTHER'S, Iced Oatmeal Cookies",
+    "calories": 463.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pork, unprepared, bacon, cured",
+    "calories": 417.0,
+    "totalFat": 40.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, dried, pinyon, pine nuts",
+    "calories": 629.0,
+    "totalFat": 61.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "GIRL SCOUTS, Do-si-dos Cookies",
+    "calories": 478.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "GIRL SCOUTS, Tagalongs Cookies",
+    "calories": 558.0,
+    "totalFat": 35.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "McDONALD'S, Creamy Ranch Sauce",
+    "calories": 468.0,
+    "totalFat": 52.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cheese, whole milk, mozzarella",
+    "calories": 300.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, 5TH AVENUE Candy Bar",
+    "calories": 482.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "5.00 mg"
+  },
+  {
+    "name": "KEEBLER, Sweet Cremes Cookies",
+    "calories": 469.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oil, salad or cooking, sesame",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "APPLEBEE'S, mozzarella sticks",
+    "calories": 316.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "BARBARA DEE, Winter Mints Cookies",
+    "calories": 515.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Wheat Crackers, TOWN HOUSE",
+    "calories": 489.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, ROLO Caramels in Milk Chocolate",
+    "calories": 474.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "6.00 mg"
+  },
+  {
+    "name": "Candies, SNICKERS Bar, MARS SNACKFOOD US",
+    "calories": 491.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "8.00 mg"
+  },
+  {
+    "name": "MURRAY, Chocolate Creme Sandwich Cookies",
+    "calories": 473.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "GIRL SCOUTS, Thank U Berry Munch Cookies",
+    "calories": 491.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oil, fully hydrogenated, soy, industrial",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, unblanched, honey roasted, almonds",
+    "calories": 594.0,
+    "totalFat": 50.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Peanut butter, without salt, chunk style",
+    "calories": 589.0,
+    "totalFat": 50.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Salad dressing, regular, ranch dressing",
+    "calories": 430.0,
+    "totalFat": 45.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fast foods, with egg and bacon, biscuit",
+    "calories": 305.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cereals ready-to-eat, homemade, granola",
+    "calories": 489.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Soup, dry, chicken flavor, ramen noodle",
+    "calories": 439.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "SUNSHINE, Baby Swiss Crackers, CHEEZ-IT",
+    "calories": 503.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, chocolate-covered, sugar wafer",
+    "calories": 526.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "5.00 mg"
+  },
+  {
+    "name": "Potato chips, reduced fat, without salt",
+    "calories": 487.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "McDONALD'S, NEWMAN'S OWN Ranch Dressing",
+    "calories": 313.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "MURRAY, Fudge Dipped Wafers, SUGAR FREE",
+    "calories": 486.0,
+    "totalFat": 34.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, prepared from recipe, brownies",
+    "calories": 466.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "SUNSHINE, Mozzarella Crackers, CHEEZ-IT",
+    "calories": 500.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, with frosting or icing, animal",
+    "calories": 509.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pie crust, baked, regular, refrigerated",
+    "calories": 506.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cheesefurter, beef, pork, cheese smokie",
+    "calories": 328.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, prepared-from-recipe, truffles",
+    "calories": 510.0,
+    "totalFat": 34.0,
+    "fatRating": "HIGH",
+    "caffeine": "15.00 mg"
+  },
+  {
+    "name": "MOTHER'S, Old Fashioned Oatmeal Cookies",
+    "calories": 470.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Goose, raw, meat and skin, domesticated",
+    "calories": 371.0,
+    "totalFat": 34.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Soybeans, salted, roasted, mature seeds",
+    "calories": 469.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, (approx. 65%), linoleic, sunflower",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "MURRAY, Vanilla Sugar Wafer, SUGAR FREE",
+    "calories": 458.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Chicken, skin, BBQ, rotisserie, broiler",
+    "calories": 378.0,
+    "totalFat": 35.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "MOTHER'S, Holiday Circus Animal Cookies",
+    "calories": 515.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "MOTHER'S, Peanut Butter Gauchos Cookies",
+    "calories": 482.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Mayonnaise, with olive oil, reduced fat",
+    "calories": 361.0,
+    "totalFat": 40.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, yogurt, confectioner's coating",
+    "calories": 522.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese food, swiss, pasteurized process",
+    "calories": 323.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "MOTHER'S, English Tea Sandwich Cookies",
+    "calories": 469.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Rainbow, Vanilla Wafers Minis",
+    "calories": 466.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Crackers, regular, standard snack-type",
+    "calories": 510.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pork, microwaved, cooked, bacon, cured",
+    "calories": 476.0,
+    "totalFat": 34.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sausage, smoked, pork and beef, Polish",
+    "calories": 301.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, milk chocolate coated peanuts",
+    "calories": 519.0,
+    "totalFat": 34.0,
+    "fatRating": "HIGH",
+    "caffeine": "14.00 mg"
+  },
+  {
+    "name": "Salad dressing, regular, green goddess",
+    "calories": 427.0,
+    "totalFat": 43.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Duck, raw, meat and skin, domesticated",
+    "calories": 404.0,
+    "totalFat": 39.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "McDONALD'S, Bacon Egg & Cheese Biscuit",
+    "calories": 304.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, prepared-from-recipe, praline",
+    "calories": 485.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fish oil, fully hydrogenated, menhaden",
+    "calories": 902.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Snacks, chopped and formed, beef jerky",
+    "calories": 410.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Minis Original Crackers, CLUB",
+    "calories": 479.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Original Crackers, TOWN HOUSE",
+    "calories": 526.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cream puff shell, prepared from recipe",
+    "calories": 360.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Peanut butter, with salt, smooth style",
+    "calories": 598.0,
+    "totalFat": 51.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Braunschweiger (a liver sausage), pork",
+    "calories": 327.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Milk, with added vitamin D, whole, dry",
+    "calories": 496.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "MURRAY, Shortbread Cookies, SUGAR FREE",
+    "calories": 431.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Taco shells, without added salt, baked",
+    "calories": 468.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "MURRAY, Vanilla Creme Sandwich Cookies",
+    "calories": 477.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Restaurant, cheese quesadilla, Mexican",
+    "calories": 368.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Salad dressing, regular, honey mustard",
+    "calories": 464.0,
+    "totalFat": 41.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Baking chocolate, squares, unsweetened",
+    "calories": 642.0,
+    "totalFat": 52.0,
+    "fatRating": "HIGH",
+    "caffeine": "80.00 mg"
+  },
+  {
+    "name": "KEEBLER, Coconut Cookies, CHIPS DELUXE",
+    "calories": 530.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "AUSTIN, sandwich-type, PB & J Crackers",
+    "calories": 484.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Keikitos (muffins), Latino bakery item",
+    "calories": 467.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Seeds, partially defatted, sesame meal",
+    "calories": 567.0,
+    "totalFat": 48.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Sea lion, fat (Alaska Native), Steller",
+    "calories": 850.0,
+    "totalFat": 94.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Willow, leaves in oil (Alaska Native)",
+    "calories": 592.0,
+    "totalFat": 61.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beef, raw, separable fat, retail cuts",
+    "calories": 674.0,
+    "totalFat": 71.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Tortilla chips, salted, plain, yellow",
+    "calories": 497.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cookies, chocolate wafer, gluten-free",
+    "calories": 541.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "USDA Commodity, smooth, Peanut Butter",
+    "calories": 588.0,
+    "totalFat": 50.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Snacks, unsalted, plain, potato chips",
+    "calories": 536.0,
+    "totalFat": 35.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Seeds, dried, watermelon seed kernels",
+    "calories": 557.0,
+    "totalFat": 47.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, REESE'S NUTRAGEOUS Candy Bar",
+    "calories": 517.0,
+    "totalFat": 32.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Snacks, barbecue-flavor, potato chips",
+    "calories": 487.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "MURRAY, Duplex Creme Sandwich Cookies",
+    "calories": 475.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, KIT KAT BIG KAT Bar, HERSHEY",
+    "calories": 520.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Snacks, salted, yucca (cassava) chips",
+    "calories": 515.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, prepared-from-recipe, toffee",
+    "calories": 560.0,
+    "totalFat": 33.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Restaurant, onion rings, family style",
+    "calories": 356.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oil, sunflower, mid-oleic, industrial",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fast foods, breaded and fried, shrimp",
+    "calories": 308.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Peanut butter, with salt, chunk style",
+    "calories": 589.0,
+    "totalFat": 50.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, with almonds, milk chocolate",
+    "calories": 526.0,
+    "totalFat": 34.0,
+    "fatRating": "HIGH",
+    "caffeine": "18.00 mg"
+  },
+  {
+    "name": "Chocolate, 45- 59% cacao solids, dark",
+    "calories": 546.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "43.00 mg"
+  },
+  {
+    "name": "Nuts, blanched, hazelnuts or filberts",
+    "calories": 629.0,
+    "totalFat": 61.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beef, cooked, breakfast strips, cured",
+    "calories": 449.0,
+    "totalFat": 34.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Baking chocolate, liquid, unsweetened",
+    "calories": 472.0,
+    "totalFat": 48.0,
+    "fatRating": "HIGH",
+    "caffeine": "47.00 mg"
+  },
+  {
+    "name": "SUNSHINE, Original Crackers, CHEEZ-IT",
+    "calories": 507.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Soup, powder, dry, cream of vegetable",
+    "calories": 446.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Snack, hard chocolate coated, Pretzel",
+    "calories": 467.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "8.00 mg"
+  },
+  {
+    "name": "Soup, dry, beef flavor, ramen noodle",
+    "calories": 441.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pork and beef sausage, cooked, fresh",
+    "calories": 396.0,
+    "totalFat": 36.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Danish pastry, unenriched, raspberry",
+    "calories": 371.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Snacks, unsalted, regular, trail mix",
+    "calories": 462.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "McDONALD'S, Sausage Biscuit with Egg",
+    "calories": 311.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beef, smoked, cooked, sausage, cured",
+    "calories": 312.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fast foods, miniature cinnamon rolls",
+    "calories": 403.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cheese, cheddar or colby, low-sodium",
+    "calories": 398.0,
+    "totalFat": 33.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Dash of Salt Crackers, CLUB",
+    "calories": 490.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "MURRAY, Lemon Creme Sandwich Cookies",
+    "calories": 479.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Veal, raw, separable fat, Australian",
+    "calories": 509.0,
+    "totalFat": 52.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Chocolate, 70-85% cacao solids, dark",
+    "calories": 598.0,
+    "totalFat": 43.0,
+    "fatRating": "HIGH",
+    "caffeine": "80.00 mg"
+  },
+  {
+    "name": "Seeds, dried, safflower seed kernels",
+    "calories": 517.0,
+    "totalFat": 38.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cream substitute, powdered, flavored",
+    "calories": 482.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "3.00 mg"
+  },
+  {
+    "name": "Snacks, unsalted, sweet potato chips",
+    "calories": 532.0,
+    "totalFat": 32.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Snacks, mixed flavors, granola bites",
+    "calories": 451.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Chocolate, 60-69% cacao solids, dark",
+    "calories": 579.0,
+    "totalFat": 38.0,
+    "fatRating": "HIGH",
+    "caffeine": "86.00 mg"
+  },
+  {
+    "name": "Cookies, refrigerated dough, oatmeal",
+    "calories": 424.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fish, liver (Alaska Native), lingcod",
+    "calories": 424.0,
+    "totalFat": 42.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Snacks, nacho cheese, tortilla chips",
+    "calories": 519.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Snacks, ranch-flavor, tortilla chips",
+    "calories": 501.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Frostings, ready-to-eat, coconut-nut",
+    "calories": 433.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, ALMOND JOY BITES, HERSHEY'S",
+    "calories": 563.0,
+    "totalFat": 35.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, SYMPHONY Milk Chocolate Bar",
+    "calories": 531.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cheese, pimento, pasteurized process",
+    "calories": 375.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Seeds, dried, sunflower seed kernels",
+    "calories": 584.0,
+    "totalFat": 51.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Snacks, lightly salted, potato chips",
+    "calories": 560.0,
+    "totalFat": 35.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Veal, cooked, separable fat, breast",
+    "calories": 521.0,
+    "totalFat": 53.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oil, bowhead (Alaska Native), whale",
+    "calories": 900.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oil, low linolenic, soy, industrial",
+    "calories": 900.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, high oleic, canola, industrial",
+    "calories": 900.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "MURRAY, Oatmeal Cookies, SUGAR FREE",
+    "calories": 451.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pork and turkey sausage, pre-cooked",
+    "calories": 342.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, SPECIAL DARK Chocolate Bar",
+    "calories": 556.0,
+    "totalFat": 32.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "SUNSHINE, Asiago Crackers, CHEEZ-IT",
+    "calories": 502.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Danish pastry, unenriched, cinnamon",
+    "calories": 403.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "FAMOUS AMOS, Chocolate Chip Cookies",
+    "calories": 503.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Snacks, taco-flavor, tortilla chips",
+    "calories": 480.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Salad dressing, regular, mayonnaise",
+    "calories": 680.0,
+    "totalFat": 75.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Snacks, salted, plain, potato chips",
+    "calories": 532.0,
+    "totalFat": 34.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Dessert topping, frozen, semi solid",
+    "calories": 318.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Soup, dry, any flavor, ramen noodle",
+    "calories": 440.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Fudge Sticks, FUDGE SHOPPE",
+    "calories": 529.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Soybeans, dry roasted, mature seeds",
+    "calories": 449.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pork, unheated, patties, ham, cured",
+    "calories": 315.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, REESE'S Peanut Butter Cups",
+    "calories": 515.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "7.00 mg"
+  },
+  {
+    "name": "Snacks, barbecue-flavor, pork skins",
+    "calories": 538.0,
+    "totalFat": 32.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Snacks, cheese-flavor, potato chips",
+    "calories": 496.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KASHI, Happy Trail Mix Cookies, TLC",
+    "calories": 451.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Minis Multigrain Crackers, CLUB",
+    "calories": 470.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Snacks, peanut butter, hard, granola bars",
+    "calories": 483.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Peanuts, with salt, dry-roasted, all types",
+    "calories": 587.0,
+    "totalFat": 50.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "GLUTINO, Lemon Flavored, Gluten Free Wafers",
+    "calories": 515.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, vanilla sandwich with creme filling",
+    "calories": 483.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SUNSHINE, White Cheddar, Snack Mix, CHEEZ-IT",
+    "calories": 473.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Shortening, fractionated palm, confectionery",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "MURRAY, Pecan Shortbread Cookies, SUGAR FREE",
+    "calories": 514.0,
+    "totalFat": 34.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Butter Flavored Cookies, E.L. FUDGE",
+    "calories": 482.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Egg, pasteurized, sugared, frozen, raw, yolk",
+    "calories": 307.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Snacks, white corn, unsalted, tortilla chips",
+    "calories": 503.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cinnamon buns, frosted (includes honey buns)",
+    "calories": 452.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Snacks, raisin, uncoated, soft, granola bars",
+    "calories": 448.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, prepared from recipe, peanut butter",
+    "calories": 475.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Snacks, unsalted, wheat-based, sesame sticks",
+    "calories": 541.0,
+    "totalFat": 37.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beef, raw, sweetbread, imported, New Zealand",
+    "calories": 303.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KELLOGG'S, Original 3-Bean Chips, BEANATURAL",
+    "calories": 487.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Salad dressing, vinegar and oil, home recipe",
+    "calories": 449.0,
+    "totalFat": 50.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pastry, Pastelitos de Guava (guava pastries)",
+    "calories": 379.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, M&M MARS 3 MUSKETEERS Truffle Crisp",
+    "calories": 538.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "16.00 mg"
+  },
+  {
+    "name": "Vegetable oil-butter spread, reduced calorie",
+    "calories": 465.0,
+    "totalFat": 53.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Peanuts, without salt, oil-roasted, valencia",
+    "calories": 589.0,
+    "totalFat": 51.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Peanuts, without salt, oil-roasted, virginia",
+    "calories": 578.0,
+    "totalFat": 49.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cheese, low moisture, whole milk, mozzarella",
+    "calories": 318.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "MOTHER'S, 4th of July Circus Animal Cookies",
+    "calories": 487.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Chicken, raw, skin only, broilers or fryers",
+    "calories": 349.0,
+    "totalFat": 32.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Salad dressing, KRAFT Mayo Light Mayonnaise",
+    "calories": 334.0,
+    "totalFat": 33.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, HERSHEY'S GOLDEN ALMOND SOLITAIRES",
+    "calories": 569.0,
+    "totalFat": 37.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pork sausage, pan-fried, cooked, link/patty",
+    "calories": 325.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, with salt added, dry roasted, walnuts",
+    "calories": 643.0,
+    "totalFat": 61.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Double Stuffed Cookies, E.L. FUDGE",
+    "calories": 512.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Nuts, with salt added, oil roasted, almonds",
+    "calories": 607.0,
+    "totalFat": 55.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, with salt added, dry roasted, almonds",
+    "calories": 598.0,
+    "totalFat": 53.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "GIRL SCOUTS, Caramel Dulce De Leche Cookies",
+    "calories": 520.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Chocolate Chip Cookies, SOFT BATCH",
+    "calories": 477.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Simply Shortbread Cookies, SANDIES",
+    "calories": 528.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Cheese & Cheddar Sandwich Crackers",
+    "calories": 502.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, milk chocolate coated coffee beans",
+    "calories": 549.0,
+    "totalFat": 33.0,
+    "fatRating": "HIGH",
+    "caffeine": "800.00 mg"
+  },
+  {
+    "name": "Pie, commercially prepared, chocolate creme",
+    "calories": 353.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Cashew Shortbread Cookies, SANDIES",
+    "calories": 535.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Margarine-like spread, BENECOL Light Spread",
+    "calories": 357.0,
+    "totalFat": 39.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, baked, refrigerated dough, oatmeal",
+    "calories": 471.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Nuts, with salt added, plain, almond butter",
+    "calories": 614.0,
+    "totalFat": 56.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, MARS Almond Bar, MARS SNACKFOOD US",
+    "calories": 467.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "4.00 mg"
+  },
+  {
+    "name": "Cookies, refrigerated dough, chocolate chip",
+    "calories": 451.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "9.00 mg"
+  },
+  {
+    "name": "Sausage, pork and beef, smoked link sausage",
+    "calories": 320.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, not chocolate covered, coconut bar",
+    "calories": 481.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "FAMOUS AMOS, Vanilla Sandwich Creme Cookies",
+    "calories": 485.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, dark chocolate coated coffee beans",
+    "calories": 540.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "839.00 mg"
+  },
+  {
+    "name": "Nuts, with salt added, plain, cashew butter",
+    "calories": 609.0,
+    "totalFat": 53.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "GLUTINO, Vanilla Creme, Gluten Free Cookies",
+    "calories": 487.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "GLUTINO, Milk Chocolate, Gluten Free Wafers",
+    "calories": 541.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Shortening, composite, household, vegetable",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Peanuts, without salt, oil-roasted, spanish",
+    "calories": 579.0,
+    "totalFat": 49.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Hazelnuts, beaked (Northern Plains Indians)",
+    "calories": 628.0,
+    "totalFat": 53.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Nuts, with salt added, dry roasted, pecans",
+    "calories": 710.0,
+    "totalFat": 74.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Ice cream, chocolate covered, bar or stick",
+    "calories": 331.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "3.00 mg"
+  },
+  {
+    "name": "KEEBLER, Vienna Fingers with Creme Filling",
+    "calories": 492.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Iced Lemonade Cookies, TRADITIONS",
+    "calories": 502.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Chicken, reheated, breaded, frozen, thighs",
+    "calories": 334.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Peanuts, with salt, oil-roasted, all types",
+    "calories": 599.0,
+    "totalFat": 53.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, with salt added, oil roasted, pecans",
+    "calories": 715.0,
+    "totalFat": 75.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, chocolate-coated, graham crackers",
+    "calories": 500.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "3.00 mg"
+  },
+  {
+    "name": "Nuts, lightly salted, oil roasted, almonds",
+    "calories": 607.0,
+    "totalFat": 55.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Shortbread Pie Crust, READY CRUST",
+    "calories": 502.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Snacks, salted, wheat-based, sesame sticks",
+    "calories": 541.0,
+    "totalFat": 37.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beef, raw, 70% lean meat / 30% fat, ground",
+    "calories": 332.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fast foods, sausage, griddle cake sandwich",
+    "calories": 318.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Snacks, plain, cones, extruded, corn-based",
+    "calories": 510.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Snacks, onion-flavor, extruded, corn-based",
+    "calories": 499.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Snacks, plain, chips, extruded, corn-based",
+    "calories": 538.0,
+    "totalFat": 33.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "MURRAY, Old Fashioned Iced Oatmeal Cookies",
+    "calories": 459.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Noodles, Chinese restaurant, crunchy, flat",
+    "calories": 521.0,
+    "totalFat": 32.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Seeds, without salt, sunflower seed butter",
+    "calories": 617.0,
+    "totalFat": 55.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Mini, Fudge Stripes, FUDGE SHOPPE",
+    "calories": 497.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fast foods, with egg and cheese, croissant",
+    "calories": 304.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Pecan Shortbread Cookies, SANDIES",
+    "calories": 541.0,
+    "totalFat": 32.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oil, bearded seal (Oogruk) (Alaska Native)",
+    "calories": 899.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Holiday, Almond Crescents Cookies",
+    "calories": 482.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, refrigerated dough, peanut butter",
+    "calories": 458.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fast foods, breaded and fried, onion rings",
+    "calories": 411.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sauce, refrigerated, ready-to-serve, pesto",
+    "calories": 418.0,
+    "totalFat": 38.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Sauce, shelf stable, ready-to-serve, pesto",
+    "calories": 426.0,
+    "totalFat": 42.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "MOTHER'S, Halloween Circus Animals Cookies",
+    "calories": 514.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "MURRAY, Chocolate Chip Cookies, SUGAR FREE",
+    "calories": 469.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Chicken, raw, skin (drumsticks and thighs)",
+    "calories": 440.0,
+    "totalFat": 44.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Frostings, ready-to-eat, creamy, chocolate",
+    "calories": 397.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "2.00 mg"
+  },
+  {
+    "name": "KEEBLER, Cheese on Wheat Sandwich Crackers",
+    "calories": 499.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Milk, without added vitamin D, whole, dry",
+    "calories": 496.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fast Foods, with egg and sausage, biscuit",
+    "calories": 312.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "WORTHINGTON Stripples, unprepared, frozen",
+    "calories": 346.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Honey Wheat Crackers, WHEATABLES",
+    "calories": 482.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Iced Oatmeal Cookies, TRADITIONS",
+    "calories": 463.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, baked, refrigerated dough, sugar",
+    "calories": 489.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "MURRAY, Oatmeal Cookies, SOUTHERN KITCHEN",
+    "calories": 478.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Chocolate Pie Crust, READY CRUST",
+    "calories": 490.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Sausage, egg and cheese breakfast biscuit",
+    "calories": 324.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SUNSHINE, Cheddar Jack Crackers, CHEEZ-IT",
+    "calories": 460.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "T.G.I. FRIDAY'S, breaded, FRIDAY'S Shrimp",
+    "calories": 302.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "MURRAY, Peanut Butter Cookies, SUGAR FREE",
+    "calories": 505.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "FAMOUS AMOS, Chocolate Chip Pecan Cookies",
+    "calories": 519.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, made with rice cereal, chocolate",
+    "calories": 440.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "2.00 mg"
+  },
+  {
+    "name": "Caribou, raw (Alaska Native), bone marrow",
+    "calories": 786.0,
+    "totalFat": 84.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "MURRAY, Coconut Cookies, SOUTHERN KITCHEN",
+    "calories": 511.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, with peanut butter, honey-combed",
+    "calories": 486.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Peanuts, with salt, oil-roasted, virginia",
+    "calories": 578.0,
+    "totalFat": 49.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Peanuts, with salt, oil-roasted, valencia",
+    "calories": 589.0,
+    "totalFat": 51.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Puff pastry, baked, ready-to-bake, frozen",
+    "calories": 558.0,
+    "totalFat": 39.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, HERSHEY'S POT OF GOLD Almond Bar",
+    "calories": 577.0,
+    "totalFat": 38.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, with rice cereal, milk chocolate",
+    "calories": 511.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "20.00 mg"
+  },
+  {
+    "name": "Pie crust, unbaked, regular, refrigerated",
+    "calories": 445.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oil, ultra low linolenic, soy, industrial",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Club & Cheddar Sandwich Crackers",
+    "calories": 494.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oil, high oleic (70% and over), sunflower",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "ARCHWAY Home Style Cookies, Peanut Butter",
+    "calories": 480.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Peanut butter, without salt, smooth style",
+    "calories": 598.0,
+    "totalFat": 51.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Buttercrisps Crackers, TOASTEDS",
+    "calories": 495.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, regular, peanut butter sandwich",
+    "calories": 478.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Salad dressing, regular, caesar dressing",
+    "calories": 542.0,
+    "totalFat": 58.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cookie, with icing or coating, chocolate",
+    "calories": 507.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "5.00 mg"
+  },
+  {
+    "name": "MURRAY, Fudge Dipped Grahams, SUGAR FREE",
+    "calories": 483.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "SUNSHINE, Hot & Spicy Crackers, CHEEZ-IT",
+    "calories": 513.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KELLOGG'S, Multigrain Crackers, ALL-BRAN",
+    "calories": 415.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beef, cooked, separable fat, retail cuts",
+    "calories": 680.0,
+    "totalFat": 70.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Peanuts, with salt, oil-roasted, spanish",
+    "calories": 579.0,
+    "totalFat": 49.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oil, linoleic (less than 60%), sunflower",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SUNSHINE, Pepper Jack Crackers, CHEEZ-IT",
+    "calories": 503.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Ice cream bar, covered with chocolate and nuts",
+    "calories": 303.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "4.00 mg"
+  },
+  {
+    "name": "MURRAY, Iced Oatmeal Cookies, SOUTHERN KITCHEN",
+    "calories": 467.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Bistro Multigrain Crackers, TOWN HOUSE",
+    "calories": 460.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, special dietary, peanut butter sandwich",
+    "calories": 535.0,
+    "totalFat": 34.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "SAGE VALLEY, Gluten Free Vanilla Sandwich Cookies",
+    "calories": 499.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, baked, refrigerated dough, peanut butter",
+    "calories": 503.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Crackers, sandwich-type with cheese filling, rye",
+    "calories": 481.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Restaurant, bunuelos (fried yeast bread), Latino",
+    "calories": 462.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "SUNSHINE, Italian Four Cheese Crackers, CHEEZ-IT",
+    "calories": 500.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Party Pack Cracker Assortment, TOASTEDS",
+    "calories": 483.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Margarine, soybean (hydrogenated), hard, regular",
+    "calories": 719.0,
+    "totalFat": 81.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Crackers, low salt, regular, standard snack-type",
+    "calories": 502.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Toast & Peanut Butter Sandwich Crackers",
+    "calories": 489.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Snacks, baked, restructured, white, potato chips",
+    "calories": 469.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cookies, regular, commercially prepared, oatmeal",
+    "calories": 450.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "MURRAY, Lemon Creme Sandwich Cookies, SUGAR FREE",
+    "calories": 469.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, enriched, commercially prepared, butter",
+    "calories": 467.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "MURRAY, Chocolate Chip Cookies, SOUTHERN KITCHEN",
+    "calories": 493.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Crackers, LA MODERNA RIKIS CREAM CRACKERS, cream",
+    "calories": 464.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KRAFT VELVEETA Pasteurized Process Cheese Spread",
+    "calories": 303.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pork sausage, unheated, fully cooked, link/patty",
+    "calories": 392.0,
+    "totalFat": 37.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "DOMINO'S 14\" Pepperoni Pizza, Crunchy Thin Crust",
+    "calories": 328.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Lamb, raw, seam fat, fresh, imported, Australian",
+    "calories": 459.0,
+    "totalFat": 44.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pork sausage rice links, cooked, brown and serve",
+    "calories": 407.0,
+    "totalFat": 38.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Seeds, dried (decorticated), sesame seed kernels",
+    "calories": 631.0,
+    "totalFat": 61.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, toasted, dried (desiccated), coconut meat",
+    "calories": 592.0,
+    "totalFat": 47.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "POPEYES, Skin and Breading, Mild, Fried Chicken",
+    "calories": 433.0,
+    "totalFat": 32.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Nuts, creamed, dried (desiccated), coconut meat",
+    "calories": 684.0,
+    "totalFat": 69.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, chocolate cream covered biscuit sticks",
+    "calories": 447.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "2.00 mg"
+  },
+  {
+    "name": "Candies, CRUNCH Bar and Dessert Topping, NESTLE",
+    "calories": 500.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "30.00 mg"
+  },
+  {
+    "name": "Seeds, roasted and toasted, whole, sesame seeds",
+    "calories": 565.0,
+    "totalFat": 48.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, DOVE Dark Chocolate, MARS SNACKFOOD US",
+    "calories": 520.0,
+    "totalFat": 32.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, DOVE Milk Chocolate, MARS SNACKFOOD US",
+    "calories": 546.0,
+    "totalFat": 32.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Snacks, all flavors, DIPPS, QUAKER, granola bar",
+    "calories": 480.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Crackers, with whole wheat, standard snack-type",
+    "calories": 463.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Original Crackers, TOPPERS, TOWN HOUSE",
+    "calories": 483.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Chicken, raw, separable fat, broilers or fryers",
+    "calories": 629.0,
+    "totalFat": 68.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, SNICKERS Almond bar, MARS SNACKFOOD US",
+    "calories": 472.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oil, 80% diglycerides, ENOVA, cooking and salad",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "McDONALD'S, NEWMAN'S OWN Creamy Caesar Dressing",
+    "calories": 319.0,
+    "totalFat": 32.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Thuringer, pork, beef, summer sausage, cervelat",
+    "calories": 362.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, fully hydrogenated, cottonseed, industrial",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Chocolate Lovers Cookies, CHIPS DELUXE",
+    "calories": 508.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Nuts, with salt added, dry roasted, cashew nuts",
+    "calories": 574.0,
+    "totalFat": 46.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, with salt added, oil roasted, cashew nuts",
+    "calories": 581.0,
+    "totalFat": 48.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, without salt added, plain, almond butter",
+    "calories": 614.0,
+    "totalFat": 56.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Salad Dressing, reduced fat, coleslaw dressing",
+    "calories": 329.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "ARCHWAY Home Style Cookies, Sugar Free Oatmeal",
+    "calories": 442.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, SNICKERS MUNCH bar, MARS SNACKFOOD US",
+    "calories": 536.0,
+    "totalFat": 36.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, peanut butter, confectioner's coating",
+    "calories": 529.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Original, Snack Sticks, CLUB Crackers",
+    "calories": 475.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beef, raw, suet, variety meats and by-products",
+    "calories": 854.0,
+    "totalFat": 94.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, without salt added, oil roasted, almonds",
+    "calories": 607.0,
+    "totalFat": 55.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, without salt added, dry roasted, almonds",
+    "calories": 598.0,
+    "totalFat": 53.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Soybeans, no salt added, roasted, mature seeds",
+    "calories": 469.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pie Crust, Ready Crust, Chocolate, Cookie-type",
+    "calories": 484.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "8.00 mg"
+  },
+  {
+    "name": "Doughnuts, sugared or glazed, plain, cake-type",
+    "calories": 426.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Crackers, with cheese filling, sandwich, wheat",
+    "calories": 497.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Nuts, without salt added, plain, cashew butter",
+    "calories": 587.0,
+    "totalFat": 49.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Frankfurter, grilled, cooked, meat and poultry",
+    "calories": 302.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Turkey, raw, (light and dark), skin from whole",
+    "calories": 407.0,
+    "totalFat": 39.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "MOTHER'S, Old Fashioned Chocolate Chip Cookies",
+    "calories": 500.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, crispy bar with peanut butter filling",
+    "calories": 542.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Egg, glucose reduced, stabilized, dried, whole",
+    "calories": 615.0,
+    "totalFat": 44.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pork, raw or unheated, breakfast strips, cured",
+    "calories": 388.0,
+    "totalFat": 37.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Seeds, roasted (glandless), cottonseed kernels",
+    "calories": 506.0,
+    "totalFat": 36.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beef, raw or unheated, breakfast strips, cured",
+    "calories": 406.0,
+    "totalFat": 39.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, made with butter, semisweet chocolate",
+    "calories": 477.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "62.00 mg"
+  },
+  {
+    "name": "DOMINO'S 14\" Sausage Pizza, Crunchy Thin Crust",
+    "calories": 319.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Original, Fudge Stripes, FUDGE SHOPPE",
+    "calories": 500.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "MOTHER'S, Double Fudge Creme Sandwich Cookies",
+    "calories": 457.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Salad dressing, regular, sesame seed dressing",
+    "calories": 443.0,
+    "totalFat": 45.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cocoa, plain, hi-fat or breakfast, dry powder",
+    "calories": 486.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "197.00 mg"
+  },
+  {
+    "name": "Peanuts, with salt, boiled, cooked, all types",
+    "calories": 318.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, caramel with nuts, chocolate covered",
+    "calories": 470.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "19.00 mg"
+  },
+  {
+    "name": "Candies, butterscotch, confectioner's coating",
+    "calories": 539.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, prepared-from-recipe, peanut brittle",
+    "calories": 486.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, SNICKERS CRUNCHER, MARS SNACKFOOD US",
+    "calories": 488.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, with creme filling, oatmeal sandwich",
+    "calories": 398.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "MURRAY, Fudge Dipped Mint Cookies, SUGAR FREE",
+    "calories": 481.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Turkey, roasted, cooked, skin only, young hen",
+    "calories": 482.0,
+    "totalFat": 44.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KELLOGG'S, Garlic and Herb Crackers, ALL-BRAN",
+    "calories": 467.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Doughnuts, with jelly filling, yeast-leavened",
+    "calories": 340.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Doughnuts, with creme filling, yeast-leavened",
+    "calories": 361.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Restaurant, prepared, beef, empanadas, Latino",
+    "calories": 335.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Deluxe Grahams Cookies, FUDGE SHOPPE",
+    "calories": 511.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Caramel Filled Cookies, FUDGE SHOPPE",
+    "calories": 506.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "FAMOUS AMOS, Chocolate Sandwich Creme Cookies",
+    "calories": 474.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Shortening, lard and vegetable oil, household",
+    "calories": 900.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Shortening industrial, lard and vegetable oil",
+    "calories": 900.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Snacks, unsalted, chips, extruded, corn-based",
+    "calories": 557.0,
+    "totalFat": 33.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Coconut Dreams Cookies, FUDGE SHOPPE",
+    "calories": 499.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Seeds, with salt added, sunflower seed butter",
+    "calories": 617.0,
+    "totalFat": 55.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Nuts, without salt added, oil roasted, pecans",
+    "calories": 715.0,
+    "totalFat": 75.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Nuts, without salt added, dry roasted, pecans",
+    "calories": 710.0,
+    "totalFat": 74.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "JACKSON'S, Old Fashioned Lemon Jumble Cookies",
+    "calories": 469.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oil, contains added sliced flaxseed, flaxseed",
+    "calories": 878.0,
+    "totalFat": 99.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Oatmeal, Fudge Stripes, FUDGE SHOPPE",
+    "calories": 478.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Peanuts, without salt, oil-roasted, all types",
+    "calories": 599.0,
+    "totalFat": 53.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Peanuts, without salt, dry-roasted, all types",
+    "calories": 587.0,
+    "totalFat": 50.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Seeds, dried, pumpkin and squash seed kernels",
+    "calories": 559.0,
+    "totalFat": 49.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Margarine Spread, tub, approximately 48% fat",
+    "calories": 424.0,
+    "totalFat": 48.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "ARCHWAY Home Style Cookies, Coconut Macaroon",
+    "calories": 460.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "SUNSHINE, Parmesan Garlic Crackers, CHEEZ-IT",
+    "calories": 503.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pork, raw, separable lean and fat, carcass, fresh",
+    "calories": 376.0,
+    "totalFat": 35.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Snacks, sour-cream-and-onion-flavor, potato chips",
+    "calories": 531.0,
+    "totalFat": 34.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, regular, sugar wafers with creme filling",
+    "calories": 502.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "9.00 mg"
+  },
+  {
+    "name": "KEEBLER, Peanut Butter, Fudge Sticks, FUDGE SHOPPE",
+    "calories": 544.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "MURRAY, Chocolate Creme Sandwich Cookies, SUGAR FREE",
+    "calories": 465.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beef, raw, seam fat, grass-fed, imported, Australian",
+    "calories": 562.0,
+    "totalFat": 58.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pork, pan-broiled, cooked, 84% lean / 16% fat, ground",
+    "calories": 301.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Lamb, cooked, subcutaneous fat, imported, New Zealand",
+    "calories": 674.0,
+    "totalFat": 72.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Rainbow Chocolate Chip Cookies, CHIPS DELUXE",
+    "calories": 502.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Salad dressing, without salt, soybean oil, mayonnaise",
+    "calories": 717.0,
+    "totalFat": 79.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Chicken, raw, meat and skin, back, broilers or fryers",
+    "calories": 319.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "USDA Commodity Food, refined, soybean, vegetable, oil",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, bite size, Pecan Shortbread Cookies, SANDIES",
+    "calories": 547.0,
+    "totalFat": 33.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Crackers, with peanut butter filling, sandwich, wheat",
+    "calories": 495.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, with extra creme filling, chocolate sandwich",
+    "calories": 497.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "6.00 mg"
+  },
+  {
+    "name": "Nuts, not sweetened, dried (desiccated), coconut meat",
+    "calories": 660.0,
+    "totalFat": 65.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Lamb, raw, separable fat, fresh, imported, Australian",
+    "calories": 648.0,
+    "totalFat": 69.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pork, pan-broiled, cooked, 72% lean / 28% fat, ground",
+    "calories": 377.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beef, cooked, subcutaneous fat, imported, New Zealand",
+    "calories": 731.0,
+    "totalFat": 78.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "GLUTINO, Chocolate Vanilla Creme, Gluten Free Cookies",
+    "calories": 474.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pork, raw, jowl, variety meats and by-products, fresh",
+    "calories": 655.0,
+    "totalFat": 70.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Oatmeal Chocolate Chip Cookies, CHIPS DELUXE",
+    "calories": 500.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pie crust, baked, prepared from recipe, standard-type",
+    "calories": 527.0,
+    "totalFat": 35.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, shredded, part-skim, low moisture, mozzarella",
+    "calories": 304.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Turkey, raw, from dark meat, from retail parts, skin",
+    "calories": 380.0,
+    "totalFat": 36.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Snacks, unsalted, oil-popped, home-prepared, popcorn",
+    "calories": 500.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Salad dressing, regular, commercial, thousand island",
+    "calories": 379.0,
+    "totalFat": 35.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SUNSHINE, Crackers (made with Whole Grain), CHEEZ-IT",
+    "calories": 511.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, sugar free, with creme filling, sugar wafer",
+    "calories": 531.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Shortening household soybean (hydrogenated) and palm",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, TWIX Caramel Cookie Bars, MARS SNACKFOOD US",
+    "calories": 502.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "7.00 mg"
+  },
+  {
+    "name": "Fast foods, and sausage, cheese, with egg, croissant",
+    "calories": 308.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, low sugar or low calorie, chocolate covered",
+    "calories": 590.0,
+    "totalFat": 43.0,
+    "fatRating": "HIGH",
+    "caffeine": "9.00 mg"
+  },
+  {
+    "name": "Cookies, with creme filling, chocolate chip sandwich",
+    "calories": 425.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "4.00 mg"
+  },
+  {
+    "name": "Cookie, chocolate-coated, with peanut butter filling",
+    "calories": 562.0,
+    "totalFat": 35.0,
+    "fatRating": "HIGH",
+    "caffeine": "21.00 mg"
+  },
+  {
+    "name": "Snack, plain, made from dried potatoes, potato chips",
+    "calories": 545.0,
+    "totalFat": 35.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Snacks, barbecue-flavor, chips, extruded, corn-based",
+    "calories": 523.0,
+    "totalFat": 33.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Salad dressing, regular, commercial, french dressing",
+    "calories": 457.0,
+    "totalFat": 45.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Salad dressing, home recipe, oil, cottonseed, french",
+    "calories": 631.0,
+    "totalFat": 70.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Lamb, raw, external fat, fresh, imported, Australian",
+    "calories": 487.0,
+    "totalFat": 49.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Snacks, nut and raisin, uncoated, soft, granola bars",
+    "calories": 454.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Dark Chocolate, Fudge Stripes, FUDGE SHOPPE",
+    "calories": 487.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Peanut butter, vitamin and mineral fortified, chunky",
+    "calories": 593.0,
+    "totalFat": 51.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Peanut butter, vitamin and mineral fortified, smooth",
+    "calories": 591.0,
+    "totalFat": 51.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Swisswurst, smoked, with swiss cheese, pork and beef",
+    "calories": 307.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Seeds, without salt, toasted, sunflower seed kernels",
+    "calories": 619.0,
+    "totalFat": 57.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pate de foie gras, smoked, canned (goose liver pate)",
+    "calories": 462.0,
+    "totalFat": 44.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Snacks, made from garden vegetables, vegetable chips",
+    "calories": 473.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Snacks, chocolate coated, with coconut, granola bar",
+    "calories": 531.0,
+    "totalFat": 32.0,
+    "fatRating": "HIGH",
+    "caffeine": "3.00 mg"
+  },
+  {
+    "name": "Fast foods, with cheese and sausage, english muffin",
+    "calories": 338.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Shortening frying (heavy duty), palm (hydrogenated)",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Country Style Oatmeal Cookies with Raisins",
+    "calories": 482.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beef, raw, intermuscular fat, imported, New Zealand",
+    "calories": 602.0,
+    "totalFat": 64.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, HERSHEY'S MILK CHOCOLATE WITH ALMOND BITES",
+    "calories": 568.0,
+    "totalFat": 36.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pie Crust, Ready Crust, Graham Cracker, Cookie-type",
+    "calories": 501.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Crackers, sandwich-type with cheese filling, cheese",
+    "calories": 490.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pork, unheated, boneless, separable fat, ham, cured",
+    "calories": 515.0,
+    "totalFat": 53.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Goose, roasted, cooked, meat and skin, domesticated",
+    "calories": 305.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Ice cream bar, with crunch coating, stick or nugget",
+    "calories": 358.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Sauce, ready-to-serve, basil pesto, CLASSICO, pesto",
+    "calories": 372.0,
+    "totalFat": 36.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Restaurant, breaded and fried, shrimp, family style",
+    "calories": 308.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Chocolate Malt Chunk Cookies, CHIPS DELUXE",
+    "calories": 537.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Dark Chocolate Chunk Cookies, CHIPS DELUXE",
+    "calories": 518.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Lamb, cooked, seam fat, fresh, imported, Australian",
+    "calories": 554.0,
+    "totalFat": 55.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Lamb, raw, Intermuscular fat, imported, New Zealand",
+    "calories": 640.0,
+    "totalFat": 69.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KFC, Skin and Breading, EXTRA CRISPY, Fried Chicken",
+    "calories": 464.0,
+    "totalFat": 37.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, unenriched, commercially prepared, butter",
+    "calories": 467.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, GOOBERS Chocolate Covered Peanuts, NESTLE",
+    "calories": 512.0,
+    "totalFat": 34.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pork sausage, microwaved, fully cooked, link/patty",
+    "calories": 438.0,
+    "totalFat": 42.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fast foods, and bacon, cheese, with egg, croissant",
+    "calories": 312.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "OSCAR MAYER, Braunschweiger Liver Sausage (sliced)",
+    "calories": 331.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "BURGER KING, CROISSAN'WICH with Sausage and Cheese",
+    "calories": 376.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "MURRAY, Chocolate Chip & Pecan Cookies, SUGAR FREE",
+    "calories": 497.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Holiday, Merry Mint Patties, FUDGE SHOPPE",
+    "calories": 528.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Garlic Herb Crackers, TOPPERS, TOWN HOUSE",
+    "calories": 483.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Doughnuts, sugared or glazed, chocolate, cake-type",
+    "calories": 417.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "1.00 mg"
+  },
+  {
+    "name": "Nuts, with salt added, dry roasted, macadamia nuts",
+    "calories": 716.0,
+    "totalFat": 76.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Peanut Creme Filled Cookies, FUDGE SHOPPE",
+    "calories": 537.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Triple Fudge Filled Cookies, FUDGE SHOPPE",
+    "calories": 533.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Fudge-Dipped Ice Cream Cups, FUDGE SHOPPE",
+    "calories": 485.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Nuts, with salt added, dry roasted, pistachio nuts",
+    "calories": 569.0,
+    "totalFat": 46.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, without salt added, dry roasted, cashew nuts",
+    "calories": 574.0,
+    "totalFat": 46.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, without salt added, oil roasted, cashew nuts",
+    "calories": 580.0,
+    "totalFat": 48.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Duck, roasted, cooked, meat and skin, domesticated",
+    "calories": 337.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, COCOAVIA Chocolate Bar, MARS SNACKFOOD US",
+    "calories": 539.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, baked, refrigerated dough, chocolate chip",
+    "calories": 492.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "MURRAY, Vanilla Creme Sandwich Cookies, SUGAR FREE",
+    "calories": 467.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pork, crumbles, cooked, 72% lean / 28% fat, ground",
+    "calories": 393.0,
+    "totalFat": 33.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beef, raw, subcutaneous fat, imported, New Zealand",
+    "calories": 685.0,
+    "totalFat": 72.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Mini Chocolate Chip Cookies, CHIPS DELUXE",
+    "calories": 498.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "ARCHWAY Home Style Cookies, Chocolate Chip Ice Box",
+    "calories": 497.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pie crust, baked, prepared, dry mix, standard-type",
+    "calories": 501.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, MILKY WAY Midnight Bar, MARS SNACKFOOD US",
+    "calories": 443.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "30.00 mg"
+  },
+  {
+    "name": "Oil, (partially hydrogenated), linoleic, sunflower",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Vanilla, Jumbo Fudge Sticks, FUDGE SHOPPE",
+    "calories": 530.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Lamb, raw, subcutaneous fat, imported, New Zealand",
+    "calories": 703.0,
+    "totalFat": 76.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pork, pan-fried, cooked, pre-sliced, bacon, cured",
+    "calories": 468.0,
+    "totalFat": 35.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cookies, pecan, commercially prepared, shortbread",
+    "calories": 542.0,
+    "totalFat": 33.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, plain, commercially prepared, shortbread",
+    "calories": 514.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Turkey, roasted, skin from whole (light and dark)",
+    "calories": 459.0,
+    "totalFat": 39.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Honey Wheat, Snack Sticks, CLUB Crackers",
+    "calories": 471.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Restaurant, fried mozzarella sticks, family style",
+    "calories": 325.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Cheese & Peanut Butter Sandwich Crackers",
+    "calories": 492.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Infant formula, powder, store brand, PBM PRODUCTS",
+    "calories": 524.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cream puff, iced, custard or cream filled, eclair",
+    "calories": 334.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Meat drippings (lard, beef tallow, mutton tallow)",
+    "calories": 889.0,
+    "totalFat": 99.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pork, heated, boneless, separable fat, ham, cured",
+    "calories": 507.0,
+    "totalFat": 52.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Multigrain Crackers, TOPPERS, TOWN HOUSE",
+    "calories": 462.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Bacon, unprepared, reduced/low sodium, pre-sliced",
+    "calories": 407.0,
+    "totalFat": 39.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "T.G.I. FRIDAY'S, from kids' menu, chicken fingers",
+    "calories": 330.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Snacks, salted, white corn, plain, tortilla chips",
+    "calories": 472.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Peanut Butter Cups Cookies, CHIPS DELUXE",
+    "calories": 519.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oil, (over 70%), linoleic, salad or cooking, safflower",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Shortening bread, soybean (hydrogenated) and cottonseed",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Seeds, with salt added, toasted, sunflower seed kernels",
+    "calories": 619.0,
+    "totalFat": 57.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oil, (partially hydrogenated), salad or cooking, soybean",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, M&M's Peanut Chocolate Candies, MARS SNACKFOOD US",
+    "calories": 515.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "10.00 mg"
+  },
+  {
+    "name": "Veal, raw, separable fat, composite of trimmed retail cuts",
+    "calories": 638.0,
+    "totalFat": 68.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cake, with vanilla frosting, commercially prepared, yellow",
+    "calories": 391.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cookies, with creme filling, vanilla sandwich, gluten-free",
+    "calories": 493.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Infant formula, powder, PROTECT PLUS, GOOD START 2, GERBER",
+    "calories": 501.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Original, Pretzel Crackers, FLIPSIDES, TOWN HOUSE",
+    "calories": 487.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Snacks, TERRA CHIPS, HAIN CELESTIAL GROUP, vegetable chips",
+    "calories": 517.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Dark Chocolate Almond Shortbread Cookies, SANDIES",
+    "calories": 540.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, M&M's Almond Chocolate Candies, MARS SNACKFOOD US",
+    "calories": 522.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "7.00 mg"
+  },
+  {
+    "name": "Crackers, sandwich-type with peanut butter filling, cheese",
+    "calories": 496.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, with salt added, unflavored, wheat-based, formulated",
+    "calories": 622.0,
+    "totalFat": 58.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "ARCHWAY Home Style Cookies, Old Fashioned Windmill Cookies",
+    "calories": 468.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, made with margarine, prepared from recipe, sugar",
+    "calories": 472.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pie crust, enriched, ready-to-bake, frozen, standard-type",
+    "calories": 457.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beef, raw,  external fat, grass-fed, imported, Australian",
+    "calories": 509.0,
+    "totalFat": 51.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Dark Chocolate, Cheesecake Middles, FUDGE SHOPPE",
+    "calories": 506.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beef, raw, choice, separable lean and fat, shortribs, rib",
+    "calories": 388.0,
+    "totalFat": 36.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, sugar free, commercially prepared, peanut butter",
+    "calories": 523.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, smoke flavor, with salt added, oil roasted, almonds",
+    "calories": 607.0,
+    "totalFat": 56.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Margarine-like spread, SMART BALANCE Light Buttery Spread",
+    "calories": 337.0,
+    "totalFat": 36.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "PEPPERIDGE FARM, Original, Baked Snack Crackers, Goldfish",
+    "calories": 467.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Oil, woks and light frying, canola for salads, industrial",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Snacks, confectioners coating, almond, soft, granola bars",
+    "calories": 455.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, COCOAVIA Crispy Chocolate Bar, MARS SNACKFOOD US",
+    "calories": 517.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Seeds, type of kernels unspecified, tahini, sesame butter",
+    "calories": 592.0,
+    "totalFat": 53.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "OSCAR MAYER, Smokies Sausage Little Cheese (pork, turkey)",
+    "calories": 315.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, soft-type, commercially prepared, chocolate chip",
+    "calories": 444.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Smoked link sausage, nonfat dry milk added, pork and beef",
+    "calories": 313.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pork, raw, leaf fat, variety meats and by-products, fresh",
+    "calories": 857.0,
+    "totalFat": 94.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Reduced Fat, Graham Pie Crust (10\"), READY CRUST",
+    "calories": 472.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Margarine, without salt, tub, composite, 80% fat, regular",
+    "calories": 713.0,
+    "totalFat": 80.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Salad dressing, regular, commercial, peppercorn dressing",
+    "calories": 564.0,
+    "totalFat": 61.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Doughnuts, chocolate-coated or frosted, plain, cake-type",
+    "calories": 452.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "2.00 mg"
+  },
+  {
+    "name": "Oil, for woks and light frying, refined, soy, industrial",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Cheese, Pretzel Crackers, FLIPSIDES, TOWN HOUSE",
+    "calories": 476.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, special dietary, commercially prepared, oatmeal",
+    "calories": 449.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SUNSHINE, Duoz Sharp Cheddar Parmesan Crackers, CHEEZ-IT",
+    "calories": 500.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, M&M's Milk Chocolate Candies, MARS SNACKFOOD US",
+    "calories": 492.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "14.00 mg"
+  },
+  {
+    "name": "Infant formula, powder, PROTECT PLUS, GOOD START, GERBER",
+    "calories": 512.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cookie, with chocolate icing or filling, butter or sugar",
+    "calories": 503.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "7.00 mg"
+  },
+  {
+    "name": "Infant Formula, powder, GENTLE PLUS, GERBER GOOD START 2",
+    "calories": 492.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, filling fat, palm kernel (hydrogenated), industrial",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cookies, soft-type, commercially prepared, peanut butter",
+    "calories": 457.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "AUSTIN, sandwich-type, Cheddar Cheese on Cheese Crackers",
+    "calories": 494.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "AUSTIN, sandwich-type, Chocolatey Peanut Butter Crackers",
+    "calories": 479.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Infant formula, powder, with iron, ENFAMIL, MEAD JOHNSON",
+    "calories": 520.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SUNSHINE, Cheez-It Mixx and Cheesy Pizza Crackers, GRIPZ",
+    "calories": 484.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, regular, with creme filling, chocolate sandwich",
+    "calories": 464.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "5.00 mg"
+  },
+  {
+    "name": "Lamb, cooked, separable fat, fresh, imported, Australian",
+    "calories": 639.0,
+    "totalFat": 66.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Infant Formula, powder, GENTLEASE, ENFAMIL, MEAD JOHNSON",
+    "calories": 514.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Margarine, with salt, stick, composite, 80% fat, regular",
+    "calories": 717.0,
+    "totalFat": 81.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Peanut Butter, Jumbo Fudge Sticks, FUDGE SHOPPE",
+    "calories": 537.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Seeds, without salt, dry roasted, sunflower seed kernels",
+    "calories": 582.0,
+    "totalFat": 50.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Seeds, without salt, oil roasted, sunflower seed kernels",
+    "calories": 592.0,
+    "totalFat": 51.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Granola bar, peanut butter, milk chocolate coated, soft",
+    "calories": 536.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "3.00 mg"
+  },
+  {
+    "name": "Chicken, roasted, cooked, skin only, broilers or fryers",
+    "calories": 454.0,
+    "totalFat": 41.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Roasted Almond, Nut Crisp Crackers, WHEATABLES",
+    "calories": 472.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Snacks, peanut butter, KUDOS Whole Grain Bars, M&M MARS",
+    "calories": 463.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "BURGER KING, Egg and Cheese, CROISSAN'WICH with Sausage",
+    "calories": 308.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Lamb, cooked, external fat, fresh, imported, Australian",
+    "calories": 538.0,
+    "totalFat": 52.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Holiday/Spiderman, Fudge Stripes, FUDGE SHOPPE",
+    "calories": 498.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Reduced Fat, Pecan Shortbread Cookies, SANDIES",
+    "calories": 488.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, without raisins, prepared from recipe, oatmeal",
+    "calories": 447.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "AUSTIN, sandwich-type, Cheddar Cheese on Wheat Crackers",
+    "calories": 495.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "AUSTIN, sandwich-type, Grilled Cheese on Wafer Crackers",
+    "calories": 493.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beef, boiled, cooked, sweetbread, imported, New Zealand",
+    "calories": 318.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "AUSTIN, sandwich-type, Peanut Butter on Cheese Crackers",
+    "calories": 492.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pie crust, unbaked, prepared from recipe, standard-type",
+    "calories": 469.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "AUSTIN, sandwich-type, Cheddar Cheese on Wafer Crackers",
+    "calories": 489.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "AUSTIN, sandwich-type, Peanut Butter on Toasty Crackers",
+    "calories": 489.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Chicken, stewed, cooked, skin only, broilers or fryers",
+    "calories": 363.0,
+    "totalFat": 33.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Imitation cheese, low cholesterol, american or cheddar",
+    "calories": 390.0,
+    "totalFat": 32.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Toasted Pecan, Nut Crisp Crackers, WHEATABLES",
+    "calories": 483.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beverages, French Vanilla Cafe, instant, coffee, KRAFT",
+    "calories": 481.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "DENNY'S, from kid's menu, star shaped, chicken nuggets",
+    "calories": 377.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fast foods, regular patty; plain, cheeseburger; triple",
+    "calories": 310.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KFC, Skin and Breading, ORIGINAL RECIPE, Fried Chicken",
+    "calories": 384.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "USDA Commodity Food, low saturated fat, vegetable, oil",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "PEPPERIDGE FARM, Pizza, Baked Snack Crackers, Goldfish",
+    "calories": 469.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cookies, regular, commercially prepared, peanut butter",
+    "calories": 473.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Snacks, salt added, white popcorn, oil-popped, popcorn",
+    "calories": 500.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Chicken, roasted, cooked, skin (drumsticks and thighs)",
+    "calories": 462.0,
+    "totalFat": 44.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Chicken, braised, cooked, skin (drumsticks and thighs)",
+    "calories": 443.0,
+    "totalFat": 43.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Infant formula, powder, soy, store brand, PBM PRODUCTS",
+    "calories": 508.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Beef, cooked, intermuscular fat, imported, New Zealand",
+    "calories": 560.0,
+    "totalFat": 57.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Original Chocolate Chip Cookies, CHIPS DELUXE",
+    "calories": 517.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, Fudge Mint, Grasshopper Cookies, FUDGE SHOPPE",
+    "calories": 499.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Lamb, cooked, Intermuscular fat, imported, New Zealand",
+    "calories": 596.0,
+    "totalFat": 62.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Margarine, with salt, tub, composite, 80% fat, regular",
+    "calories": 713.0,
+    "totalFat": 80.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Mayonnaise, cholesterol-free, reduced-calorie or diet",
+    "calories": 333.0,
+    "totalFat": 33.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pork, raw, tail, variety meats and by-products, fresh",
+    "calories": 378.0,
+    "totalFat": 34.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Nuts, without salt added, dry roasted, macadamia nuts",
+    "calories": 718.0,
+    "totalFat": 76.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "PILLSBURY, refrigerated dough, Chocolate Chip Cookies",
+    "calories": 450.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Nuts, without salt added, dry roasted, pistachio nuts",
+    "calories": 572.0,
+    "totalFat": 46.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "NABISCO, Cookie Crumb Topping, NABISCO OREO CRUNCHIES",
+    "calories": 476.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Margarine, without salt, stick, composite, 80% fat, regular",
+    "calories": 717.0,
+    "totalFat": 81.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, shredded, sweetened, dried (desiccated), coconut meat",
+    "calories": 501.0,
+    "totalFat": 35.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fast Food, thin crust, pepperoni topping, 14\" pizza, Pizza Chain",
+    "calories": 331.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cookies, special dietary, with creme filling, chocolate sandwich",
+    "calories": 461.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "4.00 mg"
+  },
+  {
+    "name": "Cake, home baked style, Panque Casero, BIMBO Bakeries USA, pound",
+    "calories": 418.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Doughnuts, plain (includes unsugared, old-fashioned), cake-type",
+    "calories": 434.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Seeds, from raw and stone ground kernels, tahini, sesame butter",
+    "calories": 570.0,
+    "totalFat": 48.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Popcorn, made with palm oil, regular (butter) flavor, microwave",
+    "calories": 535.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, without salt added, with peanuts, dry roasted, mixed nuts",
+    "calories": 607.0,
+    "totalFat": 54.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, without salt added, with peanuts, oil roasted, mixed nuts",
+    "calories": 607.0,
+    "totalFat": 54.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Sandwich spread, unspecified oils, regular, with chopped pickle",
+    "calories": 389.0,
+    "totalFat": 34.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pork, roasted, cooked, separable lean and fat, spareribs, fresh",
+    "calories": 361.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "POPEYES, meat and skin with breading, Wing, Mild, Fried Chicken",
+    "calories": 338.0,
+    "totalFat": 22.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, milk chocolate with honey and almond nougat, TOBLERONE",
+    "calories": 525.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "12.00 mg"
+  },
+  {
+    "name": "Chicken, raw, with added solution, skin (drumsticks and thighs)",
+    "calories": 386.0,
+    "totalFat": 38.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, with salt added, without peanuts, oil roasted, mixed nuts",
+    "calories": 615.0,
+    "totalFat": 56.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, bite-size, Chocolate Chip Cookies, CHIPS DELUXE, GRIPZ",
+    "calories": 473.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Margarine, tub, 67-70% fat, margarine-like vegetable oil spread",
+    "calories": 606.0,
+    "totalFat": 68.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pork, braised, cooked, separable lean and fat, spareribs, fresh",
+    "calories": 397.0,
+    "totalFat": 30.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pie crust, made with enriched flour, unbaked, frozen, deep dish",
+    "calories": 468.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Infant Formula, powder, Newborn, Premium, ENFAMIL, MEAD JOHNSON",
+    "calories": 514.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cookies, made with butter, prepared from recipe, chocolate chip",
+    "calories": 488.0,
+    "totalFat": 28.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cheese food, vitamin D fortified, American, pasteurized process",
+    "calories": 330.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, fortified with vitamin D, American, pasteurized process",
+    "calories": 366.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Margarine-like, with salt, stick, 60% fat, vegetable oil spread",
+    "calories": 537.0,
+    "totalFat": 60.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, COCOAVIA Chocolate Covered Almonds, MARS SNACKFOOD US",
+    "calories": 573.0,
+    "totalFat": 37.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Infant Formula, powder, Infant, Premium, ENFAMIL, MEAD JOHNSON",
+    "calories": 510.0,
+    "totalFat": 27.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Oil, all purpose salad or cooking, industrial and retail, corn",
+    "calories": 900.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Danish pastry, nut (includes almond, raisin nut, cinnamon nut)",
+    "calories": 430.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Fast foods, plain, boneless pieces, breaded and fried, chicken",
+    "calories": 307.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, lightly salted, without peanuts, oil roasted, mixed nuts",
+    "calories": 607.0,
+    "totalFat": 50.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "SUNSHINE, Duoz Smoked Cheddar Monterey Jack Crackers, CHEEZ-IT",
+    "calories": 507.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pork, unheated, separable fat (from ham and arm picnic), cured",
+    "calories": 579.0,
+    "totalFat": 61.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Candies, M&M's MINIs Milk Chocolate Candies, MARS SNACKFOOD US",
+    "calories": 502.0,
+    "totalFat": 23.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Fast Food, thin crust, sausage topping, 14\" pizza, Pizza Chain",
+    "calories": 321.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Margarine-like, soybean oil and butter, margarine-butter blend",
+    "calories": 727.0,
+    "totalFat": 80.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cheese, without added vitamin D, American, pasteurized process",
+    "calories": 371.0,
+    "totalFat": 32.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Chicken, batter, fried, cooked, skin only, broilers or fryers",
+    "calories": 394.0,
+    "totalFat": 29.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Margarine-like, sweetened, stick or tub, vegetable oil spread",
+    "calories": 534.0,
+    "totalFat": 52.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Mini Brownies, FUDGE SHOPPE, 100 Calorie RIGHT BITES",
+    "calories": 455.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Snacks, cheese-flavor, made from dried potatoes, potato chips",
+    "calories": 551.0,
+    "totalFat": 37.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Veal, cooked, separable fat, composite of trimmed retail cuts",
+    "calories": 642.0,
+    "totalFat": 67.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Pie crust, made with enriched flour, baked, frozen, deep dish",
+    "calories": 521.0,
+    "totalFat": 32.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Snacks, original flavor, Multigrain Snack, SUNCHIPS, FRITOLAY",
+    "calories": 491.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "KEEBLER, Garlic Herb, Pretzel Crackers, FLIPSIDES, TOWN HOUSE",
+    "calories": 486.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "KEEBLER, White Fudge Dipped Pretzels, 100 Calorie RIGHT BITES",
+    "calories": 483.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cocoa, processed with alkali, hi-fat or breakfast, dry powder",
+    "calories": 479.0,
+    "totalFat": 24.0,
+    "fatRating": "HIGH",
+    "caffeine": "72.00 mg"
+  },
+  {
+    "name": "Infant formula, powder, with iron, GOOD START SUPREME, NESTLE",
+    "calories": 509.0,
+    "totalFat": 26.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Pork, roasted, separable fat (from ham and arm picnic), cured",
+    "calories": 591.0,
+    "totalFat": 62.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Seeds, without salt, roasted, whole, pumpkin and squash seeds",
+    "calories": 446.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Margarine-like, with salt, tub, 60% fat, vegetable oil spread",
+    "calories": 533.0,
+    "totalFat": 60.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Seeds, without salt, roasted, pumpkin and squash seed kernels",
+    "calories": 574.0,
+    "totalFat": 49.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Chicken, flour, fried, cooked, skin only, broilers or fryers",
+    "calories": 502.0,
+    "totalFat": 43.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cheese, low sodium, cheddar or American, pasteurized process",
+    "calories": 376.0,
+    "totalFat": 31.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cookies, with creme filling, chocolate sandwich, gluten-free",
+    "calories": 474.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "6.00 mg"
+  },
+  {
+    "name": "Shortening industrial, soybean (hydrogenated) and cottonseed",
+    "calories": 884.0,
+    "totalFat": 100.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, raw (liquid expressed from grated meat), coconut cream",
+    "calories": 330.0,
+    "totalFat": 35.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Beef, braised, cooked, thymus, variety meats and by-products",
+    "calories": 319.0,
+    "totalFat": 25.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Candies, TWIX chocolate fudge cookie bars, MARS SNACKFOOD US",
+    "calories": 550.0,
+    "totalFat": 33.0,
+    "fatRating": "HIGH",
+    "caffeine": "10.00 mg"
+  },
+  {
+    "name": "Snacks, cheese-flavor, puffs or twists, extruded, corn-based",
+    "calories": 560.0,
+    "totalFat": 36.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Margarine-like spread with yogurt, with salt, stick, 70% fat",
+    "calories": 630.0,
+    "totalFat": 70.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, with salt added, with peanuts, oil roasted, mixed nuts",
+    "calories": 607.0,
+    "totalFat": 54.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, with salt added, with peanuts, dry roasted, mixed nuts",
+    "calories": 594.0,
+    "totalFat": 51.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Crackers, with cheese filling, sandwich, standard snack-type",
+    "calories": 477.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  }
+]

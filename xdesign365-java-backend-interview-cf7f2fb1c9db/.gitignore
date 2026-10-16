@@ -1,0 +1,11 @@
+.gradle
+build/
+
+### IntelliJ IDEA ###
+**/.idea
+**/*.iml
+out/
+**/.run
+
+# Misc
+.DS_Store

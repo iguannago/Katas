@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Chicken spread",
+    "calories": 158.0,
+    "totalFat": 18.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Margarine-like, with salt, 20% fat, vegetable oil spread",
+    "calories": 175.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Margarine-like, without salt, 20% fat, vegetable oil spread",
+    "calories": 175.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Cream, light (coffee cream or table cream), fluid",
+    "calories": 191.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Nuts, canned (liquid expressed from grated meat and water), coconut milk",
+    "calories": 197.0,
+    "totalFat": 21.0,
+    "fatRating": "HIGH",
+    "caffeine": "0"
+  },
+  {
+    "name": "Cream, cultured, sour",
+    "calories": 198.0,
+    "totalFat": 19.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  },
+  {
+    "name": "Salad dressing, reduced calorie, italian dressing",
+    "calories": 200.0,
+    "totalFat": 20.0,
+    "fatRating": "HIGH",
+    "caffeine": "0.00 mg"
+  }
+]
