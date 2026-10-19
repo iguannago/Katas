@@ -34,4 +34,11 @@ class BankAccountTest {
         account.withdraw(BigDecimal.TEN)
         assertEquals(0, account.balance().compareTo(BigDecimal.ZERO.setScale(2)))
     }
+
+    @Test
+    fun `withdraw to balance zero`() {
+        account.deposit(BigDecimal.TEN)
+        account.withdraw(BigDecimal.TEN)
+        assertEquals(0, account.balance().compareTo(BigDecimal.ZERO.setScale(2)))
+    }
 }
