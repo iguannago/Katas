@@ -41,4 +41,11 @@ class BankAccountTest {
         account.withdraw(BigDecimal.TEN)
         assertEquals(0, account.balance().compareTo(BigDecimal.ZERO.setScale(2)))
     }
+
+    @Test
+    fun `depositing money increases the balance twice with rounding`() {
+        account.deposit(BigDecimal("0.10"))
+        account.deposit(BigDecimal("0.20"))
+        assertEquals(0, account.balance().compareTo(BigDecimal.valueOf(0.30)))
+    }
 }
