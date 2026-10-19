@@ -6,7 +6,7 @@ import java.math.BigDecimal
 
 class BankAccountTest {
 
-    private var account: BankAccount = BankAccount()
+    private val account: BankAccount = BankAccount()
 
     @Test
     fun `a new account has a zero balance`() {
@@ -21,9 +21,9 @@ class BankAccountTest {
 
     @Test
     fun `depositing money increases the balance twice`() {
-        account.deposit(BigDecimal.TEN)
-        account.deposit(BigDecimal.TEN)
-        assertEquals(0, account.balance().compareTo(BigDecimal.valueOf(20).setScale(2)))
+        account.deposit(BigDecimal("0.10"))
+        account.deposit(BigDecimal("0.20"))
+        assertEquals(0, account.balance().compareTo(BigDecimal.valueOf(0.30).setScale(2)))
     }
 
     @Test
@@ -43,7 +43,7 @@ class BankAccountTest {
     }
 
     @Test
-    fun `depositing money increases the balance twice with rounding`() {
+    fun `depositing money with decimals increases balances`() {
         account.deposit(BigDecimal("0.10"))
         account.deposit(BigDecimal("0.20"))
         assertEquals(0, account.balance().compareTo(BigDecimal.valueOf(0.30)))
