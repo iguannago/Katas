@@ -6,13 +6,13 @@ Open this folder's `pom.xml` as a Maven project in IntelliJ. Select JDK 25 for t
 
 ## Start here
 
-Read the [bank account scenarios](src/test/kotlin/com/getinthecloud/katas/bank/README.md), then write the first failing test yourself.
+The first test and implementation cover a new account's zero balance. Read the [bank account scenarios](src/test/kotlin/com/getinthecloud/katas/bank/README.md), then add the next failing test yourself.
 
 - Production code goes in `src/main/kotlin/com/getinthecloud/katas/bank/`.
 - Tests go in `src/test/kotlin/com/getinthecloud/katas/bank/`.
 - Use package `com.getinthecloud.katas.bank` and name the test class `BankAccountTest`.
 
-No production code or unit tests are supplied. Initially, a successful build means the empty project builds; it does not verify any account behaviour.
+Only the initial-balance scenario is implemented. Deposits, withdrawals and validation remain for you to practise.
 
 ## Run
 
@@ -25,7 +25,7 @@ mvn clean verify
 
 Alternatively, select your JDK 25 through `JAVA_HOME` and `PATH`. Check `mvn -version` reports Java 25.
 
-Once you have created `BankAccountTest`, run just that class:
+To run just `BankAccountTest`:
 
 ```sh
 mvn -Dtest=BankAccountTest test
