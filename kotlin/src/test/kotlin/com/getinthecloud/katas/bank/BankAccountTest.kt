@@ -1,15 +1,37 @@
 package com.getinthecloud.katas.bank
 
-import java.math.BigDecimal
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
+import java.math.BigDecimal
 
 class BankAccountTest {
 
+    private var account: BankAccount = BankAccount()
+
     @Test
     fun `a new account has a zero balance`() {
-        val bankAccount = BankAccount()
+        assertEquals(0, account.balance().compareTo(BigDecimal.ZERO))
+    }
 
-        assertEquals(0, bankAccount.balance().compareTo(BigDecimal.ZERO))
+    @Test
+    fun `depositing money increases the balance`() {
+        account.deposit(BigDecimal.TEN)
+        assertEquals(0, account.balance().compareTo(BigDecimal.TEN))
+    }
+
+    @Test
+    fun `depositing money increases the balance twice`() {
+        account.deposit(BigDecimal.TEN)
+        account.deposit(BigDecimal.TEN)
+        assertEquals(0, account.balance().compareTo(BigDecimal.valueOf(20)))
+    }
+
+    @Test
+    fun `withdrawal moeny decreases the balance`() {
+        account.deposit(BigDecimal.TEN)
+        assertEquals(0, account.balance().compareTo(BigDecimal.TEN))
+
+        account.withdraw(BigDecimal.TEN)
+        assertEquals(0, account.balance().compareTo(BigDecimal.ZERO))
     }
 }
