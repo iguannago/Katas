@@ -2,6 +2,10 @@ package com.getinthecloud.katas.bank
 
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.assertThrows
+import org.junit.jupiter.params.ParameterizedTest
+import org.junit.jupiter.params.provider.NullSource
+import org.junit.jupiter.params.provider.ValueSource
 import java.math.BigDecimal
 
 class BankAccountTest {
@@ -48,4 +52,32 @@ class BankAccountTest {
         account.deposit(BigDecimal("0.20"))
         assertEquals(0, account.balance().compareTo(BigDecimal.valueOf(0.30)))
     }
+
+    @ParameterizedTest
+    @NullSource
+    @ValueSource(strings = ["0", "-1", "-10"])
+    fun `rejects null, zero and negative deposits`(amount: BigDecimal?) {
+        assertThrows<IllegalArgumentException> {
+            account.deposit(amount)
+        }
+    }
+
+    @ParameterizedTest
+    @NullSource
+    @ValueSource(strings = ["0", "-1", "-10"])
+    fun `rejects null, zero and negative withdrawals`(amount: BigDecimal?) {
+        assertThrows<IllegalArgumentException> {
+            account.withdraw(amount)
+        }
+    }
+
+    @ParameterizedTest
+    @ValueSource(strings = ["1.001", "10.500"])
+    fun `reject deposits with more than two decimals`(amount: String) {
+        assertThrows<IllegalArgumentException> {
+            account.deposit(BigDecimal(amount))
+        }
+    }
+
+
 }
