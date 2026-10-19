@@ -72,12 +72,41 @@ class BankAccountTest {
     }
 
     @ParameterizedTest
-    @ValueSource(strings = ["1.001", "10.500"])
+    @ValueSource(strings = ["1.001", "10.501"])
     fun `reject deposits with more than two decimals`(amount: String) {
         assertThrows<IllegalArgumentException> {
             account.deposit(BigDecimal(amount))
         }
     }
 
+    @Test
+    fun `these deposits should not be rejected`() {
+        account.deposit(BigDecimal("10.5"))
+        account.deposit(BigDecimal("10.500"))
+        assertEquals(0, BigDecimal("21.00").compareTo(account.balance()))
+    }
 
+    @ParameterizedTest
+    @ValueSource(strings = ["1.001", "10.501"])
+    fun `reject withdrawals with more than two decimals`(amount: String) {
+        assertThrows<IllegalArgumentException> {
+            account.withdraw(BigDecimal(amount))
+        }
+    }
+
+    @Test
+    fun `these withdrawals should not be rejected`() {
+        account.deposit(BigDecimal("10.5"))
+        account.withdraw(BigDecimal("10.5"))
+        account.deposit(BigDecimal("10.500"))
+        account.withdraw(BigDecimal("10.500"))
+        assertEquals(0, BigDecimal.ZERO.compareTo(account.balance()))
+    }
+
+    @Test
+    fun `reject withdrawal if resulting balance is negative`() {
+        assertThrows<IllegalStateException> {
+            account.withdraw(BigDecimal("10.50"))
+        }
+    }
 }

@@ -10,12 +10,20 @@ class BankAccount {
 
     fun deposit(amount: BigDecimal?) {
         require(amount != null && amount > BigDecimal.ZERO) { "Amount must be greater than zero" }
-        require(amount.scale() <= 2) { "Amount must have at most 2 decimal places" }
+        require(amount.stripTrailingZeros().scale() <= 2) {
+            "Amount must be representable in two decimal places"
+        }
         balance += amount.setScale(2)
     }
 
     fun withdraw(amount: BigDecimal?) {
         require(amount != null && amount > BigDecimal.ZERO) { "Amount must be greater than zero" }
+        require(amount.stripTrailingZeros().scale() <= 2) {
+            "Amount must be representable in two decimal places"
+        }
+        check(balance >= amount.setScale(2)) {
+            "Insufficient funds"
+        }
         balance -= amount.setScale(2)
     }
 }
