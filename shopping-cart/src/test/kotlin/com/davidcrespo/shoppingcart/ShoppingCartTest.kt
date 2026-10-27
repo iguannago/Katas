@@ -63,4 +63,14 @@ class ShoppingCartTest {
 
         assertEquals(0, cart.quantityOf(cornflakes.id))
     }
+
+    @Test
+    fun `removing an absent product leaves the cart unchanged`() {
+        cart.add(cornflakes)
+
+        cart.remove("unknown-product")
+
+        assertEquals(1, cart.quantityOf(cornflakes.id))
+        assertEquals(0, cart.quantityOf("unknown-product"))
+    }
 }
