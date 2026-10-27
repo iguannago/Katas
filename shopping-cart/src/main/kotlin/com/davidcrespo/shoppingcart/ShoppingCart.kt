@@ -10,4 +10,13 @@ class ShoppingCart {
     fun quantityOf(productId: String): Int {
         return quantities.getOrDefault(productId, 0)
     }
+
+    fun remove(productId: String) {
+        val quantity = quantityOf(productId)
+
+        when {
+            quantity > 1 -> quantities[productId] = quantity - 1
+            quantity == 1 -> quantities.remove(productId)
+        }
+    }
 }

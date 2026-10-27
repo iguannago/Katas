@@ -54,4 +54,20 @@ class ShoppingCartTest {
         assertEquals(1, cart.quantityOf(bread.id))
 
     }
+
+    @Test
+    fun `removing a product decreases its quantity by one`() {
+        val cart = ShoppingCart()
+        val cornflakes = Product(
+            id = "cornflakes",
+            name = "Cornflakes",
+            price = BigDecimal("2.50")
+        )
+        cart.add(cornflakes)
+        cart.add(cornflakes)
+
+        cart.remove(cornflakes.id)
+
+        assertEquals(1, cart.quantityOf(cornflakes.id))
+    }
 }
