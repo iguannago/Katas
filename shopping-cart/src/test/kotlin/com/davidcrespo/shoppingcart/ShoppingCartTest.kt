@@ -54,4 +54,13 @@ class ShoppingCartTest {
 
         assertEquals(1, cart.quantityOf(cornflakes.id))
     }
+
+    @Test
+    fun `removing the last unit leaves a quantity of zero`() {
+        cart.add(cornflakes)
+
+        cart.remove(cornflakes.id)
+
+        assertEquals(0, cart.quantityOf(cornflakes.id))
+    }
 }
