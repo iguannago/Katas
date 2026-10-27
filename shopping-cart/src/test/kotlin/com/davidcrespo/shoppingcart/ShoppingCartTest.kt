@@ -1,0 +1,21 @@
+package com.davidcrespo.shoppingcart
+
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
+import java.math.BigDecimal
+
+class ShoppingCartTest {
+
+    @Test
+    fun `adding a product gives it a quantity of one`() {
+        val cart = ShoppingCart()
+        val cornflakes = Product(
+            id = "cornflakes",
+            name = "Cornflakes",
+            price = BigDecimal("2.50")
+        )
+        cart.add(cornflakes)
+
+        assertEquals(1, cart.quantityOf(cornflakes.id))
+    }
+}
