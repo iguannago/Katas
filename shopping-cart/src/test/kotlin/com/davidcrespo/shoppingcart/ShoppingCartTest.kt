@@ -34,7 +34,7 @@ class ShoppingCartTest {
         }
 
         @Test
-        fun `adding different products tracks their quantitities independently`() {
+        fun `adding different products tracks their quantities independently`() {
             val bread = Product(
                 id = "bread",
                 name = "Bread",
@@ -46,7 +46,6 @@ class ShoppingCartTest {
 
             assertEquals(2, cart.quantityOf(cornflakes.id))
             assertEquals(1, cart.quantityOf(bread.id))
-
         }
     }
 
