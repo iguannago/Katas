@@ -104,10 +104,21 @@ class ShoppingCartTest {
             )
             assertEquals(0, receipt.total.compareTo(cornflakes.price))
         }
-    }
 
-    @Nested
-    inner class EdgeCases {
+        @Test
+        fun `receipt groups repeated products and totals their prices`() {
+            cart.add(cornflakes)
+            cart.add(cornflakes)
+            cart.add(cornflakes)
+
+            val receipt = cart.receipt()
+
+            assertEquals(
+                listOf(ReceiptLine(cornflakes, quantity = 3)),
+                receipt.lines
+            )
+            assertEquals(0, receipt.total.compareTo(BigDecimal("7.50")))
+        }
 
         @Test
         fun `adding the same identifier with conflicting details retains the original product`() {
