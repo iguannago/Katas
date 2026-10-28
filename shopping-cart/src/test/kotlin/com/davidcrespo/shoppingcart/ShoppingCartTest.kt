@@ -1,6 +1,7 @@
 package com.davidcrespo.shoppingcart
 
 import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
 import java.math.BigDecimal
@@ -78,6 +79,17 @@ class ShoppingCartTest {
 
             assertEquals(1, cart.quantityOf(cornflakes.id))
             assertEquals(0, cart.quantityOf("unknown-product"))
+        }
+    }
+
+    @Nested
+    inner class ItemisedReceipt {
+        @Test
+        fun `an empty cart produces a receipt with no lines and a zero total`() {
+            val receipt = cart.receipt()
+
+            assertTrue(receipt.lines.isEmpty())
+            assertEquals(0, receipt.total.compareTo(BigDecimal.ZERO))
         }
     }
 }

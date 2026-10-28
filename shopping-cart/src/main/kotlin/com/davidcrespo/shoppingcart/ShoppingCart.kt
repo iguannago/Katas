@@ -1,5 +1,7 @@
 package com.davidcrespo.shoppingcart
 
+import java.math.BigDecimal
+
 class ShoppingCart {
     private val quantities = mutableMapOf<String, Int>()
 
@@ -19,4 +21,10 @@ class ShoppingCart {
             quantity == 1 -> quantities.remove(productId)
         }
     }
+
+    fun receipt(): Receipt =
+        Receipt(
+            lines = emptyList(),
+            total = BigDecimal.ZERO
+        )
 }
