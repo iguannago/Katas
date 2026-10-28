@@ -9,6 +9,8 @@ class ShoppingCart {
 
     private val entries = mutableMapOf<String, CartEntry>()
 
+    private val twoForOneProductIds = mutableSetOf<String>()
+
     fun add(product: Product) {
         val existing = entries[product.id]
 
@@ -41,11 +43,22 @@ class ShoppingCart {
         }
 
         val total = lines.fold(BigDecimal.ZERO) { sum, line ->
+            val freeQuantity =
+                if (line.product.id in twoForOneProductIds) {
+                    line.quantity / 2
+                } else {
+                    0
+                }
+            val chargedQuantity = line.quantity - freeQuantity
             sum + line.product.price.multiply(
-                BigDecimal.valueOf(line.quantity.toLong())
+                BigDecimal.valueOf(chargedQuantity.toLong())
             )
         }
 
         return Receipt(lines = lines, total = total)
+    }
+
+    fun applyTwoForOneOffer(productId: String) {
+        twoForOneProductIds.add(productId)
     }
 }

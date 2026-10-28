@@ -177,4 +177,24 @@ class ShoppingCartTest {
             assertEquals(0, receipt.total.compareTo(BigDecimal("2.50")))
         }
     }
+
+    @Nested
+    inner class TwoForOneOffers {
+
+        @Test
+        fun `two elegible units cost the price of one`() {
+            cart.add(cornflakes)
+            cart.add(cornflakes)
+
+            cart.applyTwoForOneOffer(cornflakes.id)
+
+            val receipt = cart.receipt()
+
+            assertEquals(
+                listOf(ReceiptLine(cornflakes, quantity = 2)),
+                receipt.lines
+            )
+            assertEquals(0, receipt.total.compareTo(BigDecimal("2.50")))
+        }
+    }
 }
