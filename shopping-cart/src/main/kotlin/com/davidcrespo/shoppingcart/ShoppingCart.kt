@@ -16,7 +16,6 @@ class ShoppingCart {
             product = existing?.product ?: product,
             quantity = quantityOf(product.id) + 1
         )
-
     }
 
     fun quantityOf(productId: String): Int {
