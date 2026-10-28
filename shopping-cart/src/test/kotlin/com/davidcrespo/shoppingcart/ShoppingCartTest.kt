@@ -162,5 +162,19 @@ class ShoppingCartTest {
             assertEquals(0, receipt.total.compareTo(BigDecimal("5.00")))
         }
 
+        @Test
+        fun `receipt reflects the remaining quantity after removal`() {
+            cart.add(cornflakes)
+            cart.add(cornflakes)
+            cart.remove(cornflakes.id)
+
+            val receipt = cart.receipt()
+
+            assertEquals(
+                listOf(ReceiptLine(cornflakes, quantity = 1)),
+                receipt.lines
+            )
+            assertEquals(0, receipt.total.compareTo(BigDecimal("2.50")))
+        }
     }
 }
