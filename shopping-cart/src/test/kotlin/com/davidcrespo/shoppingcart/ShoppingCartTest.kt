@@ -104,5 +104,24 @@ class ShoppingCartTest {
             )
             assertEquals(0, receipt.total.compareTo(cornflakes.price))
         }
+
+        @Test
+        fun `adding the same identifier with conflicting details retains the original product`() {
+            val updatedCornflakes = cornflakes.copy(
+                name = "Updated Cornflakes",
+                price = BigDecimal("3.00")
+            )
+            cart.add(cornflakes)
+            cart.add(updatedCornflakes)
+
+            val receipt = cart.receipt()
+
+            assertEquals(
+                listOf(ReceiptLine(cornflakes, quantity = 2)),
+                receipt.lines
+            )
+            assertEquals(0, receipt.total.compareTo(BigDecimal("5.00")))
+        }
+
     }
 }
