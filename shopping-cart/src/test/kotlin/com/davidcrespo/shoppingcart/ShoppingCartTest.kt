@@ -104,6 +104,10 @@ class ShoppingCartTest {
             )
             assertEquals(0, receipt.total.compareTo(cornflakes.price))
         }
+    }
+
+    @Nested
+    inner class EdgeCases {
 
         @Test
         fun `adding the same identifier with conflicting details retains the original product`() {
@@ -122,6 +126,5 @@ class ShoppingCartTest {
             )
             assertEquals(0, receipt.total.compareTo(BigDecimal("5.00")))
         }
-
     }
 }
