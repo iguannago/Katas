@@ -91,5 +91,18 @@ class ShoppingCartTest {
             assertTrue(receipt.lines.isEmpty())
             assertEquals(0, receipt.total.compareTo(BigDecimal.ZERO))
         }
+
+        @Test
+        fun `receipt includes one product and its price as the total`() {
+            cart.add(cornflakes)
+
+            val receipt = cart.receipt()
+
+            assertEquals(
+                listOf(ReceiptLine(cornflakes, quantity = 1)),
+                receipt.lines
+            )
+            assertEquals(0, receipt.total.compareTo(cornflakes.price))
+        }
     }
 }
