@@ -24,7 +24,7 @@ class CartService {
             cart.receipt()
         }
     }
-
-    class CartNotFoundException(cartId: UUID) : RuntimeException("Cart not found: $cartId")
-
 }
+
+
+class CartNotFoundException(cartId: UUID) : RuntimeException("Cart not found: $cartId")
