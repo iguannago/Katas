@@ -185,6 +185,7 @@ class ShoppingCartTest {
 
         @ParameterizedTest(name = "{0} eligible unit cost £{1}")
         @CsvSource(
+            "1,2.50",
             "2,2.50",
             "3, 5",
             "4,5.00"
