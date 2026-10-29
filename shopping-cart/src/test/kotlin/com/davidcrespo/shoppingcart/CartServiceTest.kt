@@ -4,12 +4,13 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
 import java.math.BigDecimal
-import java.util.UUID
+import java.util.*
 import kotlin.test.assertTrue
 
 class CartServiceTest {
 
     private val service = CartService()
+    private val cornflakes = Product("cornflakes", "Cornflakes", BigDecimal("2.50"))
 
     @Test
     fun `creating a cart makes an empty cart available`() {
@@ -36,7 +37,6 @@ class CartServiceTest {
     fun `adding a product affects only the specified cart`() {
         val firstCartId = service.createCart()
         val secondCartId = service.createCart()
-        val cornflakes = Product("cornflakes", "Cornflakes", BigDecimal("2.50"))
 
         service.addProduct(firstCartId, cornflakes)
 
@@ -50,5 +50,22 @@ class CartServiceTest {
         assertTrue(secondReceipt.lines.isEmpty())
         assertEquals(0, firstReceipt.total.compareTo(cornflakes.price))
         assertEquals(0, secondReceipt.total.compareTo(BigDecimal.ZERO))
+    }
+
+    @Test
+    fun `removing a product through the service removes one unit`() {
+        val cartId = service.createCart()
+        service.addProduct(cartId, cornflakes)
+        service.addProduct(cartId, cornflakes)
+
+        service.removeProduct(cartId, cornflakes.id)
+
+        val receipt = service.receipt(cartId)
+
+        assertEquals(
+            listOf(ReceiptLine(cornflakes, quantity = 1)),
+            receipt.lines
+        )
+        assertEquals(0, receipt.total.compareTo(cornflakes.price))
     }
 }

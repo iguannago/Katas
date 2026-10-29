@@ -32,6 +32,14 @@ class CartService {
             cart.add(product)
         }
     }
+
+    fun removeProduct(cartId: UUID, productId: String) {
+        val cart = carts[cartId] ?: throw CartNotFoundException(cartId)
+
+        synchronized(cart) {
+            cart.remove(productId)
+        }
+    }
 }
 
 
