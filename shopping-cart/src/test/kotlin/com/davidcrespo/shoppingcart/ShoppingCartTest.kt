@@ -18,6 +18,12 @@ class ShoppingCartTest {
         price = BigDecimal("2.50")
     )
 
+    private val bread = Product(
+        id = "bread",
+        name = "Bread",
+        price = BigDecimal("1.20")
+    )
+
     @Nested
     inner class AddingProducts {
 
@@ -38,11 +44,6 @@ class ShoppingCartTest {
 
         @Test
         fun `adding different products tracks their quantities independently`() {
-            val bread = Product(
-                id = "bread",
-                name = "Bread",
-                price = BigDecimal("1.20")
-            )
             cart.add(cornflakes)
             cart.add(bread)
             cart.add(cornflakes)
@@ -124,11 +125,6 @@ class ShoppingCartTest {
 
         @Test
         fun `receipt includes different products and sums their prices`() {
-            val bread = Product(
-                id = "bread",
-                name = "Bread",
-                price = BigDecimal("1.20")
-            )
             cart.add(cornflakes)
             cart.add(cornflakes)
             cart.add(bread)
@@ -207,11 +203,6 @@ class ShoppingCartTest {
 
         @Test
         fun `offer discounts eligible products only`() {
-            val bread = Product(
-                id = "bread",
-                name = "Bread",
-                price = BigDecimal("1.20")
-            )
             repeat(2) {
                 cart.add(cornflakes)
                 cart.add(bread)
@@ -269,6 +260,31 @@ class ShoppingCartTest {
                 receipt.lines
             )
             assertEquals(0, receipt.total.compareTo(BigDecimal("2.50")))
+        }
+
+        @Test
+        fun `offers can apply to different products independently`() {
+            repeat(2) {
+                cart.add(cornflakes)
+            }
+            repeat(3) {
+                cart.add(bread)
+            }
+
+            cart.applyTwoForOneOffer(cornflakes.id)
+            cart.applyTwoForOneOffer(bread.id)
+
+            val receipt = cart.receipt()
+
+            assertEquals(2, receipt.lines.size)
+            assertEquals(
+                setOf(
+                    ReceiptLine(cornflakes, quantity = 2),
+                    ReceiptLine(bread, quantity = 3),
+                ),
+                receipt.lines.toSet()
+            )
+            assertEquals(0, receipt.total.compareTo(BigDecimal("4.90")))
         }
     }
 }
