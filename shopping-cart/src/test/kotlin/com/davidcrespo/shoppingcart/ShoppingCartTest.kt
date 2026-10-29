@@ -130,6 +130,8 @@ class ShoppingCartTest {
                 listOf(ReceiptLine(cornflakes, quantity = 1)),
                 receipt.lines
             )
+            assertEquals(0, receipt.subtotal.compareTo(cornflakes.price))
+            assertEquals(0, receipt.discount.compareTo(BigDecimal.ZERO))
             assertEquals(0, receipt.total.compareTo(cornflakes.price))
         }
 
@@ -197,6 +199,20 @@ class ShoppingCartTest {
                 listOf(ReceiptLine(cornflakes, quantity = 1)),
                 receipt.lines
             )
+            assertEquals(0, receipt.total.compareTo(BigDecimal("2.50")))
+        }
+
+        @Test
+        fun `receipt shows the subtotal discount and total for an offer`() {
+            repeat(2) {
+                cart.add(cornflakes)
+            }
+            cart.applyTwoForOneOffer(cornflakes.id)
+
+            val receipt = cart.receipt()
+
+            assertEquals(0, receipt.subtotal.compareTo(BigDecimal("5.00")))
+            assertEquals(0, receipt.discount.compareTo(BigDecimal("2.50")))
             assertEquals(0, receipt.total.compareTo(BigDecimal("2.50")))
         }
     }
@@ -310,35 +326,6 @@ class ShoppingCartTest {
                 receipt.lines.toSet()
             )
             assertEquals(0, receipt.total.compareTo(BigDecimal("4.90")))
-        }
-
-        @Test
-        fun `receipt shows the subtotal discount and total for an offer`() {
-            repeat(2) {
-                cart.add(cornflakes)
-            }
-            cart.applyTwoForOneOffer(cornflakes.id)
-
-            val receipt = cart.receipt()
-
-            assertEquals(0, receipt.subtotal.compareTo(BigDecimal("5.00")))
-            assertEquals(0, receipt.discount.compareTo(BigDecimal("2.50")))
-            assertEquals(0, receipt.total.compareTo(BigDecimal("2.50")))
-        }
-
-        @Test
-        fun `receipt includes one product and its price as the total`() {
-            cart.add(cornflakes)
-
-            val receipt = cart.receipt()
-
-            assertEquals(
-                listOf(ReceiptLine(cornflakes, quantity = 1)),
-                receipt.lines
-            )
-            assertEquals(0, receipt.subtotal.compareTo(cornflakes.price))
-            assertEquals(0, receipt.discount.compareTo(BigDecimal.ZERO))
-            assertEquals(0, receipt.total.compareTo(cornflakes.price))
         }
     }
 }
