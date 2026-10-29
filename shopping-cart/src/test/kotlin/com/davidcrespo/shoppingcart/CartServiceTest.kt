@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
 import java.math.BigDecimal
 import java.util.UUID
+import kotlin.test.assertTrue
 
 class CartServiceTest {
 
@@ -29,5 +30,25 @@ class CartServiceTest {
         assertThrows<CartNotFoundException> {
             service.receipt(unknownCartId)
         }
+    }
+
+    @Test
+    fun `adding a product affects only the specified cart`() {
+        val firstCartId = service.createCart()
+        val secondCartId = service.createCart()
+        val cornflakes = Product("cornflakes", "Cornflakes", BigDecimal("2.50"))
+
+        service.addProduct(firstCartId, cornflakes)
+
+        val firstReceipt = service.receipt(firstCartId)
+        val secondReceipt = service.receipt(secondCartId)
+
+        assertEquals(
+            listOf(ReceiptLine(cornflakes, 1)),
+            firstReceipt.lines
+        )
+        assertTrue(secondReceipt.lines.isEmpty())
+        assertEquals(0, firstReceipt.total.compareTo(cornflakes.price))
+        assertEquals(0, secondReceipt.total.compareTo(BigDecimal.ZERO))
     }
 }

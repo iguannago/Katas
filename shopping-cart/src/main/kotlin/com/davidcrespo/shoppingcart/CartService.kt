@@ -24,6 +24,14 @@ class CartService {
             cart.receipt()
         }
     }
+
+    fun addProduct(cartId: UUID, product: Product) {
+        val cart = carts[cartId] ?: throw CartNotFoundException(cartId)
+
+        synchronized(cart) {
+            cart.add(product)
+        }
+    }
 }
 
 
