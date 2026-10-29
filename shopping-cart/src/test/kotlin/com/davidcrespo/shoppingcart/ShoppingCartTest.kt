@@ -88,10 +88,12 @@ class ShoppingCartTest {
     @Nested
     inner class ItemisedReceipt {
         @Test
-        fun `an empty cart produces a receipt with no lines and a zero total`() {
+        fun `an empty cart produces a receipt with no lines and a zero subtotal, discount and total`() {
             val receipt = cart.receipt()
 
             assertTrue(receipt.lines.isEmpty())
+            assertEquals(0, receipt.subtotal.compareTo(BigDecimal.ZERO))
+            assertEquals(0, receipt.discount.compareTo(BigDecimal.ZERO))
             assertEquals(0, receipt.total.compareTo(BigDecimal.ZERO))
         }
 
@@ -285,6 +287,20 @@ class ShoppingCartTest {
                 receipt.lines.toSet()
             )
             assertEquals(0, receipt.total.compareTo(BigDecimal("4.90")))
+        }
+
+        @Test
+        fun `receipt shows the subtotal discount and total for an offer`() {
+            repeat(2) {
+                cart.add(cornflakes)
+            }
+            cart.applyTwoForOneOffer(cornflakes.id)
+
+            val receipt = cart.receipt()
+
+            assertEquals(0, receipt.subtotal.compareTo(BigDecimal("5.00")))
+            assertEquals(0, receipt.discount.compareTo(BigDecimal("2.50")))
+            assertEquals(0, receipt.total.compareTo(BigDecimal("2.50")))
         }
     }
 }

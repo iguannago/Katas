@@ -42,20 +42,29 @@ class ShoppingCart {
             )
         }
 
-        val total = lines.fold(BigDecimal.ZERO) { sum, line ->
+        val subtotal = lines.fold(BigDecimal.ZERO) { sum, line ->
+            sum + line.product.price.multiply(
+                BigDecimal.valueOf(line.quantity.toLong())
+            )
+        }
+
+        val discount = lines.fold(BigDecimal.ZERO) { sum, line ->
             val freeQuantity =
                 if (line.product.id in twoForOneProductIds) {
                     line.quantity / 2
                 } else {
                     0
                 }
-            val chargedQuantity = line.quantity - freeQuantity
             sum + line.product.price.multiply(
-                BigDecimal.valueOf(chargedQuantity.toLong())
+                BigDecimal.valueOf(freeQuantity.toLong())
             )
         }
 
-        return Receipt(lines = lines, total = total)
+        return Receipt(
+            lines = lines,
+            subtotal = subtotal,
+            discount = discount,
+        )
     }
 
     fun applyTwoForOneOffer(productId: String) {
