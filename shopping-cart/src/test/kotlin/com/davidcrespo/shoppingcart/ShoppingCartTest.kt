@@ -230,5 +230,26 @@ class ShoppingCartTest {
             )
             assertEquals(0, receipt.total.compareTo(BigDecimal("4.90")))
         }
+
+        @Test
+        fun `removing a unit recalculates the offer discount`() {
+            repeat(4) {
+                cart.add(cornflakes)
+            }
+            cart.applyTwoForOneOffer(cornflakes.id)
+
+            cart.remove(cornflakes.id)
+            cart.remove(cornflakes.id)
+
+            val receipt = cart.receipt()
+
+            assertEquals(
+                listOf(
+                    ReceiptLine(cornflakes, quantity = 2),
+                ),
+                receipt.lines
+            )
+            assertEquals(0, receipt.total.compareTo(BigDecimal("2.50")))
+        }
     }
 }
