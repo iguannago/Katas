@@ -213,5 +213,21 @@ class ShoppingCartTest {
             )
             assertEquals(0, receipt.total.compareTo(BigDecimal("5.00")))
         }
+
+        @Test
+        fun `four eliglible units cost the price of two`() {
+            repeat(4) {
+                cart.add(cornflakes)
+            }
+            cart.applyTwoForOneOffer(cornflakes.id)
+
+            val receipt = cart.receipt()
+
+            assertEquals(
+                listOf(ReceiptLine(cornflakes, quantity = 4)),
+                receipt.lines
+            )
+            assertEquals(0, receipt.total.compareTo(BigDecimal("5.00")))
+        }
     }
 }
