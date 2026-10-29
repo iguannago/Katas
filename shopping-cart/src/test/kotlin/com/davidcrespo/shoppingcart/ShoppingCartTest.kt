@@ -51,6 +51,29 @@ class ShoppingCartTest {
             assertEquals(2, cart.quantityOf(cornflakes.id))
             assertEquals(1, cart.quantityOf(bread.id))
         }
+
+        @Test
+        fun `adding a removed product uses the new product details`() {
+            cart.add(cornflakes)
+            cart.remove(cornflakes.id)
+
+            val updatedCornflakes = cornflakes.copy(
+                name = "Updated Cornflakes",
+                price = BigDecimal("3.00")
+            )
+
+            cart.add(updatedCornflakes)
+
+            val receipt = cart.receipt()
+
+            assertEquals(
+                listOf(ReceiptLine(updatedCornflakes, quantity = 1)),
+                receipt.lines
+            )
+            assertEquals(0, receipt.subtotal.compareTo(BigDecimal("3.00")))
+            assertEquals(0, receipt.discount.compareTo(BigDecimal.ZERO))
+            assertEquals(0, receipt.total.compareTo(BigDecimal("3.00")))
+        }
     }
 
     @Nested
@@ -301,6 +324,21 @@ class ShoppingCartTest {
             assertEquals(0, receipt.subtotal.compareTo(BigDecimal("5.00")))
             assertEquals(0, receipt.discount.compareTo(BigDecimal("2.50")))
             assertEquals(0, receipt.total.compareTo(BigDecimal("2.50")))
+        }
+
+        @Test
+        fun `receipt includes one product and its price as the total`() {
+            cart.add(cornflakes)
+
+            val receipt = cart.receipt()
+
+            assertEquals(
+                listOf(ReceiptLine(cornflakes, quantity = 1)),
+                receipt.lines
+            )
+            assertEquals(0, receipt.subtotal.compareTo(cornflakes.price))
+            assertEquals(0, receipt.discount.compareTo(BigDecimal.ZERO))
+            assertEquals(0, receipt.total.compareTo(cornflakes.price))
         }
     }
 }
