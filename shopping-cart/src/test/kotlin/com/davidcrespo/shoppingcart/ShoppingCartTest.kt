@@ -204,5 +204,31 @@ class ShoppingCartTest {
             )
             assertEquals(0, receipt.total.compareTo(BigDecimal(expectedTotal)))
         }
+
+        @Test
+        fun `offer discounts eligible products only`() {
+            val bread = Product(
+                id = "bread",
+                name = "Bread",
+                price = BigDecimal("1.20")
+            )
+            repeat(2) {
+                cart.add(cornflakes)
+                cart.add(bread)
+            }
+            cart.applyTwoForOneOffer(cornflakes.id)
+
+            val receipt = cart.receipt()
+
+            assertEquals(2, receipt.lines.size)
+            assertEquals(
+                setOf(
+                    ReceiptLine(cornflakes, quantity = 2),
+                    ReceiptLine(bread, quantity = 2)
+                ),
+                receipt.lines.toSet()
+            )
+            assertEquals(0, receipt.total.compareTo(BigDecimal("4.90")))
+        }
     }
 }
