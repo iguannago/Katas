@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.params.ParameterizedTest
+import org.junit.jupiter.params.provider.CsvSource
 import java.math.BigDecimal
 
 class ShoppingCartTest {
@@ -181,42 +183,14 @@ class ShoppingCartTest {
     @Nested
     inner class TwoForOneOffers {
 
-        @Test
-        fun `two elegible units cost the price of one`() {
-            cart.add(cornflakes)
-            cart.add(cornflakes)
-
-            cart.applyTwoForOneOffer(cornflakes.id)
-
-            val receipt = cart.receipt()
-
-            assertEquals(
-                listOf(ReceiptLine(cornflakes, quantity = 2)),
-                receipt.lines
-            )
-            assertEquals(0, receipt.total.compareTo(BigDecimal("2.50")))
-        }
-
-        @Test
-        fun `three eligible units cost the price of two`() {
-            cart.add(cornflakes)
-            cart.add(cornflakes)
-            cart.add(cornflakes)
-
-            cart.applyTwoForOneOffer(cornflakes.id)
-
-            val receipt = cart.receipt()
-
-            assertEquals(
-                listOf(ReceiptLine(cornflakes, quantity = 3)),
-                receipt.lines
-            )
-            assertEquals(0, receipt.total.compareTo(BigDecimal("5.00")))
-        }
-
-        @Test
-        fun `four eliglible units cost the price of two`() {
-            repeat(4) {
+        @ParameterizedTest(name = "{0} eligible unit cost £{1}")
+        @CsvSource(
+            "2,2.50",
+            "3, 5",
+            "4,5.00"
+        )
+        fun `eligible units receive one free unit per pair`(quantity: Int, expectedTotal: String) {
+            repeat(quantity) {
                 cart.add(cornflakes)
             }
             cart.applyTwoForOneOffer(cornflakes.id)
@@ -224,10 +198,10 @@ class ShoppingCartTest {
             val receipt = cart.receipt()
 
             assertEquals(
-                listOf(ReceiptLine(cornflakes, quantity = 4)),
+                listOf(ReceiptLine(cornflakes, quantity = quantity)),
                 receipt.lines
             )
-            assertEquals(0, receipt.total.compareTo(BigDecimal("5.00")))
+            assertEquals(0, receipt.total.compareTo(BigDecimal(expectedTotal)))
         }
     }
 }
