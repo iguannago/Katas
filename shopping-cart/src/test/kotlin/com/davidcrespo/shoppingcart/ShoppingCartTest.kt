@@ -251,5 +251,24 @@ class ShoppingCartTest {
             )
             assertEquals(0, receipt.total.compareTo(BigDecimal("2.50")))
         }
+
+        @Test
+        fun `applying the same offer twice does not increase the discount`() {
+            repeat(2) {
+                cart.add(cornflakes)
+            }
+            cart.applyTwoForOneOffer(cornflakes.id)
+            cart.applyTwoForOneOffer(cornflakes.id)
+
+            val receipt = cart.receipt()
+
+            assertEquals(
+                listOf(
+                    ReceiptLine(cornflakes, quantity = 2),
+                ),
+                receipt.lines
+            )
+            assertEquals(0, receipt.total.compareTo(BigDecimal("2.50")))
+        }
     }
 }
