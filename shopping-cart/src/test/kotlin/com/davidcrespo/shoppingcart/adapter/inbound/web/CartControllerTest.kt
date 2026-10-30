@@ -1,9 +1,10 @@
-package com.davidcrespo.shoppingcart
+package com.davidcrespo.shoppingcart.adapter.inbound.web
 
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.boot.webmvc.test.autoconfigure.AutoConfigureMockMvc
+import org.springframework.http.MediaType
 import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post
@@ -11,6 +12,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers.header
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 import java.util.UUID
+import kotlin.test.Ignore
 
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -50,5 +52,43 @@ class CartControllerTest @Autowired constructor(
 
         mockMvc.perform(get("/carts/$unknownCartId/receipt"))
             .andExpect(status().isNotFound)
+    }
+
+    @Test
+    @Ignore
+    fun `adding a product makes it appear on the cart receipt`() {
+        val creationResult = mockMvc.perform(post("/carts"))
+            .andExpect(status().isCreated)
+            .andReturn()
+
+        val location = requireNotNull(
+            creationResult.response.getHeader("Location")
+        )
+
+        mockMvc.perform(
+            post("$location/items")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(
+                    """
+                {
+                    "id": "cornflakes",
+                    "name": "Cornflakes",
+                    "price": 2.50
+                }
+                """.trimIndent()
+                )
+        )
+            .andExpect(status().isNoContent)
+
+        mockMvc.perform(get("$location/receipt"))
+            .andExpect(status().isOk)
+            .andExpect(jsonPath("$.lines.length()").value(1))
+            .andExpect(jsonPath("$.lines[0].product.id").value("cornflakes"))
+            .andExpect(jsonPath("$.lines[0].product.name").value("Cornflakes"))
+            .andExpect(jsonPath("$.lines[0].product.price").value(2.50))
+            .andExpect(jsonPath("$.lines[0].quantity").value(1))
+            .andExpect(jsonPath("$.subtotal").value(2.50))
+            .andExpect(jsonPath("$.discount").value(0))
+            .andExpect(jsonPath("$.total").value(2.50))
     }
 }

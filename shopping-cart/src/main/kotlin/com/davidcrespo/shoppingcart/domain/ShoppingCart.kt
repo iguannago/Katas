@@ -1,4 +1,4 @@
-package com.davidcrespo.shoppingcart
+package com.davidcrespo.shoppingcart.domain
 
 import java.math.BigDecimal
 import kotlin.collections.fold

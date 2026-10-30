@@ -1,4 +1,4 @@
-package com.davidcrespo.shoppingcart
+package com.davidcrespo.shoppingcart.domain
 
 import org.junit.jupiter.api.assertThrows
 import org.junit.jupiter.params.ParameterizedTest

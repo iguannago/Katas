@@ -1,5 +1,10 @@
-package com.davidcrespo.shoppingcart
+package com.davidcrespo.shoppingcart.application.service
 
+import com.davidcrespo.shoppingcart.adapter.outbound.memory.InMemoryCartStore
+import com.davidcrespo.shoppingcart.application.CartNotFoundException
+import com.davidcrespo.shoppingcart.application.port.output.CartStore
+import com.davidcrespo.shoppingcart.domain.Product
+import com.davidcrespo.shoppingcart.domain.ReceiptLine
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
@@ -7,9 +12,10 @@ import java.math.BigDecimal
 import java.util.*
 import kotlin.test.assertTrue
 
-class CartServiceTest {
+class CartUserCasesImplTest {
 
-    private val service = CartService()
+    private val store: CartStore = InMemoryCartStore()
+    private val service = CartUserCasesImpl(store)
     private val cornflakes = Product("cornflakes", "Cornflakes", BigDecimal("2.50"))
 
     @Test

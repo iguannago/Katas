@@ -1,5 +1,6 @@
-package com.davidcrespo.shoppingcart
+package com.davidcrespo.shoppingcart.adapter.inbound.web
 
+import com.davidcrespo.shoppingcart.application.CartNotFoundException
 import org.springframework.http.HttpStatus
 import org.springframework.http.ProblemDetail
 import org.springframework.web.bind.annotation.ExceptionHandler
