@@ -68,4 +68,26 @@ class CartServiceTest {
         )
         assertEquals(0, receipt.total.compareTo(cornflakes.price))
     }
+
+    @Test
+    fun `applying an offer through the service discounts eligible products`() {
+        val cartId = service.createCart()
+        repeat(2) {
+            service.addProduct(cartId, cornflakes)
+        }
+
+        service.applyTwoForOneOffer(cartId, cornflakes.id)
+
+        val receipt = service.receipt(cartId)
+
+        assertEquals(
+            listOf(ReceiptLine(cornflakes, quantity = 2)),
+            receipt.lines
+        )
+        assertEquals(0, receipt.subtotal.compareTo(BigDecimal("5.00")))
+        assertEquals(0, receipt.discount.compareTo(BigDecimal("2.50")))
+        assertEquals(0, receipt.total.compareTo(BigDecimal("2.50")))
+    }
+
+
 }

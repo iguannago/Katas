@@ -40,6 +40,14 @@ class CartService {
             cart.remove(productId)
         }
     }
+
+    fun applyTwoForOneOffer(cartId: UUID, productId: String) {
+        val cart = carts[cartId] ?: throw CartNotFoundException(cartId)
+
+        synchronized(cart) {
+            cart.applyTwoForOneOffer(productId)
+        }
+    }
 }
 
 
