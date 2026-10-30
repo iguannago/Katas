@@ -1,7 +1,7 @@
 package com.davidcrespo.shoppingcart
 
 import org.springframework.stereotype.Service
-import java.util.UUID
+import java.util.*
 import java.util.concurrent.ConcurrentHashMap
 
 @Service
@@ -19,33 +19,25 @@ class CartService {
     }
 
     fun receipt(cartId: UUID): Receipt {
-        val cart = carts[cartId] ?: throw CartNotFoundException(cartId)
-        return synchronized(cart) {
-            cart.receipt()
-        }
+        return withCart(cartId) { it.receipt() }
     }
 
     fun addProduct(cartId: UUID, product: Product) {
-        val cart = carts[cartId] ?: throw CartNotFoundException(cartId)
-
-        synchronized(cart) {
-            cart.add(product)
-        }
+        withCart(cartId) { it.add(product) }
     }
 
     fun removeProduct(cartId: UUID, productId: String) {
-        val cart = carts[cartId] ?: throw CartNotFoundException(cartId)
-
-        synchronized(cart) {
-            cart.remove(productId)
-        }
+        withCart(cartId) { it.remove(productId) }
     }
 
     fun applyTwoForOneOffer(cartId: UUID, productId: String) {
-        val cart = carts[cartId] ?: throw CartNotFoundException(cartId)
+        withCart(cartId) { it.applyTwoForOneOffer(productId) }
+    }
 
-        synchronized(cart) {
-            cart.applyTwoForOneOffer(productId)
+    private fun <T> withCart(cartId: UUID, operation: (ShoppingCart) -> T): T {
+        val cart = carts[cartId] ?: throw CartNotFoundException(cartId)
+        return synchronized(cart) {
+            operation(cart)
         }
     }
 }
