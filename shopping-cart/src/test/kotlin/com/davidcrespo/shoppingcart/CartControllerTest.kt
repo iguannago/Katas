@@ -10,6 +10,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.header
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
+import java.util.UUID
 
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -41,5 +42,13 @@ class CartControllerTest @Autowired constructor(
             .andExpect(jsonPath("$.subtotal").value(0))
             .andExpect(jsonPath("$.discount").value(0))
             .andExpect(jsonPath("$.total").value(0))
+    }
+
+    @Test
+    fun `requesting a receipt for an unknown cart returns not found`() {
+        val unknownCartId = UUID.randomUUID()
+
+        mockMvc.perform(get("/carts/$unknownCartId/receipt"))
+            .andExpect(status().isNotFound)
     }
 }
