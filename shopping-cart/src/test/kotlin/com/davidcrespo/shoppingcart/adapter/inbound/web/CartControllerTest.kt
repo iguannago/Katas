@@ -1,6 +1,8 @@
 package com.davidcrespo.shoppingcart.adapter.inbound.web
 
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.params.ParameterizedTest
+import org.junit.jupiter.params.provider.ValueSource
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.boot.webmvc.test.autoconfigure.AutoConfigureMockMvc
@@ -86,5 +88,39 @@ class CartControllerTest @Autowired constructor(
             .andExpect(jsonPath("$.subtotal").value(2.50))
             .andExpect(jsonPath("$.discount").value(0))
             .andExpect(jsonPath("$.total").value(2.50))
+    }
+
+    @ParameterizedTest(name = "price {0} returns bad request")
+    @ValueSource(strings = ["0.00", "-0.01", "-2.50"])
+    fun `adding a product with a non-positive price is rejected`(
+        price: String
+    ) {
+        val creationResult = mockMvc.perform(post("/carts"))
+            .andExpect(status().isCreated)
+            .andReturn()
+
+        val location = requireNotNull(
+            creationResult.response.getHeader("Location")
+        )
+
+        mockMvc.perform(
+            post("$location/items")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(
+                    """
+                {
+                    "id": "cornflakes",
+                    "name": "Cornflakes",
+                    "price": $price
+                }
+                """.trimIndent()
+                )
+        )
+            .andExpect(status().isBadRequest)
+
+        mockMvc.perform(get("$location/receipt"))
+            .andExpect(status().isOk)
+            .andExpect(jsonPath("$.lines").isEmpty)
+            .andExpect(jsonPath("$.total").value(0))
     }
 }
