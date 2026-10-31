@@ -3,6 +3,7 @@ package com.davidcrespo.shoppingcart.adapter.inbound.web
 import com.davidcrespo.shoppingcart.application.CartNotFoundException
 import org.springframework.http.HttpStatus
 import org.springframework.http.ProblemDetail
+import org.springframework.http.converter.HttpMessageNotReadableException
 import org.springframework.web.bind.MethodArgumentNotValidException
 import org.springframework.web.bind.annotation.ExceptionHandler
 import org.springframework.web.bind.annotation.RestControllerAdvice
@@ -34,5 +35,13 @@ class CartControllerExceptionHandler {
         problem.setProperty("errors", errors)
 
         return problem
+    }
+
+    @ExceptionHandler(HttpMessageNotReadableException::class)
+    fun handleUnreadableRequestBody(): ProblemDetail {
+        return ProblemDetail.forStatusAndDetail(
+            HttpStatus.BAD_REQUEST,
+            "Request body is missing or could not be read"
+        )
     }
 }

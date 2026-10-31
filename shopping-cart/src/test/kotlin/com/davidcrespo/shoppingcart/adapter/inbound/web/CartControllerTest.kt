@@ -195,5 +195,36 @@ class CartControllerTest @Autowired constructor(
                 .andExpect(jsonPath("$.lines").isEmpty)
                 .andExpect(jsonPath("$.total").value(0))
         }
+
+        @Test
+        fun `malformed product JSON returns a problem response`() {
+            val creationResult = mockMvc.perform(post("/carts"))
+                .andExpect(status().isCreated)
+                .andReturn()
+
+            val location = requireNotNull(
+                creationResult.response.getHeader("Location")
+            )
+
+            mockMvc.perform(
+                post("$location/items")
+                    .contentType(MediaType.APPLICATION_JSON)
+                    .content("""{"id": "cornflakes", "price": }""")
+            )
+                .andExpect(status().isBadRequest)
+                .andExpect(
+                    content().contentTypeCompatibleWith(
+                        MediaType.APPLICATION_PROBLEM_JSON
+                    )
+                )
+                .andExpect(jsonPath("$.status").value(400))
+                .andExpect(jsonPath("$.title").value("Bad Request"))
+                .andExpect(jsonPath("$.detail").isNotEmpty)
+
+            mockMvc.perform(get("$location/receipt"))
+                .andExpect(status().isOk)
+                .andExpect(jsonPath("$.lines").isEmpty)
+                .andExpect(jsonPath("$.total").value(0))
+        }
     }
 }
