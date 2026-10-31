@@ -123,4 +123,38 @@ class CartControllerTest @Autowired constructor(
             .andExpect(jsonPath("$.lines").isEmpty)
             .andExpect(jsonPath("$.total").value(0))
     }
+
+    @ParameterizedTest(name = "blank product ID case {index} returns bad request")
+    @ValueSource(strings = ["", " ", "   "])
+    fun `adding a product with a blank identifier is rejected`(
+        productId: String
+    ) {
+        val creationResult = mockMvc.perform(post("/carts"))
+            .andExpect(status().isCreated)
+            .andReturn()
+
+        val location = requireNotNull(
+            creationResult.response.getHeader("Location")
+        )
+
+        mockMvc.perform(
+            post("$location/items")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(
+                    """
+                {
+                    "id": "$productId",
+                    "name": "Cornflakes",
+                    "price": 2.50
+                }
+                """.trimIndent()
+                )
+        )
+            .andExpect(status().isBadRequest)
+
+        mockMvc.perform(get("$location/receipt"))
+            .andExpect(status().isOk)
+            .andExpect(jsonPath("$.lines").isEmpty)
+            .andExpect(jsonPath("$.total").value(0))
+    }
 }
