@@ -125,6 +125,7 @@ class CartControllerTest @Autowired constructor(
             .andExpect(jsonPath("$.status").value(400))
             .andExpect(jsonPath("$.title").value("Bad Request"))
             .andExpect(jsonPath("$.detail").isNotEmpty)
+            .andExpect(jsonPath("$.errors.price").isNotEmpty)
 
         mockMvc.perform(get("$location/receipt"))
             .andExpect(status().isOk)
