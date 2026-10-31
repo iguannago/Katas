@@ -51,6 +51,14 @@ class CartControllerTest @Autowired constructor(
 
         mockMvc.perform(get("/carts/$unknownCartId/receipt"))
             .andExpect(status().isNotFound)
+            .andExpect(
+                content().contentTypeCompatibleWith(
+                    MediaType.APPLICATION_PROBLEM_JSON
+                )
+            )
+            .andExpect(jsonPath("$.status").value(404))
+            .andExpect(jsonPath("$.title").value("Not Found"))
+            .andExpect(jsonPath("$.detail").isNotEmpty)
     }
 
     @Test
