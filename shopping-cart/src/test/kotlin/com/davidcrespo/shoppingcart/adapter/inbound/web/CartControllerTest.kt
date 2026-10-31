@@ -8,11 +8,8 @@ import org.springframework.http.MediaType
 import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers.header
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
-import java.util.UUID
-import kotlin.test.Ignore
+import org.springframework.test.web.servlet.result.MockMvcResultMatchers.*
+import java.util.*
 
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -55,7 +52,6 @@ class CartControllerTest @Autowired constructor(
     }
 
     @Test
-    @Ignore
     fun `adding a product makes it appear on the cart receipt`() {
         val creationResult = mockMvc.perform(post("/carts"))
             .andExpect(status().isCreated)
