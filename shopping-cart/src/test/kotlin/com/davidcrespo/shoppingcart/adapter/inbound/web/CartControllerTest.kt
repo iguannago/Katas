@@ -117,6 +117,14 @@ class CartControllerTest @Autowired constructor(
                 )
         )
             .andExpect(status().isBadRequest)
+            .andExpect(
+                content().contentTypeCompatibleWith(
+                    MediaType.APPLICATION_PROBLEM_JSON
+                )
+            )
+            .andExpect(jsonPath("$.status").value(400))
+            .andExpect(jsonPath("$.title").value("Bad Request"))
+            .andExpect(jsonPath("$.detail").isNotEmpty)
 
         mockMvc.perform(get("$location/receipt"))
             .andExpect(status().isOk)
