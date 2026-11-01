@@ -242,5 +242,37 @@ class CartControllerTest @Autowired constructor(
                 .andExpect(jsonPath("$.lines").isEmpty)
                 .andExpect(jsonPath("$.total").value(0))
         }
+
+        @ParameterizedTest(name = "null required field case {index}")
+        @ValueSource(
+            strings = [
+                """{"id":null,"name":"Cornflakes","price":2.50}""",
+                """{"id":"cornflakes","name":null,"price":2.50}""",
+                """{"id":"cornflakes","name":"Cornflakes","price":null}"""
+            ]
+        )
+        fun `null required product fields are rejected`(body: String) {
+            val location = createCartLocation()
+
+            mockMvc.perform(
+                post("$location/items")
+                    .contentType(MediaType.APPLICATION_JSON)
+                    .content(body)
+            )
+                .andExpect(status().isBadRequest)
+                .andExpect(
+                    content().contentTypeCompatibleWith(
+                        MediaType.APPLICATION_PROBLEM_JSON
+                    )
+                )
+                .andExpect(jsonPath("$.status").value(400))
+                .andExpect(jsonPath("$.title").value("Bad Request"))
+                .andExpect(jsonPath("$.detail").isNotEmpty)
+
+            mockMvc.perform(get("$location/receipt"))
+                .andExpect(status().isOk)
+                .andExpect(jsonPath("$.lines").isEmpty)
+                .andExpect(jsonPath("$.total").value(0))
+        }
     }
 }
