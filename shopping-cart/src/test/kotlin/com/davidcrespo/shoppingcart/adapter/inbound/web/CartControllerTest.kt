@@ -73,15 +73,17 @@ class CartControllerTest @Autowired constructor(
     @Nested
     inner class AddingProducts {
 
-        @Test
-        fun `adding a product makes it appear on the cart receipt`() {
-            val creationResult = mockMvc.perform(post("/carts"))
+        private fun createCartLocation(): String {
+            val result = mockMvc.perform(post("/carts"))
                 .andExpect(status().isCreated)
                 .andReturn()
 
-            val location = requireNotNull(
-                creationResult.response.getHeader("Location")
-            )
+            return requireNotNull(result.response.getHeader("Location"))
+        }
+
+        @Test
+        fun `adding a product makes it appear on the cart receipt`() {
+            val location = createCartLocation()
 
             mockMvc.perform(
                 post("$location/items")
@@ -115,13 +117,7 @@ class CartControllerTest @Autowired constructor(
         fun `adding a product with a non-positive price is rejected`(
             price: String
         ) {
-            val creationResult = mockMvc.perform(post("/carts"))
-                .andExpect(status().isCreated)
-                .andReturn()
-
-            val location = requireNotNull(
-                creationResult.response.getHeader("Location")
-            )
+            val location = createCartLocation()
 
             mockMvc.perform(
                 post("$location/items")
@@ -158,13 +154,7 @@ class CartControllerTest @Autowired constructor(
         fun `adding a product with a blank identifier is rejected`(
             productId: String
         ) {
-            val creationResult = mockMvc.perform(post("/carts"))
-                .andExpect(status().isCreated)
-                .andReturn()
-
-            val location = requireNotNull(
-                creationResult.response.getHeader("Location")
-            )
+            val location = createCartLocation()
 
             mockMvc.perform(
                 post("$location/items")
@@ -198,18 +188,44 @@ class CartControllerTest @Autowired constructor(
 
         @Test
         fun `malformed product JSON returns a problem response`() {
-            val creationResult = mockMvc.perform(post("/carts"))
-                .andExpect(status().isCreated)
-                .andReturn()
-
-            val location = requireNotNull(
-                creationResult.response.getHeader("Location")
-            )
+            val location = createCartLocation()
 
             mockMvc.perform(
                 post("$location/items")
                     .contentType(MediaType.APPLICATION_JSON)
                     .content("""{"id": "cornflakes", "price": }""")
+            )
+                .andExpect(status().isBadRequest)
+                .andExpect(
+                    content().contentTypeCompatibleWith(
+                        MediaType.APPLICATION_PROBLEM_JSON
+                    )
+                )
+                .andExpect(jsonPath("$.status").value(400))
+                .andExpect(jsonPath("$.title").value("Bad Request"))
+                .andExpect(jsonPath("$.detail").isNotEmpty)
+
+            mockMvc.perform(get("$location/receipt"))
+                .andExpect(status().isOk)
+                .andExpect(jsonPath("$.lines").isEmpty)
+                .andExpect(jsonPath("$.total").value(0))
+        }
+
+        @ParameterizedTest(name = "missing required field case {index}")
+        @ValueSource(
+            strings = [
+                """{"name":"Cornflakes","price":2.50}""",
+                """{"id":"cornflakes","price":2.50}""",
+                """{"id":"cornflakes","name":"Cornflakes"}"""
+            ]
+        )
+        fun `missing required product fields are rejected`(body: String) {
+            val location = createCartLocation()
+
+            mockMvc.perform(
+                post("$location/items")
+                    .contentType(MediaType.APPLICATION_JSON)
+                    .content(body)
             )
                 .andExpect(status().isBadRequest)
                 .andExpect(
