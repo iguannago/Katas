@@ -372,5 +372,37 @@ class ShoppingCartTest {
             assertEquals(0, receipt.discount.compareTo(BigDecimal("3.00")))
             assertEquals(0, receipt.total.compareTo(BigDecimal("2.00")))
         }
+
+        @ParameterizedTest(name = "price {0} gives discount {1} and total {2}")
+        @CsvSource(
+            "1.02, 0.20, 0.82",
+            "1.03, 0.21, 0.82",
+            "1.025, 0.21, 0.815"
+        )
+        fun `percentage discount uses half-up rounding`(
+            price: String,
+            expectedDiscount: String,
+            expectedTotal: String
+        ) {
+            cart.add(
+                Product(
+                    id = "rounding-product",
+                    name = "Rounding product",
+                    price = BigDecimal(price)
+                )
+            )
+            cart.applyTwentyPercentOffer()
+
+            val receipt = cart.receipt()
+
+            assertEquals(
+                0,
+                receipt.discount.compareTo(BigDecimal(expectedDiscount))
+            )
+            assertEquals(
+                0,
+                receipt.total.compareTo(BigDecimal(expectedTotal))
+            )
+        }
     }
 }
