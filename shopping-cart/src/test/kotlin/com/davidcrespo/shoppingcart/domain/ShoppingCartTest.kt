@@ -404,5 +404,56 @@ class ShoppingCartTest {
                 receipt.total.compareTo(BigDecimal(expectedTotal))
             )
         }
+
+        @Test
+        fun `percentage discount is rounded once across the whole cart`() {
+            cart.add(
+                Product(
+                    id = "first-product",
+                    name = "First product",
+                    price = BigDecimal("1.02")
+                )
+            )
+            cart.add(
+                Product(
+                    id = "second-product",
+                    name = "Second product",
+                    price = BigDecimal("1.02")
+                )
+            )
+            cart.applyTwentyPercentOffer()
+
+            val receipt = cart.receipt()
+
+            assertEquals(0, receipt.subtotal.compareTo(BigDecimal("2.04")))
+            assertEquals(0, receipt.discount.compareTo(BigDecimal("0.41")))
+            assertEquals(0, receipt.total.compareTo(BigDecimal("1.63")))
+        }
+
+        @Test
+        fun `applying the twenty percent offer twice does not increase the discount`() {
+            cart.add(cornflakes)
+
+            cart.applyTwentyPercentOffer()
+            cart.applyTwentyPercentOffer()
+
+            val receipt = cart.receipt()
+
+            assertEquals(0, receipt.subtotal.compareTo(BigDecimal("2.50")))
+            assertEquals(0, receipt.discount.compareTo(BigDecimal("0.50")))
+            assertEquals(0, receipt.total.compareTo(BigDecimal("2.00")))
+        }
+
+        @Test
+        fun `twenty percent offer on an empty cart produces zero amounts`() {
+            cart.applyTwentyPercentOffer()
+
+            val receipt = cart.receipt()
+
+            assertTrue(receipt.lines.isEmpty())
+            assertEquals(0, receipt.subtotal.compareTo(BigDecimal.ZERO))
+            assertEquals(0, receipt.discount.compareTo(BigDecimal.ZERO))
+            assertEquals(0, receipt.total.compareTo(BigDecimal.ZERO))
+        }
     }
 }
