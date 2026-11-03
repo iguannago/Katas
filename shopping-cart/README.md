@@ -129,6 +129,30 @@ Eligibility can be set before adding a product and persists after
 all units of that product are removed. Discounts are recalculated
 from the current quantities whenever a receipt is requested.
 
+### Planned extension: 20% cart discount
+
+The following rules are agreed requirements for the next extension, not a claim
+that implementation or verification is complete:
+
+- Enable a fixed 20% discount for the whole cart.
+- Calculate product-specific 2-for-1 savings first, then calculate the 20%
+  discount on the remaining amount: `(subtotal - twoForOneDiscount) * 0.20`.
+- Round the percentage discount once, at cart level, to two decimal places
+  using `RoundingMode.HALF_UP`. This is an explicit rounding rule for the new
+  discount; it does not change the existing product-price precision policy.
+- Enabling the percentage offer repeatedly must not stack the discount.
+- Recalculate the savings from the current contents whenever a receipt is
+  requested, including after additions or removals.
+- Include both offers' savings in the receipt's existing `discount` amount.
+  Keep `total = subtotal - discount`.
+
+Example: a subtotal of GBP 10.00 with GBP 2.00 of 2-for-1 savings leaves
+GBP 8.00. The percentage saving is GBP 1.60, giving a combined discount of
+GBP 3.60 and a final total of GBP 6.40.
+
+Implement and test the domain behaviour first, then expose it through the
+application port and web adapter. The HTTP endpoint has not yet been agreed.
+
 ## Scope
 
 The solution provides domain functions, a structured receipt and a partial REST
@@ -137,16 +161,23 @@ printable receipt renderer. Those additions are outside the current API scope.
 
 ## TODO and resuming work
 
-Paused after adding API tests for blank product IDs. Non-positive price cases
-are also present. These tests check `400` responses and that the cart remains
-empty after rejection. The README update did not rerun the tests; start by
-running `./gradlew clean build` to establish the current baseline.
+The current focus is the agreed 20% cart discount described above. Resume with
+its first domain test and proceed incrementally. Earlier API error-handling
+work has also progressed; reconcile the remaining API checklist against the
+current code and tests before resuming that track. This README update did not
+rerun tests; use `./gradlew clean build` to establish the current baseline.
 
 Continue one step at a time, with guidance and code examples for manual entry;
 wait for confirmation before progressing. Direct edits are only made when
 explicitly requested.
 
-- [ ] Next: define and test consistent `ProblemDetail` bodies for validation
+- [ ] Add domain tests and implementation for the 20% cart discount: standalone
+  savings, combination with 2-for-1 offers, HALF_UP rounding, repeated enabling,
+  empty carts and recalculation after changes.
+- [ ] Expose the percentage offer through the application port and service,
+  preserving per-cart locking; agree its HTTP contract and add endpoint tests
+  and documentation.
+- [ ] Reconcile completed work on consistent `ProblemDetail` bodies for validation
   errors and unknown carts, then implement the necessary exception handling.
 - [ ] Test malformed JSON, missing/null required fields and malformed cart UUIDs
   return `400` without mutation. Test adding to an unknown cart returns `404`.
