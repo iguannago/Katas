@@ -1,15 +1,13 @@
-package com.davidcrespo.shoppingcart
+package com.davidcrespo.shoppingcart.domain
 
 import java.math.BigDecimal
-import kotlin.collections.fold
 
 class ShoppingCart {
 
     private data class CartEntry(val product: Product, val quantity: Int)
 
     private val entries = mutableMapOf<String, CartEntry>()
-
-    private val twoForOneProductIds = mutableSetOf<String>()
+    private val cartOffers = CartOffers()
 
     fun add(product: Product) {
         val existing = entries[product.id]
@@ -48,26 +46,18 @@ class ShoppingCart {
             )
         }
 
-        val discount = lines.fold(BigDecimal.ZERO) { sum, line ->
-            val freeQuantity =
-                if (line.product.id in twoForOneProductIds) {
-                    line.quantity / 2
-                } else {
-                    0
-                }
-            sum + line.product.price.multiply(
-                BigDecimal.valueOf(freeQuantity.toLong())
-            )
-        }
-
         return Receipt(
             lines = lines,
             subtotal = subtotal,
-            discount = discount,
+            discount = cartOffers.discount(lines, subtotal)
         )
     }
 
     fun applyTwoForOneOffer(productId: String) {
-        twoForOneProductIds.add(productId)
+        cartOffers.enableTwoForOne(productId)
+    }
+
+    fun applyTwentyPercentOffer() {
+        cartOffers.enableTwentyPercent()
     }
 }

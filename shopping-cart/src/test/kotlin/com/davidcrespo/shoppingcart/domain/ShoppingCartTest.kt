@@ -1,4 +1,4 @@
-package com.davidcrespo.shoppingcart
+package com.davidcrespo.shoppingcart.domain
 
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertTrue
@@ -326,6 +326,182 @@ class ShoppingCartTest {
                 receipt.lines.toSet()
             )
             assertEquals(0, receipt.total.compareTo(BigDecimal("4.90")))
+        }
+    }
+
+    @Nested
+    inner class TwentyPercentOffers {
+        @Test
+        fun `twenty percent offer discounts the cart total`() {
+            repeat(2) {
+                cart.add(cornflakes)
+            }
+
+            cart.applyTwentyPercentOffer()
+
+            val receipt = cart.receipt()
+
+            assertEquals(
+                listOf(
+                    ReceiptLine(cornflakes, quantity = 2),
+                ),
+                receipt.lines
+            )
+            assertEquals(0, receipt.subtotal.compareTo(BigDecimal("5.00")))
+            assertEquals(0, receipt.discount.compareTo(BigDecimal("1.00")))
+            assertEquals(0, receipt.total.compareTo(BigDecimal("4.00")))
+        }
+
+        @Test
+        fun `twenty percent discount applies after two-for-one savings`() {
+            repeat(2) {
+                cart.add(cornflakes)
+            }
+            cart.applyTwentyPercentOffer()
+            cart.applyTwoForOneOffer(cornflakes.id)
+
+            val receipt = cart.receipt()
+
+            assertEquals(
+                listOf(
+                    ReceiptLine(cornflakes, quantity = 2),
+                ),
+                receipt.lines
+            )
+            assertEquals(0, receipt.subtotal.compareTo(BigDecimal("5.00")))
+            assertEquals(0, receipt.discount.compareTo(BigDecimal("3.00")))
+            assertEquals(0, receipt.total.compareTo(BigDecimal("2.00")))
+        }
+
+        @ParameterizedTest(name = "price {0} gives discount {1} and total {2}")
+        @CsvSource(
+            "1.02, 0.20, 0.82",
+            "1.03, 0.21, 0.82",
+            "1.025, 0.21, 0.815"
+        )
+        fun `percentage discount uses half-up rounding`(
+            price: String,
+            expectedDiscount: String,
+            expectedTotal: String
+        ) {
+            cart.add(
+                Product(
+                    id = "rounding-product",
+                    name = "Rounding product",
+                    price = BigDecimal(price)
+                )
+            )
+            cart.applyTwentyPercentOffer()
+
+            val receipt = cart.receipt()
+
+            assertEquals(
+                0,
+                receipt.discount.compareTo(BigDecimal(expectedDiscount))
+            )
+            assertEquals(
+                0,
+                receipt.total.compareTo(BigDecimal(expectedTotal))
+            )
+        }
+
+        @Test
+        fun `percentage discount is rounded once across the whole cart`() {
+            cart.add(
+                Product(
+                    id = "first-product",
+                    name = "First product",
+                    price = BigDecimal("1.02")
+                )
+            )
+            cart.add(
+                Product(
+                    id = "second-product",
+                    name = "Second product",
+                    price = BigDecimal("1.02")
+                )
+            )
+            cart.applyTwentyPercentOffer()
+
+            val receipt = cart.receipt()
+
+            assertEquals(0, receipt.subtotal.compareTo(BigDecimal("2.04")))
+            assertEquals(0, receipt.discount.compareTo(BigDecimal("0.41")))
+            assertEquals(0, receipt.total.compareTo(BigDecimal("1.63")))
+        }
+
+        @Test
+        fun `applying the twenty percent offer twice does not increase the discount`() {
+            cart.add(cornflakes)
+
+            cart.applyTwentyPercentOffer()
+            cart.applyTwentyPercentOffer()
+
+            val receipt = cart.receipt()
+
+            assertEquals(0, receipt.subtotal.compareTo(BigDecimal("2.50")))
+            assertEquals(0, receipt.discount.compareTo(BigDecimal("0.50")))
+            assertEquals(0, receipt.total.compareTo(BigDecimal("2.00")))
+        }
+
+        @Test
+        fun `twenty percent offer on an empty cart produces zero amounts`() {
+            cart.applyTwentyPercentOffer()
+
+            val receipt = cart.receipt()
+
+            assertTrue(receipt.lines.isEmpty())
+            assertEquals(0, receipt.subtotal.compareTo(BigDecimal.ZERO))
+            assertEquals(0, receipt.discount.compareTo(BigDecimal.ZERO))
+            assertEquals(0, receipt.total.compareTo(BigDecimal.ZERO))
+        }
+
+        @Test
+        fun `twenty percent discount recalculates after adding a product`() {
+            cart.add(cornflakes)
+            cart.applyTwentyPercentOffer()
+
+            val originalReceipt = cart.receipt()
+
+            cart.add(cornflakes)
+
+            val updatedReceipt = cart.receipt()
+
+            assertEquals(0, originalReceipt.subtotal.compareTo(BigDecimal("2.50")))
+            assertEquals(0, originalReceipt.discount.compareTo(BigDecimal("0.50")))
+            assertEquals(0, originalReceipt.total.compareTo(BigDecimal("2.00")))
+
+            assertEquals(
+                listOf(ReceiptLine(cornflakes, quantity = 2)),
+                updatedReceipt.lines
+            )
+            assertEquals(0, updatedReceipt.subtotal.compareTo(BigDecimal("5.00")))
+            assertEquals(0, updatedReceipt.discount.compareTo(BigDecimal("1.00")))
+            assertEquals(0, updatedReceipt.total.compareTo(BigDecimal("4.00")))
+        }
+
+        @Test
+        fun `twenty percent discount recalculates after removing a product`() {
+            repeat(2) {
+                cart.add(cornflakes)
+            }
+            cart.applyTwentyPercentOffer()
+
+            val originalReceipt = cart.receipt()
+
+            cart.remove(cornflakes.id)
+
+            val updatedReceipt = cart.receipt()
+
+            assertEquals(0, originalReceipt.discount.compareTo(BigDecimal("1.00")))
+            assertEquals(0, originalReceipt.total.compareTo(BigDecimal("4.00")))
+            assertEquals(
+                listOf(ReceiptLine(cornflakes, quantity = 1)),
+                updatedReceipt.lines
+            )
+            assertEquals(0, updatedReceipt.subtotal.compareTo(BigDecimal("2.50")))
+            assertEquals(0, updatedReceipt.discount.compareTo(BigDecimal("0.50")))
+            assertEquals(0, updatedReceipt.total.compareTo(BigDecimal("2.00")))
         }
     }
 }

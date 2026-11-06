@@ -3,6 +3,9 @@
 A Kotlin/JVM implementation of a shopping cart supporting product
 quantities, removal, itemised receipts and product-specific 2-for-1 offers.
 
+The original domain exercise has been extended with a Spring Boot REST API
+on branch `feature/api-extension`. The API extension is in progress.
+
 ## Requirements and running tests
 
 - JDK 25
@@ -25,6 +28,63 @@ gradlew.bat clean build
 
 These commands compile the project and run the tests.
 
+## Running the API
+
+```bash
+./gradlew bootRun
+```
+
+On Windows, use `gradlew.bat bootRun`. The default base URL is
+`http://localhost:8080`.
+
+## Architecture
+
+The project follows hexagonal architecture under
+`com.davidcrespo.shoppingcart`:
+
+- `domain`: products, carts, receipts and pricing rules; independent of Spring.
+- `application.port.input`: `CartUseCases`, the operations exposed to callers.
+- `application.port.output`: `CartStore`, the storage and exclusive-access contract.
+- `application.service`: `CartUserCasesImpl`, which delegates operations through
+  the storage port without depending on Spring or concrete adapters.
+- `adapter.inbound.web`: controllers, HTTP request/response models, validation
+  and exception handling.
+- `adapter.outbound.memory`: `InMemoryCartStore`, which owns cart instances and
+  their per-cart locks.
+- `configuration`: explicit Spring bean wiring for the ports and implementations.
+
+Tests mirror these packages. The application startup test remains at the root.
+
+## REST API completed so far
+
+| Endpoint | Behaviour | Successful response |
+| --- | --- | --- |
+| `POST /carts` | Create an independent cart | `201`, JSON `id` and `Location: /carts/{id}` |
+| `POST /carts/{id}/items` | Add one product unit | `204`, no body |
+| `GET /carts/{id}/receipt` | Return the current structured receipt | `200`, receipt JSON |
+
+Cart IDs are generated UUIDs. Product IDs remain strings. Add-item requests
+contain `id`, `name` and `price`. Blank IDs and non-positive prices are rejected
+with `400`; validation occurs before the cart operation.
+
+An unknown cart raises `CartNotFoundException`, which the web exception handler
+maps to `404` with a `ProblemDetail` body. Validation and other framework errors
+do not yet have an explicitly unified error-body contract.
+
+Example requests (replace `<cart-id>` with the returned ID):
+
+```bash
+curl -i -X POST http://localhost:8080/carts
+
+curl -i -X POST 'http://localhost:8080/carts/<cart-id>/items' \
+  -H 'Content-Type: application/json' \
+  -d '{"id":"cornflakes","name":"Cornflakes","price":2.50}'
+
+curl -i 'http://localhost:8080/carts/<cart-id>/receipt'
+```
+
+Replace the `<cart-id>` placeholder before running these commands.
+
 ## Behaviour and assumptions
 
 - Products are identified by their ID. IDs must not be blank.
@@ -38,7 +98,11 @@ These commands compile the project and run the tests.
   positive amount saved. The total is subtotal minus discount.
 - Prices are interpreted as GBP. Calculations use BigDecimal without
   rounding or enforcing a particular decimal scale.
-- The cart is intended for single-threaded, in-memory use.
+- The domain cart is not thread-safe by itself. API operations use the storage
+  port to synchronise reads and writes on the same cart instance. Different
+  carts have separate locks. A concurrent map protects registry access.
+- Carts and offers are held only in this process's memory and are lost on restart.
+  There is currently no cart expiry or deletion, so storage grows as carts are created.
 
 ## Product identity and conflicting details
 
@@ -65,7 +129,69 @@ Eligibility can be set before adding a product and persists after
 all units of that product are removed. Discounts are recalculated
 from the current quantities whenever a receipt is requested.
 
+### Planned extension: 20% cart discount
+
+The following rules are agreed requirements for the next extension, not a claim
+that implementation or verification is complete:
+
+- Enable a fixed 20% discount for the whole cart.
+- Calculate product-specific 2-for-1 savings first, then calculate the 20%
+  discount on the remaining amount: `(subtotal - twoForOneDiscount) * 0.20`.
+- Round the percentage discount once, at cart level, to two decimal places
+  using `RoundingMode.HALF_UP`. This is an explicit rounding rule for the new
+  discount; it does not change the existing product-price precision policy.
+- Enabling the percentage offer repeatedly must not stack the discount.
+- Recalculate the savings from the current contents whenever a receipt is
+  requested, including after additions or removals.
+- Include both offers' savings in the receipt's existing `discount` amount.
+  Keep `total = subtotal - discount`.
+
+Example: a subtotal of GBP 10.00 with GBP 2.00 of 2-for-1 savings leaves
+GBP 8.00. The percentage saving is GBP 1.60, giving a combined discount of
+GBP 3.60 and a final total of GBP 6.40.
+
+Implement and test the domain behaviour first, then expose it through the
+application port and web adapter. The HTTP endpoint has not yet been agreed.
+
 ## Scope
 
-The solution provides domain functions and a structured receipt.
-It does not include a UI, API, persistence or printable receipt renderer.
+The solution provides domain functions, a structured receipt and a partial REST
+API. It does not include durable persistence, authentication, a frontend or a
+printable receipt renderer. Those additions are outside the current API scope.
+
+## TODO and resuming work
+
+The current focus is the agreed 20% cart discount described above. Resume with
+its first domain test and proceed incrementally. Earlier API error-handling
+work has also progressed; reconcile the remaining API checklist against the
+current code and tests before resuming that track. This README update did not
+rerun tests; use `./gradlew clean build` to establish the current baseline.
+
+Continue one step at a time, with guidance and code examples for manual entry;
+wait for confirmation before progressing. Direct edits are only made when
+explicitly requested.
+
+- [ ] Add domain tests and implementation for the 20% cart discount: standalone
+  savings, combination with 2-for-1 offers, HALF_UP rounding, repeated enabling,
+  empty carts and recalculation after changes.
+- [ ] Expose the percentage offer through the application port and service,
+  preserving per-cart locking; agree its HTTP contract and add endpoint tests
+  and documentation.
+- [ ] Reconcile completed work on consistent `ProblemDetail` bodies for validation
+  errors and unknown carts, then implement the necessary exception handling.
+- [ ] Test malformed JSON, missing/null required fields and malformed cart UUIDs
+  return `400` without mutation. Test adding to an unknown cart returns `404`.
+- [ ] Add `DELETE /carts/{id}/items/{productId}` returning `204`: remove exactly
+  one unit; an absent product is a no-op; an absent cart returns `404`.
+- [ ] Add `PUT /carts/{id}/offers/two-for-one/{productId}` returning `204`:
+  delegate the existing offer behaviour; an absent cart returns `404`.
+- [ ] Cover the new endpoints with integration tests, including updated receipts,
+  repeated offer application and independent carts.
+- [ ] Add meaningful concurrency tests for same-cart coordination and check
+  missing-cart behaviour directly at the memory adapter boundary.
+- [ ] Review the final API against its contract, update example requests and
+  documentation, and run a clean build with all tests enabled.
+
+Removal and offer operations already exist in the domain and application ports;
+their HTTP mappings have not yet been implemented. Do not recreate pricing
+logic in controllers or expand into databases, authentication or a frontend.
