@@ -21,11 +21,17 @@ dependencies {
 
     implementation("org.springframework.boot:spring-boot-starter-webmvc")
     implementation("org.springframework.boot:spring-boot-starter-validation")
+    implementation(
+        "org.springframework.boot:spring-boot-starter-security-oauth2-resource-server"
+    )
     implementation("tools.jackson.module:jackson-module-kotlin")
     implementation(kotlin("reflect"))
 
     testImplementation(kotlin("test"))
     testImplementation("org.springframework.boot:spring-boot-starter-webmvc-test")
+    testImplementation(
+        "org.springframework.security:spring-security-test"
+    )
     testImplementation("org.junit.jupiter:junit-jupiter-params")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
