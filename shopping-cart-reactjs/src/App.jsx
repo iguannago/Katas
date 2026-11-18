@@ -1,10 +1,8 @@
 import CartHeader from './components/CartHeader.jsx';
-import ProductDetails from './components/ProductDetails.jsx';
+import ProductForm from './components/ProductForm.jsx';
 import './App.css';
 
-
 function App() {
-
   return (
     <main>
       <CartHeader
@@ -17,7 +15,7 @@ function App() {
         <p>No cart selected.</p>
       </section>
 
-      <ProductDetails />  
+      <ProductForm />
     </main>
   );
 }
