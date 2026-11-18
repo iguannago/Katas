@@ -8,9 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.boot.webmvc.test.autoconfigure.AutoConfigureMockMvc
 import org.springframework.http.MediaType
+import org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.jwt
 import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post
+import org.springframework.test.web.servlet.request.RequestPostProcessor
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.*
 import java.util.*
 
@@ -20,12 +22,19 @@ class CartControllerTest @Autowired constructor(
     private val mockMvc: MockMvc
 ) {
 
+    private fun aliceJwt(): RequestPostProcessor =
+        jwt().jwt {
+            it.issuer("http://localhost:8081/realms/shopping-cart")
+                .subject("alice-subject")
+                .audience(listOf("shopping-cart-api"))
+        }
+
     @Nested
     inner class CreatingCarts {
 
         @Test
         fun `creating a cart returns its identifier and location`() {
-            mockMvc.perform(post("/carts"))
+            mockMvc.perform(post("/carts").with(aliceJwt()))
                 .andExpect(status().isCreated)
                 .andExpect(header().exists("Location"))
                 .andExpect(jsonPath("$.id").isNotEmpty)
@@ -37,7 +46,7 @@ class CartControllerTest @Autowired constructor(
 
         @Test
         fun `a newly created cart returns an empty receipt`() {
-            val creationResult = mockMvc.perform(post("/carts"))
+            val creationResult = mockMvc.perform(post("/carts").with(aliceJwt()))
                 .andExpect(status().isCreated)
                 .andReturn()
 
@@ -45,7 +54,7 @@ class CartControllerTest @Autowired constructor(
                 creationResult.response.getHeader("Location")
             )
 
-            mockMvc.perform(get("$location/receipt"))
+            mockMvc.perform(get("$location/receipt").with(aliceJwt()))
                 .andExpect(status().isOk)
                 .andExpect(jsonPath("$.lines").isEmpty)
                 .andExpect(jsonPath("$.subtotal").value(0))
@@ -57,7 +66,7 @@ class CartControllerTest @Autowired constructor(
         fun `requesting a receipt for an unknown cart returns not found`() {
             val unknownCartId = UUID.randomUUID()
 
-            mockMvc.perform(get("/carts/$unknownCartId/receipt"))
+            mockMvc.perform(get("/carts/$unknownCartId/receipt").with(aliceJwt()))
                 .andExpect(status().isNotFound)
                 .andExpect(
                     content().contentTypeCompatibleWith(
@@ -74,7 +83,7 @@ class CartControllerTest @Autowired constructor(
     inner class AddingProducts {
 
         private fun createCartLocation(): String {
-            val result = mockMvc.perform(post("/carts"))
+            val result = mockMvc.perform(post("/carts").with(aliceJwt()))
                 .andExpect(status().isCreated)
                 .andReturn()
 
@@ -86,7 +95,7 @@ class CartControllerTest @Autowired constructor(
             val location = createCartLocation()
 
             mockMvc.perform(
-                post("$location/items")
+                post("$location/items").with(aliceJwt())
                     .contentType(MediaType.APPLICATION_JSON)
                     .content(
                         """
@@ -100,7 +109,7 @@ class CartControllerTest @Autowired constructor(
             )
                 .andExpect(status().isNoContent)
 
-            mockMvc.perform(get("$location/receipt"))
+            mockMvc.perform(get("$location/receipt").with(aliceJwt()))
                 .andExpect(status().isOk)
                 .andExpect(jsonPath("$.lines.length()").value(1))
                 .andExpect(jsonPath("$.lines[0].product.id").value("cornflakes"))
@@ -120,7 +129,7 @@ class CartControllerTest @Autowired constructor(
             val location = createCartLocation()
 
             mockMvc.perform(
-                post("$location/items")
+                post("$location/items").with(aliceJwt())
                     .contentType(MediaType.APPLICATION_JSON)
                     .content(
                         """
@@ -143,7 +152,7 @@ class CartControllerTest @Autowired constructor(
                 .andExpect(jsonPath("$.detail").isNotEmpty)
                 .andExpect(jsonPath("$.errors.price").isNotEmpty)
 
-            mockMvc.perform(get("$location/receipt"))
+            mockMvc.perform(get("$location/receipt").with(aliceJwt()))
                 .andExpect(status().isOk)
                 .andExpect(jsonPath("$.lines").isEmpty)
                 .andExpect(jsonPath("$.total").value(0))
@@ -157,7 +166,7 @@ class CartControllerTest @Autowired constructor(
             val location = createCartLocation()
 
             mockMvc.perform(
-                post("$location/items")
+                post("$location/items").with(aliceJwt())
                     .contentType(MediaType.APPLICATION_JSON)
                     .content(
                         """
@@ -180,7 +189,7 @@ class CartControllerTest @Autowired constructor(
                 .andExpect(jsonPath("$.detail").isNotEmpty)
                 .andExpect(jsonPath("$.errors.id").isNotEmpty)
 
-            mockMvc.perform(get("$location/receipt"))
+            mockMvc.perform(get("$location/receipt").with(aliceJwt()))
                 .andExpect(status().isOk)
                 .andExpect(jsonPath("$.lines").isEmpty)
                 .andExpect(jsonPath("$.total").value(0))
@@ -191,7 +200,7 @@ class CartControllerTest @Autowired constructor(
             val location = createCartLocation()
 
             mockMvc.perform(
-                post("$location/items")
+                post("$location/items").with(aliceJwt())
                     .contentType(MediaType.APPLICATION_JSON)
                     .content("""{"id": "cornflakes", "price": }""")
             )
@@ -205,7 +214,7 @@ class CartControllerTest @Autowired constructor(
                 .andExpect(jsonPath("$.title").value("Bad Request"))
                 .andExpect(jsonPath("$.detail").isNotEmpty)
 
-            mockMvc.perform(get("$location/receipt"))
+            mockMvc.perform(get("$location/receipt").with(aliceJwt()))
                 .andExpect(status().isOk)
                 .andExpect(jsonPath("$.lines").isEmpty)
                 .andExpect(jsonPath("$.total").value(0))
@@ -223,7 +232,7 @@ class CartControllerTest @Autowired constructor(
             val location = createCartLocation()
 
             mockMvc.perform(
-                post("$location/items")
+                post("$location/items").with(aliceJwt())
                     .contentType(MediaType.APPLICATION_JSON)
                     .content(body)
             )
@@ -237,7 +246,7 @@ class CartControllerTest @Autowired constructor(
                 .andExpect(jsonPath("$.title").value("Bad Request"))
                 .andExpect(jsonPath("$.detail").isNotEmpty)
 
-            mockMvc.perform(get("$location/receipt"))
+            mockMvc.perform(get("$location/receipt").with(aliceJwt()))
                 .andExpect(status().isOk)
                 .andExpect(jsonPath("$.lines").isEmpty)
                 .andExpect(jsonPath("$.total").value(0))
@@ -255,7 +264,7 @@ class CartControllerTest @Autowired constructor(
             val location = createCartLocation()
 
             mockMvc.perform(
-                post("$location/items")
+                post("$location/items").with(aliceJwt())
                     .contentType(MediaType.APPLICATION_JSON)
                     .content(body)
             )
@@ -269,7 +278,7 @@ class CartControllerTest @Autowired constructor(
                 .andExpect(jsonPath("$.title").value("Bad Request"))
                 .andExpect(jsonPath("$.detail").isNotEmpty)
 
-            mockMvc.perform(get("$location/receipt"))
+            mockMvc.perform(get("$location/receipt").with(aliceJwt()))
                 .andExpect(status().isOk)
                 .andExpect(jsonPath("$.lines").isEmpty)
                 .andExpect(jsonPath("$.total").value(0))
