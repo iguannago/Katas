@@ -1,10 +1,9 @@
 import CartHeader from './components/CartHeader.jsx';
+import ProductDetails from './components/ProductDetails.jsx';
 import './App.css';
 
-import { useState } from 'react';
 
 function App() {
-  const [productName, setProductName] = useState('');
 
   return (
     <main>
@@ -18,23 +17,7 @@ function App() {
         <p>No cart selected.</p>
       </section>
 
-      <section aria-labelledby='product-heading'>
-        <h2 id='product-heading'>Product details</h2>
-
-        <label htmlFor='product-name'>Product name</label>
-        <input
-          id='product-name'
-          type='text'
-          value={productName}
-          onChange={(event) => setProductName(event.target.value)}
-        />
-
-        <p>
-          {productName.trim()
-            ? `Draft product: ${productName}`
-            : 'Enter a product name.'}
-        </p>
-      </section>
+      <ProductDetails />  
     </main>
   );
 }
