@@ -1,5 +1,6 @@
 package com.davidcrespo.shoppingcart.adapter.inbound.web
 
+import org.hamcrest.Matchers.matchesPattern
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.params.ParameterizedTest
@@ -28,6 +29,107 @@ class CartControllerTest @Autowired constructor(
                 .subject("alice-subject")
                 .audience(listOf("shopping-cart-api"))
         }
+
+    private fun bobJwt(): RequestPostProcessor =
+        jwt().jwt {
+            it.issuer("http://localhost:8081/realms/shopping-cart")
+                .subject("bob-subject")
+                .audience(listOf("shopping-cart-api"))
+        }
+
+    @Nested
+    inner class Authentication {
+
+        @Test
+        fun `creating a cart without authentication returns unauthorized`() {
+            mockMvc.perform(post("/carts"))
+                .andExpect(status().isUnauthorized)
+                .andExpect(
+                    header().string(
+                        "WWW-Authenticate",
+                        matchesPattern("""Bearer(?:\s+.*)?""")
+                    )
+                )
+        }
+    }
+
+    @Nested
+    inner class CartOwnership {
+
+        @Test
+        fun `another user cannot read the owners cart`() {
+            val creationResult = mockMvc.perform(
+                post("/carts").with(aliceJwt())
+            )
+                .andExpect(status().isCreated)
+                .andReturn()
+
+            val location = requireNotNull(
+                creationResult.response.getHeader("Location")
+            )
+
+            mockMvc.perform(
+                get("$location/receipt").with(bobJwt())
+            )
+                .andExpect(status().isNotFound)
+                .andExpect(
+                    content().contentTypeCompatibleWith(
+                        MediaType.APPLICATION_PROBLEM_JSON
+                    )
+                )
+                .andExpect(jsonPath("$.status").value(404))
+
+            mockMvc.perform(
+                get("$location/receipt").with(aliceJwt())
+            )
+                .andExpect(status().isOk)
+                .andExpect(jsonPath("$.lines").isEmpty)
+        }
+
+        @Test
+        fun `another user cannot add products to the owners cart`() {
+            val creationResult = mockMvc.perform(
+                post("/carts").with(aliceJwt())
+            )
+                .andExpect(status().isCreated)
+                .andReturn()
+
+            val location = requireNotNull(
+                creationResult.response.getHeader("Location")
+            )
+
+            mockMvc.perform(
+                post("$location/items")
+                    .with(bobJwt())
+                    .contentType(MediaType.APPLICATION_JSON)
+                    .content(
+                        """
+                {
+                    "id": "cornflakes",
+                    "name": "Cornflakes",
+                    "price": 2.50
+                }
+                """.trimIndent()
+                    )
+            )
+                .andExpect(status().isNotFound)
+                .andExpect(
+                    content().contentTypeCompatibleWith(
+                        MediaType.APPLICATION_PROBLEM_JSON
+                    )
+                )
+                .andExpect(jsonPath("$.status").value(404))
+
+            mockMvc.perform(
+                get("$location/receipt").with(aliceJwt())
+            )
+                .andExpect(status().isOk)
+                .andExpect(jsonPath("$.lines").isEmpty)
+                .andExpect(jsonPath("$.subtotal").value(0))
+                .andExpect(jsonPath("$.discount").value(0))
+                .andExpect(jsonPath("$.total").value(0))
+        }
+    }
 
     @Nested
     inner class CreatingCarts {
