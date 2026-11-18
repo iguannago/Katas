@@ -3,11 +3,15 @@ import ProductForm from './components/ProductForm.jsx';
 import './App.css';
 import { useState } from 'react';
 import { keycloak } from './auth/keycloak.js';
+import { createCart } from './api/cartApi.js';
 
 function App({ initialAuthenticated }) {
   const [submittedProduct, setSubmittedProduct] = useState(null);
   const [signInError, setSignInError] = useState('');
   const [isSigningIn, setIsSigningIn] = useState(false);
+  const [cartId, setCartId] = useState(null);
+  const [isCreatingCart, setIsCreatingCart] = useState(false);
+  const [cartError, setCartError] = useState('');
 
   function handleProductSubmit(product) {
     setSubmittedProduct(product);
@@ -24,6 +28,24 @@ function App({ initialAuthenticated }) {
     } catch {
       setSignInError('Sign-in could not be started. Please try again.');
       setIsSigningIn(false);
+    }
+  }
+
+  async function handleCreateCart() {
+    setCartError('');
+    setIsCreatingCart(true);
+
+    try {
+      const cart = await createCart();
+      setCartId(cart.id);
+    } catch (error) {
+      setCartError(
+        error instanceof Error
+          ? error.message
+          : 'The cart could not be created.',
+      );
+    } finally {
+      setIsCreatingCart(false);
     }
   }
 
@@ -56,7 +78,18 @@ function App({ initialAuthenticated }) {
         <>
           <section aria-labelledby='cart-heading'>
             <h2 id='cart-heading'>Your cart</h2>
-            <p>No cart selected.</p>
+
+            {cartId ? <p>Cart ID: {cartId}</p> : <p>No cart selected.</p>}
+
+            <button
+              type='button'
+              onClick={handleCreateCart}
+              disabled={isCreatingCart || cartId !== null}
+            >
+              {isCreatingCart ? 'Creating cart…' : 'Create cart'}
+            </button>
+
+            {cartError && <p role='alert'>{cartError}</p>}
           </section>
 
           <ProductForm onProductSubmit={handleProductSubmit} />
