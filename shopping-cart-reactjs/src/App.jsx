@@ -1,8 +1,16 @@
 import CartHeader from './components/CartHeader.jsx';
 import ProductForm from './components/ProductForm.jsx';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+
+  const [submittedProduct, setSubmittedProduct] = useState(null);
+
+  function handleProductSubmit(product) {
+    setSubmittedProduct(product);
+  }
+
   return (
     <main>
       <CartHeader
@@ -15,7 +23,16 @@ function App() {
         <p>No cart selected.</p>
       </section>
 
-      <ProductForm />
+      <ProductForm onProductSubmit={handleProductSubmit} />
+
+      {submittedProduct && (
+        <section aria-labelledby='submitted-product-heading'>
+          <h2 id='submitted-product-heading'>Submitted Product</h2>
+          <p>Product ID: {submittedProduct.id}</p>
+          <p>Product Name: {submittedProduct.name}</p>
+          <p>Unit Price: £{submittedProduct.price}</p>
+        </section>
+      )}
     </main>
   );
 }

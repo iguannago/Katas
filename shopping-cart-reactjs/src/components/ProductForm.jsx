@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function ProductForm() {
+function ProductForm({ onProductSubmit}) {
   const [productId, setProductId] = useState('');
   const [productName, setProductName] = useState('');
   const [price, setPrice] = useState('');
@@ -22,6 +22,12 @@ function ProductForm() {
     }
 
     setError('');
+
+    onProductSubmit({
+      id: productId,
+      name: productName,
+      price,
+    });
   }
 
   return (
