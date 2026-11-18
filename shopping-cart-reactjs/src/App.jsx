@@ -2,13 +2,29 @@ import CartHeader from './components/CartHeader.jsx';
 import ProductForm from './components/ProductForm.jsx';
 import './App.css';
 import { useState } from 'react';
+import { keycloak } from './auth/keycloak.js';
 
-function App() {
-
+function App({ initialAuthenticated }) {
   const [submittedProduct, setSubmittedProduct] = useState(null);
+  const [signInError, setSignInError] = useState('');
+  const [isSigningIn, setIsSigningIn] = useState(false);
 
   function handleProductSubmit(product) {
     setSubmittedProduct(product);
+  }
+
+  async function handleSignIn() {
+    setSignInError('');
+    setIsSigningIn(true);
+
+    try {
+      await keycloak.login({
+        redirectUri: `${window.location.origin}/`,
+      });
+    } catch {
+      setSignInError('Sign-in could not be started. Please try again.');
+      setIsSigningIn(false);
+    }
   }
 
   return (
@@ -18,20 +34,42 @@ function App() {
         description='Manage your cart and view your receipt.'
       />
 
-      <section aria-labelledby='cart-heading'>
-        <h2 id='cart-heading'>Your cart</h2>
-        <p>No cart selected.</p>
+      <section aria-label='Sign-in status'>
+        {initialAuthenticated ? (
+          <p>
+            Signed in as{' '}
+            {keycloak.tokenParsed?.preferred_username ?? 'authenticated user'}
+          </p>
+        ) : (
+          <>
+            <p>Sign in to manage your shopping cart.</p>
+            <button type='button' onClick={handleSignIn} disabled={isSigningIn}>
+              {isSigningIn ? 'Redirecting…' : 'Sign in'}
+            </button>
+          </>
+        )}
+
+        {signInError && <p role='alert'>{signInError}</p>}
       </section>
 
-      <ProductForm onProductSubmit={handleProductSubmit} />
+      {initialAuthenticated && (
+        <>
+          <section aria-labelledby='cart-heading'>
+            <h2 id='cart-heading'>Your cart</h2>
+            <p>No cart selected.</p>
+          </section>
 
-      {submittedProduct && (
-        <section aria-labelledby='submitted-product-heading'>
-          <h2 id='submitted-product-heading'>Submitted Product</h2>
-          <p>Product ID: {submittedProduct.id}</p>
-          <p>Product Name: {submittedProduct.name}</p>
-          <p>Unit Price: £{submittedProduct.price}</p>
-        </section>
+          <ProductForm onProductSubmit={handleProductSubmit} />
+
+          {submittedProduct && (
+            <section aria-labelledby='submitted-product-heading'>
+              <h2 id='submitted-product-heading'>Submitted Product</h2>
+              <p>Product ID: {submittedProduct.id}</p>
+              <p>Product Name: {submittedProduct.name}</p>
+              <p>Unit Price: £{submittedProduct.price}</p>
+            </section>
+          )}
+        </>
       )}
     </main>
   );

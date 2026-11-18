@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function ProductForm({ onProductSubmit}) {
+function ProductForm({ onProductSubmit }) {
   const [productId, setProductId] = useState('');
   const [productName, setProductName] = useState('');
   const [price, setPrice] = useState('');
