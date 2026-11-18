@@ -132,14 +132,31 @@ function App({ initialAuthenticated }) {
               {receiptError && <p role='alert'>{receiptError}</p>}
 
               {receipt && (
-                <dl>
-                  <dt>Subtotal</dt>
-                  <dd>£{receipt.subtotal}</dd>
-                  <dt>Discount</dt>
-                  <dd>£{receipt.discount}</dd>
-                  <dt>Total</dt>
-                  <dd>£{receipt.total}</dd>
-                </dl>
+                <>
+                  {receipt.lines.length === 0 ? (
+                    <p>Your cart is empty.</p>
+                  ) : (
+                    <table>
+                      <caption>Products in your cart</caption>
+                      <thead>
+                        <tr>
+                          <th scope='col'>Product</th>
+                          <th scope='col'>Quantity</th>
+                          <th scope='col'>Unit price</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {receipt.lines.map((line) => (
+                          <tr key={line.product.id}>
+                            <td>{line.product.name}</td>
+                            <td>{line.quantity}</td>
+                            <td>£{line.product.price}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  )}
+                </>
               )}
             </section>
           )}
