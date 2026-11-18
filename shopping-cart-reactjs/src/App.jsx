@@ -3,15 +3,22 @@ import ProductForm from './components/ProductForm.jsx';
 import './App.css';
 import { useState } from 'react';
 import { keycloak } from './auth/keycloak.js';
-import { createCart } from './api/cartApi.js';
+import { createCart, getReceipt } from './api/cartApi.js';
 
 function App({ initialAuthenticated }) {
   const [submittedProduct, setSubmittedProduct] = useState(null);
+
   const [signInError, setSignInError] = useState('');
   const [isSigningIn, setIsSigningIn] = useState(false);
+
   const [cartId, setCartId] = useState(null);
+
   const [isCreatingCart, setIsCreatingCart] = useState(false);
   const [cartError, setCartError] = useState('');
+
+  const [receipt, setReceipt] = useState(null);
+  const [isLoadingReceipt, setIsLoadingReceipt] = useState(false);
+  const [receiptError, setReceiptError] = useState('');
 
   function handleProductSubmit(product) {
     setSubmittedProduct(product);
@@ -46,6 +53,24 @@ function App({ initialAuthenticated }) {
       );
     } finally {
       setIsCreatingCart(false);
+    }
+  }
+
+  async function handleLoadReceipt() {
+    setReceiptError('');
+    setIsLoadingReceipt(true);
+
+    try {
+      const updatedReceipt = await getReceipt(cartId);
+      setReceipt(updatedReceipt);
+    } catch (error) {
+      setReceiptError(
+        error instanceof Error
+          ? error.message
+          : 'The receipt could not be loaded.',
+      );
+    } finally {
+      setIsLoadingReceipt(false);
     }
   }
 
@@ -91,6 +116,33 @@ function App({ initialAuthenticated }) {
 
             {cartError && <p role='alert'>{cartError}</p>}
           </section>
+
+          {cartId && (
+            <section aria-labelledby='receipt-heading'>
+              <h2 id='receipt-heading'>Receipt</h2>
+
+              <button
+                type='button'
+                onClick={handleLoadReceipt}
+                disabled={isLoadingReceipt}
+              >
+                {isLoadingReceipt ? 'Loading receipt…' : 'Refresh receipt'}
+              </button>
+
+              {receiptError && <p role='alert'>{receiptError}</p>}
+
+              {receipt && (
+                <dl>
+                  <dt>Subtotal</dt>
+                  <dd>£{receipt.subtotal}</dd>
+                  <dt>Discount</dt>
+                  <dd>£{receipt.discount}</dd>
+                  <dt>Total</dt>
+                  <dd>£{receipt.total}</dd>
+                </dl>
+              )}
+            </section>
+          )}
 
           <ProductForm onProductSubmit={handleProductSubmit} />
 

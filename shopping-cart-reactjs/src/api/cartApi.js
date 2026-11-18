@@ -59,3 +59,11 @@ export async function createCart() {
 
   return response.json();
 }
+
+export async function getReceipt(cartId) {
+  const response = await apiRequest(
+    `/carts/${encodeURIComponent(cartId)}/receipt`,
+  );
+
+  return response.json();
+}
