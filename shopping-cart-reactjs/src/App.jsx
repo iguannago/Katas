@@ -4,6 +4,7 @@ import './App.css';
 import { useState } from 'react';
 import { keycloak } from './auth/keycloak.js';
 import { createCart, getReceipt } from './api/cartApi.js';
+import { useEffect } from 'react';
 
 function App({ initialAuthenticated }) {
   const [submittedProduct, setSubmittedProduct] = useState(null);
@@ -73,6 +74,10 @@ function App({ initialAuthenticated }) {
       setIsLoadingReceipt(false);
     }
   }
+
+  useEffect(() => {
+    document.title = cartId ? 'Shopping cart — cart selected' : 'Shopping cart';
+  }, [cartId]);
 
   return (
     <main>

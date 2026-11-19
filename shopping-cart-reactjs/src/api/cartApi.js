@@ -33,10 +33,20 @@ async function apiRequest(path, options = {}) {
   headers.set('Authorization', `Bearer ${keycloak.token}`);
   headers.set('Accept', 'application/json');
 
-  const response = await fetch(`/api${path}`, {
-    ...options,
-    headers,
-  });
+  let response;
+
+  try {
+    response = await fetch(`/api${path}`, {
+      ...options,
+      headers,
+    });
+  } catch (error) {
+    if (error.name === 'AbortError') {
+      throw error;
+    }
+
+    throw new ApiError('The API could not be reached.', 0);
+  }
 
   if (!response.ok) {
     const problem = await response.json().catch(() => null);
