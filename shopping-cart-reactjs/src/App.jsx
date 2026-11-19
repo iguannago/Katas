@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { keycloak } from './auth/keycloak.js';
 import { createCart, getReceipt } from './api/cartApi.js';
 import { useEffect } from 'react';
+import { getErrorMessage } from './api/errorMessages.js';
 
 function App({ initialAuthenticated }) {
   const [submittedProduct, setSubmittedProduct] = useState(null);
@@ -47,11 +48,7 @@ function App({ initialAuthenticated }) {
       const cart = await createCart();
       setCartId(cart.id);
     } catch (error) {
-      setCartError(
-        error instanceof Error
-          ? error.message
-          : 'The cart could not be created.',
-      );
+      setCartError(getErrorMessage(error));
     } finally {
       setIsCreatingCart(false);
     }
@@ -65,11 +62,7 @@ function App({ initialAuthenticated }) {
       const updatedReceipt = await getReceipt(cartId);
       setReceipt(updatedReceipt);
     } catch (error) {
-      setReceiptError(
-        error instanceof Error
-          ? error.message
-          : 'The receipt could not be loaded.',
-      );
+      setReceiptError(getErrorMessage(error));
     } finally {
       setIsLoadingReceipt(false);
     }
